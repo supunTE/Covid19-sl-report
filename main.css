@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+
+.body{
+    background: rgb(0, 0, 0);
+}
+
+.caption{
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+}
+
+.flag{
+    padding: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.sub-caption{
+    padding: 5px;
+    vertical-align: middle;
+    display: inline-block;
+    font-family: 'Inconsolata', monospace;
+}
+
+.table-sl-details{
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+}
