@@ -1,7 +1,7 @@
 #import the library used to query a website
 import urllib.request
 #specify the url
-website = "http://corona.newsfirst.lk/?lan=EN"
+website = "https://www.google.com/covid19-map/"
 #Query the website and return the html to the variable 'page'
 page = urllib.request.urlopen(website) 
 #import the Beautiful soup functions to parse the data returned from the website

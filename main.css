@@ -73,3 +73,69 @@
     background-color: rgb(24, 2, 104) !important;
     font-family: 'Inconsolata', monospace;
 }
+
+.mobile-footer{
+    display: none;
+    font-family: 'Inconsolata', monospace;
+}
+
+@media only screen and (max-width: 576px) {
+    .caption {
+        font-size: 2.5rem !important;
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    .sub-caption-text{
+        padding: 5px 0 0 0 !important;
+    }
+
+    .sub-caption-text div{
+        padding: 0px !important;
+    }
+
+    .sub-caption-text h2{
+        font-size: 1.1rem !important;
+    }
+    
+    .flag{
+        padding: 0px !important;
+    }
+
+    .card-header {
+        font-size: 100% !important;
+    }
+
+    .card-body{
+        padding: 5px !important;
+    }
+
+    .card-title{
+        padding: 0px !important;
+        font-size: 140% !important;
+    }
+
+    .footer{
+        display: none !important;
+    }
+
+    .mobile-footer{
+        display: block !important;
+    }
+
+    .mobile-footer-head{
+        margin-bottom: -10px;
+    }
+
+    .mobile-footer-head-cover{
+        background-color: rgb(16, 0, 73) !important;
+    }
+
+    .mobile-footer-body{
+        background-color: rgb(24, 2, 104) !important;
+    }
+
+    .mobile-footer-button:focus{
+        outline: 5px auto rgb(48, 3, 209) !important;
+    }
+}
