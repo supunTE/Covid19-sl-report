@@ -10,19 +10,26 @@
 }
 
 .flag{
-    padding: 5px;
-    display: inline-block;
-    vertical-align: middle;
+    padding: 10px;
+    margin: 10px auto !important;
 }
 
 .sub-caption{
     padding: 5px;
-    vertical-align: middle;
-    display: inline-block;
     font-family: 'Inconsolata', monospace;
+    margin: 10px auto !important;
+    vertical-align: middle;
+    display: block;
 }
 
 .table-sl-details{
     text-align: center;
     font-family: 'Inconsolata', monospace;
+}
+
+.card-header{
+    font-size: 100%;
+}
+
+.card-title{
 }
