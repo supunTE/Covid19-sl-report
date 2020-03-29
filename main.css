@@ -1,57 +1,75 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
 
-.body{
+.body {
     background-color: rgb(0, 0, 0) !important;
 }
 
-.caption{
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(81, 79, 87, 0.603);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(136, 136, 136, 0.342);
+    transition: 2s !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(138, 138, 138);
+}
+
+.caption {
     text-align: center;
     font-family: 'Inconsolata', monospace;
     margin: 30px auto;
 }
 
-.sub-caption{
-   padding: 10px; 
-   background-color: rgb(24, 2, 104) !important;
+.sub-caption {
+    padding: 10px;
+    background-color: rgb(24, 2, 104) !important;
 }
 
-.sub-caption-text{
+.sub-caption-text {
     padding: 10px;
     font-family: 'Inconsolata', monospace;
-    margin: 10px auto !important;
+    margin: 10px auto 10px !important;
 }
 
-.flag{
+.flag {
     padding: 10px;
     margin: 10px auto !important;
 }
 
-.table-sl-details{
+.table-sl-details {
     text-align: center;
     font-family: 'Inconsolata', monospace;
     display: table;
     width: 100%;
+    margin-bottom: 100px;
 }
 
-.col-details{
+.col-details {
     padding: 0px !important;
 }
 
-.card.card-details{
+.card.card-details {
     border-radius: 0 !important;
 }
 
-.card-header{
+.card-header {
     font-size: 100%;
 }
 
 @media only screen and (max-width: 992px) {
-    .card-header{
+    .card-header {
         font-size: 150%;
     }
-  }
+}
 
-.footer{
+.footer {
     background-color: rgb(24, 2, 104) !important;
     font-family: 'Inconsolata', monospace;
 }

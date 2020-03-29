@@ -2,100 +2,107 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="theme-color" content="#180268" />
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+  <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
 
-    <!-- Other Css -->
-    <!-- <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script> -->
-    <link href="main.css" rel="stylesheet">
+  <!-- Other Css -->
+  <link href="main.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="./sri_lanka_icon_square.svg">
 
-    <!--Boostrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!--Boostrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>
-        Covid19|SL Report
-    </title>
+  <title>
+    Covid19 SL Report
+  </title>
 
 </head>
 
 <body class="text-white bg-dark">
-    <h1 class="display-3 caption">Covid - 19</h1>
+  <h1 class="display-3 caption">Covid - 19</h1>
 
-    <div class="card col-md-8 col-11 mx-auto mb-3 sub-caption">
-        <div class="row no-gutters">
-          <div class="col-9 sub-caption-text">
-            <div class="card-body">
-              <h2 class="text-center">Report of Sri Lanka</h2>
-            </div>
-          </div>
-          <div class="col-3">
-            <img src="./sl-flag.png" class="flag card-img" alt="lk-flag">
+  <div class="card col-md-8 col-11 mx-auto mb-3 sub-caption">
+    <div class="row no-gutters">
+      <div class="col-9 sub-caption-text">
+        <div class="card-body">
+          <h2 class="text-center">Report of Sri Lanka</h2>
+        </div>
+      </div>
+      <div class="col-3">
+        <img src="./sl-flag.png" class="flag card-img" alt="lk-flag">
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-md-10 mx-auto table-sl-details">
+    <div class="row row-cols-1 row-cols-lg-5">
+      <div class="col col-details mb-4">
+        <div class="card card-details text-dark bg-warning">
+          <div class="card-header">Total Infected</div>
+          <div class="card-body">
+            <h1 class="card-title" id="totalInfected">000</h1>
           </div>
         </div>
       </div>
-     
-
-    <div class="col-md-10 mx-auto table-sl-details">
-        <div class="row row-cols-1 row-cols-lg-5">
-            <div class="col col-details mb-4">
-              <div class="card card-details text-dark bg-warning">
-                <div class="card-header">Total Infected</div>
-                <div class="card-body">
-                  <h1 class="card-title">115</h1>
-                </div>
-              </div>
-            </div>
-            <div class="col col-details mb-4">
-              <div class="card card-details text-white bg-danger">
-                <div class="card-header">Active Cases</div>
-                <div class="card-body">
-                  <h1 class="card-title">105</h1>
-                </div>
-              </div>
-            </div>
-            <div class="col col-details mb-4">
-              <div class="card card-details text-white bg-success">
-                <div class="card-header">Recovered</div>
-                <div class="card-body">
-                  <h1 class="card-title">9</h1>
-                </div>
-              </div>
-            </div>
-            <div class="col col-details mb-4">
-              <div class="card card-details text-white bg-secondary">
-                <div class="card-header">Suspected</div>
-                <div class="card-body">
-                  <h1 class="card-title">199</h1>
-                </div>
-              </div>
-            </div>
-            <div class="col col-details mb-4">
-                <div class="card card-details text-dark">
-                    <div class="card-header">Deaths</div>
-                  <div class="card-body">
-                    <h1 class="card-title">1</h1>
-                    </div>
-                </div>
-              </div>
+      <div class="col col-details mb-4">
+        <div class="card card-details text-white bg-danger">
+          <div class="card-header">Active Cases</div>
+          <div class="card-body">
+            <h1 class="card-title" id="activeCases">000</h1>
           </div>
+        </div>
+      </div>
+      <div class="col col-details mb-4">
+        <div class="card card-details text-white bg-success">
+          <div class="card-header">Recovered</div>
+          <div class="card-body">
+            <h1 class="card-title" id="recovered">000</h1>
+          </div>
+        </div>
+      </div>
+      <div class="col col-details mb-4">
+        <div class="card card-details text-white bg-secondary">
+          <div class="card-header">Suspected</div>
+          <div class="card-body">
+            <h1 class="card-title" id="suspected">000</h1>
+          </div>
+        </div>
+      </div>
+      <div class="col col-details mb-4">
+        <div class="card card-details text-dark">
+          <div class="card-header">Deaths</div>
+          <div class="card-body">
+            <h1 class="card-title" id="deaths">00</h1>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <nav class="navbar navbar-dark fixed-bottom footer">
-      <span class="navbar-brand" href="#">Covid19 SL Report</span>
-    </nav>
-    
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-    </script>
+  <nav class="navbar navbar-dark fixed-bottom footer">
+    <h5 class="navbar-brand" href="#">Covid19 SL Report</h5>
+    <h5 class="navbar-text">
+      <b>Developers - </b> Supun Tharinda | Chamuthu Megha
+    </h5>
+  </nav>
+
+  <script src="./script.js"></script>  
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
 </body>
 
 
