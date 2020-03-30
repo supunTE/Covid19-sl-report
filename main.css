@@ -48,7 +48,6 @@
     font-family: 'Inconsolata', monospace;
     display: table;
     width: 100%;
-    margin-bottom: 100px;
 }
 
 .col-details {
@@ -67,6 +66,29 @@
     .card-header {
         font-size: 150%;
     }
+}
+
+.news-panel{
+    margin-bottom: 100px;
+}
+
+.news{
+    font-family: 'Inconsolata', monospace;
+}
+
+.news-title{
+    text-align: center !important;
+}
+
+.news-time{
+    font-size: 110%;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 2px;
+}
+
+.news-time small{
+    color: rgb(255, 255, 255) !important;
 }
 
 .footer {
@@ -113,6 +135,10 @@
     .card-title{
         padding: 0px !important;
         font-size: 140% !important;
+    }
+
+    .news-body{
+        margin: 20px;
     }
 
     .footer{

@@ -13,6 +13,9 @@ var config = {
 firebase.initializeApp(config);
 const db = firebase.firestore();
 
+const settings = {timestampsInSnapshots: true};
+db.settings(settings);
+
 var docRef = db.collection("data").doc("lk");
 
 var totalInfected = document.getElementById('totalInfected');
@@ -22,9 +25,40 @@ var suspected = document.getElementById('suspected');
 var deaths = document.getElementById('deaths');
 
 docRef.get().then(function(doc) {
-    totalInfected.innerHTML = doc.data().total_infected;
-    activeCases.innerHTML = doc.data().active_cases;
-    recovered.innerHTML = doc.data().recovered;
-    suspected.innerHTML = doc.data().suspected;
-    deaths.innerHTML = doc.data().deaths;
+    var totalInfectedno = doc.data().total_infected;
+    var recoveredno = doc.data().recovered;
+    var suspectedno = doc.data().suspected;
+    var deathsno = doc.data().deaths;
+
+    totalInfected.innerHTML = totalInfectedno;
+    activeCases.innerHTML = totalInfectedno-(recoveredno+deathsno);
+    recovered.innerHTML = recoveredno;
+    suspected.innerHTML = suspectedno;
+    deaths.innerHTML = deathsno;
 });
+
+    
+
+// index.esm.js:77 [2020-03-29T22:20:06.227Z]  @firebase/firestore: Firestore (5.0.3): 
+// The behavior for Date objects stored in Firestore is going to change
+// AND YOUR APP MAY BREAK.
+// To hide this warning and ensure your app does not break, you need to add the
+// following code to your app before calling any other Cloud Firestore methods:
+
+//   const firestore = firebase.firestore();
+//   const settings = {/* your settings... */ timestampsInSnapshots: true};
+//   firestore.settings(settings);
+
+// With this change, timestamps stored in Cloud Firestore will be read back as
+// Firebase Timestamp objects instead of as system Date objects. So you will also
+// need to update code expecting a Date to instead expect a Timestamp. For example:
+
+//   // Old:
+//   const date = snapshot.get('created_at');
+//   // New:
+//   const timestamp = snapshot.get('created_at');
+//   const date = timestamp.toDate();
+
+// Please audit all existing usages of Date when you enable the new behavior. In a
+// future release, the behavior will change to the new behavior, so if you do not
+// follow these steps, YOUR APP MAY BREAK.
