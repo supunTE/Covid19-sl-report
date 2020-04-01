@@ -76,6 +76,27 @@
     font-family: 'Inconsolata', monospace;
 }
 
+.card.newsfirst{
+    background-color: rgb(194, 113, 7);
+}
+
+.card.adaderana{
+    background-color: rgb(196, 0, 0);
+}
+
+.card.bbc{
+    background-color: rgb(0, 0, 0);
+}
+
+.card.other{
+    background-color: rgb(17, 0, 80);
+}
+
+.news-image{
+    width: 100%;
+    padding: 5px;
+}
+
 .news-title{
     text-align: center !important;
 }

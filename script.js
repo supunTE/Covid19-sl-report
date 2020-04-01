@@ -24,6 +24,20 @@ var recovered = document.getElementById('recovered');
 var suspected = document.getElementById('suspected');
 var deaths = document.getElementById('deaths');
 
+var month = new Array();
+  month[0] = "Jan";
+  month[1] = "Feb";
+  month[2] = "Mar";
+  month[3] = "Apr";
+  month[4] = "May";
+  month[5] = "Jun";
+  month[6] = "Jul";
+  month[7] = "Aug";
+  month[8] = "Sep";
+  month[9] = "Oct";
+  month[10] = "Nov";
+  month[11] = "Dec";
+
 docRef.get().then(function(doc) {
     var totalInfectedno = doc.data().total_infected;
     var recoveredno = doc.data().recovered;
@@ -37,28 +51,123 @@ docRef.get().then(function(doc) {
     deaths.innerHTML = deathsno;
 });
 
-    
+var news = document.getElementById("news");
 
-// index.esm.js:77 [2020-03-29T22:20:06.227Z]  @firebase/firestore: Firestore (5.0.3): 
-// The behavior for Date objects stored in Firestore is going to change
-// AND YOUR APP MAY BREAK.
-// To hide this warning and ensure your app does not break, you need to add the
-// following code to your app before calling any other Cloud Firestore methods:
+function renderNews(doc) {
+  let carddiv = document.createElement('div');
+  let img = document.createElement('img');
+  let bodydiv = document.createElement('div');
+  let title = document.createElement('h2');
+  let description = document.createElement('h5');
+  let channel = document.createElement('p');
+  let button = document.createElement('a');
+  let time = document.createElement('p');
+  let small = document.createElement('small');
+  let i = document.createElement('i');
+  let b = document.createElement('b');
 
-//   const firestore = firebase.firestore();
-//   const settings = {/* your settings... */ timestampsInSnapshots: true};
-//   firestore.settings(settings);
+  var imgDb = doc.img;
+  var captionDb = doc.caption;
+  if (doc.description) {
+    var descriptionDb = doc.description;
+  }
+  var channelDb = doc.channel;
+  var linkDb = doc.link;
+  var dateDb =  new Date(doc.time.seconds*1000);
+  var hrsDb = dateDb.getHours();
+  var hrsDb = dateDb.getHours();
+  if(hrsDb>12){
+    hrsDb -= 12;
+  }  
+  if(hrsDb<10){
+    hrsDb = '0' + hrsDb;
+  }
+  var minsDb = dateDb.getMinutes();
+  if(minsDb<10){
+    minsDb = '0' + minsDb;
+  }
+  var hrsUTC = dateDb.getHours();
+  if(hrsUTC<12){
+      tmformat = 'AM';
+  }else{
+      tmformat = 'PM';
+  }
 
-// With this change, timestamps stored in Cloud Firestore will be read back as
-// Firebase Timestamp objects instead of as system Date objects. So you will also
-// need to update code expecting a Date to instead expect a Timestamp. For example:
+  var timeDb = dateDb.getDate() + ' ' + month[dateDb.getMonth()] + ', ' + dateDb.getFullYear() + ' | ' + hrsDb + ':' + minsDb + ' ' + tmformat;
 
-//   // Old:
-//   const date = snapshot.get('created_at');
-//   // New:
-//   const timestamp = snapshot.get('created_at');
-//   const date = timestamp.toDate();
+  if(channelDb == 'News1st'){
+    carddiv.setAttribute('class', 'card text-white newsfirst');
+  }else if(channelDb == 'AdaDerana'){
+    carddiv.setAttribute('class', 'card text-white adaderana');
+  }else if(channelDb == 'BBC'){
+    carddiv.setAttribute('class', 'card text-white bbc');
+  }else{
+    carddiv.setAttribute('class', 'card text-white other');
+  }
+//   carddiv.setAttribute('data-id', idDb);
 
-// Please audit all existing usages of Date when you enable the new behavior. In a
-// future release, the behavior will change to the new behavior, so if you do not
-// follow these steps, YOUR APP MAY BREAK.
+  img.setAttribute('class', 'card-img-top news-image');
+  img.setAttribute('src', imgDb);
+  img.setAttribute('alt', 'img');
+  ///
+
+  carddiv.appendChild(img);
+
+  bodydiv.setAttribute('class', 'card-body news-body');
+
+  title.setAttribute('class', 'card-title news-title');
+  b.textContent = captionDb;
+  title.appendChild(b);
+
+  if (doc.description) {
+    description.setAttribute('class', 'card-text');
+    description.textContent = descriptionDb;
+  }
+
+  channel.setAttribute('class', 'card-text');  
+  i.textContent = 'Source - ' + channelDb;
+  channel.appendChild(i);
+
+  if(channelDb == 'News1st'){
+    button.setAttribute('class', 'btn btn-warning');
+  }else if(channelDb == 'AdaDerana'){
+    button.setAttribute('class', 'btn btn-danger');
+  }else if(channelDb == 'BBC'){
+    button.setAttribute('class', 'btn btn-dark');
+  }else{
+    button.setAttribute('class', 'btn btn-primary');
+  }
+  button.setAttribute('href', linkDb);
+  button.setAttribute('target', '_blank');
+  button.textContent = 'Visit...';
+
+  time.setAttribute('class', 'card-text news-time');
+  small.textContent = timeDb;
+  time.appendChild(small);
+
+  bodydiv.appendChild(title);
+  if (doc.description) {
+    bodydiv.appendChild(description);
+  }
+  bodydiv.appendChild(channel);
+  bodydiv.appendChild(button);
+  bodydiv.appendChild(time);
+  ///
+
+  carddiv.appendChild(bodydiv);
+  ///
+
+  news.appendChild(carddiv);
+};
+
+newsDb = db.collection("news");
+
+newsDb.orderBy("time", "desc").get().then(function(querySnapshot) {
+        querySnapshot.forEach(function(doc) {
+            renderNews(doc.data());
+        });
+    })
+    .catch(function(error) {
+        console.log("Error getting documents: ", error);
+    });
+
