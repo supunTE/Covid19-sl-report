@@ -73,9 +73,12 @@ function renderNews(doc) {
   }
   var channelDb = doc.channel;
   var linkDb = doc.link;
+
   var dateDb =  new Date(doc.time.seconds*1000);
   var hrsDb = dateDb.getHours();
-  var hrsDb = dateDb.getHours();
+  if(hrsDb==00){
+    hrsDb = 12;
+  }
   if(hrsDb>12){
     hrsDb -= 12;
   }  
