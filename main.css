@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
-.body {
-    background-color: rgb(0, 0, 0) !important;
-}
+/* Scroll Bar */
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -21,13 +20,106 @@
     background: rgb(138, 138, 138);
 }
 
-.caption {
+/* Caption */
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+.header-box {
     text-align: center;
-    font-family: 'Inconsolata', monospace;
+    color: #252B37;
+    background-color: #151823;
+}
+
+.caption {
+    font-family: 'Rubik', sans-serif;
+}
+
+.caption h1 {
+    font-size: 150% !important;
+    margin-bottom: -8px !important;
+    font-weight: 1000;
+    animation: textColor 10s ease infinite;
+}
+
+.caption h2 {
+    font-size: 250% !important;
+    background-image: url('./sl-flag.png');
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    font-weight: 1000;
+}
+
+@keyframes textColor {
+    0% {
+        color: #f8f400;
+    }
+
+    20% {
+        color: #034e0d;
+    }
+
+    40% {
+        color: #e06c00;
+    }
+
+    60% {
+        color: #830c0c;
+    }
+
+    100% {
+        color: #f8f400;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .caption h2 {
+        background-size: 80% !important;
+    }    
+
+    .caption-2 {
+        font-size: 200% !important;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .header {
+        margin: auto;
+    }    
+
+    .caption h1 {
+        font-size: 200% !important;
+    }
+    
+    .caption h2 {
+        font-size: 180% !important;
+        background-size: 100% !important;
+    }  
+
+    /* .caption {
+        font-size: 2.5rem !important;
+        padding: 10px;
+        margin: 10px auto;
+    } */
+}
+
+.caption-2 {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
     margin: 30px auto;
 }
 
-.sub-caption {
+/* Sub Caption */
+
+/* .sub-caption {
     padding: 10px;
     background-color: rgb(24, 2, 104) !important;
 }
@@ -36,17 +128,149 @@
     padding: 10px;
     font-family: 'Inconsolata', monospace;
     margin: 10px auto 10px !important;
-}
+} */
 
-.flag {
+/* .flag {
     padding: 10px;
     margin: 10px auto !important;
+} */
+
+/* Status-Animation */
+
+.status-animation {
+    text-align: center;
+    margin: 120px auto 10px;
 }
+
+.animation-cards {
+    display: inline-block;
+    position: relative;
+    width: 60vw;
+    height: 40vw;
+    max-width: 380px;
+    max-height: 250px;
+    margin: 0;
+    color: white;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+}
+
+.animation-cards-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: translateZ(-30vw) rotateY(0);
+    transform: translateZ(-30vw) rotateY(0);
+    -webkit-animation: carousel 8s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
+    animation: carousel 8s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+
+.animation-cards-content.step-animation {
+    -webkit-animation: carousel 2s infinite steps(1) forwards;
+    animation: carousel 2s infinite steps(1) forwards;
+}
+
+.animation-cards-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 60vw;
+    height: 40vw;
+    max-width: 380px;
+    max-height: 250px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+}
+
+.animation-cards-item:nth-child(1) {
+    background: #007bff;
+    -webkit-transform: rotateY(0) translateZ(35vw);
+    transform: rotateY(0) translateZ(35vw);
+}
+
+.animation-cards-item:nth-child(2) {
+    background: #28a745;
+    -webkit-transform: rotateY(120deg) translateZ(35vw);
+    transform: rotateY(120deg) translateZ(35vw);
+}
+
+.animation-cards-item:nth-child(3) {
+    background: #dc3545;
+    -webkit-transform: rotateY(240deg) translateZ(35vw);
+    transform: rotateY(240deg) translateZ(35vw);
+}
+
+.animation-cards-item-count {
+    font-family: 'Rubik', sans-serif;
+    font-size: 400%;
+}
+
+.animation-cards-item-subtitle {
+    font-family: 'Inconsolata', monospace;
+    font-size: 200%;
+}
+
+@-webkit-keyframes carousel {
+
+    0%,
+    17.5% {
+        -webkit-transform: translateZ(-35vw) rotateY(0);
+    }
+
+    27.5%,
+    45% {
+        -webkit-transform: translateZ(-35vw) rotateY(-120deg);
+    }
+
+    55%,
+    72.5% {
+        -webkit-transform: translateZ(-35vw) rotateY(-240deg);
+    }
+
+    82.5%,
+    100% {
+        -webkit-transform: translateZ(-35vw) rotateY(-360deg);
+    }
+}
+
+@keyframes carousel {
+
+    0%,
+    17.5% {
+        transform: translateZ(-35vw) rotateY(0);
+    }
+
+    27.5%,
+    45% {
+        transform: translateZ(-35vw) rotateY(-120deg);
+    }
+
+    55%,
+    72.5% {
+        transform: translateZ(-35vw) rotateY(-240deg);
+    }
+
+    82.5%,
+    100% {
+        transform: translateZ(-35vw) rotateY(-360deg);
+    }
+}
+
+/* End of Status-Animation */
 
 .table-sl-details {
     text-align: center;
     font-family: 'Inconsolata', monospace;
-    display: table;
     width: 100%;
 }
 
@@ -58,21 +282,23 @@
     border-radius: 0 !important;
 }
 
-.card-header {
-    font-size: 100%;
+.table-card-header {
+    font-size: 130%;
 }
 
-@media only screen and (max-width: 992px) {
-    .card-header {
-        font-size: 150%;
-    }
+.table-card-body {
+    font-family: 'Rubik', sans-serif;
 }
 
-.news-panel{
+.table-card-body h1 {
+    font-size: 250% !important;
+}
+
+.news-panel {
     margin-bottom: 100px;
 }
 
-.search-bar{
+.search-bar {
     border-radius: 5px;
     margin: 0px auto 10px auto;
     display: inherit;
@@ -83,60 +309,61 @@
     font-family: 'Inconsolata', monospace;
 }
 
-.search-bar:focus{
+.search-bar:focus {
     outline: 10px auto rgb(48, 3, 209) !important;
 }
 
-.loading-news{
+.loading-news {
     font-family: 'Inconsolata', monospace;
 }
 
-.news{
+.news {
     font-family: 'Inconsolata', monospace;
 }
 
-.card.newsfirst{
+.card.newsfirst {
     background-color: rgb(194, 113, 7);
 }
 
-.card.adaderana{
+.card.adaderana {
     background-color: rgb(196, 0, 0);
 }
 
-.card.bbc{
+.card.bbc {
     background-color: rgb(0, 0, 0);
 }
 
-.card.other{
+.card.other {
     background-color: rgb(17, 0, 80);
 }
 
-.news-image{
+.news-image {
     width: 100%;
     padding: 5px;
 }
 
-.news-title{
+.news-title {
     text-align: center !important;
+    font-size: 180% !important;
 }
 
-.news-time{
+.news-time {
     font-size: 110%;
     padding: 5px;
     margin: 5px 0;
     border-radius: 2px;
 }
 
-.btn-see-all{
+.btn-see-all {
     background-color: rgb(24, 2, 104) !important;
     font-family: 'Inconsolata', monospace;
 }
 
-.btn-see-all:hover{
+.btn-see-all:hover {
     background-color: rgb(16, 0, 73) !important;
 }
 
-.news-time small{
+.news-time small {
     color: rgb(255, 255, 255) !important;
 }
 
@@ -145,93 +372,103 @@
     font-family: 'Inconsolata', monospace;
 }
 
-.mobile-footer{
+.mobile-footer {
     display: none;
     font-family: 'Inconsolata', monospace;
 }
 
 @media only screen and (max-width: 576px) {
-    .caption {
-        font-size: 2.5rem !important;
-        padding: 10px;
-        margin: 10px auto;
-    }
-
-    .sub-caption-text{
+    .sub-caption-text {
         padding: 5px 0 0 0 !important;
     }
 
-    .sub-caption-text div{
+    .sub-caption-text div {
         padding: 0px !important;
     }
 
-    .sub-caption-text h2{
+    .sub-caption-text h2 {
         font-size: 1.1rem !important;
     }
-    
-    .flag{
+
+    .flag {
         padding: 0px !important;
+    }
+
+    .animation-cards-item-count {
+        font-size: 300% !important;
+    }
+
+    .animation-cards-item-subtitle {
+        font-size: 130% !important;
+    }
+
+    .table-card-header {
+        font-size: 100% !important;
+    }
+
+    .table-card-body h1 {
+        font-size: 250% !important;
     }
 
     .card-header {
         font-size: 100% !important;
     }
 
-    .card-body{
+    .card-body {
         padding: 5px !important;
     }
 
-    .card-title{
+    .card-title {
         padding: 0px !important;
         font-size: 140% !important;
     }
 
-    .news-body{
+    .news-body {
         margin: 20px;
     }
 
-    .footer{
+    .footer {
         display: none !important;
     }
 
-    .mobile-footer{
+    .mobile-footer {
         display: block !important;
     }
 
-    .mobile-footer-head{
+    .mobile-footer-head {
         margin-bottom: -10px;
     }
 
-    .mobile-footer-head-cover{
+    .mobile-footer-head-cover {
         background-color: rgb(16, 0, 73) !important;
     }
 
-    .mobile-footer-body{
+    .mobile-footer-body {
         background-color: rgb(24, 2, 104) !important;
     }
 
-    .mobile-footer-button:focus{
+    .mobile-footer-button:focus {
         outline: 5px auto rgb(48, 3, 209) !important;
     }
 }
 
 /* newspage */
 
-.btn-back-home{
+.btn-back-home {
     background-color: rgb(24, 2, 104) !important;
     font-family: 'Inconsolata', monospace;
     margin: 10px 10px !important;
-    border-top-left-radius: 0px  !important;
-    border-bottom-left-radius: 0px  !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
 }
 
-.btn-back-home:hover{
+.btn-back-home:hover {
     background-color: rgb(16, 0, 73) !important;
-    border-radius: 0px  !important;
+    border-radius: 0px !important;
 }
 
 @media only screen and (max-width: 576px) {
-    .btn-back-home{
-        border-radius: 0px  !important;
+    .btn-back-home {
+        border-radius: 0px !important;
     }
 }
