@@ -72,6 +72,10 @@
     margin-bottom: 100px;
 }
 
+.loading-news{
+    font-family: 'Inconsolata', monospace;
+}
+
 .news{
     font-family: 'Inconsolata', monospace;
 }
@@ -106,6 +110,15 @@
     padding: 5px;
     margin: 5px 0;
     border-radius: 2px;
+}
+
+.btn-see-all{
+    background-color: rgb(24, 2, 104) !important;
+    font-family: 'Inconsolata', monospace;
+}
+
+.btn-see-all:hover{
+    background-color: rgb(16, 0, 73) !important;
 }
 
 .news-time small{
@@ -184,5 +197,26 @@
 
     .mobile-footer-button:focus{
         outline: 5px auto rgb(48, 3, 209) !important;
+    }
+}
+
+/* newspage */
+
+.btn-back-home{
+    background-color: rgb(24, 2, 104) !important;
+    font-family: 'Inconsolata', monospace;
+    margin: 10px 10px !important;
+    border-top-left-radius: 0px  !important;
+    border-bottom-left-radius: 0px  !important;
+}
+
+.btn-back-home:hover{
+    background-color: rgb(16, 0, 73) !important;
+    border-radius: 0px  !important;
+}
+
+@media only screen and (max-width: 576px) {
+    .btn-back-home{
+        border-radius: 0px  !important;
     }
 }

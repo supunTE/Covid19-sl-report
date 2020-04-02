@@ -16,14 +16,6 @@ const db = firebase.firestore();
 const settings = {timestampsInSnapshots: true};
 db.settings(settings);
 
-var docRef = db.collection("data").doc("lk");
-
-var totalInfected = document.getElementById('totalInfected');
-var activeCases = document.getElementById('activeCases');
-var recovered = document.getElementById('recovered');
-var suspected = document.getElementById('suspected');
-var deaths = document.getElementById('deaths');
-
 var month = new Array();
   month[0] = "Jan";
   month[1] = "Feb";
@@ -37,23 +29,6 @@ var month = new Array();
   month[9] = "Oct";
   month[10] = "Nov";
   month[11] = "Dec";
-
-docRef.get().then(function(doc) {
-    var totalInfectedno = doc.data().total_infected;
-    var recoveredno = doc.data().recovered;
-    var suspectedno = doc.data().suspected;
-    var deathsno = doc.data().deaths;
-
-    totalInfected.innerHTML = totalInfectedno;
-    activeCases.innerHTML = totalInfectedno-(recoveredno+deathsno);
-    recovered.innerHTML = recoveredno;
-    suspected.innerHTML = suspectedno;
-    deaths.innerHTML = deathsno;
-
-    document.getElementById('loading-news').style.display = "none";
-    document.getElementById('see-all').style.display = "block";
-
-});
 
 var news = document.getElementById("news");
 
@@ -169,10 +144,11 @@ function renderNews(doc) {
 
 newsDb = db.collection("news");
 
-newsDb.orderBy("time", "desc").limit(15).get().then(function(querySnapshot) {
+newsDb.orderBy("time", "desc").get().then(function(querySnapshot) {
         querySnapshot.forEach(function(doc) {
             renderNews(doc.data());
         });
+        document.getElementById('loading-news').style.display = "none";
     })
     .catch(function(error) {
         console.log("Error getting documents: ", error);

@@ -25,6 +25,8 @@
   <!-- Other Css -->
   <link href="main.css" rel="stylesheet">
   <link rel="icon" type="image/png" href="./sri_lanka_icon_square.svg">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
   <!--Boostrap-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -46,70 +48,18 @@
 </head>
 
 <body class="text-white bg-dark">
+  <a href="./index.html" class="btn mx-auto col-sm-6 btn-sm btn-back-home text-white" id="see-all">
+    <span class="material-icons" style="font-size: 80%; margin-top: 4px;">
+        navigate_before
+    </span>
+    Back to home page
+  </a>
+
   <h1 class="display-3 caption">COVID-19</h1>
-
-  <div class="card col-md-8 col-11 mx-auto mb-3 sub-caption">
-    <div class="row no-gutters">
-      <div class="col-9 sub-caption-text">
-        <div class="card-body">
-          <h2 class="text-center">Report of Sri Lanka</h2>
-        </div>
-      </div>
-      <div class="col-3">
-        <img src="./sl-flag.png" class="flag card-img" alt="lk-flag">
-      </div>
-    </div>
-  </div>
-
-
-  <div class="col-10 mx-auto table-sl-details">
-    <div class="row row-cols-1 row-cols-lg-5">
-      <div class="col col-details mb-4">
-        <div class="card card-details text-white bg-warning">
-          <div class="card-header">Total Infected</div>
-          <div class="card-body">
-            <h1 class="card-title" id="totalInfected">000</h1>
-          </div>
-        </div>
-      </div>
-      <div class="col col-details mb-4">
-        <div class="card card-details text-white bg-primary">
-          <div class="card-header">Active Cases</div>
-          <div class="card-body">
-            <h1 class="card-title" id="activeCases">000</h1>
-          </div>
-        </div>
-      </div>
-      <div class="col col-details mb-4">
-        <div class="card card-details text-white bg-success">
-          <div class="card-header">Recovered</div>
-          <div class="card-body">
-            <h1 class="card-title" id="recovered">000</h1>
-          </div>
-        </div>
-      </div>
-      <div class="col col-details mb-4">
-        <div class="card card-details text-white bg-secondary">
-          <div class="card-header">Suspected</div>
-          <div class="card-body">
-            <h1 class="card-title" id="suspected">000</h1>
-          </div>
-        </div>
-      </div>
-      <div class="col col-details mb-4">
-        <div class="card card-details text-white bg-danger">
-          <div class="card-header">Deaths</div>
-          <div class="card-body">
-            <h1 class="card-title" id="deaths">00</h1>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
+  
   <div class="col-10 mx-auto news-panel">
-    <h3 class="display-4 caption">Latest News on COVID-19</h3>
-    <h5 class="loading-news" id="loading-news">Loading News ...</h5>
+    <h3 class="display-4 caption">News on COVID-19</h3>
+    <h5 class="loading-news" id="loading-news">Loading News...</h5>
     <div class="card-columns news" id="news">
     <!-- {% for item in site.data.news %}
         {% if item.channel == "News1st" %}
@@ -144,7 +94,7 @@
         </div>
     {% endfor %} -->
     </div>
-    <a href="./news.html" class="btn btn-see-all text-white mx-auto" id="see-all" style="display: none;">See All News</a>
+    <a href="./news.html" class="btn btn-see-all text-white mx-auto" id="see-all" style="display: none;">See All...</a>
 
   </div>
   
@@ -183,7 +133,7 @@
     </nav>
   </div>
 
-  <script src="./script.js"></script>  
+  <script src="./script-news.js"></script>  
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
