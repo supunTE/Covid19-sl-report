@@ -154,3 +154,20 @@ newsDb.orderBy("time", "desc").get().then(function(querySnapshot) {
         console.log("Error getting documents: ", error);
     });
 
+//search function
+function searchFunction() {
+    var input, filter, news, card, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    news = document.getElementById("news");
+    card = news.getElementsByClassName("card");
+    for (i = 0; i < card.length; i++) {
+        a = card[i].getElementsByTagName("h2")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            card[i].style.display = "";
+        } else {
+            card[i].style.display = "none";
+        }
+    }
+  }

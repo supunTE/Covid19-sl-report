@@ -72,6 +72,21 @@
     margin-bottom: 100px;
 }
 
+.search-bar{
+    border-radius: 5px;
+    margin: 0px auto 10px auto;
+    display: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.274);
+    padding: 10px 30px 10px 30px;
+    background-color: #494d50;
+    color: white;
+    font-family: 'Inconsolata', monospace;
+}
+
+.search-bar:focus{
+    outline: 10px auto rgb(48, 3, 209) !important;
+}
+
 .loading-news{
     font-family: 'Inconsolata', monospace;
 }
