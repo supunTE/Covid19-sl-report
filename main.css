@@ -609,7 +609,7 @@ body{
     }
 }
 
-/* newspage */
+
 
 .btn-back-home {
     background-color: rgb(24, 2, 104) !important;
@@ -629,14 +629,13 @@ body{
         border-radius: 0px !important;
     }
 }
-
- /* The alert message box */
+/* 
  .alertbox {
      position: fixed;
      top: 65%;
      z-index: 9999;
-    /* padding: 20px; */
-    background-color:white; /* Red */
+
+    background-color:white; 
     color: black;
     margin-bottom: 15px;
     float:left;
@@ -646,7 +645,7 @@ body{
     
   }
   
-  /* The close button */
+
   .closebtn {
     color: grey;
     font-weight: bold;
@@ -659,7 +658,7 @@ body{
     margin-right: 0.5vw;
   }
   
-  /* When moving the mouse over the close button */
+ 
   .closebtn:hover {
     color: black;
   } 
@@ -676,7 +675,7 @@ body{
     margin-right: 0.5vw;
   }
   
-  /* When moving the mouse over the close button */
+
   .morebtn:hover {
     color: black;
   } 
@@ -708,7 +707,7 @@ body{
     border-top: 1px solid grey;
     margin-top: -0.01vw;
     opacity: 0.2;
-  }
+  } */
 
   
 
