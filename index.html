@@ -48,48 +48,56 @@
 </head>
 
 <body class="text-white bg-dark">
-  <!-- <h1 class="display-3 caption">COVID-19</h1> -->
   <div class="header">
     <div class="header-box shadow">
       <div class="caption">
         <h1>COVID-19</h1>
         <h2>Report of Sri Lanka</h2>
       </div>
+      <!-- <nav class="navbar navbar-expand-lg navbar-dark header-navbar" style="background-color: #151823;">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html">HOME <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./news.html">NEWS</a>
+          </li>
+        </ul>
+      </div>
+      </nav> -->
     </div>
   </div>
 
-  <!-- <div class="card col-md-8 col-11 mx-auto mb-3 sub-caption">
-    <div class="row no-gutters">
-      <div class="col-9 sub-caption-text">
-        <div class="card-body">
-          <h2 class="text-center caption-2">Report of Sri Lanka</h2>
-        </div>
-      </div>
-      <div class="col-3">
-        <img src="./sl-flag.png" class="flag card-img" alt="lk-flag">
-      </div>
-    </div>
-  </div> -->
+
 
   <div class="status-animation">
     <figure class="animation-cards">
       <div class="animation-cards-content">
         <div class="animation-cards-item d-flex align-items-center justify-content-center">
           <span>
-            <h2 id="activeCases" class="animation-cards-item-count" style="text-align: center;">000</h2>
+            <h2 id="activeCases" class="text-center animation-cards-item-count">000</h2>
             <h4 class="animation-cards-item-subtitle">Active Cases</h2>
           </span>
         </div>
         <div class="animation-cards-item d-flex align-items-center justify-content-center">
           <span>
-            <h2 id="recovered" class="animation-cards-item-count" style="text-align: center;">000</h2>
+            <h2 id="recovered" class="text-center animation-cards-item-count">000</h2>
             <h4 class="animation-cards-item-subtitle">Recovered</h2>
           </span>
         </div>
         <div class="animation-cards-item d-flex align-items-center justify-content-center">
           <span>
-            <h2 id="deaths" class="animation-cards-item-count" style="text-align: center;">000</h2>
+            <h2 id="deaths" class="text-center animation-cards-item-count">000</h2>
             <h4 class="animation-cards-item-subtitle">Deaths</h2>
+          </span>
+        </div>
+        <div class="animation-cards-item d-flex align-items-center justify-content-center">
+          <span>
+            <img src="./sri_lanka_icon_square.svg">
           </span>
         </div>
       </div>
@@ -144,8 +152,9 @@
   <div class="col-10 mx-auto news-panel">
     <h3 class="display-4 caption-2">Latest News on COVID-19</h3>
     <input type="text" class="col-10 search-bar" id="myInput" onkeyup="searchFunction()" placeholder="Search for news.."
-      title="Type here">
+      title="Type here" style="display: none;">
     <h5 class="loading-news" id="loading-news">Loading News ...</h5>
+    <h5 class="no-news" id="noNews" style="display: none;">Search not found! <br> Check in all News.</h5>
     <div class="card-columns news" id="news">
       <!-- {% for item in site.data.news %}
         {% if item.channel == "News1st" %}

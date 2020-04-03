@@ -1,19 +1,21 @@
 // Your web app's Firebase configuration
 var config = {
-    apiKey: "AIzaSyDQJ5gZ5boj0LV__nyBMcIfCyWNTJKugx8",
-    authDomain: "covidsl-59df9.firebaseapp.com",
-    databaseURL: "https://covidsl-59df9.firebaseio.com",
-    projectId: "covidsl-59df9",
-    storageBucket: "covidsl-59df9.appspot.com",
-    messagingSenderId: "816288189009",
-    appId: "1:816288189009:web:7edaff32bfddf44e0d0670",
-    measurementId: "G-SKWZ49LYVV"
+  apiKey: "AIzaSyDQJ5gZ5boj0LV__nyBMcIfCyWNTJKugx8",
+  authDomain: "covidsl-59df9.firebaseapp.com",
+  databaseURL: "https://covidsl-59df9.firebaseio.com",
+  projectId: "covidsl-59df9",
+  storageBucket: "covidsl-59df9.appspot.com",
+  messagingSenderId: "816288189009",
+  appId: "1:816288189009:web:7edaff32bfddf44e0d0670",
+  measurementId: "G-SKWZ49LYVV"
 };
 // Initialize Firebase
 firebase.initializeApp(config);
 const db = firebase.firestore();
 
-const settings = {timestampsInSnapshots: true};
+const settings = {
+  timestampsInSnapshots: true
+};
 db.settings(settings);
 
 var docRef = db.collection("data").doc("lk");
@@ -25,33 +27,34 @@ var suspected = document.getElementById('suspected');
 var deaths = document.getElementById('deaths');
 
 var month = new Array();
-  month[0] = "Jan";
-  month[1] = "Feb";
-  month[2] = "Mar";
-  month[3] = "Apr";
-  month[4] = "May";
-  month[5] = "Jun";
-  month[6] = "Jul";
-  month[7] = "Aug";
-  month[8] = "Sep";
-  month[9] = "Oct";
-  month[10] = "Nov";
-  month[11] = "Dec";
+month[0] = "Jan";
+month[1] = "Feb";
+month[2] = "Mar";
+month[3] = "Apr";
+month[4] = "May";
+month[5] = "Jun";
+month[6] = "Jul";
+month[7] = "Aug";
+month[8] = "Sep";
+month[9] = "Oct";
+month[10] = "Nov";
+month[11] = "Dec";
 
-docRef.get().then(function(doc) {
-    var totalInfectedno = doc.data().total_infected;
-    var recoveredno = doc.data().recovered;
-    var suspectedno = doc.data().suspected;
-    var deathsno = doc.data().deaths;
+docRef.get().then(function (doc) {
+  var totalInfectedno = doc.data().total_infected;
+  var recoveredno = doc.data().recovered;
+  var suspectedno = doc.data().suspected;
+  var deathsno = doc.data().deaths;
 
-    totalInfected.innerHTML = totalInfectedno;
-    activeCases.innerHTML = totalInfectedno-(recoveredno+deathsno);
-    recovered.innerHTML = recoveredno;
-    suspected.innerHTML = suspectedno;
-    deaths.innerHTML = deathsno;
+  totalInfected.innerHTML = totalInfectedno;
+  activeCases.innerHTML = totalInfectedno - (recoveredno + deathsno);
+  recovered.innerHTML = recoveredno;
+  suspected.innerHTML = suspectedno;
+  deaths.innerHTML = deathsno;
 
-    document.getElementById('loading-news').style.display = "none";
-    document.getElementById('see-all').style.display = "block";
+  document.getElementById('loading-news').style.display = "none";
+  document.getElementById('myInput').style.display = "block";
+  document.getElementById('see-all').style.display = "block";
 
 });
 
@@ -78,40 +81,40 @@ function renderNews(doc) {
   var channelDb = doc.channel;
   var linkDb = doc.link;
 
-  var dateDb =  new Date(doc.time.seconds*1000);
+  var dateDb = new Date(doc.time.seconds * 1000);
   var hrsDb = dateDb.getHours();
-  if(hrsDb==00){
+  if (hrsDb == 00) {
     hrsDb = 12;
   }
-  if(hrsDb>12){
+  if (hrsDb > 12) {
     hrsDb -= 12;
-  }  
-  if(hrsDb<10){
+  }
+  if (hrsDb < 10) {
     hrsDb = '0' + hrsDb;
   }
   var minsDb = dateDb.getMinutes();
-  if(minsDb<10){
+  if (minsDb < 10) {
     minsDb = '0' + minsDb;
   }
   var hrsUTC = dateDb.getHours();
-  if(hrsUTC<12){
-      tmformat = 'AM';
-  }else{
-      tmformat = 'PM';
+  if (hrsUTC < 12) {
+    tmformat = 'AM';
+  } else {
+    tmformat = 'PM';
   }
 
   var timeDb = dateDb.getDate() + ' ' + month[dateDb.getMonth()] + ', ' + dateDb.getFullYear() + ' | ' + hrsDb + ':' + minsDb + ' ' + tmformat;
 
-  if(channelDb == 'News1st'){
+  if (channelDb == 'News1st') {
     carddiv.setAttribute('class', 'card text-white newsfirst');
-  }else if(channelDb == 'AdaDerana'){
+  } else if (channelDb == 'AdaDerana') {
     carddiv.setAttribute('class', 'card text-white adaderana');
-  }else if(channelDb == 'BBC'){
+  } else if (channelDb == 'BBC') {
     carddiv.setAttribute('class', 'card text-white bbc');
-  }else{
+  } else {
     carddiv.setAttribute('class', 'card text-white other');
   }
-//   carddiv.setAttribute('data-id', idDb);
+  //   carddiv.setAttribute('data-id', idDb);
 
   img.setAttribute('class', 'card-img-top news-image');
   img.setAttribute('src', imgDb);
@@ -131,17 +134,17 @@ function renderNews(doc) {
     description.textContent = descriptionDb;
   }
 
-  channel.setAttribute('class', 'card-text');  
+  channel.setAttribute('class', 'card-text');
   i.textContent = 'Source - ' + channelDb;
   channel.appendChild(i);
 
-  if(channelDb == 'News1st'){
+  if (channelDb == 'News1st') {
     button.setAttribute('class', 'btn btn-warning');
-  }else if(channelDb == 'AdaDerana'){
+  } else if (channelDb == 'AdaDerana') {
     button.setAttribute('class', 'btn btn-danger');
-  }else if(channelDb == 'BBC'){
+  } else if (channelDb == 'BBC') {
     button.setAttribute('class', 'btn btn-dark');
-  }else{
+  } else {
     button.setAttribute('class', 'btn btn-primary');
   }
   button.setAttribute('href', linkDb);
@@ -169,29 +172,36 @@ function renderNews(doc) {
 
 newsDb = db.collection("news");
 
-newsDb.orderBy("time", "desc").limit(15).get().then(function(querySnapshot) {
-        querySnapshot.forEach(function(doc) {
-            renderNews(doc.data());
-        });
-    })
-    .catch(function(error) {
-        console.log("Error getting documents: ", error);
+newsDb.orderBy("time", "desc").limit(15).get().then(function (querySnapshot) {
+    querySnapshot.forEach(function (doc) {
+      renderNews(doc.data());
     });
+  })
+  .catch(function (error) {
+    console.log("Error getting documents: ", error);
+  });
 
 //search function
 function searchFunction() {
-  var input, filter, news, card, a, i, txtValue;
+  var input, filter, news, card, a, i, txtValue, searchNone, noNews;
   input = document.getElementById("myInput");
   filter = input.value.toUpperCase();
   news = document.getElementById("news");
   card = news.getElementsByClassName("card");
+  noNews = document.getElementById("noNews");
+  searchNone = true;
+  noNews.style.display = "none";
   for (i = 0; i < card.length; i++) {
-      a = card[i].getElementsByTagName("h2")[0];
-      txtValue = a.textContent || a.innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-          card[i].style.display = "";
-      } else {
-          card[i].style.display = "none";
-      }
+    a = card[i].getElementsByTagName("h2")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      card[i].style.display = "";
+      searchNone = false;
+    } else {
+      card[i].style.display = "none";
+    }
+  }
+  if (searchNone == true) {
+    noNews.style.display = "block";
   }
 }
