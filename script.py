@@ -1,3 +1,7 @@
+#import the Beautiful soup functions to parse the data returned from the website
+from bs4 import BeautifulSoup
+# Import pandas to make data tables and to import it to CSV
+import pandas as pd
 #import the library used to query a website
 import urllib.request
 class AppURLopener(urllib.request.FancyURLopener):
@@ -6,8 +10,7 @@ class AppURLopener(urllib.request.FancyURLopener):
 website = "https://www.google.com/covid19-map/"
 #Query the website and return the html to the variable 'page'
 page = AppURLopener().open(website) 
-#import the Beautiful soup functions to parse the data returned from the website
-from bs4 import BeautifulSoup
+
 #Parse the html in the 'page' variable, and store it in Beautiful Soup format
 soup = BeautifulSoup(page, 'html.parser')
 
@@ -21,6 +24,20 @@ rows = right_table.findAll("tr")
     
 datas = rows[1].findAll("td")
 
-print('Confirmed Cases : ' + datas[1].string)
-print('Recovered : ' + datas[3].string)
-print('Deaths : ' + datas[4].string)
+#print('Confirmed Cases : ' + datas[1].string)
+#print('Recovered : ' + datas[3].string)
+#print('Deaths : ' + datas[4].string)
+
+# make a table from the data
+stat = pd.DataFrame(
+    {
+       'Confirmed Cases': [datas[1].string],
+       'Recovered':  [datas[3].string],
+       'Deaths': [datas[4].string],
+    }
+)
+
+print(stat)
+
+# Export the table to csv
+stat.to_csv('stats.csv')
