@@ -3,124 +3,176 @@ layout: default
 title: Home
 ---
 
-  <div class="header">
-    <div class="header-box shadow">
-      <div class="caption">
-        <h1>COVID-19</h1>
-        <h2>Report of Sri Lanka</h2>
+<div class="status-animation margin-top-under-nav" id="status-animation">
+  <figure class="animation-cards">
+    <div class="animation-cards-content">
+      <div class="animation-cards-item d-flex align-items-center justify-content-center" onclick="hidestatuscard()">
+        <span>
+          <h2 id="activeCases" class="text-center animation-cards-item-count">000</h2>
+          <h4 class="animation-cards-item-subtitle">Active Cases</h2>
+            <img src="./virus.png" class="card-virus-cell">
+        </span>
       </div>
-      <!-- <nav class="navbar navbar-expand-lg navbar-dark header-navbar" style="background-color: #151823;">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="./index.html">HOME <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./news.html">NEWS</a>
-          </li>
-        </ul>
+      <div class="animation-cards-item d-flex align-items-center justify-content-center" onclick="hidestatuscard()">
+        <span>
+          <h2 id="recovered" class="text-center animation-cards-item-count">000</h2>
+          <h4 class="animation-cards-item-subtitle">Recovered</h2>
+            <img src="./virus.png" class="card-virus-cell">
+        </span>
       </div>
-      </nav> -->
+      <div class="animation-cards-item d-flex align-items-center justify-content-center" onclick="hidestatuscard()">
+        <span>
+          <h2 id="deaths" class="text-center animation-cards-item-count">000</h2>
+          <h4 class="animation-cards-item-subtitle">Deaths</h2>
+            <img src="./virus.png" class="card-virus-cell">
+        </span>
+      </div>
+      <div class="animation-cards-item d-flex align-items-center justify-content-center " onclick="hidestatuscard()">
+        <span class="shine">
+          <img src="./sl-flag.png" class="animation-card-img">
+        </span>
+      </div>
     </div>
-  </div>
+  </figure>
+</div>
 
-
-  <div class="status-animation" id="status-animation"> 
-    <figure class="animation-cards">
-      <div class="animation-cards-content">
-        <div class="animation-cards-item d-flex align-items-center justify-content-center" onclick="hidestatuscard()">
-          <span>
-            <h2 id="activeCases" class="text-center animation-cards-item-count">000</h2>
-            <h4 class="animation-cards-item-subtitle">Active Cases</h2>
-            <img src="./virus.png" class="card-virus-cell">
-          </span>
-        </div>
-        <div class="animation-cards-item d-flex align-items-center justify-content-center" onclick="hidestatuscard()">
-          <span>
-            <h2 id="recovered" class="text-center animation-cards-item-count">000</h2>
-            <h4 class="animation-cards-item-subtitle">Recovered</h2>
-            <img src="./virus.png" class="card-virus-cell">
-          </span>
-        </div>
-        <div class="animation-cards-item d-flex align-items-center justify-content-center" onclick="hidestatuscard()">
-          <span>
-            <h2 id="deaths" class="text-center animation-cards-item-count">000</h2>
-            <h4 class="animation-cards-item-subtitle">Deaths</h2>
-            <img src="./virus.png" class="card-virus-cell">
-          </span>
-        </div>
-        <div class="animation-cards-item d-flex align-items-center justify-content-center " onclick="hidestatuscard()">
-          <span class="shine">
-            <img src="./sl-flag.png" class="animation-card-img">
-          </span>
+<div class="col-10 mx-auto margin-top-under-nav table-sl-details-1" style="display: none;" id="table-sl-details">
+  <img src="./virus.png" class="back-virus-cell-1">
+  <img src="./virus.png" class="back-virus-cell-2">
+  <div class="justify-content-center card-deck">
+    <div class="col col-details mb-4" onclick="hidetabledetails()">
+      <div class="card card-details text-white bg-primary">
+        <div class="card-header table-card-header">Active Cases</div>
+        <div class="card-body table-card-body">
+          <h1 class="card-title" id="activeCases-2">000</h1>
         </div>
       </div>
-    </figure>
-  </div>
-
-  <div class="col-10 mx-auto table-sl-details-1" style="display: none;" id="table-sl-details">
-    <img src="./virus.png" class="back-virus-cell-1">
-    <img src="./virus.png" class="back-virus-cell-2">
-    <div class="justify-content-center card-deck">
-      <div class="col col-details mb-4" onclick="hidetabledetails()">
-        <div class="card card-details text-white bg-primary">
-          <div class="card-header table-card-header">Active Cases</div>
-          <div class="card-body table-card-body">
-            <h1 class="card-title" id="activeCases-2">000</h1>
-          </div>
+    </div>
+    <div class="col col-details mb-4" onclick="hidetabledetails()">
+      <div class="card card-details text-white bg-success">
+        <div class="card-header table-card-header">Recovered</div>
+        <div class="card-body table-card-body">
+          <h1 class="card-title" id="recovered-2">000</h1>
         </div>
       </div>
-      <div class="col col-details mb-4" onclick="hidetabledetails()">
-        <div class="card card-details text-white bg-success">
-          <div class="card-header table-card-header">Recovered</div>
-          <div class="card-body table-card-body">
-            <h1 class="card-title" id="recovered-2">000</h1>
-          </div>
-        </div>
-      </div>
-      <div class="col col-details mb-4" onclick="hidetabledetails()">
-        <div class="card card-details text-white bg-danger">
-          <div class="card-header table-card-header">Deaths</div>
-          <div class="card-body table-card-body">
-            <h1 class="card-title" id="deaths-2">000</h1>
-          </div>
+    </div>
+    <div class="col col-details mb-4" onclick="hidetabledetails()">
+      <div class="card card-details text-white bg-danger">
+        <div class="card-header table-card-header">Deaths</div>
+        <div class="card-body table-card-body">
+          <h1 class="card-title" id="deaths-2">000</h1>
         </div>
       </div>
     </div>
   </div>
+</div>
 
-  <div class="col-10 mx-auto table-sl-details">
-    <div class="row justify-content-center card-deck">
-      <div class="col col-md-4 col-details mb-4">
-        <div class="card card-details text-white bg-warning">
-          <div class="card-header table-card-header">Total</div>
-          <div class="card-body table-card-body">
-            <h1 class="card-title" id="totalInfected">000</h1>
-          </div>
+<div class="col-10 mx-auto table-sl-details">
+  <div class="row justify-content-center card-deck">
+    <div class="col col-md-4 col-details mb-4">
+      <div class="card card-details text-white bg-warning">
+        <div class="card-header table-card-header">Total</div>
+        <div class="card-body table-card-body">
+          <h1 class="card-title" id="totalInfected">000</h1>
         </div>
       </div>
-      <div class="col col-md-4 col-details mb-4">
-        <div class="card card-details text-white bg-secondary">
-          <div class="card-header table-card-header">Suspected</div>
-          <div class="card-body table-card-body">
-            <h1 class="card-title" id="suspected">000</h1>
-          </div>
+    </div>
+    <div class="col col-md-4 col-details mb-4">
+      <div class="card card-details text-white bg-secondary">
+        <div class="card-header table-card-header">Suspected</div>
+        <div class="card-body table-card-body">
+          <h1 class="card-title" id="suspected">000</h1>
         </div>
       </div>
     </div>
   </div>
+</div>
 
-  <div class="col-10 mx-auto news-panel">
-    <h3 class="display-4 caption-2">Latest News on COVID-19</h3>
-    <input type="text" class="col-10 search-bar" id="myInput" onkeyup="searchFunction()" placeholder="Search for news.."
-      title="Type here" style="display: none;">
-    <h5 class="loading-news" id="loading-news">Loading News ...</h5>
-    <h5 class="no-news" id="noNews" style="display: none;">Search not found! <br> Check in all News.</h5>
-    <div class="card-columns news" id="news">
-      <!-- {% for item in site.data.news %}
+<h3 class="global-data-caption">Global Data</h3>
+
+<div class="col-10 mx-auto table-gl-details card-group">
+  <div class="card bg-warning">
+    <div class="card-body">      
+      <p class="card-text" id="global_total"></p>
+      <h5 class="card-title">Total Cases</h5>
+    </div>
+  </div>
+  <div class="card bg-warning">
+    <div class="card-body">
+      <p class="card-text" id="global_deaths"></p>
+      <h5 class="card-title">Total Deaths</h5>
+    </div>
+  </div>
+  <div class="card bg-warning">
+    <div class="card-body">
+      <p class="card-text" id="global_recovered"></p>
+      <h5 class="card-title">Total Recovered</h5>
+    </div>
+  </div>
+  <div class="card bg-danger">
+    <div class="card-body">
+      <p class="card-text" id="global_cases_today"></p>
+      <h5 class="card-title">Cases Today</h5>
+    </div>
+  </div>
+  <div class="card bg-danger">
+    <div class="card-body">
+      <p class="card-text" id="global_deaths_today"></p>
+      <h5 class="card-title">Deaths Today</h5>
+    </div>
+  </div>
+</div>
+
+<script>
+  const api_url = "https://www.hpb.health.gov.lk/api/get-current-statistical";
+  var globalTotalAPI, globalDeathsAPI, globalRecoveredAPI, globalCasesTodayAPI, globalDeathsTodayAPI;
+
+  globalTotal = document.getElementById('global_total');
+  globalDeaths = document.getElementById('global_deaths');
+  globalRecovered = document.getElementById('global_recovered');
+  globalCasesToday = document.getElementById('global_cases_today');
+  globalDeathsToday = document.getElementById('global_deaths_today');
+
+  async function getData(){
+      const response = await fetch(api_url);
+      const all_data = await response.json();
+      const data = all_data.data
+
+      globalTotalAPI = data.global_total_cases;
+      globalDeathsAPI = data.global_deaths;
+      globalRecoveredAPI = data.global_recovered;
+      globalCasesTodayAPI = data.global_new_cases;
+      globalDeathsTodayAPI = data.global_new_deaths;
+
+      globalTotal.innerHTML = globalTotalAPI;
+      globalDeaths.innerHTML = globalDeathsAPI;
+      globalRecovered.innerHTML = globalRecoveredAPI;
+      globalCasesToday.innerHTML = globalCasesTodayAPI;
+      globalDeathsToday.innerHTML = globalDeathsTodayAPI;
+
+  }
+
+  getData();
+</script>
+
+<!--newly updated code
+  <div id="topBar"> <a href ="#" onclick="load_home()"> WorldWide status </a> </div>
+  <div id ="content"> </div>
+  <script>
+        function load_home() {
+     document.getElementById("content").innerHTML='<object type="text/html" data="stats.html" ></object>';
+}
+    
+  </script> -->
+
+<div class="col-10 mx-auto news-panel margin-bottom-before-footer">
+  <h3 class="display-4 caption-2" id="news-panel">Latest News on COVID-19</h3>
+  <input type="text" class="col-10 search-bar" id="myInput" onkeyup="searchFunction()" placeholder="Search for news.."
+    title="Type here" style="display: none;">
+  <h5 class="loading-news" id="loading-news">Loading News ...</h5>
+  <h5 class="no-news" id="noNews" style="display: none;">Search not found! <br> Check in all News.</h5>
+  <div class="card-columns news" id="news">
+    <!-- {% for item in site.data.news %}
         {% if item.channel == "News1st" %}
         <div class="card text-white" style="background-color: rgb(194, 113, 7);">
         {% elsif item.channel == "AdaDerana" %}
@@ -152,47 +204,9 @@ title: Home
           </div>
         </div>
     {% endfor %} -->
-    </div>
-    <a href="./news.html" class="btn btn-see-all text-white mx-auto" id="see-all" style="display: none;">See All
-      News</a>
-
   </div>
+  <a href="./news.html" class="btn btn-see-all text-white mx-auto" id="see-all" style="display: none;">See All
+    News</a>
+</div>
 
-  <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1PuiuCde9NbpdzHzlH3a-Mq2AaDGqMIg_" width="100%" height="480" bis_size="{&quot;x&quot;:689,&quot;y&quot;:91,&quot;w&quot;:540,&quot;h&quot;:480,&quot;abs_x&quot;:689,&quot;abs_y&quot;:91}" bis_id="fr_pvw4vcysatya18b42yxpe8" bis_depth="0" bis_chainid="1"></iframe>
-
-  <nav class="navbar navbar-dark fixed-bottom footer">
-    <h5 class="navbar-brand" href="#">Covid19 SL Report</h5>
-    <span class="navbar-text">
-      <b>Developers - </b>
-      <br> Supun Tharinda | Hasala Heiyanthuduwa
-    </span>
-    <span class="navbar-text">
-      <b>Live Updating Crew - </b>
-      <br> Chamuthu Megha | Chamindu Jayanath
-    </span>
-  </nav>
-
-  <div class="pos-f-t fixed-bottom mobile-footer">
-    <div class="collapse mobile-footer-head" id="navbarToggleExternalContent">
-      <div class="mobile-footer-head-cover p-4">
-        <div class="navbar-text">
-          <b>Developers - </b>
-          <br> Supun Tharinda
-          <br> Hasala Heiyanthuduwa
-        </div>
-        <br>
-        <div class="navbar-text">
-          <b>Live Updating Crew - </b>
-          <br> Chamuthu Megha
-          <br> Chamindu Jayanath
-        </div>
-      </div>
-    </div>
-    <nav class="navbar navbar-dark mobile-footer-body">
-      <button class="navbar-toggler mobile-footer-button mx-auto" type="button" data-toggle="collapse"
-        data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <h5 class="text-white text-center h6">COVID-19 SL Report</h5>
-      </button>
-    </nav>
-  </div>
+<script src="./script.js"></script>

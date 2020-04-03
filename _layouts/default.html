@@ -10,7 +10,7 @@
     <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
 
     <!--FACEBOOK-->
-    <meta property="og:image" content="https://covid19-sl-report.netlify.com/covid-sl-img.png">
+    <meta property="og:image" content="https://covid19-sl-report.netlify.com/covid-sl-img-transparent.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="900">
     <meta property="og:image:height" content="600">
@@ -49,9 +49,12 @@
 
 <body class="text-white bg-dark">
 
+    {% include navbar.html %}
+
     {{ content }}
 
-    <script src="./script.js"></script>
+    {% include footer.html %}
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>

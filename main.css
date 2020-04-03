@@ -24,6 +24,18 @@ body{
     background: rgb(138, 138, 138);
 }
 
+.margin-top-under-nav{
+    margin: 160px auto 10px;
+}
+
+.margin-bottom-before-footer{
+    margin-bottom: 100px !important;
+}
+
+.margin-bottom-before-footer-huge{
+    margin-bottom: 300px !important;
+}
+
 /* Caption */
 .header {
     position: fixed;
@@ -124,7 +136,7 @@ body{
 
 .status-animation {
     text-align: center;
-    margin: 120px auto 10px;
+    margin: 140px auto 10px;
 }
 
 .animation-cards {
@@ -339,7 +351,6 @@ body{
     text-align: center;
     font-family: 'Inconsolata', monospace;
     width: 100%;
-    margin: 120px auto 10px;
     transition: 2s;
 }
 
@@ -369,8 +380,16 @@ body{
     font-size: 250% !important;
 }
 
-.news-panel {
-    margin-bottom: 100px;
+.global-data-caption{
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    font-size: 200%;
+}
+
+.table-gl-details {
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    width: 100%;
 }
 
 .search-bar {
@@ -526,6 +545,10 @@ body{
         z-index: -2;
     }
 
+    .table-gl-details {
+        display: block !important;
+    }
+
     .card-columns {
         -webkit-column-count: 2 !important;
         column-count: 2 !important;
@@ -627,4 +650,15 @@ body{
     .btn-back-home {
         border-radius: 0px !important;
     }
+}
+
+
+/* Maps Page */
+.map-centers-sl{
+    height: 300px !important;
+    font-family: 'Inconsolata', monospace;
+}
+
+.map-centers-sl-frame{
+    height: 300px !important;
 }

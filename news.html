@@ -1,71 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+title: News
+---
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="theme-color" content="#180268" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
-
-  <!--FACEBOOK-->
-  <meta property="og:image" content="https://covid19-sl-report.netlify.com/covid-sl-img.png">
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="900">
-  <meta property="og:image:height" content="600">
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://covid19-sl-report.netlify.com/" />
-  <meta property="og:title" content="COVID-19 SL REPORT" />
-  <meta property="fb:app_id" content="243473633359637" />
-  <meta property="og:description"
-    content="Stay safe at home with the latest news and updates on the COVID-19 status of Sri Lanka at your finger prints from the realtime updating website." />
-
-  <!-- Other Css -->
-  <link href="main.css" rel="stylesheet">
-  <link rel="icon" type="image/png" href="./sri_lanka_icon_square.svg">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-  <!--Boostrap-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-  <title>
-    COVID-19 SL Report
-  </title>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159981863-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-159981863-1');
-  </script>
-</head>
-
-<body class="text-white bg-dark">
-  <a href="./index.html" class="btn mx-auto col-sm-6 btn-sm btn-back-home text-white" id="see-all">
-    <span class="material-icons" style="font-size: 80%; margin-top: 4px;">
-      navigate_before
-    </span>
-    Back to home page
-  </a>
-
-  <h1 class="display-3 caption-2">COVID-19</h1>
-
-  <div class="col-10 mx-auto news-panel">
-    <h3 class="display-4 caption-2">News on COVID-19</h3>
-    <input type="text" class="col-10 search-bar" id="myInput" onkeyup="searchFunction()" placeholder="Search for news.."
-      title="Type here" style="display: none;">
-    <h5 class="loading-news" id="loading-news">Loading News...</h5>
-    <h5 class="no-news" id="noNews" style="display: none;">Search not found!</h5>
-    <div class="card-columns news" id="news">
-      <!-- {% for item in site.data.news %}
+<div class="col-10 mx-auto news-panel margin-top-under-nav margin-bottom-before-footer">
+  <h3 class="display-4 caption-2">News on COVID-19</h3>
+  <input type="text" class="col-10 search-bar" id="myInput" onkeyup="searchFunction()" placeholder="Search for news.."
+    title="Type here" style="display: none;">
+  <h5 class="loading-news" id="loading-news">Loading News...</h5>
+  <h5 class="no-news" id="noNews" style="display: none;">Search not found!</h5>
+  <div class="card-columns news" id="news">
+    <!-- {% for item in site.data.news %}
         {% if item.channel == "News1st" %}
         <div class="card text-white" style="background-color: rgb(194, 113, 7);">
         {% elsif item.channel == "AdaDerana" %}
@@ -97,61 +42,46 @@
           </div>
         </div>
     {% endfor %} -->
-    </div>
-    <a href="./news.html" class="btn btn-see-all text-white mx-auto" id="see-all" style="display: none;">See All...</a>
-
   </div>
+  <a href="./news.html" class="btn btn-see-all text-white mx-auto" id="see-all" style="display: none;">See All...</a>
+</div>
 
 
-  <nav class="navbar navbar-dark fixed-bottom footer">
-    <h5 class="navbar-brand" href="#">Covid19 SL Report</h5>
-    <span class="navbar-text">
-      <b>Developers - </b>
-      <br> Supun Tharinda | Hasala Heiyanthuduwa
-    </span>
-    <span class="navbar-text">
-      <b>Live Updating Crew - </b>
-      <br> Chamuthu Megha | Chamindu Jayanath
-    </span>
-  </nav>
+<nav class="navbar navbar-dark fixed-bottom footer">
+  <h5 class="navbar-brand" href="#">Covid19 SL Report</h5>
+  <span class="navbar-text">
+    <b>Developers - </b>
+    <br> Supun Tharinda | Hasala Heiyanthuduwa
+  </span>
+  <span class="navbar-text">
+    <b>Live Updating Crew - </b>
+    <br> Chamuthu Megha | Chamindu Jayanath
+  </span>
+</nav>
 
-  <div class="pos-f-t fixed-bottom mobile-footer">
-    <div class="collapse mobile-footer-head" id="navbarToggleExternalContent">
-      <div class="mobile-footer-head-cover p-4">
-        <div class="navbar-text">
-          <b>Developers - </b>
-          <br> Supun Tharinda
-          <br> Hasala Heiyanthuduwa
-        </div>
-        <br>
-        <div class="navbar-text">
-          <b>Live Updating Crew - </b>
-          <br> Chamuthu Megha
-          <br> Chamindu Jayanath
-        </div>
+<div class="pos-f-t fixed-bottom mobile-footer">
+  <div class="collapse mobile-footer-head" id="navbarToggleExternalContent">
+    <div class="mobile-footer-head-cover p-4">
+      <div class="navbar-text">
+        <b>Developers - </b>
+        <br> Supun Tharinda
+        <br> Hasala Heiyanthuduwa
+      </div>
+      <br>
+      <div class="navbar-text">
+        <b>Live Updating Crew - </b>
+        <br> Chamuthu Megha
+        <br> Chamindu Jayanath
       </div>
     </div>
-    <nav class="navbar navbar-dark mobile-footer-body">
-      <button class="navbar-toggler mobile-footer-button mx-auto" type="button" data-toggle="collapse"
-        data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <h5 class="text-white text-center h6">COVID-19 SL Report</h5>
-      </button>
-    </nav>
   </div>
+  <nav class="navbar navbar-dark mobile-footer-body">
+    <button class="navbar-toggler mobile-footer-button mx-auto" type="button" data-toggle="collapse"
+      data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <h5 class="text-white text-center h6">COVID-19 SL Report</h5>
+    </button>
+  </nav>
+</div>
 
-  <script src="./script-news.js"></script>
-
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-  </script>
-</body>
-
-
-</html>
+<script src="./script-news.js"></script>
