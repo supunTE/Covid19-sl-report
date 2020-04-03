@@ -39,5 +39,11 @@ stat = pd.DataFrame(
 
 print(stat)
 
+html = (stat.to_html())
 # Export the table to csv
 stat.to_csv('stats.csv')
+
+# Export the table to HTML
+stat.to_html('stats.html')
+
+print(html)
