@@ -26,6 +26,10 @@ var recovered = document.getElementById('recovered');
 var suspected = document.getElementById('suspected');
 var deaths = document.getElementById('deaths');
 
+var activeCases2 = document.getElementById('activeCases-2');
+var recovered2 = document.getElementById('recovered-2');
+var deaths2 = document.getElementById('deaths-2');
+
 var month = new Array();
 month[0] = "Jan";
 month[1] = "Feb";
@@ -51,6 +55,10 @@ docRef.get().then(function (doc) {
   recovered.innerHTML = recoveredno;
   suspected.innerHTML = suspectedno;
   deaths.innerHTML = deathsno;
+
+  activeCases2.innerHTML = totalInfectedno - (recoveredno + deathsno);
+  recovered2.innerHTML = recoveredno;
+  deaths2.innerHTML = deathsno;
 
   document.getElementById('loading-news').style.display = "none";
   document.getElementById('myInput').style.display = "block";
@@ -204,4 +212,24 @@ function searchFunction() {
   if (searchNone == true) {
     noNews.style.display = "block";
   }
+}
+
+//hide cards | hide animation
+function hidestatuscard(){
+  var tableDetails, statusAnimation;
+  tableDetails = document.getElementById('table-sl-details');
+  statusAnimation = document.getElementById('status-animation')
+  tableDetails.style.display = "block";
+  tableDetails.style.opacity = "1";
+  statusAnimation.style.display = "none";
+  statusAnimation.style.opacity = "0";
+}
+function hidetabledetails(){
+  var tableDetails, statusAnimation;
+  tableDetails = document.getElementById('table-sl-details');
+  statusAnimation = document.getElementById('status-animation')
+  tableDetails.style.display = "none";
+  tableDetails.style.opacity = "0";
+  statusAnimation.style.display = "block";
+  statusAnimation.style.opacity = "1";
 }

@@ -88,7 +88,6 @@ function renderNews(doc) {
   } else {
     carddiv.setAttribute('class', 'card text-white other');
   }
-  //   carddiv.setAttribute('data-id', idDb);
 
   img.setAttribute('class', 'card-img-top news-image');
   img.setAttribute('src', imgDb);

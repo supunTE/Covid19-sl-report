@@ -73,35 +73,68 @@
   </div>
 
 
-
-  <div class="status-animation">
+  <div class="status-animation" id="status-animation"> 
     <figure class="animation-cards">
       <div class="animation-cards-content">
-        <div class="animation-cards-item d-flex align-items-center justify-content-center">
+        <div class="animation-cards-item d-flex align-items-center justify-content-center" onclick="hidestatuscard()">
           <span>
             <h2 id="activeCases" class="text-center animation-cards-item-count">000</h2>
             <h4 class="animation-cards-item-subtitle">Active Cases</h2>
+            <img src="./virus.png" class="card-virus-cell">
           </span>
         </div>
-        <div class="animation-cards-item d-flex align-items-center justify-content-center">
+        <div class="animation-cards-item d-flex align-items-center justify-content-center" onclick="hidestatuscard()">
           <span>
             <h2 id="recovered" class="text-center animation-cards-item-count">000</h2>
             <h4 class="animation-cards-item-subtitle">Recovered</h2>
+            <img src="./virus.png" class="card-virus-cell">
           </span>
         </div>
-        <div class="animation-cards-item d-flex align-items-center justify-content-center">
+        <div class="animation-cards-item d-flex align-items-center justify-content-center" onclick="hidestatuscard()">
           <span>
             <h2 id="deaths" class="text-center animation-cards-item-count">000</h2>
             <h4 class="animation-cards-item-subtitle">Deaths</h2>
+            <img src="./virus.png" class="card-virus-cell">
           </span>
         </div>
-        <div class="animation-cards-item d-flex align-items-center justify-content-center">
-          <span>
-            <img src="./sri_lanka_icon_square.svg">
+        <div class="animation-cards-item d-flex align-items-center justify-content-center " onclick="hidestatuscard()">
+          <span class="shine">
+            <img src="./sl-flag.png" class="animation-card-img">
           </span>
         </div>
       </div>
     </figure>
+  </div>
+
+  <div class="col-10 mx-auto table-sl-details-1" style="display: none;" id="table-sl-details">
+    <img src="./virus.png" class="back-virus-cell-1">
+    <img src="./virus.png" class="back-virus-cell-2">
+    <div class="justify-content-center card-deck">
+      <div class="col col-details mb-4" onclick="hidetabledetails()">
+        <div class="card card-details text-white bg-primary">
+          <div class="card-header table-card-header">Active Cases</div>
+          <div class="card-body table-card-body">
+            <h1 class="card-title" id="activeCases-2">000</h1>
+          </div>
+        </div>
+      </div>
+      <div class="col col-details mb-4" onclick="hidetabledetails()">
+        <div class="card card-details text-white bg-success">
+          <div class="card-header table-card-header">Recovered</div>
+          <div class="card-body table-card-body">
+            <h1 class="card-title" id="recovered-2">000</h1>
+          </div>
+        </div>
+      </div>
+      <div class="col col-details mb-4" onclick="hidetabledetails()">
+        <div class="card card-details text-white bg-danger">
+          <div class="card-header table-card-header">Deaths</div>
+          <div class="card-body table-card-body">
+            <h1 class="card-title" id="deaths-2">000</h1>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="col-10 mx-auto table-sl-details">
@@ -114,22 +147,6 @@
           </div>
         </div>
       </div>
-      <!-- <div class="col col-details mb-4">
-        <div class="card card-details text-white bg-primary">
-          <div class="card-header">Active Cases</div>
-          <div class="card-body">
-            <h1 class="card-title" id="activeCases">000</h1>
-          </div>
-        </div>
-      </div> -->
-      <!-- <div class="col col-details mb-4">
-        <div class="card card-details text-white bg-success">
-          <div class="card-header">Recovered</div>
-          <div class="card-body">
-            <h1 class="card-title" id="recovered">000</h1>
-          </div>
-        </div>
-      </div> -->
       <div class="col col-md-4 col-details mb-4">
         <div class="card card-details text-white bg-secondary">
           <div class="card-header table-card-header">Suspected</div>
@@ -138,14 +155,6 @@
           </div>
         </div>
       </div>
-      <!-- <div class="col col-details mb-4">
-        <div class="card card-details text-white bg-danger">
-          <div class="card-header">Deaths</div>
-          <div class="card-body">
-            <h1 class="card-title" id="deaths">00</h1>
-          </div>
-        </div>
-      </div> -->
     </div>
   </div>
 
