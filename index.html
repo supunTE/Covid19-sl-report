@@ -3,85 +3,94 @@ layout: default
 title: Home
 ---
 
-<div class="status-animation margin-top-under-nav" id="status-animation">
-  <figure class="animation-cards">
-    <div class="animation-cards-content">
-      <div class="animation-cards-item d-flex align-items-center justify-content-center" onclick="hidestatuscard()">
-        <span>
-          <h2 id="activeCases" class="text-center animation-cards-item-count">000</h2>
-          <h4 class="animation-cards-item-subtitle">Active Cases</h2>
-            <img src="./virus.png" class="card-virus-cell">
-        </span>
-      </div>
-      <div class="animation-cards-item d-flex align-items-center justify-content-center" onclick="hidestatuscard()">
-        <span>
-          <h2 id="recovered" class="text-center animation-cards-item-count">000</h2>
-          <h4 class="animation-cards-item-subtitle">Recovered</h2>
-            <img src="./virus.png" class="card-virus-cell">
-        </span>
-      </div>
-      <div class="animation-cards-item d-flex align-items-center justify-content-center" onclick="hidestatuscard()">
-        <span>
-          <h2 id="deaths" class="text-center animation-cards-item-count">000</h2>
-          <h4 class="animation-cards-item-subtitle">Deaths</h2>
-            <img src="./virus.png" class="card-virus-cell">
-        </span>
-      </div>
-      <div class="animation-cards-item d-flex align-items-center justify-content-center " onclick="hidestatuscard()">
-        <span class="shine">
-          <img src="./sl-flag.png" class="animation-card-img">
-        </span>
-      </div>
+<div class="row mx-auto row-main-1" style="width: 100%;">
+  <div class="col-xl-8 main-col-1 margin-top-under-nav" id="status-animation" style="width: 100%;">
+    <div class="status-animation">
+      <figure class="animation-cards">
+        <div class="animation-cards-content">
+          <div class="animation-cards-item d-flex align-items-center justify-content-center" onclick="hidestatuscard()">
+            <span>
+              <h2 id="activeCases" class="text-center animation-cards-item-count">000</h2>
+              <h4 class="animation-cards-item-subtitle">Active Cases</h2>
+                <img src="./virus.png" class="card-virus-cell">
+            </span>
+          </div>
+          <div class="animation-cards-item d-flex align-items-center justify-content-center" onclick="hidestatuscard()">
+            <span>
+              <h2 id="recovered" class="text-center animation-cards-item-count">000</h2>
+              <h4 class="animation-cards-item-subtitle">Recovered</h2>
+                <img src="./virus.png" class="card-virus-cell">
+            </span>
+          </div>
+          <div class="animation-cards-item d-flex align-items-center justify-content-center" onclick="hidestatuscard()">
+            <span>
+              <h2 id="deaths" class="text-center animation-cards-item-count">000</h2>
+              <h4 class="animation-cards-item-subtitle">Deaths</h2>
+                <img src="./virus.png" class="card-virus-cell">
+            </span>
+          </div>
+          <div class="animation-cards-item d-flex align-items-center justify-content-center "
+            onclick="hidestatuscard()">
+            <span class="shine">
+              <img src="./sl-flag.png" class="animation-card-img">
+            </span>
+          </div>
+        </div>
+      </figure>
     </div>
-  </figure>
-</div>
+  </div>
 
-<div class="col-10 mx-auto margin-top-under-nav table-sl-details-1" style="display: none;" id="table-sl-details">
-  <img src="./virus.png" class="back-virus-cell-1">
-  <img src="./virus.png" class="back-virus-cell-2">
-  <div class="justify-content-center card-deck">
-    <div class="col col-details mb-4" onclick="hidetabledetails()">
-      <div class="card card-details text-white bg-primary">
-        <div class="card-header table-card-header">Active Cases</div>
-        <div class="card-body table-card-body">
-          <h1 class="card-title" id="activeCases-2">000</h1>
+  <div class="col-xl-8 main-col-1-b margin-top-under-nav" style="display: none;" id="table-sl-details" style="width: 100%;">
+    <div class="col-10 mx-auto table-sl-details-1">
+      <img src="./virus.png" class="back-virus-cell-1">
+      <img src="./virus.png" class="back-virus-cell-2">
+      <div class="justify-content-center card-deck">
+        <div class="col col-details mb-4" onclick="hidetabledetails()">
+          <div class="card card-details text-white bg-primary">
+            <div class="card-header table-card-header">Active Cases</div>
+            <div class="card-body table-card-body">
+              <h1 class="card-title" id="activeCases-2">000</h1>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="col col-details mb-4" onclick="hidetabledetails()">
-      <div class="card card-details text-white bg-success">
-        <div class="card-header table-card-header">Recovered</div>
-        <div class="card-body table-card-body">
-          <h1 class="card-title" id="recovered-2">000</h1>
+        <div class="col col-details mb-4" onclick="hidetabledetails()">
+          <div class="card card-details text-white bg-success">
+            <div class="card-header table-card-header">Recovered</div>
+            <div class="card-body table-card-body">
+              <h1 class="card-title" id="recovered-2">000</h1>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="col col-details mb-4" onclick="hidetabledetails()">
-      <div class="card card-details text-white bg-danger">
-        <div class="card-header table-card-header">Deaths</div>
-        <div class="card-body table-card-body">
-          <h1 class="card-title" id="deaths-2">000</h1>
+        <div class="col col-details mb-4" onclick="hidetabledetails()">
+          <div class="card card-details text-white bg-danger">
+            <div class="card-header table-card-header">Deaths</div>
+            <div class="card-body table-card-body">
+              <h1 class="card-title" id="deaths-2">000</h1>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="col-10 mx-auto table-sl-details">
-  <div class="row justify-content-center card-deck">
-    <div class="col col-md-4 col-details mb-4">
-      <div class="card card-details text-white bg-warning">
-        <div class="card-header table-card-header">Total</div>
-        <div class="card-body table-card-body">
-          <h1 class="card-title" id="totalInfected">000</h1>
+  <div class="col-xl-4 main-col-2 margin-top-under-nav-xl" style="width: 100%;">
+    <div class="col-xl-12 col-10 mx-auto table-sl-details">
+      <div class="row justify-content-center card-deck">
+        <div class="col col-xl-6 col-md-4 col-details mb-4">
+          <div class="card card-details text-white" style="background-color: #c79600">
+            <div class="card-header table-card-header">Total</div>
+            <div class="card-body table-card-body">
+              <h1 class="card-title" id="totalInfected">000</h1>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="col col-md-4 col-details mb-4">
-      <div class="card card-details text-white bg-secondary">
-        <div class="card-header table-card-header">Suspected</div>
-        <div class="card-body table-card-body">
-          <h1 class="card-title" id="suspected">000</h1>
+        <div class="col col-xl-6 col-md-4 col-details mb-4">
+          <div class="card card-details text-white bg-secondary">
+            <div class="card-header table-card-header">Suspected</div>
+            <div class="card-body table-card-body">
+              <h1 class="card-title" id="suspected">000</h1>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -91,69 +100,43 @@ title: Home
 <h3 class="global-data-caption">Global Data</h3>
 
 <div class="col-10 mx-auto table-gl-details card-group">
-  <div class="card bg-warning">
-    <div class="card-body">      
-      <p class="card-text" id="global_total"></p>
-      <h5 class="card-title">Total Cases</h5>
+  <div class="card" style="background-color: #c79600">
+    <div class="card-body">
+      <h4 class="card-text global-table-card-header-value" id="global_total"></h4>
+      <h5 class="card-title global-table-card-text">Total Cases</h5>
     </div>
   </div>
-  <div class="card bg-warning">
+  <div class="card" style="background-color: #c79600">
     <div class="card-body">
-      <p class="card-text" id="global_deaths"></p>
-      <h5 class="card-title">Total Deaths</h5>
+      <h4 class="card-text global-table-card-header-value" id="global_deaths"></h4>
+      <h5 class="card-title global-table-card-text">Total Deaths</h5>
     </div>
   </div>
-  <div class="card bg-warning">
+  <div class="card" style="background-color: #c79600">
     <div class="card-body">
-      <p class="card-text" id="global_recovered"></p>
-      <h5 class="card-title">Total Recovered</h5>
-    </div>
-  </div>
-  <div class="card bg-danger">
-    <div class="card-body">
-      <p class="card-text" id="global_cases_today"></p>
-      <h5 class="card-title">Cases Today</h5>
+      <h4 class="card-text global-table-card-header-value" id="global_recovered"></h4>
+      <h5 class="card-title global-table-card-text">Total Recovered</h5>
     </div>
   </div>
   <div class="card bg-danger">
     <div class="card-body">
-      <p class="card-text" id="global_deaths_today"></p>
-      <h5 class="card-title">Deaths Today</h5>
+      <h4 class="card-text global-table-card-header-value" id="global_cases_today"></h4>
+      <h5 class="card-title global-table-card-text">Cases Today</h5>
+    </div>
+  </div>
+  <div class="card bg-danger">
+    <div class="card-body">
+      <h4 class="card-text global-table-card-header-value" id="global_deaths_today"></h4>
+      <h5 class="card-title global-table-card-text">Deaths Today</h5>
     </div>
   </div>
 </div>
 
-<script>
-  const api_url = "https://www.hpb.health.gov.lk/api/get-current-statistical";
-  var globalTotalAPI, globalDeathsAPI, globalRecoveredAPI, globalCasesTodayAPI, globalDeathsTodayAPI;
-
-  globalTotal = document.getElementById('global_total');
-  globalDeaths = document.getElementById('global_deaths');
-  globalRecovered = document.getElementById('global_recovered');
-  globalCasesToday = document.getElementById('global_cases_today');
-  globalDeathsToday = document.getElementById('global_deaths_today');
-
-  async function getData(){
-      const response = await fetch(api_url);
-      const all_data = await response.json();
-      const data = all_data.data
-
-      globalTotalAPI = data.global_total_cases;
-      globalDeathsAPI = data.global_deaths;
-      globalRecoveredAPI = data.global_recovered;
-      globalCasesTodayAPI = data.global_new_cases;
-      globalDeathsTodayAPI = data.global_new_deaths;
-
-      globalTotal.innerHTML = globalTotalAPI;
-      globalDeaths.innerHTML = globalDeathsAPI;
-      globalRecovered.innerHTML = globalRecoveredAPI;
-      globalCasesToday.innerHTML = globalCasesTodayAPI;
-      globalDeathsToday.innerHTML = globalDeathsTodayAPI;
-
-  }
-
-  getData();
-</script>
+<h6 class="text-center font-1 source">( Source - HEALTH PROMOTION BUREAU of SRI LANKA | <a
+    href="https://www.hpb.health.gov.lk/en">https://www.hpb.health.gov.lk/en</a> )
+  <br>
+  Last updated at : <span id="API_lastUpdated"></span>
+  </h6>
 
 <!--newly updated code
   <div id="topBar"> <a href ="#" onclick="load_home()"> WorldWide status </a> </div>
@@ -165,7 +148,7 @@ title: Home
     
   </script> -->
 
-<div class="col-10 mx-auto news-panel margin-bottom-before-footer">
+<div class="col-xl-8 col-10 mx-auto news-panel margin-bottom-before-footer">
   <h3 class="display-4 caption-2" id="news-panel">Latest News on COVID-19</h3>
   <input type="text" class="col-10 search-bar" id="myInput" onkeyup="searchFunction()" placeholder="Search for news.."
     title="Type here" style="display: none;">

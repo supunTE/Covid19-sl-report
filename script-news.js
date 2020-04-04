@@ -89,12 +89,14 @@ function renderNews(doc) {
     carddiv.setAttribute('class', 'card text-white other');
   }
 
-  img.setAttribute('class', 'card-img-top news-image');
-  img.setAttribute('src', imgDb);
-  img.setAttribute('alt', 'img');
-  ///
+  if (doc.img) {
+    img.setAttribute('class', 'card-img-top news-image');
+    img.setAttribute('src', imgDb);
+    img.setAttribute('alt', 'img');
 
-  carddiv.appendChild(img);
+    carddiv.appendChild(img);
+
+  }
 
   bodydiv.setAttribute('class', 'card-body news-body');
 
@@ -103,7 +105,7 @@ function renderNews(doc) {
   title.appendChild(b);
 
   if (doc.description) {
-    description.setAttribute('class', 'card-text');
+    description.setAttribute('class', 'card-text news-description');
     description.textContent = descriptionDb;
   }
 
@@ -112,13 +114,13 @@ function renderNews(doc) {
   channel.appendChild(i);
 
   if (channelDb == 'News1st') {
-    button.setAttribute('class', 'btn btn-warning');
+    button.setAttribute('class', 'btn btn-sm btn-warning');
   } else if (channelDb == 'AdaDerana') {
-    button.setAttribute('class', 'btn btn-danger');
+    button.setAttribute('class', 'btn btn-sm btn-danger');
   } else if (channelDb == 'BBC') {
-    button.setAttribute('class', 'btn btn-dark');
+    button.setAttribute('class', 'btn btn-sm btn-dark');
   } else {
-    button.setAttribute('class', 'btn btn-primary');
+    button.setAttribute('class', 'btn btn-sm btn-primary');
   }
   button.setAttribute('href', linkDb);
   button.setAttribute('target', '_blank');
