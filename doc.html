@@ -1,0 +1,27 @@
+---
+layout: default
+title: Documents
+---
+
+<div class="col-10 mx-auto font-1">
+<table class="table table-sm table-secondary margin-top-under-nav">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Provider</th>
+        <th scope="col">Date</th>
+        <th scope="col">Link</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for doc in site.data.doc %}
+      <tr>
+        <td>{{ doc.name }}</td>
+        <td>{{ doc.provider }}</td>
+        <td>{{ doc.date }}</td>
+        <td><a href="{{ doc.url }}" target="_blank">Visit...</a></td>
+    {% endfor %}
+      </tr>
+    </tbody>
+  </table>
+</div>

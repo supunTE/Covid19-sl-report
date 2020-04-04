@@ -131,7 +131,7 @@ function renderNews(doc) {
     carddiv.appendChild(img);
 
   }
-  
+
   ///
 
   bodydiv.setAttribute('class', 'card-body news-body');
@@ -218,60 +218,82 @@ function searchFunction() {
 }
 
 //hide cards | hide animation
-function hidestatuscard(){
-  var tableDetails, statusAnimation;
-  tableDetails = document.getElementById('table-sl-details');
-  statusAnimation = document.getElementById('status-animation')
+
+var tableDetails, statusAnimation;
+tableDetails = document.getElementById('table-sl-details');
+statusAnimation = document.getElementById('status-animation');
+
+function hidestatuscard() {
   tableDetails.style.display = "block";
   tableDetails.style.opacity = "1";
   statusAnimation.style.display = "none";
   statusAnimation.style.opacity = "0";
 }
-function hidetabledetails(){
-  var tableDetails, statusAnimation;
-  tableDetails = document.getElementById('table-sl-details');
-  statusAnimation = document.getElementById('status-animation')
+
+function hidetabledetails() {
   tableDetails.style.display = "none";
   tableDetails.style.opacity = "0";
   statusAnimation.style.display = "block";
   statusAnimation.style.opacity = "1";
 }
 
-//formatdata
-function formatNumber(num) {
-  return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
-}
+// //formatdata
+// function formatNumber(num) {
+//   return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
+// }
 
 //api global data
-const api_url = "https://www.hpb.health.gov.lk/api/get-current-statistical";
-  var globalTotalAPI, globalDeathsAPI, globalRecoveredAPI, globalCasesTodayAPI, globalDeathsTodayAPI;
+// const api_url = "https://www.hpb.health.gov.lk/api/get-current-statistical";
+// var globalTotalAPI, globalDeathsAPI, globalRecoveredAPI, globalCasesTodayAPI, globalDeathsTodayAPI;
 
-  globalTotal = document.getElementById('global_total');
-  globalDeaths = document.getElementById('global_deaths');
-  globalRecovered = document.getElementById('global_recovered');
-  globalCasesToday = document.getElementById('global_cases_today');
-  globalDeathsToday = document.getElementById('global_deaths_today');
-  LastUpdated = document.getElementById('API_lastUpdated');
+// globalTotal = document.getElementById('global_total');
+// globalDeaths = document.getElementById('global_deaths');
+// globalRecovered = document.getElementById('global_recovered');
+// globalCasesToday = document.getElementById('global_cases_today');
+// globalDeathsToday = document.getElementById('global_deaths_today');
+// LastUpdated = document.getElementById('API_lastUpdated');
 
-  async function getData(){
-      const response = await fetch(api_url);
-      const all_data = await response.json();
-      const data = all_data.data
+// async function getData() {
+//   const response = await fetch(api_url);
+//   const all_data = await response.json();
+//   const data = all_data.data;
 
-      globalTotalAPI = data.global_total_cases;
-      globalDeathsAPI = data.global_deaths;
-      globalRecoveredAPI = data.global_recovered;
-      globalCasesTodayAPI = data.global_new_cases;
-      globalDeathsTodayAPI = data.global_new_deaths;
-      LastUpdatedAPI = data.update_date_time;
+//   globalTotalAPI = data.global_total_cases;
+//   globalDeathsAPI = data.global_deaths;
+//   globalRecoveredAPI = data.global_recovered;
+//   globalCasesTodayAPI = data.global_new_cases;
+//   globalDeathsTodayAPI = data.global_new_deaths;
+//   LastUpdatedAPI = data.update_date_time;
 
-      globalTotal.innerHTML = formatNumber(globalTotalAPI);
-      globalDeaths.innerHTML = formatNumber(globalDeathsAPI);
-      globalRecovered.innerHTML = formatNumber(globalRecoveredAPI);
-      globalCasesToday.innerHTML = formatNumber(globalCasesTodayAPI);
-      globalDeathsToday.innerHTML = formatNumber(globalDeathsTodayAPI);
-      LastUpdated.innerHTML = LastUpdatedAPI;
+//   globalTotal.innerHTML = formatNumber(globalTotalAPI);
+//   globalDeaths.innerHTML = formatNumber(globalDeathsAPI);
+//   globalRecovered.innerHTML = formatNumber(globalRecoveredAPI);
+//   globalCasesToday.innerHTML = formatNumber(globalCasesTodayAPI);
+//   globalDeathsToday.innerHTML = formatNumber(globalDeathsTodayAPI);
+//   LastUpdated.innerHTML = LastUpdatedAPI;
 
+// }
+
+// getData();
+
+function detectBrowser() {
+  if ((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR')) != -1) {
+    // alert('Opera');
+  } else if (navigator.userAgent.indexOf("Chrome") != -1) {
+    // if (window.confirm('We found that you have a browser that does not support our website! You may encounter several problems when data appears. If you click OK You can try our minified version, or you can cancel this and visit the original site.')) {
+    //   window.location.href = '/minified.html';
+    // };
+  } else if (navigator.userAgent.indexOf("Safari") != -1) {
+    // alert('Safari');
+  } else if (navigator.userAgent.indexOf("Firefox") != -1) {
+    // alert('Firefox');
+  } else if ((navigator.userAgent.indexOf("MSIE") != -1) || (!!document.documentMode == true)) //IF IE > 10
+  {
+    tableDetails.style.display = "block";
+    tableDetails.style.opacity = "1";
+    statusAnimation.style.display = "none";
+    statusAnimation.style.opacity = "0";
+  } else {
+    // alert('unknown');
   }
-
-  getData();
+}

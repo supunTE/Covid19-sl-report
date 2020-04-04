@@ -60,7 +60,6 @@ body{
 
 .header-box {
     text-align: center;
-    color: #252B37;
     background-color: #151823;
 }
 
@@ -69,14 +68,14 @@ body{
 }
 
 .caption h1 {
-    font-size: 150% !important;
+    font-size: 120% !important;
     margin-bottom: -8px !important;
     font-weight: 1000;
     animation: textColor 10s ease infinite;
 }
 
 .caption h2 {
-    font-size: 250% !important;
+    font-size: 180% !important;
     background-image: url('./sl-flag.png');
     background-position: center;
     background-size: 50%;
@@ -111,35 +110,11 @@ body{
     }
 }
 
-@media only screen and (max-width: 992px) {
-    .caption h2 {
-        background-size: 80% !important;
-    }
-
-    .caption-2 {
-        font-size: 200% !important;
-    }
-}
-
-@media only screen and (max-width: 576px) {
-    .header {
-        margin: auto;
-    }
-
-    .caption h1 {
-        font-size: 200% !important;
-    }
-
-    .caption h2 {
-        font-size: 180% !important;
-        background-size: 100% !important;
-    }
-}
-
 .caption-2 {
     text-align: center;
     font-family: 'Rubik', sans-serif;
     margin: 30px auto;
+    font-size: 180% !important;
 }
 
 .header-navbar {
@@ -147,43 +122,9 @@ body{
 }
 
 /* Main Cols */
-.row-main-1{
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
-    column-count: 3;
-    -webkit-column-gap: 1.25rem;
-    -moz-column-gap: 1.25rem;
-    column-gap: 1.25rem;
-    orphans: 1;
-    widows: 1;
-}
-
 .main-col-1{
-    display: relative;
+    display: inline;
 }
-
-.main-col-1-b{
-    
-}
-
-/* @media (min-width: 576px)
-.card-columns {
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
-    column-count: 3;
-    -webkit-column-gap: 1.25rem;
-    -moz-column-gap: 1.25rem;
-    column-gap: 1.25rem;
-    orphans: 1;
-    widows: 1;
-}
-
-.news {
-    font-family: 'Inconsolata', monospace;
-}
-*, ::after, ::before {
-    box-sizing: border-box;
-} */
 
 .main-col-2{
     display: inline-block;
@@ -207,8 +148,12 @@ body{
     margin: 0;
     color: white;
     -webkit-perspective: 5000px;
+    -moz-perspective: 5000px;
+    -ms-perspective: 5000px;
     perspective: 5000px;
     -webkit-transform-origin: center;
+    -moz-transform-origin: center;
+    -ms-transform-origin: center;
     transform-origin: center;
 }
 
@@ -217,17 +162,27 @@ body{
     width: 100%;
     height: 100%;
     -webkit-transform-origin: center;
+    -moz-transform-origin: center;
+    -ms-transform-origin: center;
     transform-origin: center;
     -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
     transform-style: preserve-3d;
     -webkit-transform: translateZ(-30vw) rotateY(0);
+    -moz-transform: translateZ(-30vw) rotateY(0);
+    -ms-transform: translateZ(-30vw) rotateY(0);
     transform: translateZ(-50vw) rotateY(0);
     -webkit-animation: carousel 8s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
+    -moz-animation: carousel 8s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
+    -ms-animation: carousel 8s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
     animation: carousel 8s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
 }
 
 .animation-cards-content.step-animation {
     -webkit-animation: carousel 2s infinite steps(1) forwards;
+    -moz-animation: carousel 2s infinite steps(1) forwards;
+    -ms-animation: carousel 2s infinite steps(1) forwards;
     animation: carousel 2s infinite steps(1) forwards;
 }
 
@@ -244,6 +199,8 @@ body{
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     border-radius: 6px;
     -webkit-transform-origin: center;
+    -moz-transform-origin: center;
+    -ms-transform-origin: center;
     transform-origin: center;
     overflow: hidden;
 }
@@ -251,18 +208,24 @@ body{
 .animation-cards-item:nth-child(1) {
     background: #007bff;
     -webkit-transform: rotateY(0) translateZ(20vw);
+    -moz-transform: rotateY(0) translateZ(20vw);
+    -ms-transform: rotateY(0) translateZ(20vw);
     transform: rotateY(0) translateZ(30vw);
 }
 
 .animation-cards-item:nth-child(2) {
     background: #28a745;
     -webkit-transform: rotateY(90deg) translateZ(20vw);
+    -moz-transform: rotateY(90deg) translateZ(20vw);
+    -ms-transform: rotateY(90deg) translateZ(20vw);
     transform: rotateY(90deg) translateZ(30vw);
 }
 
 .animation-cards-item:nth-child(3) {
     background: #dc3545;
     -webkit-transform: rotateY(180deg) translateZ(20vw);
+    -moz-transform: rotateY(180deg) translateZ(20vw);
+    -ms-transform: rotateY(180deg) translateZ(20vw);
     transform: rotateY(180deg) translateZ(30vw);
 }
 
@@ -270,6 +233,8 @@ body{
     background: #dfdfdf;
     overflow: hidden;
     -webkit-transform: rotateY(270deg) translateZ(20vw);
+    -moz-transform: rotateY(270deg) translateZ(20vw);
+    -ms-transform: rotateY(270deg) translateZ(20vw);
     transform: rotateY(270deg) translateZ(30vw);
 }
 
@@ -321,6 +286,64 @@ body{
     88%,
     100% {
         -webkit-transform: translateZ(-55vw) rotateY(-360deg);
+    }
+
+}
+
+@-moz-keyframes carousel {
+
+    0%,
+    12% {
+        -moz-transform: translateZ(-55vw) rotateY(0);
+    }
+
+    22%,
+    34% {
+        -moz-transform: translateZ(-55vw) rotateY(-90deg);
+    }
+
+    44%,
+    56% {
+        -moz-transform: translateZ(-55vw) rotateY(-180deg);
+    }
+
+    66%,
+    78% {
+        -moz-transform: translateZ(-55vw) rotateY(-270deg);
+    }
+
+    88%,
+    100% {
+        -moz-transform: translateZ(-55vw) rotateY(-360deg);
+    }
+
+}
+
+@-ms-keyframes carousel {
+
+    0%,
+    12% {
+        -ms-transform: translateZ(-55vw) rotateY(0);
+    }
+
+    22%,
+    34% {
+        -ms-transform: translateZ(-55vw) rotateY(-90deg);
+    }
+
+    44%,
+    56% {
+        -ms-transform: translateZ(-55vw) rotateY(-180deg);
+    }
+
+    66%,
+    78% {
+        -ms-transform: translateZ(-55vw) rotateY(-270deg);
+    }
+
+    88%,
+    100% {
+        -ms-transform: translateZ(-55vw) rotateY(-360deg);
     }
 
 }
@@ -555,6 +578,16 @@ body{
     outline: 5px auto rgb(48, 3, 209) !important;
 }
 
+@media only screen and (max-width: 992px) {
+    .caption h2 {
+        background-size: 80% !important;
+    }
+
+    .caption-2 {
+        font-size: 200% !important;
+    }
+}
+
 @media only screen and (max-width: 860px) {
     .animation-cards {
         width: 60vw;
@@ -631,6 +664,19 @@ body{
 }
 
 @media only screen and (max-width: 576px) {
+    .header {
+        margin: auto;
+    }
+
+    .caption h1 {
+        font-size: 200% !important;
+    }
+
+    .caption h2 {
+        font-size: 180% !important;
+        background-size: 100% !important;
+    }
+
     .animation-cards-item-count {
         font-size: 300% !important;
     }
