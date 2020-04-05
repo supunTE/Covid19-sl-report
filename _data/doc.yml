@@ -1,352 +1,349 @@
-
-# http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-eu-28-01.pdf
-
 - name: COVID-19 Community Mobility Report in Sri Lanka
   provider: Google
   date: 29 Mar, 2020
   url: https://www.gstatic.com/covid19/mobility/2020-03-29_LK_Mobility_Report_en.pdf
 
-- name: Situation Report 69 ( 10:00 HRS )
+- name: Situation Report 69 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 05 Apr, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-05-04_10.pdf  
 
-- name: Situation Report 68 ( 10:00 HRS )
+- name: Situation Report 68 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 04 Apr, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-04-04_10.pdf    
 
-- name: Situation Report 67 ( 10:00 HRS )
+- name: Situation Report 67 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 03 Apr, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-03-04_10.pdf    
 
-- name: Situation Report 66 ( 10:00 HRS )
+- name: Situation Report 66 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 02 Apr, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-02-04_10.pdf  
 
-- name: Situation Report 65 ( 10:00 HRS )
+- name: Situation Report 65 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 01 Apr, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-01-04_10.pdf  
 
-- name: Situation Report 64 ( 10:00 HRS )
+- name: Situation Report 64 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 31 Mar, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-31-03_10.pdf 
 
-- name: Situation Report 63 ( 10:00 HRS )
+- name: Situation Report 63 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 30 Mar, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-30-03_10.pdf    
 
-- name: Situation Report 62 ( 10:00 HRS )
+- name: Situation Report 62 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 29 Mar, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-29-03_10.pdf    
 
-- name: Situation Report 61 ( 10:00 HRS )
+- name: Situation Report 61 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 28 Mar, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-28-03_10.pdf    
 
-- name: Situation Report 60 ( 10:00 HRS )
+- name: Situation Report 60 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 27 Mar, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-27-03_10.pdf    
 
-- name: Situation Report 59 ( 10:00 HRS )
+- name: Situation Report 59 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 26 Mar, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-26-03_10.pdf    
 
-- name: Situation Report 58 ( 10:00 HRS )
+- name: Situation Report 58 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 25 Mar, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-25-03_10.pdf    
 
-- name: Situation Report 57 ( 10:00 HRS )
+- name: Situation Report 57 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 24 Mar, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-24-03_10.pdf    
 
-- name: Situation Report 56 ( 10:00 HRS )
+- name: Situation Report 56 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 23 Mar, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-23-03_10.pdf    
 
-- name: Situation Report 55 ( 10:00 HRS )
+- name: Situation Report 55 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 22 Mar, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-22-03_10.pdf      
 
-- name: Situation Report 54 ( 10:00 HRS )
+- name: Situation Report 54 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 21 Mar, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-21-03_10.pdf    
 
-- name: Situation Report 53 ( 10:00 HRS )
+- name: Situation Report 53 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 20 Mar, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-20-03_10.pdf    
 
-- name: Situation Report 52 ( 10:00 HRS )
+- name: Situation Report 52 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 19 Mar, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-19-03_10.pdf    
 
-- name: Situation Report 51 ( 10:00 HRS )
+- name: Situation Report 51 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 18 Mar, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-18-03_10.pdf  
 
-- name: Situation Report 50 ( 10:00 HRS )
+- name: Situation Report 50 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 17 Mar, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-17-03_10.pdf  
 
-- name: Situation Report 49 ( 10:00 HRS )
+- name: Situation Report 49 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 16 Mar, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-16-03_10.pdf  
 
-- name: Situation Report 48 ( 10:00 HRS )
+- name: Situation Report 48 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 15 Mar, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-15-03_10.pdf  
 
-- name: Situation Report 47 ( 10:00 HRS )
+- name: Situation Report 47 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 14 Mar, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-14-03_10.pdf  
 
-- name: Situation Report 46 ( 10:00 HRS )
+- name: Situation Report 46 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 13 Mar, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-13-03_10.pdf  
 
-- name: Situation Report 45 ( 10:00 HRS )
+- name: Situation Report 45 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 12 Mar, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-12-03_10.pdf 
 
-- name: Situation Report 44 ( 10:00 HRS )
+- name: Situation Report 44 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 11 Mar, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-11-03_10.pdf
 
-- name: Situation Report 43 ( 10:00 HRS )
+- name: Situation Report 43 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 10 Mar, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-10-03_10.pdf
 
-- name: Situation Report 42 ( 10:00 HRS )
+- name: Situation Report 42 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 09 Mar, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-09-03_10.pdf
 
-- name: Situation Report 41 ( 10:00 HRS )
+- name: Situation Report 41 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 08 Mar, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-08-03_10.pdf
 
-- name: Situation Report 40 ( 10:00 HRS )
+- name: Situation Report 40 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 07 Mar, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-07-03_10.pdf
 
-- name: Situation Report 39 ( 10:00 HRS )
+- name: Situation Report 39 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 06 Mar, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-06-03_10.pdf
 
-- name: Situation Report 38 ( 10:00 HRS )
+- name: Situation Report 38 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 05 Mar, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-05-03_10.pdf
 
-- name: Situation Report 37 ( 10:00 HRS )
+- name: Situation Report 37 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 04 Mar, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-04-03_10.pdf
 
-- name: Situation Report 36 ( 10:00 HRS )
+- name: Situation Report 36 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 03 Mar, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-03-03_10.pdf
 
-- name: Situation Report 35 ( 10:00 HRS )
+- name: Situation Report 35 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 02 Mar, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-02-03_10.pdf
 
-- name: Situation Report 34 ( 10:00 HRS )
+- name: Situation Report 34 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 01 Mar, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-01-03_10.pdf
 
-- name: Situation Report 33 ( 10:00 HRS )
+- name: Situation Report 33 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 29 Feb, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-29-02_10.pdf
 
-- name: Situation Report 32 ( 10:00 HRS )
+- name: Situation Report 32 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 28 Feb, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-28-02_10.pdf  
 
-- name: Situation Report 31 ( 10:00 HRS )
+- name: Situation Report 31 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 27 Feb, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-27-02_10.pdf
 
-- name: Situation Report 30 ( 10:00 HRS )
+- name: Situation Report 30 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 26 Feb, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-26-02_10.pdf
 
-- name: Situation Report 29 ( 10:00 HRS )
+- name: Situation Report 29 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 25 Feb, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-25-02_10.pdf
 
-- name: Situation Report 28 ( 10:00 HRS )
+- name: Situation Report 28 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 24 Feb, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-24-02_10.pdf
 
-- name: Situation Report 27 ( 10:00 HRS )
+- name: Situation Report 27 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 23 Feb, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-23-02_10.pdf
 
-- name: Situation Report 26 ( 10:00 HRS )
+- name: Situation Report 26 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 22 Feb, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-22-02_10.pdf
 
-- name: Situation Report 25 ( 10:00 HRS )
+- name: Situation Report 25 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 21 Feb, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-21-02_10.pdf  
 
-- name: Situation Report 24 ( 10:00 HRS )
+- name: Situation Report 24 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 20 Feb, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-20-02_10.pdf
 
-- name: Situation Report 23 ( 10:00 HRS )
+- name: Situation Report 23 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 19 Feb, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-19-02_10.pdf  
 
-- name: Situation Report 22 ( 10:00 HRS )
+- name: Situation Report 22 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 18 Feb, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-18-02_10.pdf
 
-- name: Situation Report 21 ( 10:00 HRS )
+- name: Situation Report 21 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 17 Feb, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-17-02_10.pdf
 
-- name: Situation Report 20 ( 10:00 HRS )
+- name: Situation Report 20 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 16 Feb, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-16-02_10.pdf
 
-- name: Situation Report 19 ( 10:00 HRS )
+- name: Situation Report 19 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 15 Feb, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-15-02_10.pdf
 
-- name: Situation Report 18 ( 10:00 HRS )
+- name: Situation Report 18 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 14 Feb, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-14-02_10.pdf
 
-- name: Situation Report 17 ( 10:00 HRS )
+- name: Situation Report 17 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 13 Feb, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-13-02_10.pdf
 
-- name: Situation Report 16 ( 10:00 HRS )
+- name: Situation Report 16 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 12 Feb, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-12-02_10.pdf
 
-- name: Situation Report 15 ( 10:00 HRS )
+- name: Situation Report 15 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 11 Feb, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-11-02_10.pdf
 
-- name: Situation Report 14 ( 10:00 HRS )
+- name: Situation Report 14 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 10 Feb, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-10-02_10.pdf
 
-- name: Situation Report 13 ( 10:00 HRS )
+- name: Situation Report 13 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 09 Feb, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-09-02_10.pdf
 
-- name: Situation Report 12 ( 10:00 HRS )
+- name: Situation Report 12 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 08 Feb, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-08-02_10.pdf
 
-- name: Situation Report 11 ( 10:00 HRS )
+- name: Situation Report 11 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 07 Feb, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-07-02_10.pdf
 
-- name: Situation Report 10 ( 10:00 HRS )
+- name: Situation Report 10 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 06 Feb, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-06-02_10.pdf
 
-- name: Situation Report 09 ( 10:00 HRS )
+- name: Situation Report 09 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 05 Feb, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-05-02_10.pdf
 
-- name: Situation Report 08 ( 10:00 HRS )
+- name: Situation Report 08 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 04 Feb, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-04-02_10.pdf
 
-- name: Situation Report 07 ( 10:00 HRS )
+- name: Situation Report 07 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 03 Feb, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-03-02_10.pdf
 
-- name: Situation Report 06 ( 10:00 HRS )
+- name: Situation Report 06 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 02 Feb, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-02-02_10.pdf
 
-- name: Situation Report 05 ( 10:00 HRS )
+- name: Situation Report 05 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 01 Feb, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-01-02_10.pdf
 
-- name: Situation Report 04 ( 10:00 HRS )
+- name: Situation Report 04 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 31 Jan, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-31-01_10.pdf
 
-- name: Situation Report 03 ( 10:00 HRS )
+- name: Situation Report 03 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 29 Jan, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-30-01_10.pdf
 
-- name: Situation Report 02 ( 10:00 HRS )
+- name: Situation Report 02 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 29 Jan, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-29-01_10.pdf
 
-- name: Situation Report 01 ( 10:00 HRS )
+- name: Situation Report 01 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 28 Jan, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-eu-28-01.pdf

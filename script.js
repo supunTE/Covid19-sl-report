@@ -25,6 +25,8 @@ var activeCases = document.getElementById('activeCases');
 var recovered = document.getElementById('recovered');
 var suspected = document.getElementById('suspected');
 var deaths = document.getElementById('deaths');
+var deathRate = document.getElementById('deathRate');
+var recoveryRate = document.getElementById('recoveryRate');
 
 var activeCases2 = document.getElementById('activeCases-2');
 var recovered2 = document.getElementById('recovered-2');
@@ -45,16 +47,24 @@ month[10] = "Nov";
 month[11] = "Dec";
 
 docRef.get().then(function (doc) {
-  var totalInfectedno = doc.data().total_infected;
-  var recoveredno = doc.data().recovered;
-  var suspectedno = doc.data().suspected;
-  var deathsno = doc.data().deaths;
+  totalInfectedno = doc.data().total_infected;
+  recoveredno = doc.data().recovered;
+  suspectedno = doc.data().suspected;
+  deathsno = doc.data().deaths;
+
+  window.document.title = '(' + totalInfectedno + ') ' + window.document.title ; 
 
   totalInfected.innerHTML = totalInfectedno;
   activeCases.innerHTML = totalInfectedno - (recoveredno + deathsno);
   recovered.innerHTML = recoveredno;
   suspected.innerHTML = suspectedno;
   deaths.innerHTML = deathsno;
+
+  deathsRateno =  (deathsno/totalInfectedno)*100;
+  recoveryRateno = (recoveredno/totalInfectedno)*100;
+  
+  deathRate.innerHTML = (Math.floor(deathsRateno*100)/100) + '%' ;
+  recoveryRate.innerHTML = (Math.floor(recoveryRateno*100)/100) + '%';
 
   activeCases2.innerHTML = totalInfectedno - (recoveredno + deathsno);
   recovered2.innerHTML = recoveredno;
