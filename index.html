@@ -4,7 +4,8 @@ title: Home
 ---
 
 <div class="row mx-auto row-main-1" style="width: 100%;" onload="detectBrowser()">
-  <div class="col-xl-8 main-col-1 margin-top-under-nav status-animation-find" id="status-animation" style="width: 100%;">
+  <div class="col-xl-8 main-col-1 margin-top-under-nav status-animation-find" id="status-animation"
+    style="width: 100%;">
     <div class="status-animation">
       <figure class="animation-cards">
         <div class="animation-cards-content">
@@ -40,7 +41,8 @@ title: Home
     </div>
   </div>
 
-  <div class="col-xl-8 main-col-1-b margin-top-under-nav table-sl-details-find" style="display: none;" id="table-sl-details" style="width: 100%;">
+  <div class="col-xl-8 main-col-1-b margin-top-under-nav table-sl-details-find" style="display: none;"
+    id="table-sl-details" style="width: 100%;">
     <div class="col-10 mx-auto table-sl-details-1">
       <img src="./virus.png" class="back-virus-cell-1">
       <img src="./virus.png" class="back-virus-cell-2">
@@ -138,35 +140,100 @@ title: Home
   Last updated at : <span id="API_lastUpdated"></span>
   </h6> -->
 
-  <div class="col-xl-5 col-10 mx-auto table-sl-details-2">
-    <div class="row justify-content-center card-deck">
-      <div class="col col-xl-6 col-md-4 col-details mb-4">
-        <div class="card card-details text-white bg-info">
-          <div class="card-header table-card-header">Death Rate</div>
-          <div class="card-body table-card-body">
-            <h1 class="card-title" id="deathRate">00%</h1>
-          </div>
+<div class="col-xl-5 col-10 mx-auto table-sl-details-2">
+  <div class="row justify-content-center card-deck">
+    <div class="col col-xl-6 col-md-4 col-details mb-4">
+      <div class="card card-details text-white bg-info">
+        <div class="card-header table-card-header">Death Rate</div>
+        <div class="card-body table-card-body">
+          <h1 class="card-title" id="deathRate">00%</h1>
         </div>
       </div>
-      <div class="col col-xl-6 col-md-4 col-details mb-4">
-        <div class="card card-details text-white bg-info">
-          <div class="card-header table-card-header">Recovery Rate</div>
-          <div class="card-body table-card-body">
-            <h1 class="card-title" id="recoveryRate">00%</h1>
-          </div>
+    </div>
+    <div class="col col-xl-6 col-md-4 col-details mb-4">
+      <div class="card card-details text-white bg-info">
+        <div class="card-header table-card-header">Recovery Rate</div>
+        <div class="card-body table-card-body">
+          <h1 class="card-title" id="recoveryRate">00%</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  ul.timeline {
+    list-style-type: none;
+    position: relative;
+  }
+
+  ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 25;
+  }
+
+  ul.timeline>li {
+    margin: 20px 0;
+    padding-left: 20px;
+  }
+
+  ul.timeline>li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #22c0e8;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 50;
+  }
+</style>
+
+<div class="row mx-auto row-main-2" style="width: 100%;">
+  <div class="col-xl-3 main-col-1 margin-bottom-before-footer" style="width: 100%;">
+    <div class="container font-1">
+      <div class="row">
+        <div class="col-xl-12 col-md-6 offset-md-3">
+          <h3 class="display-4 caption-2">Timeline</h3>
+          <ul class="timeline">
+            {% for date in site.data.timeline %}
+            <li>
+              <h3>{{ date.date }}</h3>
+              {% if date.important %}
+              {% for importanttext in date.important %}
+              <h5 style="color: red;">- {{ importanttext.text }}</h5>
+              {% endfor %}
+              {% endif %}
+
+              {% for detail in date.data %}
+              <h6>- {{ detail.text }}</h6>
+              {% endfor %}
+            </li>
+            {% endfor %}
+          </ul>
+          <div>Source - News1st | <a href="http://corona.newsfirst.lk/">http://corona.newsfirst.lk/</a></div>
         </div>
       </div>
     </div>
   </div>
 
-<div class="col-xl-8 col-10 mx-auto news-panel margin-bottom-before-footer">
-  <h3 class="display-4 caption-2" id="news-panel">Latest News on COVID-19</h3>
-  <input type="text" class="col-10 search-bar" id="myInput" onkeyup="searchFunction()" placeholder="Search for news.."
-    title="Type here" style="display: none;">
-  <h5 class="loading-news" id="loading-news">Loading News ...</h5>
-  <h5 class="no-news" id="noNews" style="display: none;">Search not found! <br> Check in all News.</h5>
-  <div class="card-columns news" id="news">
-    <!-- {% for item in site.data.news %}
+  <div class="col-xl-9 main-col-2" style="width: 100%;">
+    <div class="col-xl-10 col-10 mx-auto news-panel margin-bottom-before-footer">
+      <h3 class="display-4 caption-2" id="news-panel">Latest News on COVID-19</h3>
+      <input type="text" class="col-10 search-bar" id="myInput" onkeyup="searchFunction()"
+        placeholder="Search for news.." title="Type here" style="display: none;">
+      <h5 class="loading-news" id="loading-news">Loading News ...</h5>
+      <h5 class="no-news" id="noNews" style="display: none;">Search not found! <br> Check in all News.</h5>
+      <div class="card-columns news" id="news">
+        <!-- {% for item in site.data.news %}
         {% if item.channel == "News1st" %}
         <div class="card text-white" style="background-color: rgb(194, 113, 7);">
         {% elsif item.channel == "AdaDerana" %}
@@ -198,9 +265,11 @@ title: Home
           </div>
         </div>
     {% endfor %} -->
+      </div>
+      <a href="./news.html" class="btn btn-see-all text-white mx-auto" id="see-all" style="display: none;">See All
+        News</a>
+    </div>
   </div>
-  <a href="./news.html" class="btn btn-see-all text-white mx-auto" id="see-all" style="display: none;">See All
-    News</a>
 </div>
 
 <script src="./script.js"></script>
