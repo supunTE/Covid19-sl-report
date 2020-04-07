@@ -48,7 +48,8 @@ body {
     .margin-top-under-nav-xl {
         margin: 140px auto 10px;
     }
-    .margin-bottom-before-footer-xl{
+
+    .margin-bottom-before-footer-xl {
         margin-bottom: 100px;
     }
 }
@@ -450,6 +451,63 @@ body {
     width: 100%;
 }
 
+/* Spinner Animation */
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin: 8px auto;
+}
+
+.double-bounce1,
+.double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgb(226, 224, 224);
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+
+    0%,
+    100% {
+        -webkit-transform: scale(0.0)
+    }
+
+    50% {
+        -webkit-transform: scale(1.0)
+    }
+}
+
+@keyframes sk-bounce {
+
+    0%,
+    100% {
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    }
+
+    50% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+}
+
+/* Timeline */
+
 ul.timeline {
     list-style-type: none;
     position: relative;
@@ -594,21 +652,21 @@ ul.timeline>li:before {
     color: rgb(255, 255, 255) !important;
 }
 
-.card-emergency{
+.card-emergency {
     background-color: red;
     padding: 20px;
     margin: 20px 0px;
 }
 
-h2.emergency-number{
+h2.emergency-number {
     font-size: 180%;
 }
 
-h5.emergency-number{
+h5.emergency-number {
     font-size: 140%;
 }
 
-.emergency-text{
+.emergency-text {
     font-size: 100%;
 }
 
@@ -795,13 +853,13 @@ h5.emergency-number{
         margin: 20px;
     }
 
-    h2.emergency-number{
+    h2.emergency-number {
         font-size: 180% !important;
     }
-    
-    h5.emergency-number{
+
+    h5.emergency-number {
         font-size: 140% !important;
-    }    
+    }
 
     .footer {
         display: none !important;
@@ -843,45 +901,3 @@ h5.emergency-number{
 .map-centers-sl-frame {
     height: 300px !important;
 }
-
-.spinner {
-    width: 40px;
-    height: 40px;
-  
-    position: relative;
-    margin: 8px auto;
-  }
-  
-  .double-bounce1, .double-bounce2 {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background-color: rgb(226, 224, 224);
-    opacity: 0.6;
-    position: absolute;
-    top: 0;
-    left: 0;
-    
-    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
-    animation: sk-bounce 2.0s infinite ease-in-out;
-  }
-  
-  .double-bounce2 {
-    -webkit-animation-delay: -1.0s;
-    animation-delay: -1.0s;
-  }
-  
-  @-webkit-keyframes sk-bounce {
-    0%, 100% { -webkit-transform: scale(0.0) }
-    50% { -webkit-transform: scale(1.0) }
-  }
-  
-  @keyframes sk-bounce {
-    0%, 100% { 
-      transform: scale(0.0);
-      -webkit-transform: scale(0.0);
-    } 50% { 
-      transform: scale(1.0);
-      -webkit-transform: scale(1.0);
-    }
-  }
