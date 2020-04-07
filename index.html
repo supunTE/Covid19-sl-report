@@ -98,47 +98,6 @@ title: Home
     </div>
   </div>
 </div>
-<!-- 
-<h3 class="global-data-caption">Global Data</h3>
-
-<div class="col-10 mx-auto table-gl-details card-group">
-  <div class="card" style="background-color: #c79600">
-    <div class="card-body">
-      <h4 class="card-text global-table-card-header-value" id="global_total"></h4>
-      <h5 class="card-title global-table-card-text">Total Cases</h5>
-    </div>
-  </div>
-  <div class="card" style="background-color: #c79600">
-    <div class="card-body">
-      <h4 class="card-text global-table-card-header-value" id="global_deaths"></h4>
-      <h5 class="card-title global-table-card-text">Total Deaths</h5>
-    </div>
-  </div>
-  <div class="card" style="background-color: #c79600">
-    <div class="card-body">
-      <h4 class="card-text global-table-card-header-value" id="global_recovered"></h4>
-      <h5 class="card-title global-table-card-text">Total Recovered</h5>
-    </div>
-  </div>
-  <div class="card bg-danger">
-    <div class="card-body">
-      <h4 class="card-text global-table-card-header-value" id="global_cases_today"></h4>
-      <h5 class="card-title global-table-card-text">Cases Today</h5>
-    </div>
-  </div>
-  <div class="card bg-danger">
-    <div class="card-body">
-      <h4 class="card-text global-table-card-header-value" id="global_deaths_today"></h4>
-      <h5 class="card-title global-table-card-text">Deaths Today</h5>
-    </div>
-  </div>
-</div>
-
-<h6 class="text-center font-1 source">( Source - HEALTH PROMOTION BUREAU of SRI LANKA | <a
-    href="https://www.hpb.health.gov.lk/en">https://www.hpb.health.gov.lk/en</a> )
-  <br>
-  Last updated at : <span id="API_lastUpdated"></span>
-  </h6> -->
 
 <div class="col-xl-5 col-10 mx-auto table-sl-details-2">
   <div class="row justify-content-center card-deck">
@@ -161,50 +120,14 @@ title: Home
   </div>
 </div>
 
-<style>
-  ul.timeline {
-    list-style-type: none;
-    position: relative;
-  }
-
-  ul.timeline:before {
-    content: ' ';
-    background: #d4d9df;
-    display: inline-block;
-    position: absolute;
-    left: 29px;
-    width: 2px;
-    height: 100%;
-    z-index: 25;
-  }
-
-  ul.timeline>li {
-    margin: 20px 0;
-    padding-left: 20px;
-  }
-
-  ul.timeline>li:before {
-    content: ' ';
-    background: white;
-    display: inline-block;
-    position: absolute;
-    border-radius: 50%;
-    border: 3px solid #22c0e8;
-    left: 20px;
-    width: 20px;
-    height: 20px;
-    z-index: 50;
-  }
-</style>
-
 <div class="row mx-auto row-main-2" style="width: 100%;">
-  <div class="col-xl-3 main-col-1 margin-bottom-before-footer" style="width: 100%;">
+  <div class="col-xl-3 main-col-1 main-col-b-1 margin-bottom-before-footer-xl" style="width: 100%;">
     <div class="container font-1">
       <div class="row">
         <div class="col-xl-12 col-md-6 offset-md-3">
           <h3 class="display-4 caption-2">Timeline</h3>
           <ul class="timeline">
-            {% for date in site.data.timeline %}
+            {% for date in site.data.timeline limit: 6 %}
             <li>
               <h3>{{ date.date }}</h3>
               {% if date.important %}
@@ -219,14 +142,15 @@ title: Home
             </li>
             {% endfor %}
           </ul>
+          <a href="./timeline.html" class="btn btn-see-all text-white mx-auto" style="width: 100%;">See All</a>
           <div>Source - News1st | <a href="http://corona.newsfirst.lk/">http://corona.newsfirst.lk/</a></div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="col-xl-9 main-col-2" style="width: 100%;">
-    <div class="col-xl-10 col-10 mx-auto news-panel margin-bottom-before-footer">
+  <div class="col-xl-9 main-col-2 margin-bottom-before-footer" style="width: 100%;">
+    <div class="col-xl-10 col-10 mx-auto news-panel">
       <h3 class="display-4 caption-2" id="news-panel">Latest News on COVID-19</h3>
       <input type="text" class="col-10 search-bar" id="myInput" onkeyup="searchFunction()"
         placeholder="Search for news.." title="Type here" style="display: none;">
@@ -268,6 +192,83 @@ title: Home
       </div>
       <a href="./news.html" class="btn btn-see-all text-white mx-auto" id="see-all" style="display: none;">See All
         News</a>
+      
+      <div class="card-emergency font-1">
+        <div class="row row-cols-1 row-cols-md-3 text-white">
+          <div class="col mb-4">
+            <div class="card bg-transparent text-center">
+              <div class="card-body">
+                <h2 class="card-title emergency-number">1990</h2>
+                <p class="card-text emergency-text">Suwasariya Ambulance Service</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card bg-transparent text-center">
+              <div class="card-body">
+                <h2 class="card-title emergency-number">199</h2>
+                <p class="card-text emergency-text">Police Emergency Call Centre</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card bg-transparent text-center">
+              <div class="card-body">
+                <h2 class="card-title emergency-number">117</h2>
+                <p class="card-text emergency-text">President Task Force</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card bg-transparent text-center">
+              <div class="card-body">
+                <h5 class="card-title emergency-number">011 242 2222</h5>
+                <p class="card-text emergency-text">Fire and Rescue / Ambulance</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card bg-transparent text-center">
+              <div class="card-body">
+                <h5 class="card-title emergency-number">011 242 1052</h5>
+                <p class="card-text emergency-text">Tourist Police</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card bg-transparent text-center">
+              <div class="card-body">
+                <h5 class="card-title emergency-number">011 269 1111</h5>
+                <p class="card-text emergency-text">General Hospital Colombo</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card bg-transparent text-center">
+              <div class="card-body">
+                <h5 class="card-title emergency-number">071 010 7107</h5>
+                <p class="card-text emergency-text">Health Promotion Bureau</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card bg-transparent text-center">
+              <div class="card-body">
+                <h5 class="card-title emergency-number">011 307 1073</h5>
+                <p class="card-text emergency-text">Disaster Unit of Ministry of Health</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card bg-transparent text-center">
+              <div class="card-body">
+                <h5 class="card-title emergency-number">011 309 0502 / 113</h5>
+                <p class="card-text emergency-text">Information and complaints regarding quarntine process</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

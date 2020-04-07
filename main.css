@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
-body{
+body {
     overflow-x: hidden;
 }
 
-.font-1{
+.font-1 {
     font-family: 'Inconsolata', monospace;
 }
 
-.source{
+.source {
     padding: 20px 10px;
 }
 
@@ -32,22 +32,25 @@ body{
     background: rgb(138, 138, 138);
 }
 
-.margin-top-under-nav{
+.margin-top-under-nav {
     margin: 140px auto 10px;
 }
 
-@media only screen and (min-width: 1200px) {
-    .margin-top-under-nav-xl{
-        margin: 140px auto 10px;
-    }
-}
-
-.margin-bottom-before-footer{
+.margin-bottom-before-footer {
     margin-bottom: 100px !important;
 }
 
-.margin-bottom-before-footer-huge{
+.margin-bottom-before-footer-huge {
     margin-bottom: 300px !important;
+}
+
+@media only screen and (min-width: 1200px) {
+    .margin-top-under-nav-xl {
+        margin: 140px auto 10px;
+    }
+    .margin-bottom-before-footer-xl{
+        margin-bottom: 100px;
+    }
 }
 
 /* Caption */
@@ -122,14 +125,13 @@ body{
 }
 
 /* Main Cols */
-.main-col-1{
+.main-col-1 {
     display: inline;
 }
 
-.main-col-2{
+.main-col-2 {
     display: inline-block;
 }
-
 
 /* Status-Animation */
 
@@ -448,6 +450,40 @@ body{
     width: 100%;
 }
 
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 25;
+}
+
+ul.timeline>li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+ul.timeline>li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #22c0e8;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 50;
+}
+
 .col-details {
     padding: 0px !important;
 }
@@ -468,7 +504,7 @@ body{
     font-size: 250% !important;
 }
 
-.global-data-caption{
+.global-data-caption {
     text-align: center;
     font-family: 'Inconsolata', monospace;
     font-size: 200%;
@@ -558,6 +594,24 @@ body{
     color: rgb(255, 255, 255) !important;
 }
 
+.card-emergency{
+    background-color: red;
+    padding: 20px;
+    margin: 20px 0px;
+}
+
+h2.emergency-number{
+    font-size: 180%;
+}
+
+h5.emergency-number{
+    font-size: 140%;
+}
+
+.emergency-text{
+    font-size: 100%;
+}
+
 .footer {
     background-color: rgb(24, 2, 104) !important;
     font-family: 'Inconsolata', monospace;
@@ -638,7 +692,7 @@ body{
         left: -15%;
         z-index: -2;
     }
-    
+
     .back-virus-cell-2 {
         position: absolute;
         top: -20%;
@@ -651,7 +705,7 @@ body{
         display: block !important;
     }
 
-    .global-table-card-header-value{
+    .global-table-card-header-value {
         font-size: 220% !important;
     }
 
@@ -741,6 +795,14 @@ body{
         margin: 20px;
     }
 
+    h2.emergency-number{
+        font-size: 180% !important;
+    }
+    
+    h5.emergency-number{
+        font-size: 140% !important;
+    }    
+
     .footer {
         display: none !important;
     }
@@ -773,11 +835,11 @@ body{
 
 
 /* Maps Page */
-.map-centers-sl{
+.map-centers-sl {
     height: 300px !important;
     font-family: 'Inconsolata', monospace;
 }
 
-.map-centers-sl-frame{
+.map-centers-sl-frame {
     height: 300px !important;
 }
