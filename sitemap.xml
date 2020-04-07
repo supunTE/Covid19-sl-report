@@ -1,37 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+﻿<?xml version="1.0" encoding="UTF-8"?>
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-  <loc>https://covid19-sl-report.netlify.com/</loc>
-  <lastmod>2020-04-05T17:31:05+00:00</lastmod>
-  <priority>1.00</priority>
+	<loc>https://covid19-sl-report.netlify.com/</loc>
+	<lastmod>2020-04-07T17:29:44+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://covid19-sl-report.netlify.com/global.html</loc>
-  <lastmod>2020-04-05T17:31:05+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://covid19-sl-report.netlify.com/global.html</loc>
+	<lastmod>2020-04-07T17:29:44+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://covid19-sl-report.netlify.com/news.html</loc>
-  <lastmod>2020-04-05T17:31:05+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://covid19-sl-report.netlify.com/news.html</loc>
+	<lastmod>2020-04-07T17:29:48+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://covid19-sl-report.netlify.com/map.html</loc>
-  <lastmod>2020-04-05T17:31:05+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://covid19-sl-report.netlify.com/map.html</loc>
+	<lastmod>2020-04-07T17:29:48+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://covid19-sl-report.netlify.com/doc.html</loc>
-  <lastmod>2020-04-05T17:31:05+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://covid19-sl-report.netlify.com/timeline.html</loc>
+	<lastmod>2020-04-07T17:29:52+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
-
-
+<url>
+	<loc>https://covid19-sl-report.netlify.com/doc.html</loc>
+	<lastmod>2020-04-07T17:29:49+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
 </urlset>

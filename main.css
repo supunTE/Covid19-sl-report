@@ -653,7 +653,7 @@ ul.timeline>li:before {
 }
 
 .card-emergency {
-    background-color: red;
+    background-color: rgb(133, 0, 0);
     padding: 20px;
     margin: 20px 0px;
 }
