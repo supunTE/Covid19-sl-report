@@ -12,274 +12,281 @@
 
 - date: 05 Apr, 2020
   data:
-    - text: Total confirmed COVID-19 cases in Sri Lanka rises to 176 ; Total recoveries in Sri Lanka now at 33 , Health Ministry
-    - text: 16 year old male who attacked a PHI using a sharp weapon in Rambukkana arrested , Police Media Division
-    - text: Curfew for all districts excluding Colombo, Gampaha, Kalutara, Puttlam, Kandy and Jaffna will be relaxed at 06:00 AM tomorrow and re-imposed at 02PM the same day , PMD
-    - text: Working days from tomorrow to Friday (April 10) declared as a period to work from home for both public and private sectors , PMD
-    - text: 1245 people who violated the curfew arrested during the 24 period which ended at 06AM today ; 336 vehicles seized , Police Media Division
+    - text: 1245 people who violated the curfew arrested during the 24 period which ended at 06AM today ; 336 vehicles seized - Police Media Division.
+    - text: Working days from tomorrow to Friday (April 10) declared as a period to work from home for both public and private sectors - PMD.
+    - text: Curfew for all districts excluding Colombo, Gampaha, Kalutara, Puttlam, Kandy and Jaffna will be relaxed at 06:00 AM tomorrow and re-imposed at 02PM the same day - PMD.
+    - text: 16 year old male who attacked a PHI using a sharp weapon in Rambukkana arrested - Police Media Division.
+    - text: Total confirmed COVID-19 cases in Sri Lanka rises to 176 ; Total recoveries in Sri Lanka now at 33 - Health Ministry.
 
 - date: 04 Apr, 2020
+  important:
+    - text: 05th COVID-19 death reported in Sri Lanka; victim was a 44 year old male who returned from Italy - DG Health Services.
   data:
-    - text: 7 cases positive for COVID-19 Total confirmed cases in Sri Lanka now at 166
-    - text: Health Ministry -Number of people who recovered from COVID-19 in Sri Lanka now at 25
-    - text: Ministry of Health  -172 passengers who were quarantined at the Sri Lanka Air Force Quarantine Centre in Iranamadu released today (4 Apr 20)
-    - text: 1493 curfew violators arrested and 360 vehicles seized in a 24 hour period which ended at 06AM today (04th April). In total 12,223 people arrested
-    - text: Police Media Division  -05th COVID-19 death reported in Sri Lanka; victim was a 44 year old male who returned from Italy - DG Health Services 
+    - text: 1493 curfew violators arrested and 360 vehicles seized in a 24 hour period which ended at 06AM today (04th April). In total 12,223 people arrested - Police Media Division.
+    - text: 172 passengers who were quarantined at the Sri Lanka Air Force Quarantine Centre in Iranamadu released today (4 Apr 20).
+    - text: Number of people who recovered from COVID-19 in Sri Lanka now at 25 - Ministry of Health.
+    - text: 7 cases positive for COVID-19. Total confirmed cases in Sri Lanka now at 166 - Health Ministry.
 
 - date: 03 Apr, 2020
   data:
-    - text: The World Bank approved a $128.6 million COVID-19 Emergency Response & Health Systems Preparedness Project for Sri Lanka to respond to the COVID-19 pandemic
-    - text: Police open fire at a car which failed to stop when ordered to do so in Moratuwa. 03 people, in the car at the time, injured , Police Media Division
-    - text: The number COVID-19 cases reached one million worldwide; there are more than 51,000 reported deaths and more than 208,000 people have recovered
+    - text: The number COVID-19 cases reached one million worldwide; there are more than 51,000 reported deaths and more than 208,000 people have recovered.
+    - text: Police open fire at a car which failed to stop when ordered to do so in Moratuwa. 03 people, in the car at the time, injured - Police Media Division.
+    - text: The World Bank approved a $128.6 million COVID-19 Emergency Response & Health Systems Preparedness Project for Sri Lanka to respond to the COVID-19 pandemic.
 
 - date: 02 Apr, 2020
   important: 
-    - text: 04th COVID-19 death in Sri Lanka reported , DG Health Services
+    - text: 04th COVID-19 death in Sri Lanka reported - DG Health Services.
   data: 
-    - text: Two more people tested positive for COVID-19; total confirmed COVID-19 cases in Sri Lanka now at 150
-    - text: Ministry of Health -University student, arrested for posting false content on COVID-19 online, remanded until 09th of April , Police Spokesperson
-    - text: Government decided to prohibit or restrict importing non essential goods except for medicine and fuel , Joint Cabinet Spokesperson
-    - text: Cabinet discussed possibility to provide Rs. 5000/- monthly allowance to 04 Million people with no direct income , Joint Cabinet Spokesperson
-    - text: Two more COVID-19 cases reported. Total confirmed COVID-19 cases in Sri Lanka now at 148
-    - text: EPF will be protected and Government will not follow ad-hoc ill-advice to tap or dilute the fund or rights of millions of employees , Min. Dinesh Gunawardena
-    - text: -2000 people living down Arnold Ratnayake Mawatha in Maradana (Colombo 10) moved in to quarantine inside their homes
-    - text: Colombo Chief MOH -72 year old male died at IDH raising Sri Lanka's death toll from COVID-19 to 03 , Health Officials
+    - text: 2000 people living down Arnold Ratnayake Mawatha in Maradana (Colombo 10) moved in to quarantine inside their homes - Colombo Chief MOH.
+    - text: EPF will be protected and Government will not follow ad-hoc ill-advice to tap or dilute the fund or rights of millions of employees - Min. Dinesh Gunawardena.
+    - text: Two more COVID-19 cases reported. Total confirmed COVID-19 cases in Sri Lanka now at 148 - Health Ministry.
+    - text: Cabinet discussed possibility to provide Rs. 5000/- monthly allowance to 04 Million people with no direct income - Joint Cabinet Spokesperson.
+    - text: Government decided to prohibit or restrict importing non essential goods except for medicine and fuel - Joint Cabinet Spokesperson.
+    - text: University student, arrested for posting false content on COVID-19 online, remanded until 09th of April - Police Spokesperson.
+    - text: Two more people tested positive for COVID-19; total confirmed COVID-19 cases in Sri Lanka now at 150 - Ministry of Health.
 
 - date: 01 Apr, 2020
   important: 
-    - text: 72 year old male died at IDH raising Sri Lanka's death toll from COVID-19 to 03 , Health Officials
+    - text: 72 year old male died at IDH raising Sri Lanka's death toll from COVID-19 to 03 - Health Officials.
   data: 
+    - text: COVID-19 cases in Sri Lanka now at 143 - Health Ministry.
+    - text: 43 relatives of the COVID-19 victim from Kochchikade moved to the Punani Quarantine Centre - Army Commander.
+    - text: Another COVID-19 patient recovers completely. Total recoveries in Sri Lanka now at 18 - Health Ministry.
+    - text: AG requests CJ to consider cancelling HC Court sittings fixed for the next two curfew days scheduled to consider bail - AG's CO.
+    - text: China's Alibaba Group donates 100,000 face masks & Chinese Govt donates medical equipment worth over Rs. 50 Million, to Sri Lanka - Health Ministry.
+    - text: 288 people arrested for curfew violation in Colombo, Gampaha, Kalutara, Puttlam, Kandy and Jaffna from 06AM to 12 noon today(01) - Police.
+    - text: Validity period of Visa of foreign nationals in Sri Lanka extended to 12th May - Controller General of Immigration and Emigration.
+    - text: Three more COVID-19 patients recover completely; total recoveries in Sri Lanka now at 21 - Health Ministry.
     - text: SriLankan Airline temporarily suspend all its flights from 8th to 21st of April 2020 & cargo services will continue to operate from its worldwide network as and when required.
-    - text: Three more COVID-19 patients recover completely; total recoveries in Sri Lanka now at 21 , Health Ministry
-    - text: Validity period of Visa of foreign nationals in Sri Lanka extended to 12th May , Controller General of Immigration and Emigration
-    - text: 288 people arrested for curfew violation in Colombo, Gampaha, Kalutara, Puttlam, Kandy and Jaffna from 06AM to 12 noon today(01)
-    - text: China's Alibaba Group donates 100,000 face masks & Chinese Govt donates medical equipment worth over Rs. 50 Million, to Sri Lanka , Health Ministry
-    - text: AG requests CJ to consider cancelling HC Court sittings fixed for the next two curfew days scheduled to consider bail-AG's CO- Another COVID-19 patient recovers completely. 
-    - text: Total recoveries in Sri Lanka now at 18 , Health Ministry
-    - text: 43 relatives of the COVID-19 victim from Kochchikade moved to the Punani Quarantine Centre , Army Commander
-    - text: COVID-19 cases in Sri Lanka now at 143 , Health Ministry 
 
 - date: 31 Mar, 2020
   data:
-    - text: COVID-19 cases in Sri Lanka rises to 142 , Ministry of Health
-    - text: 195 people arrested and 110 vehicles seized for violating the curfew in a special operation carried out in the Colombo City , Police Media Division
-    - text: Pensioners will be transported to banks on 02nd & 03rd April to obtain pension payments & would be dropped at their homes , Army Commander
-    - text: Another COVID-19 patient recovers completely. Total recoveries in Sri Lanka now at 17 , Health Ministry
-    - text: Globally more than 800,000 infected with COVID-19 ; total deaths across the world now at 38,769
-    - text: Colombo Stock Exchange will remain closed from tomorrow(01) until the curfew is lifted , CSE
-    - text: GMOA recommends for social distancing to be maintained at over 80% and suspend the process of relaxing the curfew from time to time, in order to combat COVID-19 
-    - text: Two more COVID-19 cases recover completely & total recoveries in Sri Lanka now at 16 , Health Ministry 
-    - text: Sri Lanka's 02nd COVID-19 cremated. An entire ward at the Negombo Hospital closed & 20 hospital staff moved in to quarantine , Hospital Director.
-    - text: 508 people arrested in 24 hours for violating the curfew; 7358 arrested in total and 1768 vehicles seized , Police Media Division
+    - text: 508 people arrested in 24 hours for violating the curfew; 7358 arrested in total and 1768 vehicles seized - Police Media Division.
+    - text: Sri Lanka's 02nd COVID-19 cremated. An entire ward at the Negombo Hospital closed & 20 hospital staff moved in to quarantine - Hospital Director.
+    - text: Two more COVID-19 cases recover completely & total recoveries in Sri Lanka now at 16 - Health Ministry.
+    - text: GMOA recommends for social distancing to be maintained at over 80% and suspend the process of relaxing the curfew from time to time, in order to combat COVID-19.
+    - text: Colombo Stock Exchange will remain closed from tomorrow(01) until the curfew is lifted - CSE.
+    - text: Globally more than 800,000 infected with COVID-19 ; total deaths across the world now at 38,769.
+    - text: Another COVID-19 patient recovers completely. Total recoveries in Sri Lanka now at 17 - Health Ministry.
+    - text: Pensioners will be transported to banks on 02nd & 03rd April to obtain pension payments & would be dropped at their homes - Army Commander.
+    - text: 195 people arrested and 110 vehicles seized for violating the curfew in a special operation carried out in the Colombo City - Police Media Division.
+    - text: COVID-19 cases in Sri Lanka rises to 142 - Ministry of Health.
 
 - date: 30 Mar, 2020
   important: 
-    - text: Health officials have confirmed Sri Lanka's second COVID-19 death
+    - text: Health officials have confirmed Sri Lanka's second COVID-19 death.
+    - text: 05 members of a single family including a 04 month old infant from Nattandiya tested positive for COVID-19.
   data: 
-    - text: A ward of the Kalubowila Teaching Hospital closed following the detection of a COVID-19 case. 15 patients & 20 staff members moved to quarantine , Hospital Director
-    - text: Globally COVID-19 death toll over 35,000 & 740,235 infected ; Total recoveries now at 156,588
-    - text: Sri Lankan High Commission in Singapore closed for a period of two weeks as a person working in the 21st floor of the building tested positive for COVID-19
-    - text: Curfew for all districts excluding Colombo, Gampaha, Kalutara, Puttlam, Kandy and Jaffna will be in effect until 06 AM on the 01st of April , PMD
-    - text: 05 members of a single family including a 04 month old infant from Nattandiya tested positive for COVID-19   02 new COVID-19 cases reported in Sri Lanka. Total confirmed COVID-19 cases at 122 with 14 recoveries , Health Ministry
-    - text: Results of the G. C. E. O/L examination will be released before the 30th of April , Education Ministry
-    - text: Sri Lankan Rupee depreciates further against US dollar. Selling rate of dollar is at Rs.192.50, CBSL
-    - text: 132 people who arrived in Sri Lanka from overseas, leave quarantine centres after completing quarantine. - Army Commander 
+    - text: 132 people who arrived in Sri Lanka from overseas, leave quarantine centres after completing quarantine - Army Commander.
+    - text: Sri Lankan Rupee depreciates further against US dollar. Selling rate of dollar is at Rs.192.50 - CBSL.
+    - text: Results of the G. C. E. O/L examination will be released before the 30th of April - Education Ministry.
+    - text: 02 new COVID-19 cases reported in Sri Lanka. Total confirmed COVID-19 cases at 122 with 14 recoveries - Health Ministry.
+    - text: Curfew for all districts excluding Colombo, Gampaha, Kalutara, Puttlam, Kandy and Jaffna will be in effect until 06 AM on the 01st of April - PMD.
+    - text: Sri Lankan High Commission in Singapore closed for a period of two weeks as a person working in the 21st floor of the building tested positive for COVID-19.
+    - text: Globally COVID-19 death toll over 35,000 & 740,235 infected ; Total recoveries now at 156,588.
+    - text: A ward of the Kalubowila Teaching Hospital closed following the detection of a COVID-19 case. 15 patients & 20 staff members moved to quarantine - Hospital Director.
 
 - date: 29 Mar, 2020
   data:
-    - text: Globally COVID-19 death toll over 33,000 & 702,368 infected ; Italy reports 756 new deaths & total COVID-19 deaths in Italy now over 10,000
-    - text: Food stores located in districts where curfew will be relaxed to be opened & general public requested to maintain distance from each other , Army Commander
-    - text: Confirmed COVID-19 cases in Sri Lanka now at 117 , Health Ministry
-    - text: Another COVID-19 patient recovers completely. Total recoveries in Sri Lanka now at 11 , Health Ministry
-    - text: Pension payments will be done on the 02nd & 03rd of April. Those -who cannot obtain the pension on those days can do so on the 06th of April , Prime Minister's Office
-    - text: 206 people arrested from 06AM to 12 noon today(29) for violating the curfew; 6247 people arrested in total , Police Media Division 
-    - text: Another COVID-19 case discharged from hospital following a complete recovery. Number of recoveries now at 10 & 117 suspected cases under medical observation , Health Ministry
-    - text: Curfew for Colombo, Gampaha, Kalutara, Puttlam, Kandy & Jaffna extended until further notice; curfew for all other districts will be lifted at 06AM tomorrow(30) & re-imposed at 02PM
-    - text: Ban on aircraft arrivals to the Bandaranaike International Airport extended to the 07th of April , Civil Aviation Authority
-    - text: Residents of one village in Puttlam moved in to a quarantine camp as a COVID-19 infected person had roamed in the area , Army Commander 
-    - text: The Akurana town in Kandy subject to quarantine , Army Commander
-    - text: Total confirmed COVID-19 cases reported in Sri Lanka now at 115 , Health Ministry
+    - text: Total confirmed COVID-19 cases reported in Sri Lanka now at 115 - Health Ministry.
+    - text: The Akurana town in Kandy subject to quarantine - Army Commander.
+    - text: Residents of one village in Puttlam moved in to a quarantine camp as a COVID-19 infected person had roamed in the area - Army Commander.
+    - text: Ban on aircraft arrivals to the Bandaranaike International Airport extended to the 07th of April - Civil Aviation Authority.
+    - text: Curfew for Colombo, Gampaha, Kalutara, Puttlam, Kandy & Jaffna extended until further notice; curfew for all other districts will be lifted at 06AM tomorrow(30) & re-imposed at 02PM.
+    - text: Another COVID-19 case discharged from hospital following a complete recovery. Number of recoveries now at 10 & 117 suspected cases under medical observation - Health Ministry.
+    - text: 206 people arrested from 06AM to 12 noon today(29) for violating the curfew; 6247 people arrested in total - Police Media Division.
+    - text: Pension payments will be done on the 02nd & 03rd of April. Those -who cannot obtain the pension on those days can do so on the 06th of April - Prime Minister's Office.
+    - text: Another COVID-19 patient recovers completely. Total recoveries in Sri Lanka now at 11 - Health Ministry.
+    - text: Confirmed COVID-19 cases in Sri Lanka now at 117 - Health Ministry.
+    - text: Food stores located in districts where curfew will be relaxed to be opened & general public requested to maintain distance from each other - Army Commander.
+    - text: Globally COVID-19 death toll over 33,000 & 702,368 infected ; Italy reports 756 new deaths & total COVID-19 deaths in Italy now over 10,000.
 
 - date: 28 Mar, 2020
   important: 
-    - text: First COVID-19 death reported in Sri Lanka. 60 year old male treated at IDH, was subject to a kidney transplant sever years ago and was diagnosed with diabetes & High Blood Pressure - DG Health Services
+    - text: First COVID-19 death reported in Sri Lanka. 60 year old male treated at IDH, was subject to a kidney transplant sever years ago and was diagnosed with diabetes & High Blood Pressure - DG Health Services.
   data: 
-    - text: 38 year old Male who spread false Information on COVID-19 via social media arrested by the CID & to be produced in court - Police Media Division 
-    - text: Three more confirmed COVID-19 cases detected in Sri Lanka today(28). Total confirmed COVID-19 cases at 113 , Health Ministry
-    - text: Government requests all those who arrived from Chennai, Indian during the recent past to immediately move in to quarantine - DG Health Services
-    - text: The city in China where the coronavirus pandemic began, Wuhan, has partially re-opened after more than two months of isolation. BBC
-    - text: Russia is beginning what Vladimir Putin called a "non-working week\ ", to try to slow the spread of the coronavirus. BBC
-    - text: Another group of more than 300 people releassd from Quarantine Centres following the completion of their quarantine period . Military Spokesperson
-    - text: Italy has reported 919 new deaths from coronavirus, the highest number of fatalities any country has reported in the space of 24 hours since the outbreak began late last year. 
-    - text: The US has more confirmed cases of coronavirus than any other country, with more than 100,000 positive tests. 
+    - text: The US has more confirmed cases of coronavirus than any other country, with more than 100,000 positive tests.
+    - text: Italy has reported 919 new deaths from coronavirus, the highest number of fatalities any country has reported in the space of 24 hours since the outbreak began late last year.
+    - text: Another group of more than 300 people releassd from Quarantine Centres following the completion of their quarantine period - Military Spokesperson.
+    - text: Russia is beginning what Vladimir Putin called a "non-working week", to try to slow the spread of the coronavirus - BBC.
+    - text: The city in China where the coronavirus pandemic began, Wuhan, has partially re-opened after more than two months of isolation - BBC.
+    - text: Government requests all those who arrived from Chennai, Indian during the recent past to immediately move in to quarantine - DG Health Services.
+    - text: Three more confirmed COVID-19 cases detected in Sri Lanka today(28). Total confirmed COVID-19 cases at 113 - Health Ministry.
+    - text: 38 year old Male who spread false Information on COVID-19 via social media arrested by the CID & to be produced in court - Police Media Division.
 
 - date: 27 Mar, 2020
   data:
-    - text: UK Prime Minister Boris Johnson has tested positive for coronavirus- Foreign Media
-    - text: General public advised to adhere to curfew which is in effect island-wide. Police & Tri-Forces instructed to strictly enforce regulations , PMD 
-    - text: All pharmacies excluding the state Osu Sala are to remain closed until further notice. Medicines can be delivered to customers , Police Spokesperson
-    - text: Payment of VAT for February and March 2020 extended to the 30th of April , Inland Revenue Department 
+    - text: The US now has more confirmed cases of coronavirus than any other country with at least 82,404 positive tests - BBC.
+    - text: Total of 4018 curfew violators arrested & 533 of them were arrested during the past 24 hours; 1033 vehicles also seized - Police Spokesperson.
+    - text: World Bank Group & IMF request all official bilateral creditors to suspend debt payments from Developing nations to help face COVID-19 outbreak.
+    - text: Another group of 503 people who completed mandatory quarantine released from quarantine camps - Army Commander.
     - text: Foreign Ministry confirms that a Sri Lankan in Switzerland has passed away from COVID-19.
-    - text: Another group of 503 people who completed mandatory quarantine released from quarantine camps , Army Commander
-    - text: World Bank Group & IMF request all official bilateral creditors to suspend debt payments from Developing nations to help face COVID-19 outbreak  
-    - text: Update , Total of 4018 curfew violators arrested & 533 of them were arrested during the past 24 hours; 1033 vehicles also seized , Police Spokesperson
-    - text: The US now has more confirmed cases of coronavirus than any other country with at least 82,404 positive tests.BBC"
+    - text: Payment of VAT for February and March 2020 extended to the 30th of April - Inland Revenue Department.
+    - text: All pharmacies excluding the state Osu Sala are to remain closed until further notice. Medicines can be delivered to customers - Police Spokesperson.
+    - text: General public advised to adhere to curfew which is in effect island-wide. Police & Tri-Forces instructed to strictly enforce regulations - PMD.
+    - text: UK Prime Minister Boris Johnson has tested positive for coronavirus- Foreign Media.
 
 - date: 26 Mar, 2020
   data:
-    - text: All leave of Police officers cancelled until the 10th of April with immediate effect, by the IGP - Police media spokesperson
-    - text: Salary for the month of April of Public Sector employees will be paid before the 10th of April , Secretary to the Ministry of Finance
-    - text: Two more confirmed COVID-19 cases reported in Sri Lanka; total confirmed cases now at 104 , Ministry of Health
-    - text: March 30th to April 03rd declared as a period to work from home, however, this period is not considered a government holiday , PMD
-    - text: 04 active COVID-19 cases recover completely and leave IDH , Health Officials
-    - text: Public Sector pension will be paid from April 03rd , Secretary to the Ministry of Finance
-    - text: Curfew which was lifted at 06,00 AM today for many districts will be re-imposed at 02,00 PM until 06,00 AM on Monday(30) & re-imposed at 02,00 PM the same day , PMD 
-    - text: Another batch of 223 people from Kandakadu(42), Diyathalawa(38), Punani(125) & Miyankulama(18) complete quarantine period & released from quarantine camps , Military Spokesperson
-    - text: Consumer Affairs Authority warns online sellers to refrain from selling essential items above the fixed MRP & legal action will be taken against those who fail to comply
+    - text: Consumer Affairs Authority warns online sellers to refrain from selling essential items above the fixed MRP & legal action will be taken against those who fail to comply.
+    - text: Another batch of 223 people from Kandakadu(42), Diyathalawa(38), Punani(125) & Miyankulama(18) complete quarantine period & released from quarantine camps - Military Spokesperson.
+    - text: Curfew which was lifted at 06:00 AM today for many districts will be re-imposed at 02:00 PM until 06:00 AM on Monday(30) & re-imposed at 02:00 PM the same day - PMD.
+    - text: Public Sector pension will be paid from April 03rd - Secretary to the Ministry of Finance.
+    - text: 04 active COVID-19 cases recover completely and leave IDH - Health Officials.
+    - text: March 30th to April 03rd declared as a period to work from home, however, this period is not considered a government holiday - PMD.
+    - text: Two more confirmed COVID-19 cases reported in Sri Lanka; total confirmed cases now at 104 - Ministry of Health. 
+    - text: Salary for the month of April of Public Sector employees will be paid before the 10th of April - Secretary to the Ministry of Finance.
+    - text: All leave of Police officers cancelled until the 10th of April with immediate effect, by the IGP - Police media spokesperson.
 
 - date:  25 Mar, 2020
   data:
-    - text: Total number of people who recovered from COVID-19 in Sri Lanka now at 03; Total COVID-19 cases at 102 & 225 under medical observation , Health Ministry
-    - text: 3700 people arrested for violating the curfew & 715 vehicles seized , DIG Ajith Rohana
-    - text: Globally 18,887 people have died of COVID-19 while 422,566 tested positive for the virus across many countries(108,388 people recovered)
-    - text: A maximum of 10 people will be allowed to attend funerals and five to attend weddings in Australia under new curbs in the fight against coronavirus. BBC
+    - text: A maximum of 10 people will be allowed to attend funerals and five to attend weddings in Australia under new curbs in the fight against coronavirus - BBC.
+    - text: Globally 18,887 people have died of COVID-19 while 422,566 tested positive for the virus across many countries(108,388 people recovered).
+    - text: 3700 people arrested for violating the curfew & 715 vehicles seized - DIG Ajith Rohana.
+    - text: Total number of people who recovered from COVID-19 in Sri Lanka now at 03; Total COVID-19 cases at 102 & 225 under medical observation - Health Ministry.
 
 - date: 24 Mar, 2020
   data:
-    - text: Confirmed COVID-19 cases in Sri Lanka now at 102 , Health Ministry
-    - text: Confirmed COVID-19 cases in Sri Lanka now at 100; 229 suspected cases under medical observation , Health Ministry
-    - text: Colombo, Gampaha & Kalutara classified as COVID-19 High Risk Zones; curfew for those districts will be in effect until further notice , PMD
-    - text: The Police have issued instructions to refrain from closing down stores until the last customer in the queue is able to purchase goods.
-    - text: Police Media Spokesman SP Jaliya Senarate said that all police stations have been informed regarding this directive. These instructions had been issued to facilitate the public in purchasing their goods without disruptions.
-    - text: Curfew for Colombo, Gampaha, Puttlam & 05 districts in the north lifted and will be re-imposed at 12 noon until 06,00 AM on Friday(27)
+    - text: Curfew for Colombo, Gampaha, Puttlam & 05 districts in the north lifted and will be re-imposed at 12 noon until 06:00 AM on Friday(27).
+    - text: The Police have issued instructions to refrain from closing down stores until the last customer in the queue is able to purchase goods. Police Media Spokesman SP Jaliya Senarate said that all police stations have been informed regarding this directive. These instructions had been issued to facilitate the public in purchasing their goods without disruptions.
+    - text: Colombo, Gampaha & Kalutara classified as COVID-19 High Risk Zones; curfew for those districts will be in effect until further notice - PMD.
+    - text: Confirmed COVID-19 cases in Sri Lanka now at 100; 229 suspected cases under medical observation - Health Ministry.
+    - text: Confirmed COVID-19 cases in Sri Lanka now at 102 - Health Ministry.
 
 - date: 23 Mar, 2020
   data:
-    - text: No new COVID-19 cases reported as of 1630 hours today , Health Minister
+    - text: The death toll from the coronavirus pandemic continued its relentless rise in Europe on Sunday with Italy announcing 651 dead in one day, bringing its total to 5,476.
+    - text: 1589 people who violated the police curfew arrested; 362 vehicles including motorcycles and three-wheelers seized - Police Media Division.
+    - text: Confirmed COVID-19 cases in Sri Lanka rises to 86 - Health Minister.
+    - text: Acting IGP says bank employees can use their Bank ID as a pass to engage in official matters during period of the curfew - Government Information Dept.
+    - text: COVID-19-Curfew for Colombo, Gampaha, Puttlam & 05 districts in the north will be lifted at 06AM tomorrow(24), re-imposed at 12 noon until 06AM on Friday(27) - PMD.
+    - text: President pledges USD 05 Million to the SAARC Fund set up to combat.
+    - text: The first Sri Lankan to test positive to COVID-19 (Tour Guide) leaves hospital following a complete recovery.
+    - text: Second batch of 201 people who completed quarantine period leave the Kandakadu (144) & Punani (57) Quarantine Camps - Military Spokesperson.
     - text: The Prince of Wales has tested positive for coronavirus. Prince Charles, is displaying mild symptoms "but otherwise remains in good health".
-    - text: Second batch of 201 people who completed quarantine period leave the Kandakadu (144) & Punani (57) Quarantine Camps - Military Spokesperson  
-    - text: The first Sri Lankan to test positive to COVID-19 (Tour Guide) leaves hospital following a complete recovery
-    - text: Pressident pledges USD 05 Million to the SAARC Fund set up to combat
-    - text: COVID-19-Curfew for Colombo, Gampaha, Puttlam & 05 districts in the north will be lifted at 06AM tomorrow(24), re-imposed at 12 noon until 06AM on Friday(27) , PMD
-    - text: Acting IGP says bank employees can use their Bank ID as a pass to engage in official matters during period of the curfew , Government Information Dept.
-    - text: Confirmed COVID-19 cases in Sri Lanka rises to 86 , Health Minister
-    - text: 1589 people who violated the police curfew arrested; 362 vehicles including motorcycles and three-wheelers seized , Police Media Division
-    - text: The death toll from the coronavirus pandemic continued its relentless rise in Europe on Sunday with Italy announcing 651 dead in one day, bringing its total to 5,476."
+    - text: No new COVID-19 cases reported as of 1630 hours today - Health Minister.
 
 - date: 22 Mar, 2020
   data:
-    - text: CPC storage facilities & filling stations have sufficient stocks of fuel to meet present requirement , Government Information Department 
-    - text: Update , People from the 05 districts in the northern province prohibited from leaving their respective districts , PMD 
-    - text: Confirmed COVID-19 cases in Sri Lanka rises to 80 , Health Minister  With a total of 48 pilgrims returning in the last SriLankan Airlines dedicated flight, all Sri Lankan pilgrims who were in India have now returned to Sri Lanka , Foreign Ministry 
-    - text: All passenger aircraft and cruise ships prohibited from entering the country in an attempt to prevent COVID-19 from entering Sri Lanka 
-    - text: Grace period announced until the 31st of March for electricity customers to pay bills , Minister Mahinda Amaraweera
-    - text: More than 390 Sri Lankan pilgrims flown out of India will be quarantined upon arrival , Military Spokesperson
-    - text: worldwide more than 300,000 people have contracted the novel coronavirus (COVID-19) and at least 12,944 have died
-    - text: Neville Fernando Hospital to be used to treat expectant mothers suspected of having COVID-19 & ICU at Kotelawala Defence University Hospital equipped for same purpose , DG Health Service
-    - text: 291 people who violated the police curfew arrested , Police
+    - text: 291 people who violated the police curfew arrested - Police.
+    - text: Neville Fernando Hospital to be used to treat expectant mothers suspected of having COVID-19 & ICU at Kotelawala Defence University Hospital equipped for same purpose - DG Health Service.
+    - text: More than 300,000 people have contracted the novel coronavirus (COVID-19) and at least 12,944 have died worldwide.
+    - text: More than 390 Sri Lankan pilgrims flown out of India will be quarantined upon arrival - Military Spokesperson.
+    - text: Grace period announced until the 31st of March for electricity customers to pay bills - Minister Mahinda Amaraweera.
+    - text: All passenger aircraft and cruise ships prohibited from entering the country in an attempt to prevent COVID-19 from entering Sri Lanka.
+    - text: With a total of 48 pilgrims returning in the last SriLankan Airlines dedicated flight, all Sri Lankan pilgrims who were in India have now returned to Sri Lanka - Foreign Ministry.
+    - text: Confirmed COVID-19 cases in Sri Lanka rises to 80 - Health Minister.
+    - text: People from the 05 districts in the northern province prohibited from leaving their respective districts - PMD.
 
 - date: 21 Mar, 2020
   data:
-    - text: Update , Confirmed COVID-19 cases in Sri Lanka rises to 77 following the detection of 05 new cases today , Health Minister
-    - text: Police curfew imposed for the Colombo, Gampaha and Puttlam Districts extended to 06,00 AM on Tuesday (24th March)
-    - text: Confirmed COVID-19 cases in Sri Lanka rises to 76 following the detection of 04 new cases today , Health Ministry
-    - text: Italy announced 627 more deaths on Friday, the biggest day-to-day increase in the country's four-week epidemic as worldwide fatalities surged past 11,000
+    - text: Italy announced 627 more deaths on Friday, the biggest day-to-day increase in the country's four-week epidemic as worldwide fatalities surged past 11,000.
+    - text: Confirmed COVID-19 cases in Sri Lanka rises to 76 following the detection of 04 new cases today - Health Ministry.
+    - text: Police curfew imposed for the Colombo, Gampaha and Puttlam Districts extended to 06:00 AM on Tuesday (24th March).
+    - text: Confirmed COVID-19 cases in Sri Lanka rises to 77 following the detection of 05 new cases today - Health Minister.
 
 - date: 20 Mar, 2020
   data:
-    - text: Confirmed COVID-19 cases in Sri Lanka rises to 72 , Health Minister
-    - text: Confirmed COVID-19 cases in Sri Lanka rises to 70 , Health Minister
-    - text: All postal services suspended with immediate effect until further notice , Post Master General
-    - text: Confirmed COVID-19 cases in Sri Lanka rises to 65; total of 218 people under medical observation , Health Ministry
-    - text: Police Curfew imposed for Chilaw, Puttlam, Negombo, Wattala & Ja-Ela temporarily lifted at 09,00 AM today(20) & will be re-imposed at 12 noon until further notice , Police 
-    - text: Media Division  Island-wide curfew will be in effect from 06,00 PM today(20) to 06,00 AM on Monday(23) , PMD
+    - text: Island-wide curfew will be in effect from 06:00 PM today(20) to 06:00 AM on Monday(23) - PMD.
+    - text: Police Curfew imposed for Chilaw, Puttlam, Negombo, Wattala & Ja-Ela temporarily lifted at 09:00 AM today(20) & will be re-imposed at 12 noon until further notice - Police Media Division.
+    - text: Confirmed COVID-19 cases in Sri Lanka rises to 65; total of 218 people under medical observation - Health Ministry.
+    - text: All postal services suspended with immediate effect until further notice - Post Master General.
+    - text: Confirmed COVID-19 cases in Sri Lanka rises to 70 - Health Minister.
+    - text: Confirmed COVID-19 cases in Sri Lanka rises to 72 - Health Minister.
 
 - date: 19 Mar, 2020
   data:
-    - text: CBSL requests commercial banks to suspend facilitating importation of non-essential goods under Letters of Credit, Documents against acceptance & advance payment
-    - text: SriLankan Airlines will bring back Sri Lankan pilgrims currently in India, today & tomorrow , Army Commander
-    - text: Facilities made available for over 38,000 foreigners trapped in Sri Lanka to depart the country , Airport and Aviation Services Limited-Prime Minister instructs Finance Secretary to pay salaries of all public servants on Monday the 23rd of March , Finance Ministry
-    - text: COVID-19 cases in Sri Lanka now at 52; 243 people under medical observation , Health Ministry
-    - text: March 20th to 27th declared by government as a period to work from home for both the Public & Private sector , PMD
-    - text: oronavirus claims 475 lives in a single day in Italy, the highest loss of life within 24-hours in that country since the beginning of the outbreak
-    - text: 18 people including 02 females arrested at a hotel in Beruwala for using narcotics and hosting a party in a hotel, despite COVID-19 warnings
-    - text: Operations at the Colombo Stock Exchange suspended for the 05th day
+    - text: Operations at the Colombo Stock Exchange suspended for the 05th day.
+    - text: 18 people including 02 females arrested at a hotel in Beruwala for using narcotics and hosting a party in a hotel, despite COVID-19 warnings.
+    - text: Coronavirus claims 475 lives in a single day in Italy, the highest loss of life within 24-hours in that country since the beginning of the outbreak.
+    - text: March 20th to 27th declared by government as a period to work from home for both the Public & Private sector - PMD.
+    - text: COVID-19 cases in Sri Lanka now at 52; 243 people under medical observation - Health Ministry.
+    - text: Prime Minister instructs Finance Secretary to pay salaries of all public servants on Monday the 23rd of March - Finance Ministry.
+    - text: Facilities made available for over 38,000 foreigners trapped in Sri Lanka to depart the country - Airport and Aviation Services Limited.
+    - text: SriLankan Airlines will bring back Sri Lankan pilgrims currently in India, today & tomorrow - Army Commander.
+    - text: CBSL requests commercial banks to suspend facilitating importation of non-essential goods under Letters of Credit, Documents against acceptance & advance payment.
 
 - date: 18 Mar, 2020
   data:
-    - text: Total confirmed cases of COVID-19 in Sri Lanka as of this evening is at 50 , DG Health Services
-    - text: 08 new COVID-19 cases reported from Sri Lanka , Health Minister
-    - text: Tour Guides requested to refrain from engaging in social activities during this month and remain at home , DG Health Services
-    - text: Private Hospitals can only conduct tests for COVID-19, only on patients who show symptoms & under strict conditions , DG Health Services
-    - text: Government instructs for temporary closure of all night clubs and betting centres
-    - text: Government decided to prohibit trips and tours in the country with effect from today , Health Minister
-    - text: Sri Lankan Rupee depreciated to Rs.187.23 against US dollar with compared to Tuesday’s 186.66CBSLPolice Curfew imposed for police divisions of Puttlam, Chilaw, Negombo  Kochchikade from 04:30 PM today until further notice , Police Spokesperson
-    - text: All international airports in Sri Lanka will be closed for operation of inward intentional commercial passenger flights from 04:00 AM tomorrow(19) to 25th April-Special plane to be sent to India to bring back Sri Lankan pilgrims in New Delhi , Ministry of Buddha Sasana
-    - text: A new quarantine center which can house 136 people established at the Boossa Navy Camp-The European Union will ban travellers from outside the bloc for 30 days in an unprecedented move to seal its borders amid the coronavirus crisis-BBC
+    - text: The European Union will ban travellers from outside the bloc for 30 days in an unprecedented move to seal its borders amid the coronavirus crisis - BBC.
+    - text: A new quarantine center which can house 136 people established at the Boossa Navy Camp.
+    - text: Special plane to be sent to India to bring back Sri Lankan pilgrims in New Delhi - Ministry of Buddha Sasana.
+    - text: All international airports in Sri Lanka will be closed for operation of inward intentional commercial passenger flights from 04:00 AM tomorrow(19) to 25th April.
+    - text: Police Curfew imposed for police divisions of Puttlam, Chilaw, Negombo-Kochchikade from 04:30 PM today until further notice - Police Spokesperson.
+    - text: Sri Lankan Rupee depreciated to Rs.187.23 against US dollar with compared to Tuesday’s 186.66 - CBSL.
+    - text: Government decided to prohibit trips and tours in the country with effect from today - Health Minister.
+    - text: Government instructs for temporary closure of all night clubs and betting centres.
+    - text: Private Hospitals can only conduct tests for COVID-19, only on patients who show symptoms & under strict conditions - DG Health Services.
+    - text: Tour Guides requested to refrain from engaging in social activities during this month and remain at home - DG Health Services.
+    - text: 08 new COVID-19 cases reported from Sri Lanka - Health Minister.
+    - text: Total confirmed cases of COVID-19 in Sri Lanka as of this evening is at 50 - DG Health Services.
 
 - date: 17 Mar, 2020
   data:
-    - text: 15 confirmed COVID-19 cases reported today in Sri Lanka -Confirmed COVID -19 cases in Sri Lanka rises to 43 , Health Minister-Update
-    - text: All passenger arrivals suspended with effect from midnight tomorrow (18) to 31st March. Departure, transit & cargo transportation will continue , CAA
-    - text: Acting Chief of Defence Staff & Army Commander, Lieutenant General Shavendra Silva appointed as the Head of the National Operation Centre for Prevention of COVID-19 Outbreak
-    - text: Aircraft will not be permitted to land at the BIA for a period of two weeks with effect from 03:00 PM today(17)
-    - text: Issuing of train tickets and accepting of parcels suspended , Railways Station Masters Association.
-    - text: Passengers from Bahrain, Qatar and Canada will not be permitted to enter SL from today for a period of two weeks , Civil Aviation Authority
-    - text: MOD says 170 Sri Lankans from Italy & Korea evaded quarantine and urges them to register with police immediately; legal action against those who fail to comply.
-    - text: All passengers who arrived in the country between 1st & 15th March can register by calling the nearest police station , Police HQ.
+    - text: Special Unit to be set up in Polonnaruwa today on the instructions of the President, to house confirmed COVID-19 cases - Army Commander.
     - text: Malaysia announced a two-week lockdown to slow the spread of the new coronavirus following a sharp spike in the number of cases.
-    - text: Special Unit to be set up in Polonnaruwa today on the instructions of the President, to house confirmed COVID-19 cases , Army Commander
-    - text: 88 train operations cancelled with effect from today to the 19th of March , Department of Railways.
+    - text: Labour Department requests private sector to comply with Special Holiday declared by the Government - Labour Commissioner General.
+    - text: 88 train operations cancelled with effect from today to the 19th of March - Department of Railways.
+    - text: All passengers who arrived in the country between 1st & 15th March can register by calling the nearest police station - Police HQ.
+    - text: MOD says 170 Sri Lankans from Italy & Korea evaded quarantine and urges them to register with police immediately; legal action against those who fail to comply.
+    - text: Passengers from Bahrain, Qatar and Canada will not be permitted to enter SL from today for a period of two weeks - Civil Aviation Authority.
+    - text: Issuing of train tickets and accepting of parcels suspended - Railways Station Masters Association.
+    - text: Aircraft will not be permitted to land at the BIA for a period of two weeks with effect from 03:00 PM today(17).
+    - text: Acting Chief of Defence Staff & Army Commander, Lieutenant General Shavendra Silva appointed as the Head of the National Operation Centre for Prevention of COVID-19 Outbreak.
+    - text: All passenger arrivals suspended with effect from midnight tomorrow (18) to 31st March. Departure, transit & cargo transportation will continue - CAA.
+    - text: Confirmed COVID -19 cases in Sri Lanka rises to 43 - Health Minister.
+    - text: 15 confirmed COVID-19 cases reported today in Sri Lanka.
 
 - date: 16 Mar, 2020
   data:
-    - text: Validity period of all types of Visas issued to foreigners will be extended for a period of 30 days with effect from 14th March to 12th April 2020.
-    - text: Government Information Dept -President announces relief package to support people affected by COVID-19, maximum price of dhal to be Rs.65/- & maximum price of canned fish Rs. 100/- - COVID-19 cases in Sri Lanka rise to 28 , Health Officials
-    - text: GMOA & BASL request the government to extend holidays.
-    - text: Government holiday will not be extended says Bandula.
-    - text: Department of Motor Traffic decided to temporary stop all Driving License services to avoid the public gatherings towards preventing further spreading of COVID-19.
+    - text: Self-quarantine mandatory for those who arrived between 1st March to 9th March.
+    - text: Measures have been taken to temporarily close down 11 museums in the country.
     - text: The General Public is requested to only visit the National Eye Hospital in the event of an emergency as a result of COVID-19 concerns.
-    - text: Measures have been taken to temporarily close down 11 museums in the country - Self-quarantine mandatory for those who arrived between 1st March to 9th March
+    - text: Department of Motor Traffic decided to temporary stop all Driving License services to avoid the public gatherings towards preventing further spreading of COVID-19.
+    - text: Government holiday will not be extended says Bandula.
+    - text: GMOA & BASL request the government to extend holidays.
+    - text: COVID-19 cases in Sri Lanka rise to 28 - Health Officials.
+    - text: President announces relief package to support people affected by COVID-19, maximum price of dhal to be Rs.65/- & maximum price of canned fish Rs. 100/-.
+    - text: Validity period of all types of Visas issued to foreigners will be extended for a period of 30 days with effect from 14th March to 12th April 2020 - Government Information Dept.
   
 - date: 15 Mar, 2020
   data:
-    - text: Eight more Coronavirus patients identified in Sri Lanka.
-    - text: Total increased to 18.
-    - text: 11th confirmed COVID-19 case reported in Sri Lanka; 45 year old who returned from Germany currently treated at IDH.
-    - text: Muslim Community requested to temporarily stop Jummah & 5 times congregational prayers at Masjids & public gatherings-ACJU.
-    - text: All passengers from 11 countries including France, Germany, Denmark, Russia & Sweden will be quarantined upon arrival.
-    - text: All 10 confirmed COVID-19 cases in Sri Lanka treated at IDH.
-    - text: All flights to Sri Lanka from the UK, Belgium and Norway will be suspended for two weeks with effect from tomorrow (16) night.
+    - text: 117 - hotline introduced by Presidential Task Force to Combat COVID-19 for the general public.
     - text: SAARC Leaders discuss how to combat COVID-19 over video conference.
-    - text: 117 hotline introduced by Presidential Task Force to Combat COVID-19 for the general public.
+    - text: All flights to Sri Lanka from the UK, Belgium and Norway will be suspended for two weeks with effect from tomorrow (16) night.
+    - text: All 10 confirmed COVID-19 cases in Sri Lanka treated at IDH.
+    - text: All passengers from 11 countries including France, Germany, Denmark, Russia & Sweden will be quarantined upon arrival.
+    - text: Muslim Community requested to temporarily stop Jummah & 5 times congregational prayers at Masjids & public gatherings - ACJU.
+    - text: 11th confirmed COVID-19 case reported in Sri Lanka; 45 year old who returned from Germany currently treated at IDH.
+    - text: Eight more Coronavirus patients identified in Sri Lanka. Total increased to 18.
 
 - date: 14 Mar, 2020
   data:
-    - text: Number of coronavirus patients rises to 10.
-    - text: The Health Ministry announces that a 56-year old woman and a 17-year old girl have been tested positive for COVID-19.
-    - text: The United Arab Emirates suspends the issuance of visas except for diplomatic passport holders.
-    - text: Masses at churches belonging to the dioceses of Colombo and Chilaw suspended for two weeks.
     - text: A decision made to close down the Zoo, Elephant Orphanages & Safari Park under the Department of National Zoological Gardens for 02 weeks from March 15.
+    - text: Masses at churches belonging to the dioceses of Colombo and Chilaw suspended for two weeks.
+    - text: The United Arab Emirates suspends the issuance of visas except for diplomatic passport holders.
+    - text: The Health Ministry announces that a 56-year old woman and a 17-year old girl have been tested positive for COVID-19.
+    - text: Number of coronavirus patients rises to 10.
 
 - date: 13 Mar, 2020
   data:
-    - text: Two patients were tested positive while undergoing treatment at the Kandakadu Quarantine Center and one from IDH Hospital.
-    - text: Sri Lanka bars flights from South Korea, Italy, and Iran.
-    - text: President orders to suspend the issuance of visas for citizens from EU countries for two weeks.
-    - text: Flights from France, Spain, Germany, Switzerland, Denmark, Netherlands, Sweden and Austria will be banned from the 15th to the 29th of March.
-    - text: Two week holiday for all National Colleges of Education and Teachers Colleges from March 16 to March 29.
-    - text: Sri Lankans temporarily suspended from going for foreign employment until further notice.
-    - text: All pre-schools island wide to be closed until April 20.
-    - text: TRC advices the public to refrain from misusing telecommunication services by spreading false information in a manner that is alarming to the public.
     - text: All state universities in the country to be closed for two weeks from March 14.
+    - text: TRC advices the public to refrain from misusing telecommunication services by spreading false information in a manner that is alarming to the public.
+    - text: All pre-schools island wide to be closed until April 20. Special Advice for Day Care Centers.
+    - text: Sri Lankans temporarily suspended from going for foreign employment until further notice.
+    - text: Two week holiday for all National Colleges of Education and Teachers Colleges from March 16 to March 29.
+    - text: Flights from France, Spain, Germany, Switzerland, Denmark, Netherlands, Sweden and Austria will be banned from the 15th to the 29th of March.
+    - text: President orders to suspend the issuance of visas for citizens from EU countries for two weeks - PMD.
+    - text: Sri Lanka bars flights from South Korea, Italy, and Iran.
+    - text: Two patients were tested positive while undergoing treatment at the Kandakadu Quarantine Center and one from IDH Hospital.
 
 - date: 12 Mar, 2020
   data:
-    - text: Saudi Arabia extends its travel ban to several countries including Sri Lanka.
-    - text: The Director General of Health Services refutes reports claiming that the son of the first Sri Lankan coronavirus patient in Sri Lanka has been infected.
-    - text: Police to take legal action against people who spread false information about the corona virus.
+    - text: A 44 year old person who had maintained contact with the first patient has been tested positive for the disease.
     - text: The Ministry of Education declares that governments schools will be closed until April 20th.
-    - text: A 44 year old person who had maintained contact with the first patient has been tested positive for the disease. 
+    - text: Police to take legal action against people who spread false information about the Coronavirus.
+    - text: The Director General of Health Services refutes reports claiming that the son of the first Sri Lankan coronavirus patient in Sri Lanka has been infected.
+    - text: Saudi Arabia extends its travel ban to several countries including Sri Lanka.
 
 - date: 11 Mar, 2020
   data:
@@ -287,11 +294,11 @@
 
 - date: 10 Mar, 2020
   data:
-    - text: Two Sri Lankans suspected to have contracted COVID-19 in UAE
+    - text: Two Sri Lankans suspected to have contracted COVID-19 in UAE.
 
 - date: 09 Mar, 2020
   data:
-    - text: Tourists arriving from South Korea, Italy, and Iran are being quarantined in Sri Lanka.
+    - text: Tourists arriving from South Korea, Italy and Iran are being quarantined in Sri Lanka.
     - text: The Qatar government announces that it has decided to bar the entry of visitors from 14 countries including Sri Lanka.  
 
 - date: 19 Feb, 2020
@@ -300,7 +307,7 @@
 
 - date: 14 Feb, 2020
   data:
-    - text: The 33 Sri Lankan nationals who were repatriated from Wuhan, China after the outbreak of the Coronavirus are set to be reunited with the families
+    - text: The 33 Sri Lankan nationals who were repatriated from Wuhan, China after the outbreak of the Coronavirus are set to be reunited with the families.
 
 - date: 01 Feb, 2020
   data:
