@@ -653,26 +653,30 @@ ul.timeline>li:before {
 }
 
 .card-emergency {
-    background-color: rgb(133, 0, 0);
+    background-color: #C02F1D;
     padding: 20px;
     margin: 20px 0px;
+    border-radius: 8px;
 }
 
 h2.emergency-number {
     font-size: 180%;
+    font-family: Rubik;
 }
 
 h5.emergency-number {
     font-size: 140%;
+    font-family: Rubik;
 }
 
 .emergency-text {
     font-size: 100%;
+    font-family: Rubik;
 }
 
 .footer {
-    background-color: rgb(24, 2, 104) !important;
-    font-family: 'Inconsolata', monospace;
+    background-color: #151823 !important;
+    font-family: 'Rubik', monospace;
 }
 
 .mobile-footer {
@@ -901,3 +905,88 @@ h5.emergency-number {
 .map-centers-sl-frame {
     height: 300px !important;
 }
+
+.contain {
+    opacity: 0;
+    transition: 1s ease;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: #107896;
+    box-shadow: inset 0 0 0px 40px rgba(33, 150, 243, 1), 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23), 0 0 0 0 rgba(33, 150, 243, 0);
+  }
+  .contain:active {
+    animation: callaaya 3s ease-in-out infinite;
+  }
+  .contain .phonecall:active {
+    animation: phoneaaya 3s ease-in-out infinite;
+  }
+  .phonecall {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .containcall:hover > .contain{
+      opacity: 1;
+  }
+  
+  @keyframes callaaya {
+    0% {
+      box-shadow: inset 0 0 0px 40px rgba(33, 150, 243, 1), 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23), 0 0 0 0 rgba(33, 150, 243, 0.1);
+      transform: translate(-50%, -50%);
+    }
+    10% {
+      box-shadow: inset 0 0 0 10px rgba(255, 255, 255, 0.2), 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23), 0 0 0 0 rgba(33, 150, 243, 0.1);
+      transform: translate(-50%, -50%) scale(1.2);
+    }
+    20% {
+      box-shadow: inset 0 0 0px 40px rgba(33, 150, 243, 1), 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23), 0 0 0 1px rgba(33, 150, 243, 0.1);
+    }
+    25% {
+      transform: translate(-50%, -50%);
+    }
+    69% {
+    box-shadow: inset 0 0 0px 40px rgba(33, 150, 243, 1), 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23), 0 0 0 100px rgba(33, 150, 243, 0.01);  }
+  }
+  
+  @keyframes phoneaaya {
+    0% {
+      transform: translate(-52%, -50%);;
+    }
+    2% {
+      transform: translate(-48%, -50%);;
+    }
+    4% {
+      transform: translate(-52%, -50%);;
+    }
+    6% {
+      transform: translate(-48%, -50%);;
+    }
+    8% {
+      transform: translate(-52%, -50%);
+    }
+    10% {
+      transform: translate(-48%, -50%);;
+    }
+    12% {
+      transform: translate(-52%, -50%);;
+    }
+    14% {
+      transform: translate(-48%, -50%);;
+    }
+    16% {
+      transform: translate(-52%, -50%);
+    }
+    18% {
+      transform: translate(-48%, -50%);
+    }
+    20% {
+      transform: translate(-50%, -50%);
+    }
+  }
