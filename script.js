@@ -46,7 +46,38 @@ month[9] = "Oct";
 month[10] = "Nov";
 month[11] = "Dec";
 
+  totalInfectedno = 189;
+  recoveredno = 44;
+  suspectedno = 138;
+  deathsno = 7;
+
+  window.document.title = '(' + totalInfectedno + ') ' + window.document.title ; 
+
+  totalInfected.innerHTML = totalInfectedno;
+  activeCases.innerHTML = totalInfectedno - (recoveredno + deathsno);
+  recovered.innerHTML = recoveredno;
+  suspected.innerHTML = suspectedno;
+  deaths.innerHTML = deathsno;
+
+  deathsRateno =  (deathsno/totalInfectedno)*100;
+  recoveryRateno = (recoveredno/totalInfectedno)*100;
+  
+  deathRate.innerHTML = (Math.floor(deathsRateno*100)/100) + '%' ;
+  recoveryRate.innerHTML = (Math.floor(recoveryRateno*100)/100) + '%';
+
+  activeCases2.innerHTML = totalInfectedno - (recoveredno + deathsno);
+  recovered2.innerHTML = recoveredno;
+  deaths2.innerHTML = deathsno;
+
+  document.getElementById('loading-news').style.display = "none";
+  document.getElementById('myInput').style.display = "block";
+  document.getElementById('see-all').style.display = "block";
+
 docRef.get().then(function (doc) {
+//   totalInfectedno = doc.data().total_infected;
+//   recoveredno = doc.data().recovered;
+//   suspectedno = doc.data().suspected;
+//   deathsno = doc.data().deaths;
   totalInfectedno = doc.data().total_infected;
   recoveredno = doc.data().recovered;
   suspectedno = doc.data().suspected;
