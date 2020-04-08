@@ -607,11 +607,11 @@ ul.timeline>li:before {
 }
 
 .card.adaderana {
-    background-color: rgb(196, 0, 0);
+    background-color: #C02F1D;
 }
 
 .card.bbc {
-    background-color: rgb(0, 0, 0);
+    background-color: #151823;
 }
 
 .card.other {
@@ -988,5 +988,34 @@ h5.emergency-number {
     }
     20% {
       transform: translate(-50%, -50%);
+    }
+  }
+
+  .spinner2 {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+  
+    margin: 100px auto;
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+  }
+  
+  @-webkit-keyframes sk-rotateplane {
+    0% { -webkit-transform: perspective(120px) }
+    50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+    100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+  }
+  
+  @keyframes sk-rotateplane {
+    0% { 
+      transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+    } 50% { 
+      transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+    } 100% { 
+      transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+      -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
     }
   }
