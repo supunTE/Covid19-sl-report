@@ -30,35 +30,37 @@
  
 ## **Developer Setup Guide**
 
- 1. First, Clone the repository by
-  
+1. First, Clone the repository by,
 
-	    git clone https://github.com/chamindujs/Covid19-sl-report/
+	`git clone https://github.com/STEdirisuriya/Covid19-sl-report.git`
 
-  
- 2. Install Jekyll on your local PC
- - [Install Jekyll on Windows](https://jekyllrb.com/docs/installation/windows/)		
-
-- [Install Jekyll on Linux](https://jekyllrb.com/docs/installation/other-linux/)	
-- [Install Jekyll on MacOS](https://jekyllrb.com/docs/installation/macos/)	
+2. Install Jekyll on your local PC
+	- [Install Jekyll on Windows](https://jekyllrb.com/docs/installation/windows/)		
+	- [Install Jekyll on Linux](https://jekyllrb.com/docs/installation/other-linux/)	
+	- [Install Jekyll on MacOS](https://jekyllrb.com/docs/installation/macos/)	
 	
 3. Then Go to project root and run
 
-    ``
-bundle instalL
-``
+	```
+	bundle install
+	```
+	
 
- 4. Then run 
+ 4. Then run
  
-
-	    jekyll serve
+	 ```
+	 jekyll serve
+	 ```
+	 
 
 > This will start the server
 
  5. Go to your browser and enter the following URL
  
-
-	    localhost:4000
+	 ```
+	 localhost:4000
+	 ```
+	 
 
 > Done !
 
