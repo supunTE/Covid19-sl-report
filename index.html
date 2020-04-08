@@ -1,0 +1,389 @@
+---
+layout: default
+title: Home
+---
+
+<div class="row mx-auto row-main-1" style="width: 100%;" onload="detectBrowser()">
+  <div class="col-xl-8 main-col-1 margin-top-under-nav status-animation-find" id="status-animation"
+    style="width: 100%;">
+    <div class="status-animation">
+      <figure class="animation-cards">
+        <div class="animation-cards-content">
+          <div class="animation-cards-item d-flex align-items-center justify-content-center" onclick="hidestatuscard()">
+            <span>
+              <h2 id="activeCases" class="text-center animation-cards-item-count">
+                <div class="spinner">
+                  <div class="double-bounce1"></div>
+                  <div class="double-bounce2"></div>
+                </div>
+              </h2>
+              <h4 class="animation-cards-item-subtitle">Active Cases</h2>
+                <img src="./virus.png" class="card-virus-cell">
+            </span>
+          </div>
+          <div class="animation-cards-item d-flex align-items-center justify-content-center" onclick="hidestatuscard()">
+            <span>
+              <h2 id="recovered" class="text-center animation-cards-item-count">
+                <div class="spinner">
+                  <div class="double-bounce1"></div>
+                  <div class="double-bounce2"></div>
+                </div>
+              </h2>
+              <h4 class="animation-cards-item-subtitle">Recovered</h2>
+                <img src="./virus.png" class="card-virus-cell">
+            </span>
+          </div>
+          <div class="animation-cards-item d-flex align-items-center justify-content-center" onclick="hidestatuscard()">
+            <span>
+              <h2 id="deaths" class="text-center animation-cards-item-count">
+                <div class="spinner">
+                  <div class="double-bounce1"></div>
+                  <div class="double-bounce2"></div>
+                </div>
+              </h2>
+              <h4 class="animation-cards-item-subtitle">Deaths</h2>
+                <img src="./virus.png" class="card-virus-cell">
+            </span>
+          </div>
+          <div class="animation-cards-item d-flex align-items-center justify-content-center "
+            onclick="hidestatuscard()">
+            <span class="shine">
+              <img src="./sl-flag.png" class="animation-card-img">
+            </span>
+          </div>
+        </div>
+      </figure>
+    </div>
+  </div>
+
+  <div class="col-xl-8 main-col-1-b margin-top-under-nav table-sl-details-find" style="display: none;"
+    id="table-sl-details" style="width: 100%;">
+    <div class="col-10 mx-auto table-sl-details-1">
+      <img src="./virus.png" class="back-virus-cell-1">
+      <img src="./virus.png" class="back-virus-cell-2">
+      <div class="justify-content-center card-deck">
+        <div class="col col-details mb-4" onclick="hidetabledetails()">
+          <div class="card card-details text-white bg-primary">
+            <div class="card-header table-card-header">Active Cases</div>
+            <div class="card-body table-card-body">
+              <h1 class="card-title" id="activeCases-2">
+                <div class="spinner">
+                  <div class="double-bounce1"></div>
+                  <div class="double-bounce2"></div>
+                </div>
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="col col-details mb-4" onclick="hidetabledetails()">
+          <div class="card card-details text-white bg-success">
+            <div class="card-header table-card-header">Recovered</div>
+            <div class="card-body table-card-body">
+              <h1 class="card-title" id="recovered-2">
+                <div class="spinner">
+                  <div class="double-bounce1"></div>
+                  <div class="double-bounce2"></div>
+                </div>
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="col col-details mb-4" onclick="hidetabledetails()">
+          <div class="card card-details text-white bg-danger">
+            <div class="card-header table-card-header">Deaths</div>
+            <div class="card-body table-card-body">
+              <h1 class="card-title" id="deaths-2">
+                <div class="spinner">
+                  <div class="double-bounce1"></div>
+                  <div class="double-bounce2"></div>
+                </div>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-4 main-col-2 margin-top-under-nav-xl" style="width: 100%;">
+    <div class="col-xl-12 col-10 mx-auto table-sl-details">
+      <div class="row justify-content-center card-deck">
+        <div class="col col-xl-6 col-md-4 col-details mb-4">
+          <div class="card card-details text-white" style="background-color: #c79600">
+            <div class="card-header table-card-header">Total</div>
+            <div class="card-body table-card-body">
+              <h1 class="card-title" id="totalInfected">
+                <div class="spinner">
+                  <div class="double-bounce1"></div>
+                  <div class="double-bounce2"></div>
+                </div>
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="col col-xl-6 col-md-4 col-details mb-4">
+          <div class="card card-details text-white bg-secondary">
+            <div class="card-header table-card-header">Suspected</div>
+            <div class="card-body table-card-body">
+              <h1 class="card-title" id="suspected">
+                <div class="spinner">
+                  <div class="double-bounce1"></div>
+                  <div class="double-bounce2"></div>
+                </div>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-xl-5 col-10 mx-auto table-sl-details-2">
+  <div class="row justify-content-center card-deck">
+    <div class="col col-xl-6 col-md-4 col-details mb-4">
+      <div class="card card-details text-white bg-info">
+        <div class="card-header table-card-header">Death Rate</div>
+        <div class="card-body table-card-body">
+          <h1 class="card-title" id="deathRate">
+            <div class="spinner">
+              <div class="double-bounce1"></div>
+              <div class="double-bounce2"></div>
+            </div>
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div class="col col-xl-6 col-md-4 col-details mb-4">
+      <div class="card card-details text-white bg-info">
+        <div class="card-header table-card-header">Recovery Rate</div>
+        <div class="card-body table-card-body">
+          <h1 class="card-title" id="recoveryRate">
+            <div class="spinner">
+              <div class="double-bounce1"></div>
+              <div class="double-bounce2"></div>
+            </div>
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row mx-auto row-main-2" style="width: 100%;">
+  <div class="col-xl-3 main-col-1 main-col-b-1 margin-bottom-before-footer-xl" style="width: 100%;">
+    <div class="container font-1">
+      <div class="row">
+        <div class="col-xl-12 col-md-6 offset-md-3">
+          <h3 class="display-4 caption-2">Timeline</h3>
+          <ul class="timeline">
+            {% for date in site.data.timeline limit: 6 %}
+            <li>
+              <h3>{{ date.date }}</h3>
+              {% if date.important %}
+              {% for importanttext in date.important %}
+              <h5 style="color: red;">- {{ importanttext.text }}</h5>
+              {% endfor %}
+              {% endif %}
+
+              {% for detail in date.data %}
+              <h6>- {{ detail.text }}</h6>
+              {% endfor %}
+            </li>
+            {% endfor %}
+          </ul>
+          <a href="./timeline.html" class="btn btn-see-all text-white mx-auto" style="width: 100%;">See All</a>
+          <div>Source - News1st | <a href="http://corona.newsfirst.lk/">http://corona.newsfirst.lk/</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-9 main-col-2 margin-bottom-before-footer" style="width: 100%;">
+    <div class="col-xl-10 col-10 mx-auto news-panel">
+      <h3 class="display-4 caption-2" id="news-panel">Latest News on COVID-19</h3>
+      <input type="text" class="col-10 search-bar" id="myInput" onkeyup="searchFunction()"
+        placeholder="Search for news.." title="Type here" style="display: none;">
+      <h5 class="loading-news" id="loading-news">Loading News ...</h5>
+      <h5 class="no-news" id="noNews" style="display: none;">Search not found! <br> Check in all News.</h5>
+      <div class="card-columns news" id="news">
+        <!-- {% for item in site.data.news %}
+        {% if item.channel == "News1st" %}
+        <div class="card text-white" style="background-color: rgb(194, 113, 7);">
+        {% elsif item.channel == "AdaDerana" %}
+        <div class="card text-white" style="background-color: rgb(196, 0, 0);">
+        {% elsif item.channel == "BBC" %}
+        <div class="card text-white" style="background-color: rgb(0, 0, 0);">
+        {% else %}
+        <div class="card text-white" style="background-color: rgb(17, 0, 80);">
+        {% endif %}
+          <img src="{{ item.img }}" class="card-img-top" alt="img" style="width: 100%; padding: 5px;">
+          <div class="card-body news-body">
+            <h2 class="card-title news-title"><b>{{ item.caption }}</b></h2>
+            {% if item.description %}
+            <h5 class="card-text">{{ item.description }}</h5>
+            {% endif %}
+            <p class="card-text"><i>Source - {{ item.channel }}</i></p>
+
+            {% if item.channel == "News1st" %}
+            <a href="{{ item.link }}" target="_blank" class="btn btn-warning">Visit...</a>
+            {% elsif item.channel == "AdaDerana" %}
+            <a href="{{ item.link }}" target="_blank" class="btn btn-danger">Visit...</a>
+            {% elsif item.channel == "BBC" %}
+            <a href="{{ item.link }}" target="_blank" class="btn btn-dark">Visit...</a>
+            {% else %}
+            <a href="{{ item.link }}" target="_blank" class="btn btn-primary">Visit...</a>
+            {% endif %}   
+
+            <p class="card-text news-time"><small>{{ item.time }}</small></p>
+          </div>
+        </div>
+    {% endfor %} -->
+      </div>
+      <a href="./news.html" class="btn btn-see-all text-white mx-auto" id="see-all" style="display: none;">See All
+        News</a>
+
+      <div class="card-emergency font-1">
+        <div class="row row-cols-1 row-cols-md-3 text-white">
+          <div class="col mb-4">
+            <div class="card bg-transparent text-center">
+              <div class="card-body">
+                <div class="containcall">
+                <h2 class="card-title emergency-number">1990</h2>
+                <p class="card-text emergency-text">Suwasariya Ambulance Service</p>
+                <div class='contain'>
+                  <a href="tel:1990">
+                  <img alt='' class='phonecall' height='24' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAEhUlEQVR4Xu2d7XXVMAyGpQmACWAD6ATQCWAD6ASUCWgnACagG0AnoBvQDWAD2gnEeS8O5KS9RJbt6CZWzuk/fyTvY0mWP26Z4nFVgF17j84pADgPggAQAJwVcO4+LCAAOCvg3H1YQABwVsC5+7CAAOCsgHP3YQFrBCAiz4joPRG9IKKHhd9wQ0RXRHTOzNeFba2uerYFJPG/N/rSo94gWAB8JaKXjQBcMvOrRm0fZLMWAL8quJ19Ytww86ODVKrRS1kASKN32TXLzNnv1PJ9Wred/bEiEgAqUgkAFcW0NBUALKpVrBMAKoppaSoAWFSrWCcAVBTT0lQAsKhWsU4AqCimpSkLACyePbB0pqkTidiMSiKClcvnGjEtZQJAALCMG3MdiwsKCzDLfbeiBcBZ2oyp+Br/mgoXNO+CsF7/pYn6sRo6L6uIPCGiH/MlbSXCAhS6iUirqegJM18oXmEzRbJjAL5cRFpsS3YnPrS0Ajglog8Vh2GX4pcAqBkHuhXfDCC5IZzheVpoBV2LXwqg1A11L34pgBI3FOIn12EKwoPbMS7Mhfgjv10K4A0Rfc6IAyH+RKwiACkY/ySixwoIIf49ItUAoLGC7s58KgbkrkgxgAwr6O7kswZCLQCaKek1Mx9pXqqnMrUA4JIGErO5WPCOmT/2JPDct1YBkNyQJhZgFRWuCIE7nloxIDMvuGLm41D/jwLVLCBZAe6Oaa4v4T4Ytja7f6oCSBDg498qlD1mZmzwd/20AICADB8/d3gLZRAPEBe6faoDSFaA66vfFKp2Hw+aAEgQtMdXLpj5RAFrk0WaAUgQtJs23eYHrQFgzwAQ5uIBeHW5WNcUQEaCNriX7mZGzQFkTk0xIwKEbn4zYhEACYL2LFFXEJYEgPwAiZfmJEU3EBYDkKxAm6ShOCAgMMNyNvssCmC0XgRL0MyMms6ORAT72VjFLXmKfu9ocQBGCKfM/KlEpWndSuJPm83e9XMBYIRQLWNuJD4+K3vv2w2AEQKmp5immhfwGoq/i1u5v3fkCsAIwTxDaiz+zh3lXjBxB2CEgGpnzHyujQtLiL9aACMIuB2jyRMG3TGbwlT1v3vMS4m/agCjPEGbrA0Q4JKwmnrv1aYlxV89gBEEJF+5t/HvWMPS4m8CwDCsRUS7oTMNA6iHnAFXqEqTLG2I+VtulUF431eKCO4kw7Vos+axWyr9Rd9s8TdlASNLwKYOXFJOcDaJV6PSpixgLIiIaI+71NDR3MZmAaQAjdMWcElzZ1DNApZW3DSA0SwJgVZz+KtUz+z6mwcwig0HaQ3dAJhMV3E/IXemlD26NRW6A3BobqlLAJMpK+LDa81obVGmawATEHBLyIQXdU0BYDSsRQTZ8ABiianrLTNnZeAHsR/QwhVM20z/+wYwsLzRyirWtSW5hPD39ZHWmDCNxV/NJY71bMp7ib8HyAADV6wGF4I1KI3buk0HzrBDl32kshsXdEjAx+8SAJzJBIAA4KyAc/dhAQHAWQHn7sMCAoCzAs7dhwUEAGcFnLsPCwgAzgo4d/8bkhaJcMKI4pcAAAAASUVORK5CYII=' width='24'>
+                </a>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card bg-transparent text-center">
+              <div class="card-body">
+                  <div class="containcall">
+                <h2 class="card-title emergency-number">199</h2>
+                <p class="card-text emergency-text">Police Emergency Call Centre</p>
+                <div class='contain'>
+                  <a href="tel:199">
+                  <img alt='' class='phonecall' height='24' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAEhUlEQVR4Xu2d7XXVMAyGpQmACWAD6ATQCWAD6ASUCWgnACagG0AnoBvQDWAD2gnEeS8O5KS9RJbt6CZWzuk/fyTvY0mWP26Z4nFVgF17j84pADgPggAQAJwVcO4+LCAAOCvg3H1YQABwVsC5+7CAAOCsgHP3YQFrBCAiz4joPRG9IKKHhd9wQ0RXRHTOzNeFba2uerYFJPG/N/rSo94gWAB8JaKXjQBcMvOrRm0fZLMWAL8quJ19Ytww86ODVKrRS1kASKN32TXLzNnv1PJ9Wred/bEiEgAqUgkAFcW0NBUALKpVrBMAKoppaSoAWFSrWCcAVBTT0lQAsKhWsU4AqCimpSkLACyePbB0pqkTidiMSiKClcvnGjEtZQJAALCMG3MdiwsKCzDLfbeiBcBZ2oyp+Br/mgoXNO+CsF7/pYn6sRo6L6uIPCGiH/MlbSXCAhS6iUirqegJM18oXmEzRbJjAL5cRFpsS3YnPrS0Ajglog8Vh2GX4pcAqBkHuhXfDCC5IZzheVpoBV2LXwqg1A11L34pgBI3FOIn12EKwoPbMS7Mhfgjv10K4A0Rfc6IAyH+RKwiACkY/ySixwoIIf49ItUAoLGC7s58KgbkrkgxgAwr6O7kswZCLQCaKek1Mx9pXqqnMrUA4JIGErO5WPCOmT/2JPDct1YBkNyQJhZgFRWuCIE7nloxIDMvuGLm41D/jwLVLCBZAe6Oaa4v4T4Ytja7f6oCSBDg498qlD1mZmzwd/20AICADB8/d3gLZRAPEBe6faoDSFaA66vfFKp2Hw+aAEgQtMdXLpj5RAFrk0WaAUgQtJs23eYHrQFgzwAQ5uIBeHW5WNcUQEaCNriX7mZGzQFkTk0xIwKEbn4zYhEACYL2LFFXEJYEgPwAiZfmJEU3EBYDkKxAm6ShOCAgMMNyNvssCmC0XgRL0MyMms6ORAT72VjFLXmKfu9ocQBGCKfM/KlEpWndSuJPm83e9XMBYIRQLWNuJD4+K3vv2w2AEQKmp5immhfwGoq/i1u5v3fkCsAIwTxDaiz+zh3lXjBxB2CEgGpnzHyujQtLiL9aACMIuB2jyRMG3TGbwlT1v3vMS4m/agCjPEGbrA0Q4JKwmnrv1aYlxV89gBEEJF+5t/HvWMPS4m8CwDCsRUS7oTMNA6iHnAFXqEqTLG2I+VtulUF431eKCO4kw7Vos+axWyr9Rd9s8TdlASNLwKYOXFJOcDaJV6PSpixgLIiIaI+71NDR3MZmAaQAjdMWcElzZ1DNApZW3DSA0SwJgVZz+KtUz+z6mwcwig0HaQ3dAJhMV3E/IXemlD26NRW6A3BobqlLAJMpK+LDa81obVGmawATEHBLyIQXdU0BYDSsRQTZ8ABiianrLTNnZeAHsR/QwhVM20z/+wYwsLzRyirWtSW5hPD39ZHWmDCNxV/NJY71bMp7ib8HyAADV6wGF4I1KI3buk0HzrBDl32kshsXdEjAx+8SAJzJBIAA4KyAc/dhAQHAWQHn7sMCAoCzAs7dhwUEAGcFnLsPCwgAzgo4d/8bkhaJcMKI4pcAAAAASUVORK5CYII=' width='24'>
+                </a>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card bg-transparent text-center">
+              <div class="card-body">
+                  <div class="containcall">
+                <h2 class="card-title emergency-number">117</h2>
+                <p class="card-text emergency-text">President Task Force</p>
+                <div class='contain'>
+                  <a href="tel:177">
+                  <img alt='' class='phonecall' height='24' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAEhUlEQVR4Xu2d7XXVMAyGpQmACWAD6ATQCWAD6ASUCWgnACagG0AnoBvQDWAD2gnEeS8O5KS9RJbt6CZWzuk/fyTvY0mWP26Z4nFVgF17j84pADgPggAQAJwVcO4+LCAAOCvg3H1YQABwVsC5+7CAAOCsgHP3YQFrBCAiz4joPRG9IKKHhd9wQ0RXRHTOzNeFba2uerYFJPG/N/rSo94gWAB8JaKXjQBcMvOrRm0fZLMWAL8quJ19Ytww86ODVKrRS1kASKN32TXLzNnv1PJ9Wred/bEiEgAqUgkAFcW0NBUALKpVrBMAKoppaSoAWFSrWCcAVBTT0lQAsKhWsU4AqCimpSkLACyePbB0pqkTidiMSiKClcvnGjEtZQJAALCMG3MdiwsKCzDLfbeiBcBZ2oyp+Br/mgoXNO+CsF7/pYn6sRo6L6uIPCGiH/MlbSXCAhS6iUirqegJM18oXmEzRbJjAL5cRFpsS3YnPrS0Ajglog8Vh2GX4pcAqBkHuhXfDCC5IZzheVpoBV2LXwqg1A11L34pgBI3FOIn12EKwoPbMS7Mhfgjv10K4A0Rfc6IAyH+RKwiACkY/ySixwoIIf49ItUAoLGC7s58KgbkrkgxgAwr6O7kswZCLQCaKek1Mx9pXqqnMrUA4JIGErO5WPCOmT/2JPDct1YBkNyQJhZgFRWuCIE7nloxIDMvuGLm41D/jwLVLCBZAe6Oaa4v4T4Ytja7f6oCSBDg498qlD1mZmzwd/20AICADB8/d3gLZRAPEBe6faoDSFaA66vfFKp2Hw+aAEgQtMdXLpj5RAFrk0WaAUgQtJs23eYHrQFgzwAQ5uIBeHW5WNcUQEaCNriX7mZGzQFkTk0xIwKEbn4zYhEACYL2LFFXEJYEgPwAiZfmJEU3EBYDkKxAm6ShOCAgMMNyNvssCmC0XgRL0MyMms6ORAT72VjFLXmKfu9ocQBGCKfM/KlEpWndSuJPm83e9XMBYIRQLWNuJD4+K3vv2w2AEQKmp5immhfwGoq/i1u5v3fkCsAIwTxDaiz+zh3lXjBxB2CEgGpnzHyujQtLiL9aACMIuB2jyRMG3TGbwlT1v3vMS4m/agCjPEGbrA0Q4JKwmnrv1aYlxV89gBEEJF+5t/HvWMPS4m8CwDCsRUS7oTMNA6iHnAFXqEqTLG2I+VtulUF431eKCO4kw7Vos+axWyr9Rd9s8TdlASNLwKYOXFJOcDaJV6PSpixgLIiIaI+71NDR3MZmAaQAjdMWcElzZ1DNApZW3DSA0SwJgVZz+KtUz+z6mwcwig0HaQ3dAJhMV3E/IXemlD26NRW6A3BobqlLAJMpK+LDa81obVGmawATEHBLyIQXdU0BYDSsRQTZ8ABiianrLTNnZeAHsR/QwhVM20z/+wYwsLzRyirWtSW5hPD39ZHWmDCNxV/NJY71bMp7ib8HyAADV6wGF4I1KI3buk0HzrBDl32kshsXdEjAx+8SAJzJBIAA4KyAc/dhAQHAWQHn7sMCAoCzAs7dhwUEAGcFnLsPCwgAzgo4d/8bkhaJcMKI4pcAAAAASUVORK5CYII=' width='24'>
+                </a>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card bg-transparent text-center">
+              <div class="card-body">
+                  <div class="containcall">
+                <h5 class="card-title emergency-number">011 242 2222</h5>
+                <p class="card-text emergency-text">Fire and Rescue / Ambulance</p>
+                <div class='contain'>
+                  <a href="tel:011-242-2222">
+                  <img alt='' class='phonecall' height='24' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAEhUlEQVR4Xu2d7XXVMAyGpQmACWAD6ATQCWAD6ASUCWgnACagG0AnoBvQDWAD2gnEeS8O5KS9RJbt6CZWzuk/fyTvY0mWP26Z4nFVgF17j84pADgPggAQAJwVcO4+LCAAOCvg3H1YQABwVsC5+7CAAOCsgHP3YQFrBCAiz4joPRG9IKKHhd9wQ0RXRHTOzNeFba2uerYFJPG/N/rSo94gWAB8JaKXjQBcMvOrRm0fZLMWAL8quJ19Ytww86ODVKrRS1kASKN32TXLzNnv1PJ9Wred/bEiEgAqUgkAFcW0NBUALKpVrBMAKoppaSoAWFSrWCcAVBTT0lQAsKhWsU4AqCimpSkLACyePbB0pqkTidiMSiKClcvnGjEtZQJAALCMG3MdiwsKCzDLfbeiBcBZ2oyp+Br/mgoXNO+CsF7/pYn6sRo6L6uIPCGiH/MlbSXCAhS6iUirqegJM18oXmEzRbJjAL5cRFpsS3YnPrS0Ajglog8Vh2GX4pcAqBkHuhXfDCC5IZzheVpoBV2LXwqg1A11L34pgBI3FOIn12EKwoPbMS7Mhfgjv10K4A0Rfc6IAyH+RKwiACkY/ySixwoIIf49ItUAoLGC7s58KgbkrkgxgAwr6O7kswZCLQCaKek1Mx9pXqqnMrUA4JIGErO5WPCOmT/2JPDct1YBkNyQJhZgFRWuCIE7nloxIDMvuGLm41D/jwLVLCBZAe6Oaa4v4T4Ytja7f6oCSBDg498qlD1mZmzwd/20AICADB8/d3gLZRAPEBe6faoDSFaA66vfFKp2Hw+aAEgQtMdXLpj5RAFrk0WaAUgQtJs23eYHrQFgzwAQ5uIBeHW5WNcUQEaCNriX7mZGzQFkTk0xIwKEbn4zYhEACYL2LFFXEJYEgPwAiZfmJEU3EBYDkKxAm6ShOCAgMMNyNvssCmC0XgRL0MyMms6ORAT72VjFLXmKfu9ocQBGCKfM/KlEpWndSuJPm83e9XMBYIRQLWNuJD4+K3vv2w2AEQKmp5immhfwGoq/i1u5v3fkCsAIwTxDaiz+zh3lXjBxB2CEgGpnzHyujQtLiL9aACMIuB2jyRMG3TGbwlT1v3vMS4m/agCjPEGbrA0Q4JKwmnrv1aYlxV89gBEEJF+5t/HvWMPS4m8CwDCsRUS7oTMNA6iHnAFXqEqTLG2I+VtulUF431eKCO4kw7Vos+axWyr9Rd9s8TdlASNLwKYOXFJOcDaJV6PSpixgLIiIaI+71NDR3MZmAaQAjdMWcElzZ1DNApZW3DSA0SwJgVZz+KtUz+z6mwcwig0HaQ3dAJhMV3E/IXemlD26NRW6A3BobqlLAJMpK+LDa81obVGmawATEHBLyIQXdU0BYDSsRQTZ8ABiianrLTNnZeAHsR/QwhVM20z/+wYwsLzRyirWtSW5hPD39ZHWmDCNxV/NJY71bMp7ib8HyAADV6wGF4I1KI3buk0HzrBDl32kshsXdEjAx+8SAJzJBIAA4KyAc/dhAQHAWQHn7sMCAoCzAs7dhwUEAGcFnLsPCwgAzgo4d/8bkhaJcMKI4pcAAAAASUVORK5CYII=' width='24'>
+                </a>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card bg-transparent text-center">
+              <div class="card-body">
+                  <div class="containcall">
+                <h5 class="card-title emergency-number">011 242 1052</h5>
+                <p class="card-text emergency-text">Tourist Police</p>
+                <div class='contain'>
+                  <a href="tel:011-242-1052">
+                  <img alt='' class='phonecall' height='24' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAEhUlEQVR4Xu2d7XXVMAyGpQmACWAD6ATQCWAD6ASUCWgnACagG0AnoBvQDWAD2gnEeS8O5KS9RJbt6CZWzuk/fyTvY0mWP26Z4nFVgF17j84pADgPggAQAJwVcO4+LCAAOCvg3H1YQABwVsC5+7CAAOCsgHP3YQFrBCAiz4joPRG9IKKHhd9wQ0RXRHTOzNeFba2uerYFJPG/N/rSo94gWAB8JaKXjQBcMvOrRm0fZLMWAL8quJ19Ytww86ODVKrRS1kASKN32TXLzNnv1PJ9Wred/bEiEgAqUgkAFcW0NBUALKpVrBMAKoppaSoAWFSrWCcAVBTT0lQAsKhWsU4AqCimpSkLACyePbB0pqkTidiMSiKClcvnGjEtZQJAALCMG3MdiwsKCzDLfbeiBcBZ2oyp+Br/mgoXNO+CsF7/pYn6sRo6L6uIPCGiH/MlbSXCAhS6iUirqegJM18oXmEzRbJjAL5cRFpsS3YnPrS0Ajglog8Vh2GX4pcAqBkHuhXfDCC5IZzheVpoBV2LXwqg1A11L34pgBI3FOIn12EKwoPbMS7Mhfgjv10K4A0Rfc6IAyH+RKwiACkY/ySixwoIIf49ItUAoLGC7s58KgbkrkgxgAwr6O7kswZCLQCaKek1Mx9pXqqnMrUA4JIGErO5WPCOmT/2JPDct1YBkNyQJhZgFRWuCIE7nloxIDMvuGLm41D/jwLVLCBZAe6Oaa4v4T4Ytja7f6oCSBDg498qlD1mZmzwd/20AICADB8/d3gLZRAPEBe6faoDSFaA66vfFKp2Hw+aAEgQtMdXLpj5RAFrk0WaAUgQtJs23eYHrQFgzwAQ5uIBeHW5WNcUQEaCNriX7mZGzQFkTk0xIwKEbn4zYhEACYL2LFFXEJYEgPwAiZfmJEU3EBYDkKxAm6ShOCAgMMNyNvssCmC0XgRL0MyMms6ORAT72VjFLXmKfu9ocQBGCKfM/KlEpWndSuJPm83e9XMBYIRQLWNuJD4+K3vv2w2AEQKmp5immhfwGoq/i1u5v3fkCsAIwTxDaiz+zh3lXjBxB2CEgGpnzHyujQtLiL9aACMIuB2jyRMG3TGbwlT1v3vMS4m/agCjPEGbrA0Q4JKwmnrv1aYlxV89gBEEJF+5t/HvWMPS4m8CwDCsRUS7oTMNA6iHnAFXqEqTLG2I+VtulUF431eKCO4kw7Vos+axWyr9Rd9s8TdlASNLwKYOXFJOcDaJV6PSpixgLIiIaI+71NDR3MZmAaQAjdMWcElzZ1DNApZW3DSA0SwJgVZz+KtUz+z6mwcwig0HaQ3dAJhMV3E/IXemlD26NRW6A3BobqlLAJMpK+LDa81obVGmawATEHBLyIQXdU0BYDSsRQTZ8ABiianrLTNnZeAHsR/QwhVM20z/+wYwsLzRyirWtSW5hPD39ZHWmDCNxV/NJY71bMp7ib8HyAADV6wGF4I1KI3buk0HzrBDl32kshsXdEjAx+8SAJzJBIAA4KyAc/dhAQHAWQHn7sMCAoCzAs7dhwUEAGcFnLsPCwgAzgo4d/8bkhaJcMKI4pcAAAAASUVORK5CYII=' width='24'>
+                </a>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card bg-transparent text-center">
+              <div class="card-body">
+                  <div class="containcall">
+                <h5 class="card-title emergency-number">011 269 1111</h5>
+                <p class="card-text emergency-text">General Hospital Colombo</p>
+                <div class='contain'>
+                  <a href="tel:011-269-1111">
+                  <img alt='' class='phonecall' height='24' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAEhUlEQVR4Xu2d7XXVMAyGpQmACWAD6ATQCWAD6ASUCWgnACagG0AnoBvQDWAD2gnEeS8O5KS9RJbt6CZWzuk/fyTvY0mWP26Z4nFVgF17j84pADgPggAQAJwVcO4+LCAAOCvg3H1YQABwVsC5+7CAAOCsgHP3YQFrBCAiz4joPRG9IKKHhd9wQ0RXRHTOzNeFba2uerYFJPG/N/rSo94gWAB8JaKXjQBcMvOrRm0fZLMWAL8quJ19Ytww86ODVKrRS1kASKN32TXLzNnv1PJ9Wred/bEiEgAqUgkAFcW0NBUALKpVrBMAKoppaSoAWFSrWCcAVBTT0lQAsKhWsU4AqCimpSkLACyePbB0pqkTidiMSiKClcvnGjEtZQJAALCMG3MdiwsKCzDLfbeiBcBZ2oyp+Br/mgoXNO+CsF7/pYn6sRo6L6uIPCGiH/MlbSXCAhS6iUirqegJM18oXmEzRbJjAL5cRFpsS3YnPrS0Ajglog8Vh2GX4pcAqBkHuhXfDCC5IZzheVpoBV2LXwqg1A11L34pgBI3FOIn12EKwoPbMS7Mhfgjv10K4A0Rfc6IAyH+RKwiACkY/ySixwoIIf49ItUAoLGC7s58KgbkrkgxgAwr6O7kswZCLQCaKek1Mx9pXqqnMrUA4JIGErO5WPCOmT/2JPDct1YBkNyQJhZgFRWuCIE7nloxIDMvuGLm41D/jwLVLCBZAe6Oaa4v4T4Ytja7f6oCSBDg498qlD1mZmzwd/20AICADB8/d3gLZRAPEBe6faoDSFaA66vfFKp2Hw+aAEgQtMdXLpj5RAFrk0WaAUgQtJs23eYHrQFgzwAQ5uIBeHW5WNcUQEaCNriX7mZGzQFkTk0xIwKEbn4zYhEACYL2LFFXEJYEgPwAiZfmJEU3EBYDkKxAm6ShOCAgMMNyNvssCmC0XgRL0MyMms6ORAT72VjFLXmKfu9ocQBGCKfM/KlEpWndSuJPm83e9XMBYIRQLWNuJD4+K3vv2w2AEQKmp5immhfwGoq/i1u5v3fkCsAIwTxDaiz+zh3lXjBxB2CEgGpnzHyujQtLiL9aACMIuB2jyRMG3TGbwlT1v3vMS4m/agCjPEGbrA0Q4JKwmnrv1aYlxV89gBEEJF+5t/HvWMPS4m8CwDCsRUS7oTMNA6iHnAFXqEqTLG2I+VtulUF431eKCO4kw7Vos+axWyr9Rd9s8TdlASNLwKYOXFJOcDaJV6PSpixgLIiIaI+71NDR3MZmAaQAjdMWcElzZ1DNApZW3DSA0SwJgVZz+KtUz+z6mwcwig0HaQ3dAJhMV3E/IXemlD26NRW6A3BobqlLAJMpK+LDa81obVGmawATEHBLyIQXdU0BYDSsRQTZ8ABiianrLTNnZeAHsR/QwhVM20z/+wYwsLzRyirWtSW5hPD39ZHWmDCNxV/NJY71bMp7ib8HyAADV6wGF4I1KI3buk0HzrBDl32kshsXdEjAx+8SAJzJBIAA4KyAc/dhAQHAWQHn7sMCAoCzAs7dhwUEAGcFnLsPCwgAzgo4d/8bkhaJcMKI4pcAAAAASUVORK5CYII=' width='24'>
+                </a>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card bg-transparent text-center">
+              <div class="card-body">
+                  <div class="containcall">
+                <h5 class="card-title emergency-number">071 010 7107</h5>
+                <p class="card-text emergency-text">Health Promotion Bureau</p>
+                <div class='contain'>
+                  <a href="tel:071-010-7107">
+                  <img alt='' class='phonecall' height='24' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAEhUlEQVR4Xu2d7XXVMAyGpQmACWAD6ATQCWAD6ASUCWgnACagG0AnoBvQDWAD2gnEeS8O5KS9RJbt6CZWzuk/fyTvY0mWP26Z4nFVgF17j84pADgPggAQAJwVcO4+LCAAOCvg3H1YQABwVsC5+7CAAOCsgHP3YQFrBCAiz4joPRG9IKKHhd9wQ0RXRHTOzNeFba2uerYFJPG/N/rSo94gWAB8JaKXjQBcMvOrRm0fZLMWAL8quJ19Ytww86ODVKrRS1kASKN32TXLzNnv1PJ9Wred/bEiEgAqUgkAFcW0NBUALKpVrBMAKoppaSoAWFSrWCcAVBTT0lQAsKhWsU4AqCimpSkLACyePbB0pqkTidiMSiKClcvnGjEtZQJAALCMG3MdiwsKCzDLfbeiBcBZ2oyp+Br/mgoXNO+CsF7/pYn6sRo6L6uIPCGiH/MlbSXCAhS6iUirqegJM18oXmEzRbJjAL5cRFpsS3YnPrS0Ajglog8Vh2GX4pcAqBkHuhXfDCC5IZzheVpoBV2LXwqg1A11L34pgBI3FOIn12EKwoPbMS7Mhfgjv10K4A0Rfc6IAyH+RKwiACkY/ySixwoIIf49ItUAoLGC7s58KgbkrkgxgAwr6O7kswZCLQCaKek1Mx9pXqqnMrUA4JIGErO5WPCOmT/2JPDct1YBkNyQJhZgFRWuCIE7nloxIDMvuGLm41D/jwLVLCBZAe6Oaa4v4T4Ytja7f6oCSBDg498qlD1mZmzwd/20AICADB8/d3gLZRAPEBe6faoDSFaA66vfFKp2Hw+aAEgQtMdXLpj5RAFrk0WaAUgQtJs23eYHrQFgzwAQ5uIBeHW5WNcUQEaCNriX7mZGzQFkTk0xIwKEbn4zYhEACYL2LFFXEJYEgPwAiZfmJEU3EBYDkKxAm6ShOCAgMMNyNvssCmC0XgRL0MyMms6ORAT72VjFLXmKfu9ocQBGCKfM/KlEpWndSuJPm83e9XMBYIRQLWNuJD4+K3vv2w2AEQKmp5immhfwGoq/i1u5v3fkCsAIwTxDaiz+zh3lXjBxB2CEgGpnzHyujQtLiL9aACMIuB2jyRMG3TGbwlT1v3vMS4m/agCjPEGbrA0Q4JKwmnrv1aYlxV89gBEEJF+5t/HvWMPS4m8CwDCsRUS7oTMNA6iHnAFXqEqTLG2I+VtulUF431eKCO4kw7Vos+axWyr9Rd9s8TdlASNLwKYOXFJOcDaJV6PSpixgLIiIaI+71NDR3MZmAaQAjdMWcElzZ1DNApZW3DSA0SwJgVZz+KtUz+z6mwcwig0HaQ3dAJhMV3E/IXemlD26NRW6A3BobqlLAJMpK+LDa81obVGmawATEHBLyIQXdU0BYDSsRQTZ8ABiianrLTNnZeAHsR/QwhVM20z/+wYwsLzRyirWtSW5hPD39ZHWmDCNxV/NJY71bMp7ib8HyAADV6wGF4I1KI3buk0HzrBDl32kshsXdEjAx+8SAJzJBIAA4KyAc/dhAQHAWQHn7sMCAoCzAs7dhwUEAGcFnLsPCwgAzgo4d/8bkhaJcMKI4pcAAAAASUVORK5CYII=' width='24'>
+                </a>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card bg-transparent text-center">
+              <div class="card-body">
+                  <div class="containcall">
+                <h5 class="card-title emergency-number">011 307 1073</h5>
+                <p class="card-text emergency-text">Disaster Unit of Ministry of Health</p>
+                <div class='contain'>
+                  <a href="tel:011-307-1073">
+                  <img alt='' class='phonecall' height='24' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAEhUlEQVR4Xu2d7XXVMAyGpQmACWAD6ATQCWAD6ASUCWgnACagG0AnoBvQDWAD2gnEeS8O5KS9RJbt6CZWzuk/fyTvY0mWP26Z4nFVgF17j84pADgPggAQAJwVcO4+LCAAOCvg3H1YQABwVsC5+7CAAOCsgHP3YQFrBCAiz4joPRG9IKKHhd9wQ0RXRHTOzNeFba2uerYFJPG/N/rSo94gWAB8JaKXjQBcMvOrRm0fZLMWAL8quJ19Ytww86ODVKrRS1kASKN32TXLzNnv1PJ9Wred/bEiEgAqUgkAFcW0NBUALKpVrBMAKoppaSoAWFSrWCcAVBTT0lQAsKhWsU4AqCimpSkLACyePbB0pqkTidiMSiKClcvnGjEtZQJAALCMG3MdiwsKCzDLfbeiBcBZ2oyp+Br/mgoXNO+CsF7/pYn6sRo6L6uIPCGiH/MlbSXCAhS6iUirqegJM18oXmEzRbJjAL5cRFpsS3YnPrS0Ajglog8Vh2GX4pcAqBkHuhXfDCC5IZzheVpoBV2LXwqg1A11L34pgBI3FOIn12EKwoPbMS7Mhfgjv10K4A0Rfc6IAyH+RKwiACkY/ySixwoIIf49ItUAoLGC7s58KgbkrkgxgAwr6O7kswZCLQCaKek1Mx9pXqqnMrUA4JIGErO5WPCOmT/2JPDct1YBkNyQJhZgFRWuCIE7nloxIDMvuGLm41D/jwLVLCBZAe6Oaa4v4T4Ytja7f6oCSBDg498qlD1mZmzwd/20AICADB8/d3gLZRAPEBe6faoDSFaA66vfFKp2Hw+aAEgQtMdXLpj5RAFrk0WaAUgQtJs23eYHrQFgzwAQ5uIBeHW5WNcUQEaCNriX7mZGzQFkTk0xIwKEbn4zYhEACYL2LFFXEJYEgPwAiZfmJEU3EBYDkKxAm6ShOCAgMMNyNvssCmC0XgRL0MyMms6ORAT72VjFLXmKfu9ocQBGCKfM/KlEpWndSuJPm83e9XMBYIRQLWNuJD4+K3vv2w2AEQKmp5immhfwGoq/i1u5v3fkCsAIwTxDaiz+zh3lXjBxB2CEgGpnzHyujQtLiL9aACMIuB2jyRMG3TGbwlT1v3vMS4m/agCjPEGbrA0Q4JKwmnrv1aYlxV89gBEEJF+5t/HvWMPS4m8CwDCsRUS7oTMNA6iHnAFXqEqTLG2I+VtulUF431eKCO4kw7Vos+axWyr9Rd9s8TdlASNLwKYOXFJOcDaJV6PSpixgLIiIaI+71NDR3MZmAaQAjdMWcElzZ1DNApZW3DSA0SwJgVZz+KtUz+z6mwcwig0HaQ3dAJhMV3E/IXemlD26NRW6A3BobqlLAJMpK+LDa81obVGmawATEHBLyIQXdU0BYDSsRQTZ8ABiianrLTNnZeAHsR/QwhVM20z/+wYwsLzRyirWtSW5hPD39ZHWmDCNxV/NJY71bMp7ib8HyAADV6wGF4I1KI3buk0HzrBDl32kshsXdEjAx+8SAJzJBIAA4KyAc/dhAQHAWQHn7sMCAoCzAs7dhwUEAGcFnLsPCwgAzgo4d/8bkhaJcMKI4pcAAAAASUVORK5CYII=' width='24'>
+                </a>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card bg-transparent text-center">
+              <div class="card-body">
+                  <div class="containcall">
+                <h5 class="card-title emergency-number">011 309 0502 / 113</h5>
+                <p class="card-text emergency-text">Information and complaints regarding quarntine process</p>
+                <div class='contain'>
+                  <a href="tel:011-309-0502">
+                  <img alt='' class='phonecall' height='24' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAEhUlEQVR4Xu2d7XXVMAyGpQmACWAD6ATQCWAD6ASUCWgnACagG0AnoBvQDWAD2gnEeS8O5KS9RJbt6CZWzuk/fyTvY0mWP26Z4nFVgF17j84pADgPggAQAJwVcO4+LCAAOCvg3H1YQABwVsC5+7CAAOCsgHP3YQFrBCAiz4joPRG9IKKHhd9wQ0RXRHTOzNeFba2uerYFJPG/N/rSo94gWAB8JaKXjQBcMvOrRm0fZLMWAL8quJ19Ytww86ODVKrRS1kASKN32TXLzNnv1PJ9Wred/bEiEgAqUgkAFcW0NBUALKpVrBMAKoppaSoAWFSrWCcAVBTT0lQAsKhWsU4AqCimpSkLACyePbB0pqkTidiMSiKClcvnGjEtZQJAALCMG3MdiwsKCzDLfbeiBcBZ2oyp+Br/mgoXNO+CsF7/pYn6sRo6L6uIPCGiH/MlbSXCAhS6iUirqegJM18oXmEzRbJjAL5cRFpsS3YnPrS0Ajglog8Vh2GX4pcAqBkHuhXfDCC5IZzheVpoBV2LXwqg1A11L34pgBI3FOIn12EKwoPbMS7Mhfgjv10K4A0Rfc6IAyH+RKwiACkY/ySixwoIIf49ItUAoLGC7s58KgbkrkgxgAwr6O7kswZCLQCaKek1Mx9pXqqnMrUA4JIGErO5WPCOmT/2JPDct1YBkNyQJhZgFRWuCIE7nloxIDMvuGLm41D/jwLVLCBZAe6Oaa4v4T4Ytja7f6oCSBDg498qlD1mZmzwd/20AICADB8/d3gLZRAPEBe6faoDSFaA66vfFKp2Hw+aAEgQtMdXLpj5RAFrk0WaAUgQtJs23eYHrQFgzwAQ5uIBeHW5WNcUQEaCNriX7mZGzQFkTk0xIwKEbn4zYhEACYL2LFFXEJYEgPwAiZfmJEU3EBYDkKxAm6ShOCAgMMNyNvssCmC0XgRL0MyMms6ORAT72VjFLXmKfu9ocQBGCKfM/KlEpWndSuJPm83e9XMBYIRQLWNuJD4+K3vv2w2AEQKmp5immhfwGoq/i1u5v3fkCsAIwTxDaiz+zh3lXjBxB2CEgGpnzHyujQtLiL9aACMIuB2jyRMG3TGbwlT1v3vMS4m/agCjPEGbrA0Q4JKwmnrv1aYlxV89gBEEJF+5t/HvWMPS4m8CwDCsRUS7oTMNA6iHnAFXqEqTLG2I+VtulUF431eKCO4kw7Vos+axWyr9Rd9s8TdlASNLwKYOXFJOcDaJV6PSpixgLIiIaI+71NDR3MZmAaQAjdMWcElzZ1DNApZW3DSA0SwJgVZz+KtUz+z6mwcwig0HaQ3dAJhMV3E/IXemlD26NRW6A3BobqlLAJMpK+LDa81obVGmawATEHBLyIQXdU0BYDSsRQTZ8ABiianrLTNnZeAHsR/QwhVM20z/+wYwsLzRyirWtSW5hPD39ZHWmDCNxV/NJY71bMp7ib8HyAADV6wGF4I1KI3buk0HzrBDl32kshsXdEjAx+8SAJzJBIAA4KyAc/dhAQHAWQHn7sMCAoCzAs7dhwUEAGcFnLsPCwgAzgo4d/8bkhaJcMKI4pcAAAAASUVORK5CYII=' width='24'>
+                </a>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="./script.js"></script>

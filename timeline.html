@@ -1,0 +1,31 @@
+---
+layout: default
+title: Timeline
+---
+
+<div class="col-12 margin-top-under-nav margin-bottom-before-footer" style="width: 100%;">
+<div class="container font-1 margin-top-under-nav margin-bottom-before-footer">
+    <div class="row">
+        <div class="col-xl-12 col-md-6">
+            <h3 class="display-4 caption-2">Timeline</h3>
+            <ul class="timeline">
+                {% for date in site.data.timeline %}
+                <li>
+                    <h3>{{ date.date }}</h3>
+                    {% if date.important %}
+                    {% for importanttext in date.important %}
+                    <h5 style="color: red;">- {{ importanttext.text }}</h5>
+                    {% endfor %}
+                    {% endif %}
+
+                    {% for detail in date.data %}
+                    <h6>- {{ detail.text }}</h6>
+                    {% endfor %}
+                </li>
+                {% endfor %}
+            </ul>
+            <div>Source - News1st | <a href="http://corona.newsfirst.lk/">http://corona.newsfirst.lk/</a></div>
+        </div>
+    </div>
+</div>
+</div>
