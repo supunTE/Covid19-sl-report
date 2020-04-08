@@ -40,20 +40,16 @@
 	- [Install Jekyll on MacOS](https://jekyllrb.com/docs/installation/macos/)	
 	
 3. Then Go to project root and run
-
 	```
 	bundle install
 	```
 	
-
  4. Then run
- 
 	 ```
 	 jekyll serve
-	 ```
-	 
+	 ``` 
 
-> This will start the server
+	> This will start the server
 
  5. Go to your browser and enter the following URL
  
@@ -61,7 +57,6 @@
 	 localhost:4000
 	 ```
 	 
-
-> Done !
+	> Done !
 
 
