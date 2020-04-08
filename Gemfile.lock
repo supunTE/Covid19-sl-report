@@ -8,9 +8,13 @@ GEM
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
+<<<<<<< HEAD
     eventmachine (1.2.7)
     eventmachine (1.2.7-x64-mingw32)
     ffi (1.12.2)
+=======
+    eventmachine (1.2.7-x64-mingw32)
+>>>>>>> 0c5c592e0bcadda09e8d8eeb9201f169a551df06
     ffi (1.12.2-x64-mingw32)
     forwardable-extended (2.6.0)
     http_parser.rb (0.6.0)
@@ -59,8 +63,11 @@ GEM
       ffi (~> 1.0)
     rouge (3.17.0)
     safe_yaml (1.0.5)
+<<<<<<< HEAD
     sassc (2.2.1)
       ffi (~> 1.9)
+=======
+>>>>>>> 0c5c592e0bcadda09e8d8eeb9201f169a551df06
     sassc (2.2.1-x64-mingw32)
       ffi (~> 1.9)
     terminal-table (1.8.0)
@@ -74,7 +81,10 @@ GEM
     wdm (0.1.1)
 
 PLATFORMS
+<<<<<<< HEAD
   ruby
+=======
+>>>>>>> 0c5c592e0bcadda09e8d8eeb9201f169a551df06
   x64-mingw32
 
 DEPENDENCIES

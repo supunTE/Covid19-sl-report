@@ -653,30 +653,50 @@ ul.timeline>li:before {
 }
 
 .card-emergency {
+<<<<<<< HEAD
     background-color: #C02F1D;
     padding: 20px;
     margin: 20px 0px;
     border-radius: 8px;
+=======
+    background-color: rgb(133, 0, 0);
+    padding: 20px;
+    margin: 20px 0px;
+>>>>>>> 0c5c592e0bcadda09e8d8eeb9201f169a551df06
 }
 
 h2.emergency-number {
     font-size: 180%;
+<<<<<<< HEAD
     font-family: Rubik;
+=======
+>>>>>>> 0c5c592e0bcadda09e8d8eeb9201f169a551df06
 }
 
 h5.emergency-number {
     font-size: 140%;
+<<<<<<< HEAD
     font-family: Rubik;
+=======
+>>>>>>> 0c5c592e0bcadda09e8d8eeb9201f169a551df06
 }
 
 .emergency-text {
     font-size: 100%;
+<<<<<<< HEAD
     font-family: Rubik;
 }
 
 .footer {
     background-color: #151823 !important;
     font-family: 'Rubik', monospace;
+=======
+}
+
+.footer {
+    background-color: rgb(24, 2, 104) !important;
+    font-family: 'Inconsolata', monospace;
+>>>>>>> 0c5c592e0bcadda09e8d8eeb9201f169a551df06
 }
 
 .mobile-footer {
@@ -904,6 +924,7 @@ h5.emergency-number {
 
 .map-centers-sl-frame {
     height: 300px !important;
+<<<<<<< HEAD
 }
 
 .contain {
@@ -990,3 +1011,6 @@ h5.emergency-number {
       transform: translate(-50%, -50%);
     }
   }
+=======
+}
+>>>>>>> 0c5c592e0bcadda09e8d8eeb9201f169a551df06
