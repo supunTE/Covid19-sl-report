@@ -10,6 +10,17 @@
 #   data:
 #     - text: WHO declares Coronavirus as a global emergency
 
+- date: 07 Apr, 2020
+  important: 
+    - text: 80 year man treated at the IDH for COVID-19 passes away. The total number of deaths rises to 6.
+  data:
+    - text: UK Prime Minister Boris Johnson has been moved to intensive care in hospital after his coronavirus symptoms "worsened", Downing Street has said. BBC
+    - text: 1,107 people arrested & 326 vehicles seized in the past 24 hours for violating the curfew. In total 15,902 curfew violators arrested , Police
+    - text: 04 more people who tested positive for COVID-19 recover. Total recoveries in Sri Lanka now at 42 , Health Ministry
+    - text: Dambulla Special Economic Center closed until further notice. Distribution to take place based on orders received , Pramitha Bandara Tennakooon
+    - text: Three more people tested positive for COVID-19. Confirmed COVID-19 cases in Sri Lanka now at 183 , Health Ministry
+    - text: Curfew passes will be issued according to a new system. Based on personnel availability, passes will be issued by Police HQ, Snr. DIGs Office, SP Office and Police Station , PMD
+
 - date: 06 Apr, 2020
   data:
     - text: Four more coroners recover The number of people recovering goes up to 38 , Ministry of Health
