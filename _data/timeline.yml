@@ -9,6 +9,43 @@
 #     - text: none
 #   data:
 #     - text: WHO declares Coronavirus as a global emergency
+- date: 09 Apr, 2020
+  data:
+    - text: Cabinet approves to airlift 33 Sri Lankans trapped in 13 international airports , Joint Cabinet Spokesperson
+    - text: Government decides to offer additional 02% intrest for NRFC account holders when depositing foreign currency , Minister Bandula Gunawardena
+    - text: Three more people who tested positive for COVID-19 recover. Total recoveries in Sri Lanka now at 47 , Health Ministry
+    - text: 23 people who were subject to self quarantine in Suduwella, Ja-Ela arrested by Naval Intelligence for violating the quarantine program , Sri Lanka Navy
+    - text: The European Union (EU) has agreed to provide a EUR 22 mn grant to support Sri Lanka's COVID19 response.
+    - text: AG issues strict guidelines to Acting IGP, to be considered when moving to grant bail for those in remand for minor drugs and related offences, to reduce congestion at prisons.
+    - text: Two women died following a collision between a pick up truck and a motorcycle in Paraththakandal, Mannar , Police
+    - text: Pharmacies across the island will remain open tomorrow,10th April, from 09AM to 05PM , DIG Ajith Rohana
+    - text: People who cross district borders, violating the curfew, will be taken to Quarantine centres for a mandatory 14 day quarantine period from tomorrow , DIG Ajith Rohana
+    - text: All taverns in the Central and Southern Provinces sealed, temporarily , Excise Department
+    - text: Confirmed COVID-19 cases in Sri Lanka now at 190; Only one COVID-19 cases detected so far today.
+    - text: Two more people who tested positive for COVID-19 recover. Total recoveries in Sri Lanka now at 49 , Health Ministry
+
+- date: 08 Apr, 2020
+  important: 
+    - text: 7th COVID-19 death in Sri Lanka reported. Victim was a 44 year old male who was treated at IDH , Health Ministry
+  data:
+    - text: 1,815 people arrested and 595 vehicles seized for violating the curfew during the past 24 hours. In total, 17,717 people were arrested , Police Media Division
+    - text: United States reported 1,966 coronavirus fatalities in the last 24 hours, a new one-day high. Globally COVID-19 death toll is 82,000
+    - text: Permission granted to use official ID as curfew pass for Public & Private essential services extended to the 30th of April , Police Spokesperson
+    - text: Two more people tested positive for COVID-19. Total confirmed cases in Sri Lanka now at 188 , Health Ministry
+    - text: Curfew will be in effect until further notice for Colombo, Gampaha, Kalutara, Puttlam, Kandy and Jaffna districts.Curfew for 19 districts will be relaxed at 06AM tomorrow & re-imposed at 04PM the same day. It will be relaxed again on 14th April at 06AM and re-imposed at 04PM the same day.
+    - text: All new year traditions should be limited to family members only , PMD
+    - text: Confirmed COVID-19 cases in Sri Lanka rises to 189; Total recoveries in Sri Lanka rises to 44 , Health Ministry
+
+- date: 07 Apr, 2020
+  important: 
+    - text: 80yo man treated at the IDH for COVID-19 passes away. The total number of deaths rises to 6.
+  data:
+    - text: UK Prime Minister Boris Johnson has been moved to intensive care in hospital after his coronavirus symptoms "worsened", Downing Street has said. BBC
+    - text: 1,107 people arrested & 326 vehicles seized in the past 24 hours for violating the curfew. In total 15,902 curfew violators arrested , Police
+    - text: 04 more people who tested positive for COVID-19 recover. Total recoveries in Sri Lanka now at 42 , Health Ministry
+    - text: Dambulla Special Economic Center closed until further notice. Distribution to take place based on orders received , Pramitha Bandara Tennakooon
+    - text: Three more people tested positive for COVID-19. Confirmed COVID-19 cases in Sri Lanka now at 183 , Health Ministry
+    - text: Curfew passes will be issued according to a new system. Based on personnel availability, passes will be issued by Police HQ, Snr. DIGs Office, SP Office and Police Station , PMD
 
 - date: 06 Apr, 2020
   data:
