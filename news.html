@@ -1,87 +1,103 @@
 ---
 layout: default
 title: News
+date: 20 Mar, 2020
 ---
 
-<div class="col-10 mx-auto news-panel margin-top-under-nav margin-bottom-before-footer">
+<div class="col-10 mx-auto news-panel margin-top-under-nav" id="allNews" style="padding-top: 200px; margin-top: -100px;">
   <h3 class="display-4 caption-2">News on COVID-19</h3>
   <input type="text" class="col-10 search-bar" id="myInput" onkeyup="searchFunction()" placeholder="Search for news.."
     title="Type here" style="display: none;">
-  <h5 class="loading-news" id="loading-news"><div class="spinner2"></div></h5>
+  <h5 class="loading-news" id="loading-news">
+    <div class="spinner2"></div>
+  </h5>
   <h5 class="no-news" id="noNews" style="display: none;">Search not found!</h5>
   <div class="card-columns news" id="news">
-    <!-- {% for item in site.data.news %}
-        {% if item.channel == "News1st" %}
-        <div class="card text-white" style="background-color: rgb(194, 113, 7);">
-        {% elsif item.channel == "AdaDerana" %}
-        <div class="card text-white" style="background-color: rgb(196, 0, 0);">
+
+  </div>
+</div>
+
+<div class="col-10 mx-auto news-panel margin-bottom-before-footer link-set" id="archivedNews" style="padding-top: 100px; margin-top: -100px;">
+  <h3 class="display-4 caption-2">Archived News on COVID-19<br><small>from before {{ page.date }}</small></h3>
+  <input type="text" class="col-10 search-bar" id="myInput" onkeyup="searchFunction()" placeholder="Search for news.."
+    title="Type here">
+  <h5 class="no-news" id="noNews" style="display: none;">Search not found!</h5>
+  <div class="card-columns news">
+
+    {% for item in site.data.news %}
+
+    {% if item.channel == "News1st" %}
+    <div class="card text-white newsfirst">
+      {% elsif item.channel == "AdaDerana" %}
+      <div class="card text-white adaderana">
         {% elsif item.channel == "BBC" %}
-        <div class="card text-white" style="background-color: rgb(0, 0, 0);">
-        {% else %}
-        <div class="card text-white" style="background-color: rgb(17, 0, 80);">
-        {% endif %}
-          <img src="{{ item.img }}" class="card-img-top" alt="img" style="width: 100%; padding: 5px;">
-          <div class="card-body news-body">
-            <h2 class="card-title news-title"><b>{{ item.caption }}</b></h2>
-            {% if item.description %}
-            <h5 class="card-text">{{ item.description }}</h5>
+        <div class="card text-white bbc">
+          {% else %}
+          <div class="card text-white other">
             {% endif %}
-            <p class="card-text"><i>Source - {{ item.channel }}</i></p>
 
-            {% if item.channel == "News1st" %}
-            <a href="{{ item.link }}" target="_blank" class="btn btn-warning">Visit...</a>
-            {% elsif item.channel == "AdaDerana" %}
-            <a href="{{ item.link }}" target="_blank" class="btn btn-danger">Visit...</a>
-            {% elsif item.channel == "BBC" %}
-            <a href="{{ item.link }}" target="_blank" class="btn btn-dark">Visit...</a>
-            {% else %}
-            <a href="{{ item.link }}" target="_blank" class="btn btn-primary">Visit...</a>
-            {% endif %}   
+            <img class="card-img-top news-image" src="{{ item.img }}" alt="img">
+            <div class="card-body news-body">
+              <h2 class="card-title news-title"><b>{{ item.caption }}</b></h2>
+              {% if item.description %}
+              <h5 class="card-text news-description">{{ item.description }}</h5>
+              {% endif %}
+              <p class="card-text"><i>Source - {{ item.channel }}</i></p>
 
-            <p class="card-text news-time"><small>{{ item.time }}</small></p>
+              {% if item.channel == "News1st" %}
+              <a href="{{ item.link }}" target="_blank" class="btn btn-sm btn-warning">Visit...</a>
+              {% elsif item.channel == "AdaDerana" %}
+              <a href="{{ item.link }}" target="_blank" class="btn btn-sm btn-danger">Visit...</a>
+              {% elsif item.channel == "BBC" %}
+              <a href="{{ item.link }}" target="_blank" class="btn btn-sm btn-dark">Visit...</a>
+              {% else %}
+              <a href="{{ item.link }}" target="_blank" class="btn btn-sm btn-primary">Visit...</a>
+              {% endif %}
+
+              <p class="card-text news-time"><small>{{ item.time }}</small></p>
+            </div>
+          </div>
+
+          {% endfor %}
+
+        </div>
+      </div>
+
+      <nav class="navbar navbar-dark fixed-bottom footer">
+        <h5 class="navbar-brand" href="#">Covid19 SL Report</h5>
+        <span class="navbar-text">
+          <b>Developers - </b>
+          <br> Supun Tharinda | Hasala Heiyanthuduwa
+        </span>
+        <span class="navbar-text">
+          <b>Live Updating Crew - </b>
+          <br> Chamuthu Megha | Chamindu Jayanath
+        </span>
+      </nav>
+
+      <div class="pos-f-t fixed-bottom mobile-footer">
+        <div class="collapse mobile-footer-head" id="navbarToggleExternalContent">
+          <div class="mobile-footer-head-cover p-4">
+            <div class="navbar-text">
+              <b>Developers - </b>
+              <br> Supun Tharinda
+              <br> Hasala Heiyanthuduwa
+            </div>
+            <br>
+            <div class="navbar-text">
+              <b>Live Updating Crew - </b>
+              <br> Chamuthu Megha
+              <br> Chamindu Jayanath
+            </div>
           </div>
         </div>
-    {% endfor %} -->
-  </div>
-  <a href="./news.html" class="btn btn-see-all text-white mx-auto" id="see-all" style="display: none;">See All...</a>
-</div>
-
-
-<nav class="navbar navbar-dark fixed-bottom footer">
-  <h5 class="navbar-brand" href="#">Covid19 SL Report</h5>
-  <span class="navbar-text">
-    <b>Developers - </b>
-    <br> Supun Tharinda | Hasala Heiyanthuduwa
-  </span>
-  <span class="navbar-text">
-    <b>Live Updating Crew - </b>
-    <br> Chamuthu Megha | Chamindu Jayanath
-  </span>
-</nav>
-
-<div class="pos-f-t fixed-bottom mobile-footer">
-  <div class="collapse mobile-footer-head" id="navbarToggleExternalContent">
-    <div class="mobile-footer-head-cover p-4">
-      <div class="navbar-text">
-        <b>Developers - </b>
-        <br> Supun Tharinda
-        <br> Hasala Heiyanthuduwa
+        <nav class="navbar navbar-dark mobile-footer-body">
+          <button class="navbar-toggler mobile-footer-button mx-auto" type="button" data-toggle="collapse"
+            data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <h5 class="text-white text-center h6">COVID-19 SL Report</h5>
+          </button>
+        </nav>
       </div>
-      <br>
-      <div class="navbar-text">
-        <b>Live Updating Crew - </b>
-        <br> Chamuthu Megha
-        <br> Chamindu Jayanath
-      </div>
-    </div>
-  </div>
-  <nav class="navbar navbar-dark mobile-footer-body">
-    <button class="navbar-toggler mobile-footer-button mx-auto" type="button" data-toggle="collapse"
-      data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
-      aria-label="Toggle navigation">
-      <h5 class="text-white text-center h6">COVID-19 SL Report</h5>
-    </button>
-  </nav>
-</div>
 
-<script src="./script-news.js"></script>
+      <script src="./script-news.js"></script>
