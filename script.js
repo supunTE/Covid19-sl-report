@@ -341,6 +341,7 @@ function hidetabledetails() {
 const api_url = "https://www.hpb.health.gov.lk/api/get-current-statistical";
 
 tableHospitals = document.getElementById('sl-hospitals-details');
+LastUpdated = document.getElementById('API_lastUpdated');
 
 function getData(){
   fetch(api_url)
@@ -353,7 +354,11 @@ function getData(){
   
     .then(function(json) {
       hospitals = json.data.hospital_data;
-      hospitals.forEach(function(hospital){
+      
+      LastUpdatedAPI = json.data.update_date_time;
+      LastUpdated.innerHTML = LastUpdatedAPI; 
+      
+      hospitals.forEach(function(hospital){  
 
         let tr = document.createElement('tr');
         let hospitalName = document.createElement('td');

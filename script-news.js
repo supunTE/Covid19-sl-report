@@ -182,3 +182,27 @@ function searchFunction() {
     noNews.style.display = "block";
   }
 }
+
+function searchFunctionInArchive() {
+  var input, filter, news, card, a, i, txtValue, searchNone, noNews;
+  input = document.getElementById("myInputArchive");
+  filter = input.value.toUpperCase();
+  news = document.getElementById("newsArchive");
+  card = news.getElementsByClassName("card");
+  noNews = document.getElementById("noNewsInArchive");
+  searchNone = true;
+  noNews.style.display = "none";
+  for (i = 0; i < card.length; i++) {
+    a = card[i].getElementsByTagName("h2")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      card[i].style.display = "";
+      searchNone = false;
+    } else {
+      card[i].style.display = "none";
+    }
+  }
+  if (searchNone == true) {
+    noNews.style.display = "block";
+  }
+}
