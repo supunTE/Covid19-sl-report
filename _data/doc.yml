@@ -1,5 +1,9 @@
 
 # http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-eu-28-01.pdf
+- name: COVID-19 Community Mobility Report in Sri Lanka
+  provider: Google
+  date: 5 Apr, 2020
+  url: https://www.gstatic.com/covid19/mobility/2020-04-05_LK_Mobility_Report_en.pdf
 
 - name: Situation Report 76 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
