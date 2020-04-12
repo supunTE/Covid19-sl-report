@@ -82,7 +82,9 @@ function renderNews(doc) {
   let carddiv = document.createElement('div');
   let img = document.createElement('img');
   let bodydiv = document.createElement('div');
+  let hidediv = document.createElement('div');
   let title = document.createElement('h2');
+  let contentdiv = document.createElement('div');
   let description = document.createElement('h5');
   let channel = document.createElement('p');
   let button = document.createElement('a');
@@ -139,7 +141,6 @@ function renderNews(doc) {
     img.setAttribute('alt', 'img');
 
     carddiv.appendChild(img);
-
   }
 
   ///
@@ -149,6 +150,9 @@ function renderNews(doc) {
   title.setAttribute('class', 'card-title news-title');
   b.textContent = captionDb;
   title.appendChild(b);
+
+  hidediv.setAttribute('class', 'hide-card');
+  hidediv.appendChild(title);
 
   if (doc.description) {
     description.setAttribute('class', 'card-text news-description');
@@ -176,19 +180,23 @@ function renderNews(doc) {
   small.textContent = timeDb;
   time.appendChild(small);
 
-  bodydiv.appendChild(title);
+  contentdiv.setAttribute('class', 'content-card');
   if (doc.description) {
-    bodydiv.appendChild(description);
+    contentdiv.appendChild(description);
   }
-  bodydiv.appendChild(channel);
-  bodydiv.appendChild(button);
-  bodydiv.appendChild(time);
+  contentdiv.appendChild(channel);
+  contentdiv.appendChild(button);
+  contentdiv.appendChild(time);
+
+  bodydiv.appendChild(hidediv);
+  bodydiv.appendChild(contentdiv);
   ///
 
   carddiv.appendChild(bodydiv);
   ///
 
   news.appendChild(carddiv);
+  
 };
 
 newsDb = db.collection("news");
@@ -197,6 +205,20 @@ newsDb.orderBy("time", "desc").limit(15).get().then(function (querySnapshot) {
     querySnapshot.forEach(function (doc) {
       renderNews(doc.data());
     });
+    // var coll = document.getElementsByClassName("hide-card");
+    // var i;
+  
+    // for (i = 0; i < coll.length; i++) {
+    //   coll[i].addEventListener("click", function () {
+    //     this.classList.toggle("active");
+    //     var content = this.nextElementSibling;
+    //     if (content.style.maxHeight) {
+    //       content.style.maxHeight = null;
+    //     } else {
+    //       content.style.maxHeight = content.scrollHeight + "px";
+    //     }
+    //   });
+    // }
   })
   .catch(function (error) {
     console.log("Error getting documents: ", error);
@@ -283,6 +305,57 @@ function hidetabledetails() {
 //   LastUpdated.innerHTML = LastUpdatedAPI;
 
 // }
+
+// Hospital Data
+const api_url = "https://www.hpb.health.gov.lk/api/get-current-statistical";
+
+tableHospitals = document.getElementById('sl-hospitals-details');
+
+function getData(){
+  fetch(api_url)
+    .then(function(response) {
+      if (response.status >= 400) {
+        throw new Error("Bad response from server");
+      }
+      return response.json();
+    })
+  
+    .then(function(json) {
+      hospitals = json.data.hospital_data;
+      hospitals.forEach(function(hospital){
+
+        let tr = document.createElement('tr');
+        let hospitalName = document.createElement('td');
+        let SLpatientsnum = document.createElement('td');
+        let Foreignpatientsnum = document.createElement('td');
+        let Totalpatientsnum = document.createElement('td');
+
+        var hospitalNameAPI = hospital.hospital.name;
+        var SLpatientsnumAPI = hospital.treatment_local;
+        var ForeignpatientsnumAPI = hospital.treatment_foreign;
+        var Totalpatientsnumdata = SLpatientsnumAPI + ForeignpatientsnumAPI;
+
+        hospitalName.setAttribute('class', 'hospital-name');
+        hospitalName.textContent = hospitalNameAPI;
+        SLpatientsnum.setAttribute('class', 'sl-patients');
+        SLpatientsnum.textContent = SLpatientsnumAPI;  
+        Foreignpatientsnum.setAttribute('class', 'foreign-patients');
+        Foreignpatientsnum.textContent = ForeignpatientsnumAPI;
+        Totalpatientsnum.setAttribute('class', 'total-patients');
+        Totalpatientsnum.textContent = Totalpatientsnumdata;
+
+        tr.appendChild(hospitalName);
+        tr.appendChild(SLpatientsnum);
+        tr.appendChild(Foreignpatientsnum);
+        tr.appendChild(Totalpatientsnum);
+
+        tableHospitals.appendChild(tr); 
+      });
+    })
+  
+  }
+  
+  getData();
 
 // getData();
 

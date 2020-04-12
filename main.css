@@ -506,6 +506,11 @@ body {
     }
 }
 
+/* table-hospitals */
+.sl-patients, .foreign-patients, .total-patients{
+    text-align: center;
+}
+
 /* Timeline */
 
 ul.timeline {
@@ -602,6 +607,12 @@ ul.timeline>li:before {
     font-family: 'Inconsolata', monospace;
 }
 
+.news div.card{
+    border: 0px !important;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
 .card.newsfirst {
     background-color: rgb(194, 113, 7);
 }
@@ -620,12 +631,11 @@ ul.timeline>li:before {
 
 .news-image {
     width: 100%;
-    padding: 5px;
 }
 
 .news-title {
-    text-align: center !important;
     font-size: 140% !important;
+
 }
 
 .news-description {

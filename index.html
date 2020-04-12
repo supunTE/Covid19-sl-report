@@ -171,10 +171,30 @@ title: Home
 </div>
 
 <div class="row mx-auto row-main-2" style="width: 100%;">
-  <div class="col-xl-3 main-col-1 main-col-b-1 margin-bottom-before-footer-xl" style="width: 100%;">
+  <div class="col-xl-4 main-col-1 main-col-b-1 margin-bottom-before-footer-xl" style="width: 100%;">
+    
+    <div class="col-xl-12 col-md-8 mx-auto font-1">
+      <h3 class="display-4 caption-2">Hospital Details</h3>
+      <table class="table table-sm table-striped table-dark" >
+          <thead class="text-center">
+            <tr>
+              <th scope="col" rowspan="2">Hospital</th>
+              <th scope="col" colspan="3">Suspected on today</th>
+            </tr>
+            <tr>
+              <th scope="col">SL</th>
+              <th scope="col">Forei.</th>
+              <th scope="col">Tot.</th>
+            </tr>
+          </thead>
+          <tbody id="sl-hospitals-details" style="sl-hospitals-details">
+          </tbody>
+        </table>
+      </div>
+
     <div class="container font-1">
       <div class="row">
-        <div class="col-xl-12 col-md-6 offset-md-3">
+        <div class="col-xl-12 col-md-8 mx-auto">
           <h3 class="display-4 caption-2">Timeline</h3>
           <ul class="timeline">
             {% for date in site.data.timeline limit: 6 %}
@@ -197,10 +217,11 @@ title: Home
         </div>
       </div>
     </div>
+    
   </div>
 
-  <div class="col-xl-9 main-col-2 margin-bottom-before-footer" style="width: 100%;">
-    <div class="col-xl-10 col-10 mx-auto news-panel">
+  <div class="col-xl-8 main-col-2 margin-bottom-before-footer" style="width: 100%;">
+    <div class="col-xl-12 col-10 mx-auto news-panel">
       <h3 class="display-4 caption-2" id="news-panel">Latest News on COVID-19</h3>
       <input type="text" class="col-10 search-bar" id="myInput" onkeyup="searchFunction()"
         placeholder="Search for news.." title="Type here" style="display: none;">
