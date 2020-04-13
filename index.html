@@ -4,9 +4,14 @@ title: Home
 ---
 
 <div class="row mx-auto row-main-1" style="width: 100%;" onload="detectBrowser()" id="localDetails">
-  <div class="col-xl-8 main-col-1 margin-top-under-nav status-animation-find" id="status-animation"
-    style="width: 100%;">
-    <div class="status-animation">
+  <div class="col-xl-8 main-col-1 status-animation-find" tyle="width: 100%;">
+
+    <div class="col-xl-6 col-10 font-2 mx-auto now-date-time margin-top-under-nav text-center">
+      <h2 class="now-time" id="nowTime">Now Time</h2>
+      <h5 class="now-date" id="nowDate">Now Date</h5>
+    </div>
+
+    <div class="status-animation" id="status-animation">
       <figure class="animation-cards">
         <div class="animation-cards-content">
           <div class="animation-cards-item d-flex align-items-center justify-content-center" onclick="hidestatuscard()">
@@ -54,50 +59,50 @@ title: Home
         </div>
       </figure>
     </div>
-  </div>
 
-  <div class="col-xl-8 main-col-1-b margin-top-under-nav table-sl-details-find" style="display: none;"
-    id="table-sl-details" style="width: 100%;">
-    <div class="col-10 mx-auto table-sl-details-1">
-      <img src="./virus.png" class="back-virus-cell-1">
-      <img src="./virus.png" class="back-virus-cell-2">
-      <div class="justify-content-center card-deck">
-        <div class="col col-details mb-4" onclick="hidetabledetails()">
-          <div class="card card-details text-white bg-primary">
-            <div class="card-header table-card-header">Active Cases</div>
-            <div class="card-body table-card-body">
-              <h1 class="card-title" id="activeCases-2">
-                <div class="spinner">
-                  <div class="double-bounce1"></div>
-                  <div class="double-bounce2"></div>
-                </div>
-              </h1>
+    <div class="col-12 main-col-1-b table-sl-details-find" style="display: none;" id="table-sl-details"
+      style="width: 100%;">
+      <div class="col-10 mx-auto table-sl-details-1">
+        <img src="./virus.png" class="back-virus-cell-1">
+        <img src="./virus.png" class="back-virus-cell-2">
+        <div class="justify-content-center card-deck">
+          <div class="col col-details mb-4" onclick="hidetabledetails()">
+            <div class="card card-details text-white bg-primary">
+              <div class="card-header table-card-header">Active Cases</div>
+              <div class="card-body table-card-body">
+                <h1 class="card-title" id="activeCases-2">
+                  <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                  </div>
+                </h1>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col col-details mb-4" onclick="hidetabledetails()">
-          <div class="card card-details text-white bg-success">
-            <div class="card-header table-card-header">Recovered</div>
-            <div class="card-body table-card-body">
-              <h1 class="card-title" id="recovered-2">
-                <div class="spinner">
-                  <div class="double-bounce1"></div>
-                  <div class="double-bounce2"></div>
-                </div>
-              </h1>
+          <div class="col col-details mb-4" onclick="hidetabledetails()">
+            <div class="card card-details text-white bg-success">
+              <div class="card-header table-card-header">Recovered</div>
+              <div class="card-body table-card-body">
+                <h1 class="card-title" id="recovered-2">
+                  <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                  </div>
+                </h1>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col col-details mb-4" onclick="hidetabledetails()">
-          <div class="card card-details text-white bg-danger">
-            <div class="card-header table-card-header">Deaths</div>
-            <div class="card-body table-card-body">
-              <h1 class="card-title" id="deaths-2">
-                <div class="spinner">
-                  <div class="double-bounce1"></div>
-                  <div class="double-bounce2"></div>
-                </div>
-              </h1>
+          <div class="col col-details mb-4" onclick="hidetabledetails()">
+            <div class="card card-details text-white bg-danger">
+              <div class="card-header table-card-header">Deaths</div>
+              <div class="card-body table-card-body">
+                <h1 class="card-title" id="deaths-2">
+                  <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                  </div>
+                </h1>
+              </div>
             </div>
           </div>
         </div>
@@ -136,34 +141,34 @@ title: Home
         </div>
       </div>
     </div>
-  </div>
-</div>
 
-<div class="col-xl-5 col-10 mx-auto table-sl-details-2">
-  <div class="row justify-content-center card-deck">
-    <div class="col col-xl-6 col-md-4 col-details mb-4">
-      <div class="card card-details text-white bg-info">
-        <div class="card-header table-card-header">Death Rate</div>
-        <div class="card-body table-card-body">
-          <h1 class="card-title" id="deathRate">
-            <div class="spinner">
-              <div class="double-bounce1"></div>
-              <div class="double-bounce2"></div>
+    <div class="col-xl-12 col-10 mx-auto table-sl-details-2">
+      <div class="row justify-content-center card-deck">
+        <div class="col col-xl-6 col-md-4 col-details mb-4">
+          <div class="card card-details text-white bg-info">
+            <div class="card-header table-card-header">Death Rate</div>
+            <div class="card-body table-card-body">
+              <h1 class="card-title" id="deathRate">
+                <div class="spinner">
+                  <div class="double-bounce1"></div>
+                  <div class="double-bounce2"></div>
+                </div>
+              </h1>
             </div>
-          </h1>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="col col-xl-6 col-md-4 col-details mb-4">
-      <div class="card card-details text-white bg-info">
-        <div class="card-header table-card-header">Recovery Rate</div>
-        <div class="card-body table-card-body">
-          <h1 class="card-title" id="recoveryRate">
-            <div class="spinner">
-              <div class="double-bounce1"></div>
-              <div class="double-bounce2"></div>
+        <div class="col col-xl-6 col-md-4 col-details mb-4">
+          <div class="card card-details text-white bg-info">
+            <div class="card-header table-card-header">Recovery Rate</div>
+            <div class="card-body table-card-body">
+              <h1 class="card-title" id="recoveryRate">
+                <div class="spinner">
+                  <div class="double-bounce1"></div>
+                  <div class="double-bounce2"></div>
+                </div>
+              </h1>
             </div>
-          </h1>
+          </div>
         </div>
       </div>
     </div>
@@ -190,11 +195,11 @@ title: Home
         </tbody>
       </table>
       <h6 class="text-center font-1 source">( Source - HEALTH PROMOTION BUREAU of SRI LANKA | <a
-        href="https://www.hpb.health.gov.lk/en">https://www.hpb.health.gov.lk/en</a> )
-      <br>
-      Last updated at : <span id="API_lastUpdated"></span>
-      <p class="text-danger">Showing these data does not support from some of web browsers.</p>
-    </h6>
+          href="https://www.hpb.health.gov.lk/en">https://www.hpb.health.gov.lk/en</a> )
+        <br>
+        Last updated at : <span id="API_lastUpdated"></span>
+        <p class="text-danger">Showing these data does not support from some of web browsers.</p>
+      </h6>
     </div>
 
     <div class="container font-1" id="latestTimeline" style="padding-top: 100px; margin-top: -100px;">
@@ -218,7 +223,8 @@ title: Home
             {% endfor %}
           </ul>
           <a href="./timeline.html" class="btn btn-see-all text-white mx-auto" style="width: 100%;">See All</a>
-          <div class="text-center">Source - News1st | <a href="http://corona.newsfirst.lk/">http://corona.newsfirst.lk/</a></div>
+          <div class="text-center">Source - News1st | <a
+              href="http://corona.newsfirst.lk/">http://corona.newsfirst.lk/</a></div>
         </div>
       </div>
     </div>
@@ -240,138 +246,139 @@ title: Home
     </div>
 
     <div class="container font-1" id="emergencyContacts" style="padding-top: 120px; margin-top: -100px;">
-    <div class="card-emergency font-1">
-      <div class="row row-cols-1 row-cols-md-3 text-white">
-        <div class="col mb-4">
-          <div class="card bg-transparent text-center">
-            <div class="card-body">
-              <div class="containcall">
-                <h2 class="card-title emergency-number">1990</h2>
-                <p class="card-text emergency-text">Suwasariya Ambulance Service</p>
-                <div class='contain'>
-                  <a href="tel:1990">
-                    <img alt='' class='phonecall' height='24' src='./images/icons/callbtn.png' width='24'>
-                  </a>
+      <div class="card-emergency font-1">
+        <div class="row row-cols-1 row-cols-md-3 text-white">
+          <div class="col mb-4">
+            <div class="card bg-transparent text-center">
+              <div class="card-body">
+                <div class="containcall">
+                  <h2 class="card-title emergency-number">1990</h2>
+                  <p class="card-text emergency-text">Suwasariya Ambulance Service</p>
+                  <div class='contain'>
+                    <a href="tel:1990">
+                      <img alt='' class='phonecall' height='24' src='./images/icons/callbtn.png' width='24'>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card bg-transparent text-center">
-            <div class="card-body">
-              <div class="containcall">
-                <h2 class="card-title emergency-number">199</h2>
-                <p class="card-text emergency-text">Police Emergency Call Centre</p>
-                <div class='contain'>
-                  <a href="tel:199">
-                    <img alt='' class='phonecall' height='24' src='./images/icons/callbtn.png' width='24'>
-                  </a>
+          <div class="col mb-4">
+            <div class="card bg-transparent text-center">
+              <div class="card-body">
+                <div class="containcall">
+                  <h2 class="card-title emergency-number">199</h2>
+                  <p class="card-text emergency-text">Police Emergency Call Centre</p>
+                  <div class='contain'>
+                    <a href="tel:199">
+                      <img alt='' class='phonecall' height='24' src='./images/icons/callbtn.png' width='24'>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card bg-transparent text-center">
-            <div class="card-body">
-              <div class="containcall">
-                <h2 class="card-title emergency-number">117</h2>
-                <p class="card-text emergency-text">President Task Force</p>
-                <div class='contain'>
-                  <a href="tel:177">
-                    <img alt='' class='phonecall' height='24' src='./images/icons/callbtn.png' width='24'>
-                  </a>
+          <div class="col mb-4">
+            <div class="card bg-transparent text-center">
+              <div class="card-body">
+                <div class="containcall">
+                  <h2 class="card-title emergency-number">117</h2>
+                  <p class="card-text emergency-text">President Task Force</p>
+                  <div class='contain'>
+                    <a href="tel:177">
+                      <img alt='' class='phonecall' height='24' src='./images/icons/callbtn.png' width='24'>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card bg-transparent text-center">
-            <div class="card-body">
-              <div class="containcall">
-                <h5 class="card-title emergency-number">011 242 2222</h5>
-                <p class="card-text emergency-text">Fire and Rescue / Ambulance</p>
-                <div class='contain'>
-                  <a href="tel:011-242-2222">
-                    <img alt='' class='phonecall' height='24' src='./images/icons/callbtn.png' width='24'>
-                  </a>
+          <div class="col mb-4">
+            <div class="card bg-transparent text-center">
+              <div class="card-body">
+                <div class="containcall">
+                  <h5 class="card-title emergency-number">011 242 2222</h5>
+                  <p class="card-text emergency-text">Fire and Rescue / Ambulance</p>
+                  <div class='contain'>
+                    <a href="tel:011-242-2222">
+                      <img alt='' class='phonecall' height='24' src='./images/icons/callbtn.png' width='24'>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card bg-transparent text-center">
-            <div class="card-body">
-              <div class="containcall">
-                <h5 class="card-title emergency-number">011 242 1052</h5>
-                <p class="card-text emergency-text">Tourist Police</p>
-                <div class='contain'>
-                  <a href="tel:011-242-1052">
-                    <img alt='' class='phonecall' height='24' src='./images/icons/callbtn.png' width='24'>
-                  </a>
+          <div class="col mb-4">
+            <div class="card bg-transparent text-center">
+              <div class="card-body">
+                <div class="containcall">
+                  <h5 class="card-title emergency-number">011 242 1052</h5>
+                  <p class="card-text emergency-text">Tourist Police</p>
+                  <div class='contain'>
+                    <a href="tel:011-242-1052">
+                      <img alt='' class='phonecall' height='24' src='./images/icons/callbtn.png' width='24'>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card bg-transparent text-center">
-            <div class="card-body">
-              <div class="containcall">
-                <h5 class="card-title emergency-number">011 269 1111</h5>
-                <p class="card-text emergency-text">General Hospital Colombo</p>
-                <div class='contain'>
-                  <a href="tel:011-269-1111">
-                    <img alt='' class='phonecall' height='24' src='./images/icons/callbtn.png' width='24'>
-                  </a>
+          <div class="col mb-4">
+            <div class="card bg-transparent text-center">
+              <div class="card-body">
+                <div class="containcall">
+                  <h5 class="card-title emergency-number">011 269 1111</h5>
+                  <p class="card-text emergency-text">General Hospital Colombo</p>
+                  <div class='contain'>
+                    <a href="tel:011-269-1111">
+                      <img alt='' class='phonecall' height='24' src='./images/icons/callbtn.png' width='24'>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card bg-transparent text-center">
-            <div class="card-body">
-              <div class="containcall">
-                <h5 class="card-title emergency-number">071 010 7107</h5>
-                <p class="card-text emergency-text">Health Promotion Bureau</p>
-                <div class='contain'>
-                  <a href="tel:071-010-7107">
-                    <img alt='' class='phonecall' height='24' src='./images/icons/callbtn.png' width='24'>
-                  </a>
+          <div class="col mb-4">
+            <div class="card bg-transparent text-center">
+              <div class="card-body">
+                <div class="containcall">
+                  <h5 class="card-title emergency-number">071 010 7107</h5>
+                  <p class="card-text emergency-text">Health Promotion Bureau</p>
+                  <div class='contain'>
+                    <a href="tel:071-010-7107">
+                      <img alt='' class='phonecall' height='24' src='./images/icons/callbtn.png' width='24'>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card bg-transparent text-center">
-            <div class="card-body">
-              <div class="containcall">
-                <h5 class="card-title emergency-number">011 307 1073</h5>
-                <p class="card-text emergency-text">Disaster Unit of Ministry of Health</p>
-                <div class='contain'>
-                  <a href="tel:011-307-1073">
-                    <img alt='' class='phonecall' height='24' src='./images/icons/callbtn.png' width='24'>
-                  </a>
+          <div class="col mb-4">
+            <div class="card bg-transparent text-center">
+              <div class="card-body">
+                <div class="containcall">
+                  <h5 class="card-title emergency-number">011 307 1073</h5>
+                  <p class="card-text emergency-text">Disaster Unit of Ministry of Health</p>
+                  <div class='contain'>
+                    <a href="tel:011-307-1073">
+                      <img alt='' class='phonecall' height='24' src='./images/icons/callbtn.png' width='24'>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card bg-transparent text-center">
-            <div class="card-body">
-              <div class="containcall">
-                <h5 class="card-title emergency-number">011 309 0502 / 113</h5>
-                <p class="card-text emergency-text">Information and complaints regarding quarantine process</p>
-                <div class='contain'>
-                  <a href="tel:011-309-0502">
-                    <img alt='' class='phonecall' height='24' src='./images/icons/callbtn.png' width='24'>
-                  </a>
+          <div class="col mb-4">
+            <div class="card bg-transparent text-center">
+              <div class="card-body">
+                <div class="containcall">
+                  <h5 class="card-title emergency-number">011 309 0502 / 113</h5>
+                  <p class="card-text emergency-text">Information and complaints regarding quarantine process</p>
+                  <div class='contain'>
+                    <a href="tel:011-309-0502">
+                      <img alt='' class='phonecall' height='24' src='./images/icons/callbtn.png' width='24'>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -379,8 +386,19 @@ title: Home
         </div>
       </div>
     </div>
-    </div>
   </div>
 </div>
+
+<div class="col-xl-8 col-11 alert mx-auto alert-success alert-dismissible font-2 alert-new-year fade show" role="alert">
+  <h5 class="alert-heading" id="demo1">Sinhala & Tamil New Year</h5>
+  <span id="demo"></span>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<style>
+
+</style>
 
 <script src="./script.js"></script>

@@ -6,11 +6,22 @@ body {
 }
 
 .font-1 {
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Inconsolata', monospace !important;
+}
+
+.font-2 {
+    font-family: 'Rubik', sans-serif !important;
 }
 
 .source {
-    padding: 20px 10px;
+    padding: 20px 5px;
+}
+
+/* Alert */
+.alert-new-year {
+    position: sticky !important;
+    z-index: 100 !important;
+    bottom: 100px !important;
 }
 
 /* Scroll Bar */
@@ -47,6 +58,10 @@ body {
 @media only screen and (min-width: 1200px) {
     .margin-top-under-nav-xl {
         margin: 140px auto 10px;
+    }
+
+    .to-mid {
+        margin: 50px auto 0px;
     }
 
     .margin-bottom-before-footer-xl {
@@ -125,6 +140,7 @@ body {
     font-family: 'Inconsolata', monospace;
 }
 
+
 /* Main Cols */
 .main-col-1 {
     display: inline;
@@ -132,6 +148,13 @@ body {
 
 .main-col-2 {
     display: inline-block;
+}
+
+.now-date-time {
+    background-color: rgba(0, 0, 0, 0.356);
+    padding: 0.5rem;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 /* Status-Animation */
@@ -558,7 +581,8 @@ ul.timeline>li:before {
 }
 
 .table-card-header {
-    font-size: 130%;
+    font-size: 120%;
+    padding: 0.5rem;
 }
 
 .table-card-body {
@@ -566,7 +590,7 @@ ul.timeline>li:before {
 }
 
 .table-card-body h1 {
-    font-size: 250% !important;
+    font-size: 180% !important;
 }
 
 .global-data-caption {
@@ -999,7 +1023,7 @@ h5.emergency-number {
     }
 
     .table-card-body h1 {
-        font-size: 250% !important;
+        font-size: 200% !important;
     }
 
     .card-columns {
@@ -1030,6 +1054,10 @@ h5.emergency-number {
 
     h5.emergency-number {
         font-size: 140% !important;
+    }
+
+    .alert-new-year {
+        bottom: 70px !important;
     }
 
     .footer {

@@ -35,6 +35,14 @@ LastUpdated = document.getElementById('API_lastUpdated');
 
 // }
 
+// function setup(){
+//   loadJSON('https://www.hpb.health.gov.lk/api/get-current-statistical', gotData);
+// }
+// setup();
+// function gotData(data){
+//   console.log(data);
+// }
+
 function getData(){
 fetch(api_url)
   .then(function(response) {

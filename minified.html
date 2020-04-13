@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 SL REPORT {MINIFIED VERSION}</title>
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
+</head>
+
+<body>
+    <a href="./">Go Back to original version</a>
+    <h2>COVID-19 SL REPORT {MINIFIED VERSION}</h2>
+    <p>This page gives you a minified version of COVID-19 SL REPORT. (Recommend for old browsers & slow networks)</p>
+
+    <table>
+        <tr>
+            <td>Total Infected</td>
+            <td id="totalInfected"></td>
+        </tr>
+        <tr>
+            <td>Active Cases</td>
+            <td id="activeCases"></td>
+        </tr>
+        <tr>
+            <td>Recovered</td>
+            <td id="recovered"></td>
+        </tr>
+        <tr>
+            <td>Deaths</td>
+            <td id="deaths"></td>
+        </tr>
+        <tr>
+            <td>Suspected</td>
+            <td id="suspected"></td>
+        </tr>
+        <tr>
+            <td>Deaths Rate</td>
+            <td id="deathRate"></td>
+        </tr>
+        <tr>
+            <td>Recovery Rate</td>
+            <td id="recoveryRate"></td>
+        </tr>
+    </table>
+
+    <script>
+        // Your web app's Firebase configuration
+        var config = {
+            apiKey: "AIzaSyDQJ5gZ5boj0LV__nyBMcIfCyWNTJKugx8",
+            authDomain: "covidsl-59df9.firebaseapp.com",
+            databaseURL: "https://covidsl-59df9.firebaseio.com",
+            projectId: "covidsl-59df9",
+            storageBucket: "covidsl-59df9.appspot.com",
+            messagingSenderId: "816288189009",
+            appId: "1:816288189009:web:7edaff32bfddf44e0d0670",
+            measurementId: "G-SKWZ49LYVV"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(config);
+        const db = firebase.firestore();
+
+
+        const settings = {
+            timestampsInSnapshots: true
+        };
+        db.settings(settings);
+
+        var docRef = db.collection("data").doc("lk");
+
+        var totalInfected = document.getElementById('totalInfected');
+        var activeCases = document.getElementById('activeCases');
+        var recovered = document.getElementById('recovered');
+        var suspected = document.getElementById('suspected');
+        var deaths = document.getElementById('deaths');
+        var deathRate = document.getElementById('deathRate');
+        var recoveryRate = document.getElementById('recoveryRate');
+
+        docRef.get().then(function (doc) {
+        totalInfectedno = doc.data().total_infected;
+        recoveredno = doc.data().recovered;
+        suspectedno = doc.data().suspected;
+        deathsno = doc.data().deaths;
+
+        totalInfected.innerHTML = totalInfectedno;
+        activeCases.innerHTML = totalInfectedno - (recoveredno + deathsno);
+        recovered.innerHTML = recoveredno;
+        suspected.innerHTML = suspectedno;
+        deaths.innerHTML = deathsno;
+
+        deathsRateno = (deathsno / totalInfectedno) * 100;
+        recoveryRateno = (recoveredno / totalInfectedno) * 100;
+
+        deathRate.innerHTML = (Math.floor(deathsRateno * 100) / 100) + '%';
+        recoveryRate.innerHTML = (Math.floor(recoveryRateno * 100) / 100) + '%';
+        });
+    </script>
+</body>
+
+</html>

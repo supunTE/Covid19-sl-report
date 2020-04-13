@@ -73,11 +73,57 @@ month[11] = "Dec";
 //   document.getElementById('myInput').style.display = "block";
 //   document.getElementById('see-all').style.display = "block";
 
+// Today
+function getCurrentTime() {
+  today = new Date();
+  dd = String(today.getDate()).padStart(2, '0');
+  mm = month[today.getMonth()];
+  yyyy = today.getFullYear();
+  hrs = today.getHours();
+  if (hrs < 12) {
+    ap = 'AM';
+  } else {
+    ap = 'PM';
+  }
+  if (hrs > 12) {
+    hrs -= 12;
+  }
+
+  hrs = String(hrs).padStart(2, '0');
+  mins = String(today.getMinutes()).padStart(2, '0');
+  secs = String(today.getSeconds()).padStart(2, '0');
+
+  today = dd + ' ' + mm + ', ' + yyyy;
+  time = hrs + ':' + mins + ':' + secs + ' ' + ap;
+
+  document.getElementById('nowDate').innerHTML = today;
+  document.getElementById('nowTime').innerHTML = time;
+}
+
+setInterval(getCurrentTime, 1000);
+
+// NewYear
+var countDownDate = new Date("Apr 13, 2020 20:23:00").getTime();
+var x = setInterval(function () {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("demo").innerHTML = "There's only, " + hours + "h " +
+    minutes + "m " + seconds + "s " + "remaining to the new year.";
+
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML =
+      "A new year has arrived. We wish you a very Happy Sinhala & Tamil New Year!";
+  }
+}, 1000);
+// 
+
 docRef.get().then(function (doc) {
-  totalInfectedno = doc.data().total_infected;
-  recoveredno = doc.data().recovered;
-  suspectedno = doc.data().suspected;
-  deathsno = doc.data().deaths;
   totalInfectedno = doc.data().total_infected;
   recoveredno = doc.data().recovered;
   suspectedno = doc.data().suspected;
@@ -288,16 +334,12 @@ statusAnimation = document.getElementById('status-animation');
 
 function hidestatuscard() {
   tableDetails.style.display = "block";
-  tableDetails.style.opacity = "1";
   statusAnimation.style.display = "none";
-  statusAnimation.style.opacity = "0";
 }
 
 function hidetabledetails() {
   tableDetails.style.display = "none";
-  tableDetails.style.opacity = "0";
   statusAnimation.style.display = "block";
-  statusAnimation.style.opacity = "1";
 }
 
 // //formatdata
@@ -357,7 +399,7 @@ function getData(){
       
       LastUpdatedAPI = json.data.update_date_time;
       LastUpdated.innerHTML = LastUpdatedAPI; 
-      
+
       hospitals.forEach(function(hospital){  
 
         let tr = document.createElement('tr');
