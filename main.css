@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
+html{
+    scroll-behavior: smooth !important;
+}
+
 body {
     overflow-x: hidden;
 }
@@ -22,6 +26,14 @@ body {
     position: sticky !important;
     z-index: 100 !important;
     bottom: 100px !important;
+}
+
+.alert-new-year button:active{
+    cursor: pointer;
+}
+
+.alert-new-year button:active{
+    box-shadow: none;
 }
 
 /* Scroll Bar */
@@ -161,7 +173,6 @@ body {
 
 .status-animation {
     text-align: center;
-    /* margin: 140px auto 10px; */
 }
 
 .animation-cards {
@@ -229,6 +240,10 @@ body {
     -ms-transform-origin: center;
     transform-origin: center;
     overflow: hidden;
+}
+
+.animation-cards-item.d-flex.align-items-center.justify-content-center {
+    
 }
 
 .animation-cards-item:nth-child(1) {

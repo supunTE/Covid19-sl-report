@@ -113,7 +113,7 @@ var x = setInterval(function () {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   document.getElementById("demo").innerHTML = "There's only, " + hours + "h " +
-    minutes + "m " + seconds + "s " + "remaining to the new year.";
+    minutes + "m " + seconds + "s " + "remaining for the new year.";
 
   if (distance < 0) {
     clearInterval(x);
