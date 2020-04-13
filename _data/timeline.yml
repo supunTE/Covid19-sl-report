@@ -9,6 +9,46 @@
 #     - text: none
 #   data:
 #     - text: WHO declares Coronavirus as a global emergency
+
+- date: 12 Apr, 2020
+  data:
+    - text: Another person tested positive for COVID-19. Total confirmed COVID-19 cases in Sri Lanka now at 198 , Ministry of Health
+    - text: Second school term will commence on the 11th of May , PMD
+    - text: 14 Sri Lankans who were stranded in overseas airports airlifted to Colombo from Singapore and Oman
+    - text: Another COVID-19 patient recovers. Total recoveries in Sri Lanka now at 55 , Health Ministry
+    - text: IGP orders to take necessary action to stop new year celebrations, with mass gatherings, from taking place , Police Spokesperson
+    - text: Four more people tested positive for COVID-19. Total confirmed COVID-19 cases in Sri Lanka now at 203 , Health Ministry
+    - text: Universities will open for staff on 04th May, Final Year students on 11th May & 18th May for all students , UGC
+    - text: 52 people who had contact with the 28 people from Suduwella in Ja-Ela who were sent into quarantine, detained by the navy , Navy Spokesperson
+    - text: Western Province Governor introduces helpline ( 011 2 092 720 ) to assist those stranded in the Western Province to return to their homes in other provinces.
+    - text: 27 Medical Staff from the Ragama and Welisara hospitals moved to the Mulankavil Quarantine Facility in Mannar , Sri Lanka Navy
+    - text: UK PM Boris Johnson is discharged from hospital after being in intensive care with Covid-19. BBC
+    - text: Seven more people tested positive for COVID-19. Total confirmed COVID-19 cases in Sri Lanka now at 210 , Health Ministry ,Another person who tested positive for COVID-19 recovers. Total recoveries in Sri Lanka now at 56 : Health Ministry
+
+- date: 11 Apr, 2020
+  data:
+    - text: 07 more people tested positive for COVID-19 today; 06 of them are from Suduwella, Ja-Ela. Total confirmed COVID-19 cases in Sri Lanka now at 197 , Army Commander
+    - text: Former Archbishop of Colombo, His Lordship Nicholas Marcus Fernando called to eternal rest
+    - text: The United States has counted more than 2,100 Covid-19 fatalities in the space of 24 hours
+    - text: Mandatory to wear a face mask when travelling on main roads and by-roads , Police Spokesperson
+    - text: Chief Inspectors and lower ranks, engaged in duty to prevent the spread of COVID-19, to be awarded Rs. 5000/- each , Police Spokesperson
+    - text: Attorney General issued further guidelines to Acting IGP on granting bail to remandees of other minor offences in view of COVID 19 , AG’s CO
+    - text: Lotus Tower will be lit in red at 07 PM today to honor medical staff & essential services battling COVID-19 and to add wishes for the Sinhala & Tamil New Year
+    - text: 12 hour water cut for Kelaniya, Wattala, Mabola, Katunayake, Biyagama & Gampaha from 04PM today , NWS&DB
+    - text: New bank account introduced to deposit unlimited foreign currency. 06 month deposit to receive additional 01% interest and 02% for 12 months , PMD
+    - text: Another person tested positive for COVID-19. Total confirmed COVID-19 cases in Sri Lanka now at 198 , Ministry of Health
+    - text: Curfew for 19 districts except Colombo, Gampaha, Kalutara, Puttlam, Jaffna & Kandy extended to 06AM on 16th April , PMD
+    - text: Second school term will commence on the 11th of May , PMD
+
+- date: 10 Apr, 2020
+  data:
+    - text: The coronavirus pandemic will turn global economic growth "sharply negative" this year, the head of the International Monetary Fund (IMF) has warned. BBC
+    - text: One person recovered from COVID-19 today. Total recoveries in Sri Lanka now at 50 , Ministry of Health
+    - text: The services of rice mill owners declared as an essential service for COVID-19 quarantine measures until further notice : PMD
+    - text: Medicine purchases in High Risk Districts will be done online or via telephone; Pharmacies will be open in other districts from 09AM to 02PM : PM Office
+    - text: MRP imposed for rice with effect from today. 01 kg prices; Keeri Samba Rs. 125/- Kakula White/Red Rs. 85/- Nadu Rs. 90/- Samba White/Red Rs. 90/- : CAA
+    - text: Four more people who tested positive for COVID-19 recover. Total recoveries in Sri Lanka rises to 54 , Health Ministry
+ 
 - date: 09 Apr, 2020
   data:
     - text: Cabinet approves to airlift 33 Sri Lankans trapped in 13 international airports , Joint Cabinet Spokesperson
