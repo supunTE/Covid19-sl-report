@@ -1,4 +1,4 @@
-<div class="header">
+<div class="header" id="header-nav">
     <div class="header-box shadow">
       <div class="caption">
         <h1>COVID-19</h1>
@@ -18,6 +18,7 @@
                 <a class="dropdown-item" href="./#localDetails">Local Details</a>
                 <a class="dropdown-item" href="./#hospitalDetails">Hospital Details</a>
                 <a class="dropdown-item" href="./#latestTimeline">Latest Timeline</a>
+                <a class="dropdown-item" href="./#confirmedMap">District Distribution of Confirmed Patients</a>
                 <a class="dropdown-item" href="./#latestNews">Latest News</a>
                 <a class="dropdown-item" href="./#emergencyContacts">Emergency Contacts</a>
               </div>
@@ -51,8 +52,24 @@
 
 
 <style>
+  #header-nav{
+    transition: top 0.3s;
+  }
   .dropdown-item:hover{
     background-color: #007bff !important;
     color: white !important;
   }
 </style>
+
+<script>
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function () {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("header-nav").style.top = "0";
+    } else {
+      document.getElementById("header-nav").style.top = "-50px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+</script>

@@ -103,24 +103,24 @@ function getCurrentTime() {
 setInterval(getCurrentTime, 1000);
 
 // NewYear
-var countDownDate = new Date("Apr 13, 2020 20:23:00").getTime();
-var x = setInterval(function () {
-  var now = new Date().getTime();
-  var distance = countDownDate - now;
+// var countDownDate = new Date("Apr 13, 2020 20:23:00").getTime();
+// var x = setInterval(function () {
+//   var now = new Date().getTime();
+//   var distance = countDownDate - now;
 
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+//   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+//   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+//   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  document.getElementById("demo").innerHTML = "There's only, " + hours + "h " +
-    minutes + "m " + seconds + "s " + "remaining for the new year.";
+//   document.getElementById("demo").innerHTML = "There's only, " + hours + "h " +
+//     minutes + "m " + seconds + "s " + "remaining for the new year.";
 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML =
-      "A new year has arrived. We wish you a very Happy Sinhala & Tamil New Year!";
-  }
-}, 1000);
+//   if (distance < 0) {
+//     clearInterval(x);
+//     document.getElementById("demo").innerHTML =
+//       "A new year has arrived. We wish you a very Happy Sinhala & Tamil New Year!";
+//   }
+// }, 1000);
 // 
 
 docRef.get().then(function (doc) {

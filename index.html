@@ -183,7 +183,7 @@ title: Home
         <thead class="text-center">
           <tr>
             <th scope="col" rowspan="2">Hospital</th>
-            <th scope="col" colspan="3">Suspected on today</th>
+            <th scope="col" colspan="3">Suspected as of today</th>
           </tr>
           <tr>
             <th scope="col">SL</th>
@@ -198,7 +198,7 @@ title: Home
           href="https://www.hpb.health.gov.lk/en">https://www.hpb.health.gov.lk/en</a> )
         <br>
         Last updated at : <span id="API_lastUpdated"></span>
-        <p class="text-danger">Showing these data does not support from some of web browsers.</p>
+        <p class="text-danger">Displaying these data is not supported on some of the web browsers.</p>
       </h6>
     </div>
 
@@ -232,6 +232,11 @@ title: Home
   </div>
 
   <div class="col-xl-8 main-col-2 margin-bottom-before-footer" style="width: 100%;">
+
+    <div class="col-12 mx-auto" id="confirmedMap" style="padding-top: 120px; margin-top: -100px;">
+      {% include map.html %}
+    </div>
+
     <div class="col-xl-12 col-10 mx-auto news-panel" id="latestNews"
       style="padding-top: 100px; margin-top: -100px; width: 100%;">
       <h3 class="display-4 caption-2" id="news-panel">Latest News on COVID-19</h3>
@@ -389,12 +394,12 @@ title: Home
   </div>
 </div>
 
-<div class="col-xl-8 col-11 alert mx-auto alert-success alert-dismissible font-2 alert-new-year fade show" role="alert">
+<!-- <div class="col-xl-8 col-11 alert mx-auto alert-success alert-dismissible font-2 alert-new-year fade show" role="alert">
   <h5 class="alert-heading" id="demo1">Sinhala & Tamil New Year</h5>
   <span id="demo"></span>
   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>
-</div>
+</div> -->
 
 <script src="./script.js"></script>

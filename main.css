@@ -99,14 +99,14 @@ body {
 }
 
 .caption h1 {
-    font-size: 120% !important;
+    font-size: 110% !important;
     margin-bottom: -8px !important;
     font-weight: 1000;
     animation: textColor 10s ease infinite;
 }
 
 .caption h2 {
-    font-size: 180% !important;
+    font-size: 170% !important;
     background-image: url('./sl-flag.png');
     background-position: center;
     background-size: 50%;
@@ -883,6 +883,11 @@ h5.emergency-number {
 .footer {
     background-color: #151823 !important;
     font-family: 'Rubik', monospace;
+    font-size: 70%;
+}
+
+.footer-n-caption{
+    font-size: 140% !important;
 }
 
 .mobile-footer {
@@ -1108,7 +1113,6 @@ h5.emergency-number {
 
 /* Maps Page */
 .map-centers-sl {
-    height: 300px !important;
     font-family: 'Inconsolata', monospace;
 }
 
