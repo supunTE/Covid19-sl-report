@@ -117,6 +117,7 @@
             <div id="mapDetailsOther">
                 <div id="mapDetailsBoxQuarn">From Quarantine Centers : <em>{{ site.data.confirmed_lk.QUARN }}</em></div>
                 <div id="mapDetailsBoxForei">Foreigners : <em>{{ site.data.confirmed_lk.FOREI }}</em></div>
+                <div id="mapDetailsBoxForei">Under Investigation : <em>{{ site.data.confirmed_lk.UNDIN }}</em></div>
             </div>
             <table id="mapDetailsColors">
                 <tr>
@@ -145,8 +146,8 @@
                     <br>Last Updated on {{ site.data.confirmed_lk.date }}
                 </small>
                 <br>
-                    <b>Source - Epidemiology Unit, Ministry of Health Sri Lanka | 
-                    <a href="{{ site.data.confirmed_lk.link }}" target="_blank">{{ site.data.confirmed_lk.link }}</a></b>
+                    Source - Epidemiology Unit, Ministry of Health Sri Lanka | 
+                    <a href="{{ site.data.confirmed_lk.link }}" target="_blank">Link for the file</a>
             </div>
         </div>
     </div>
@@ -275,6 +276,7 @@
     var POLN = {{site.data.confirmed_lk.POLN}}
     var MONG = {{site.data.confirmed_lk.MONG}}
 
+    var UNDIN = {{site.data.confirmed_lk.UNDIN}}
     var QUARN = {{site.data.confirmed_lk.QUARN}}
     var FOREI = {{site.data.confirmed_lk.FOREI}}
     var TOT = {{site.data.confirmed_lk.TOT}}
@@ -531,7 +533,7 @@
 <style>
     #mapDetailsBox {
         position: absolute;
-        top: 280px;
+        top: 260px;
         right: 50px;
         width: 30%;
     }
@@ -624,7 +626,7 @@
 
     @media only screen and (max-width: 860px) {
         #mapDetailsBox {
-            top: 340px;
+            top: 320px;
         }
         #mapDetailsBoxName{
             font-size: 140%;
