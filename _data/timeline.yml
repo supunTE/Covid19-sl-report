@@ -9,64 +9,134 @@
 #     - text: none
 #   data:
 #     - text: WHO declares Coronavirus as a global emergency
+- date: 16 Apr, 2020
+  data:
+    - text: Nagalagam Street in Grandpass declared as an isolated area - Army Commander.
+    - text: Total of 635 houses in 05 separate divisions in the Puttlam District were damaged by gale winds last evening - District Secretary.
+    - text: Ex-Minister Rishad Bathiudeen summoned to the CID to record a statement for further investigations on a land related matter in Mannar - Police Spokesperson.
+    - text: 02 more people who tested positive for COVID-19 recover. Total recoveries in Sri Lanka now at 65 - Health Ministry.
+    - text: Grama Niladhari Officers across the island step away from the duty of providing the Rs. 5000/- allowance - Sri Lanka Grama Niladhari Association.
+    - text: Thunder showers accompanied by severe lightening to be experienced in Western, Sabaragamuwa, Central, North-Western, Uva and Southern provinces - DMC.
+
+- date: 15 Apr, 2020
+  data:
+    - text: South Korea goes ahead with its general election with strict measures to prevent the spread of the corona virus.
+    - text: The coronavirus death toll in the U.S. surpassed 25,000 with more than 600,000 confirmed cases in the country.
+    - text: United Nations Secretary-General Antonio Guterres said it was "not the time" to be reducing funds to the WHO or any other organisation fighting the pandemic.
+    - text: Government decided to award the Rs. 5000/- allowance for three-wheeler drivers & drivers who transport school students - Minister Mahinda Amaraweera.
+    - text: Two more people who tested positive for COVID-19 recover. Total recoveries in Sri Lanka now at 63 - Health Ministry.
+    - text: 02 more people tested positive for COVID-19. Total confirmed COVID-19 cases in Sri Lanka now at 235 - Health Ministry.
+
+- date: 14 Apr, 2020
+  data:
+    - text: Isolation period for Atalugama in Bandaragama over. Pannila and Cheena Koratuwa areas in Beruwala declared as isolation areas - Army Commander.
+    - text: Total confirmed COVID-19 cases in Sri Lanka now at 218.
+    - text: India's lockdown has been extended until May 3rd, Prime Minister Narendra Modi said in an address to the nation.
+    - text: 03 more people who tested positive for COVID-19 recover. Total recoveries in Sri Lanka now at 59 - Ministry of Health.
+    - text: Former MP Ranjan Ramanayake, arrested for obstructing the duties of Police Officers, remanded until the 20th of April.
+    - text: Another person tested positive for COVID-19. Total confirmed COVID-19 cases in Sri Lanka now at 219 - DG Health Services.
+    - text: 02 more people who tested positive for COVID-19 recover. Total recoveries in Sri Lanka now at 61 - Health Ministry.
+    - text: Police confirm former Minister's brother Riyadh Bathiudeen was arrested by CID over April 21st attacks.
+    - text: Sri Lankan Airlines to extend temporary suspension of its scheduled passenger flights till April 30, 2020; cargo services to continue.
+    - text: 15 people tested positive for COVID-19 today. Total confirmed COVID-19 cases in Sri Lanka rises to 233 - Health Ministry.
+
+- date: 13 Apr, 2020
+  data:
+    - text: Work from home period for both the Public and Private sectors extended to 20th April - PMD.
+    - text: Another group of 32 people from Ja-Ela moved to the Oluvil Quarantine Facility operated by Sri Lanka Navy - Navy Spokesperson.
+    - text: UPDATE:The group of 32 people from Ja-Ela to be moved to the Nachchikula Quarantine Facility instead of the Oluvil Facility due to health concerns - SL Navy.
+    - text: 04 people tested positive for COVID-19 at the Punani Quarantine Facility. Total confirmed COVID-19 cases in Sri Lanka now at 214 - DG Health Services.
+    - text: Sri Lanka Navy safely brought ashore a Philippine sailor from a foreign merchant vessel suspected of having COVID-19 - SL Navy.
+    - text: India, Pakistan plan to restart some economic activity during coronavirus lockdown.
+    - text: Former UNP MP Ranjan Ramanayake arrested for obstructing the duties of Police Officers - Police Spokesperson.
+    - text: 03 more people tested positive for COVID-19. Total confirmed COVID-19 cases in Sri Lanka now at 217 - Health Ministry.
+
+- date: 12 Apr, 2020
+  data:
+    - text: Another person tested positive for COVID-19. Total confirmed COVID-19 cases in Sri Lanka now at 198 - Ministry of Health.
+    - text: 14 Sri Lankans who were stranded in overseas airports airlifted to Colombo from Singapore and Oman.
+    - text: Another COVID-19 patient recovers. Total recoveries in Sri Lanka now at 55 - Health Ministry.
+    - text: IGP orders to take necessary action to stop new year celebrations, with mass gatherings, from taking place - Police Spokesperson.
+    - text: Four more people tested positive for COVID-19. Total confirmed COVID-19 cases in Sri Lanka now at 203 - Health Ministry.
+    - text: Universities will open for staff on 04th May, Final Year students on 11th May & 18th May for all students - UGC.
+    - text: 52 people who had contact with the 28 people from Suduwella in Ja-Ela who were sent into quarantine, detained by the navy - Navy Spokesperson.
+    - text: Western Province Governor introduces helpline ( 011 2 092 720 ) to assist those stranded in the Western Province to return to their homes in other provinces.
+    - text: 27 Medical Staff from the Ragama and Welisara hospitals moved to the Mulankavil Quarantine Facility in Mannar - Sri Lanka Navy.
+    - text: UK PM Boris Johnson is discharged from hospital after being in intensive care with Covid-19. - BBC
+    - text: Another person who tested positive for COVID-19 recovers. Total recoveries in Sri Lanka now at 56 - Health Ministry.
+    - text: Seven more people tested positive for COVID-19. Total confirmed COVID-19 cases in Sri Lanka now at 210 - Health Ministry.
+
+- date: 11 Apr, 2020
+  data:
+    - text: 07 more people tested positive for COVID-19 today; 06 of them are from Suduwella, Ja-Ela. Total confirmed COVID-19 cases in Sri Lanka now at 197 - Army Commander.
+    - text: Former Archbishop of Colombo, His Lordship Nicholas Marcus Fernando called to eternal rest.
+    - text: The United States has counted more than 2,100 Covid-19 fatalities in the space of 24 hours.
+    - text: Mandatory to wear a face mask when travelling on main roads and by-roads - Police Spokesperson.
+    - text: Chief Inspectors and lower ranks, engaged in duty to prevent the spread of COVID-19, to be awarded Rs. 5000/- each - Police Spokesperson.
+    - text: Attorney General issued further guidelines to Acting IGP on granting bail to remandees of other minor offences in view of COVID 19 - AG’s CO.
+    - text: Lotus Tower will be lit in red at 07 PM today to honor medical staff & essential services battling COVID-19 and to add wishes for the Sinhala & Tamil New Year.
+    - text: 12 hour water cut for Kelaniya, Wattala, Mabola, Katunayake, Biyagama & Gampaha from 04PM today - NWS&DB.
+    - text: New bank account introduced to deposit unlimited foreign currency. 06 month deposit to receive additional 01% interest and 02% for 12 months - PMD.
+    - text: Another person tested positive for COVID-19. Total confirmed COVID-19 cases in Sri Lanka now at 198 - Ministry of Health.
+    - text: Curfew for 19 districts except Colombo, Gampaha, Kalutara, Puttlam, Jaffna & Kandy extended to 06AM on 16th April - PMD.
+    - text: Second school term will commence on the 11th of May - PMD.
+
+- date: 10 Apr, 2020
+  data:
+    - text: The coronavirus pandemic will turn global economic growth "sharply negative" this year, the head of the International Monetary Fund (IMF) has warned - BBC.
+    - text: One person recovered from COVID-19 today. Total recoveries in Sri Lanka now at 50 - Ministry of Health.
+    - text: The services of rice mill owners declared as an essential service for COVID-19 quarantine measures until further notice - PMD.
+    - text: Medicine purchases in High Risk Districts will be done online or via telephone; Pharmacies will be open in other districts from 09AM to 02PM - PM Office.
+    - text: MRP imposed for rice with effect from today. 01 kg prices; Keeri Samba Rs. 125/- Kakula White/Red Rs. 85/- Nadu Rs. 90/- Samba White/Red Rs. 90/- - CAA.
+    - text: Four more people who tested positive for COVID-19 recover. Total recoveries in Sri Lanka rises to 54 - Health Ministry.
+
 - date: 09 Apr, 2020
   data:
-    - text: Cabinet approves to airlift 33 Sri Lankans trapped in 13 international airports , Joint Cabinet Spokesperson
-    - text: Government decides to offer additional 02% intrest for NRFC account holders when depositing foreign currency , Minister Bandula Gunawardena
-    - text: Three more people who tested positive for COVID-19 recover. Total recoveries in Sri Lanka now at 47 , Health Ministry
-    - text: 23 people who were subject to self quarantine in Suduwella, Ja-Ela arrested by Naval Intelligence for violating the quarantine program , Sri Lanka Navy
-    - text: The European Union (EU) has agreed to provide a EUR 22 mn grant to support Sri Lanka's COVID19 response.
+    - text: Cabinet approves to airlift 33 Sri Lankans trapped in 13 international airports - Joint Cabinet Spokesperson.
+    - text: Government decides to offer additional 02% intrest for NRFC account holders when depositing foreign currency - Minister Bandula Gunawardena.
+    - text: Three more people who tested positive for COVID-19 recover. Total recoveries in Sri Lanka now at 47 - Health Ministry.
+    - text: 23 people who were subject to self quarantine in Suduwella, Ja-Ela arrested by Naval Intelligence for violating the quarantine program - Sri Lanka Navy.
+    - text: The European Union (EU) has agreed to provide a EUR 22 mn grant to support Sri Lanka's COVID-19 response.
     - text: AG issues strict guidelines to Acting IGP, to be considered when moving to grant bail for those in remand for minor drugs and related offences, to reduce congestion at prisons.
-    - text: Two women died following a collision between a pick up truck and a motorcycle in Paraththakandal, Mannar , Police
-    - text: Pharmacies across the island will remain open tomorrow,10th April, from 09AM to 05PM , DIG Ajith Rohana
-    - text: People who cross district borders, violating the curfew, will be taken to Quarantine centres for a mandatory 14 day quarantine period from tomorrow , DIG Ajith Rohana
-    - text: All taverns in the Central and Southern Provinces sealed, temporarily , Excise Department
+    - text: Two women died following a collision between a pick up truck and a motorcycle in Paraththakandal, Mannar - Police.
+    - text: Pharmacies across the island will remain open tomorrow,10th April, from 09AM to 05PM - DIG Ajith Rohana.
+    - text: People who cross district borders, violating the curfew, will be taken to Quarantine centres for a mandatory 14 day quarantine period from tomorrow - DIG Ajith Rohana.
+    - text: All taverns in the Central and Southern Provinces sealed, temporarily - Excise Department.
     - text: Confirmed COVID-19 cases in Sri Lanka now at 190; Only one COVID-19 cases detected so far today.
-    - text: Two more people who tested positive for COVID-19 recover. Total recoveries in Sri Lanka now at 49 , Health Ministry
+    - text: Two more people who tested positive for COVID-19 recover. Total recoveries in Sri Lanka now at 49 - Health Ministry.
 
 - date: 08 Apr, 2020
   important: 
-    - text: 7th COVID-19 death in Sri Lanka reported. Victim was a 44 year old male who was treated at IDH , Health Ministry
+    - text: 7th COVID-19 death in Sri Lanka reported. Victim was a 44 year old male who was treated at IDH - Health Ministry.
   data:
-    - text: 1,815 people arrested and 595 vehicles seized for violating the curfew during the past 24 hours. In total, 17,717 people were arrested , Police Media Division
-    - text: United States reported 1,966 coronavirus fatalities in the last 24 hours, a new one-day high. Globally COVID-19 death toll is 82,000
-    - text: Permission granted to use official ID as curfew pass for Public & Private essential services extended to the 30th of April , Police Spokesperson
-    - text: Two more people tested positive for COVID-19. Total confirmed cases in Sri Lanka now at 188 , Health Ministry
-    - text: Curfew will be in effect until further notice for Colombo, Gampaha, Kalutara, Puttlam, Kandy and Jaffna districts.Curfew for 19 districts will be relaxed at 06AM tomorrow & re-imposed at 04PM the same day. It will be relaxed again on 14th April at 06AM and re-imposed at 04PM the same day.
-    - text: All new year traditions should be limited to family members only , PMD
-    - text: Confirmed COVID-19 cases in Sri Lanka rises to 189; Total recoveries in Sri Lanka rises to 44 , Health Ministry
+    - text: 1,815 people arrested and 595 vehicles seized for violating the curfew during the past 24 hours. In total, 17,717 people were arrested - Police Media Division.
+    - text: United States reported 1,966 coronavirus fatalities in the last 24 hours, a new one-day high. Globally COVID-19 death toll is 82,000.
+    - text: Permission granted to use official ID as curfew pass for Public & Private essential services extended to the 30th of April - Police Spokesperson.
+    - text: Two more people tested positive for COVID-19. Total confirmed cases in Sri Lanka now at 188 - Health Ministry.
+    - text: Curfew will be in effect until further notice for Colombo, Gampaha, Kalutara, Puttlam, Kandy and Jaffna districts. Curfew for 19 districts will be relaxed at 06AM tomorrow & re-imposed at 04PM the same day. It will be relaxed again on 14th April at 06AM and re-imposed at 04PM the same day.
+    - text: All new year traditions should be limited to family members only - PMD.
+    - text: Confirmed COVID-19 cases in Sri Lanka rises to 189; Total recoveries in Sri Lanka rises to 44 - Health Ministry.
 
 - date: 07 Apr, 2020
   important: 
-    - text: 80yo man treated at the IDH for COVID-19 passes away. The total number of deaths rises to 6.
+    - text: 80 year old man treated at the IDH for COVID-19 passes away. The total number of deaths rises to 6.
   data:
-    - text: UK Prime Minister Boris Johnson has been moved to intensive care in hospital after his coronavirus symptoms "worsened", Downing Street has said. BBC
-    - text: 1,107 people arrested & 326 vehicles seized in the past 24 hours for violating the curfew. In total 15,902 curfew violators arrested , Police
-    - text: 04 more people who tested positive for COVID-19 recover. Total recoveries in Sri Lanka now at 42 , Health Ministry
-    - text: Dambulla Special Economic Center closed until further notice. Distribution to take place based on orders received , Pramitha Bandara Tennakooon
-    - text: Three more people tested positive for COVID-19. Confirmed COVID-19 cases in Sri Lanka now at 183 , Health Ministry
-    - text: Curfew passes will be issued according to a new system. Based on personnel availability, passes will be issued by Police HQ, Snr. DIGs Office, SP Office and Police Station , PMD
-
-- date: 07 Apr, 2020
-  important: 
-    - text: 80 year man treated at the IDH for COVID-19 passes away. The total number of deaths rises to 6.
-  data:
-    - text: UK Prime Minister Boris Johnson has been moved to intensive care in hospital after his coronavirus symptoms "worsened", Downing Street has said. BBC
-    - text: 1,107 people arrested & 326 vehicles seized in the past 24 hours for violating the curfew. In total 15,902 curfew violators arrested , Police
-    - text: 04 more people who tested positive for COVID-19 recover. Total recoveries in Sri Lanka now at 42 , Health Ministry
-    - text: Dambulla Special Economic Center closed until further notice. Distribution to take place based on orders received , Pramitha Bandara Tennakooon
-    - text: Three more people tested positive for COVID-19. Confirmed COVID-19 cases in Sri Lanka now at 183 , Health Ministry
-    - text: Curfew passes will be issued according to a new system. Based on personnel availability, passes will be issued by Police HQ, Snr. DIGs Office, SP Office and Police Station , PMD
+    - text: UK Prime Minister Boris Johnson has been moved to intensive care in hospital after his coronavirus symptoms "worsened", Downing Street has said - BBC.
+    - text: 1,107 people arrested & 326 vehicles seized in the past 24 hours for violating the curfew. In total 15,902 curfew violators arrested - Police.
+    - text: 04 more people who tested positive for COVID-19 recover. Total recoveries in Sri Lanka now at 42 - Health Ministry.
+    - text: Dambulla Special Economic Center closed until further notice. Distribution to take place based on orders received - Pramitha Bandara Tennakooon.
+    - text: Three more people tested positive for COVID-19. Confirmed COVID-19 cases in Sri Lanka now at 183 - Health Ministry.
+    - text: Curfew passes will be issued according to a new system. Based on personnel availability, passes will be issued by Police HQ, Snr. DIGs Office, SP Office and Police Station - PMD.
 
 - date: 06 Apr, 2020
   data:
-    - text: Four more coroners recover The number of people recovering goes up to 38 , Ministry of Health
-    - text: Police have arrested 1,327 curfew and 312 vehicles in the last 24 hours. The total number of arrests increased to 14,795. , Police Media Division
-    - text: Sri Lankan Rupee depreciated against US dollar by Rs.5.65. Selling rate of a dollar is at Rs.199.40 against Friday’s 193.75, CBSL
+    - text: Police have arrested 1,327 curfew and 312 vehicles in the last 24 hours. The total number of arrests increased to 14,795 - Police Media Division.
+    - text: 02 more people tested positive for COVID-19. Total confirmed COVID-19 cases in Sri Lanka now at 178; Total recoveries at 34 - Health Ministry.
+    - text: 04 more people who tested positive for COVID-19 recover. Total recoveries in Sri Lanka now at 38 - Health Ministry.
 
 - date: 05 Apr, 2020
   data:
-    - text: 1245 people who violated the curfew arrested during the 24 period which ended at 06AM today ; 336 vehicles seized - Police Media Division.
+    - text: 1245 people who violated the curfew arrested during the 24 hour period which ended at 06AM today; 336 vehicles seized - Police Media Division.
     - text: Working days from tomorrow to Friday (April 10) declared as a period to work from home for both public and private sectors - PMD.
     - text: Curfew for all districts excluding Colombo, Gampaha, Kalutara, Puttlam, Kandy and Jaffna will be relaxed at 06:00 AM tomorrow and re-imposed at 02PM the same day - PMD.
     - text: 16 year old male who attacked a PHI using a sharp weapon in Rambukkana arrested - Police Media Division.
@@ -120,7 +190,7 @@
     - text: Two more COVID-19 cases recover completely & total recoveries in Sri Lanka now at 16 - Health Ministry.
     - text: GMOA recommends for social distancing to be maintained at over 80% and suspend the process of relaxing the curfew from time to time, in order to combat COVID-19.
     - text: Colombo Stock Exchange will remain closed from tomorrow(01) until the curfew is lifted - CSE.
-    - text: Globally more than 800,000 infected with COVID-19 ; total deaths across the world now at 38,769.
+    - text: Globally more than 800,000 infected with COVID-19; total deaths across the world now at 38,769.
     - text: Another COVID-19 patient recovers completely. Total recoveries in Sri Lanka now at 17 - Health Ministry.
     - text: Pensioners will be transported to banks on 02nd & 03rd April to obtain pension payments & would be dropped at their homes - Army Commander.
     - text: 195 people arrested and 110 vehicles seized for violating the curfew in a special operation carried out in the Colombo City - Police Media Division.
@@ -133,7 +203,7 @@
   data: 
     - text: 132 people who arrived in Sri Lanka from overseas, leave quarantine centres after completing quarantine - Army Commander.
     - text: Sri Lankan Rupee depreciates further against US dollar. Selling rate of dollar is at Rs.192.50 - CBSL.
-    - text: Results of the G. C. E. O/L examination will be released before the 30th of April - Education Ministry.
+    - text: Results of the G.C.E. O/L examination will be released before the 30th of April - Education Ministry.
     - text: 02 new COVID-19 cases reported in Sri Lanka. Total confirmed COVID-19 cases at 122 with 14 recoveries - Health Ministry.
     - text: Curfew for all districts excluding Colombo, Gampaha, Kalutara, Puttlam, Kandy and Jaffna will be in effect until 06 AM on the 01st of April - PMD.
     - text: Sri Lankan High Commission in Singapore closed for a period of two weeks as a person working in the 21st floor of the building tested positive for COVID-19.
@@ -153,7 +223,7 @@
     - text: Another COVID-19 patient recovers completely. Total recoveries in Sri Lanka now at 11 - Health Ministry.
     - text: Confirmed COVID-19 cases in Sri Lanka now at 117 - Health Ministry.
     - text: Food stores located in districts where curfew will be relaxed to be opened & general public requested to maintain distance from each other - Army Commander.
-    - text: Globally COVID-19 death toll over 33,000 & 702,368 infected ; Italy reports 756 new deaths & total COVID-19 deaths in Italy now over 10,000.
+    - text: Globally COVID-19 death toll over 33,000 & 702,368 infected; Italy reports 756 new deaths & total COVID-19 deaths in Italy now over 10,000.
 
 - date: 28 Mar, 2020
   important: 
@@ -162,7 +232,7 @@
     - text: The US has more confirmed cases of coronavirus than any other country, with more than 100,000 positive tests.
     - text: Italy has reported 919 new deaths from coronavirus, the highest number of fatalities any country has reported in the space of 24 hours since the outbreak began late last year.
     - text: Another group of more than 300 people releassd from Quarantine Centres following the completion of their quarantine period - Military Spokesperson.
-    - text: Russia is beginning what Vladimir Putin called a "non-working week", to try to slow the spread of the coronavirus - BBC.
+    - text: Russia is beginning what Vladimir Putin called a non-working week, to try to slow the spread of the coronavirus - BBC.
     - text: The city in China where the coronavirus pandemic began, Wuhan, has partially re-opened after more than two months of isolation - BBC.
     - text: Government requests all those who arrived from Chennai, Indian during the recent past to immediately move in to quarantine - DG Health Services.
     - text: Three more confirmed COVID-19 cases detected in Sri Lanka today(28). Total confirmed COVID-19 cases at 113 - Health Ministry.
@@ -217,7 +287,7 @@
     - text: President pledges USD 05 Million to the SAARC Fund set up to combat.
     - text: The first Sri Lankan to test positive to COVID-19 (Tour Guide) leaves hospital following a complete recovery.
     - text: Second batch of 201 people who completed quarantine period leave the Kandakadu (144) & Punani (57) Quarantine Camps - Military Spokesperson.
-    - text: The Prince of Wales has tested positive for coronavirus. Prince Charles, is displaying mild symptoms "but otherwise remains in good health".
+    - text: The Prince of Wales has tested positive for coronavirus. Prince Charles, is displaying mild symptoms but otherwise remains in good health.
     - text: No new COVID-19 cases reported as of 1630 hours today - Health Minister.
 
 - date: 22 Mar, 2020
