@@ -2,6 +2,14 @@
 <html lang="en">
 
 <head>
+
+    <script type="module">
+        import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+
+        const el = document.createElement('pwa-update');
+        document.body.appendChild(el);
+    </script>
+    
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="theme-color" content="#151823" />
@@ -28,6 +36,8 @@
     <!--Boostrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel='manifest' href='/manifest.json'>
 
     <title>
          COVID-19 SL Report | {{ page.title }}
