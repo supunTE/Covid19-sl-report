@@ -10,41 +10,45 @@
 #   data:
 #     - text: WHO declares Coronavirus as a global emergency
 - date: 20 Apr, 2020
- - text: 24 people tested positive for COVID-19 from Colombo 12 today. Total confirmed COVID-19 cases in Sri Lanka now at 295 - DG Health Services.
- - text: Postal service in areas where curfew will be relaxed to resume on 21st. Distribution of mail to commence on 22nd - Post Master General.
- - text: Curfew for Colombo, Gampaha, Kalutara and Puttalam Districts extended to 05AM on the 27th of April - PMD.
- - text: Curfew for other districts will be relaxed daily from 05AM to 08PM until 24th April; curfew from 08PM on 24th April to be relaxed at 05AM on 27th April - PMD.
- - text: Movement between Colombo, Gampaha, Kalutara, Puttalam as well as outside those districts strictly prohibited.
- - text: Another person who tested positive for COVID-19 recovers. Total recoveries in Sri Lanka now at 97 - Health Ministry.
- - text: 08 more people tested positive for COVID-19 today. Total confirmed COVID-19 cases in Sri Lanka now at 303 - Ministry of Health.
- - text: Another person tested positive for COVID-19 today. Total confirmed COVID-19 cases in Sri Lanka now at 304 - Ministry of Health.
- - text: Another person who tested positive for COVID-19 recovers. Total recoveries in Sri Lanka now at 98 - Health Ministry.
- - text: National Elections Commission decided to hold the General Elections on the 20th of June - NEC Chairman Mahinda Deshapriya
+  data:
+    - text: 24 people tested positive for COVID-19 from Colombo 12 today. Total confirmed COVID-19 cases in Sri Lanka now at 295 - DG Health Services.
+    - text: Postal service in areas where curfew will be relaxed to resume on 21st. Distribution of mail to commence on 22nd - Post Master General.
+    - text: Curfew for Colombo, Gampaha, Kalutara and Puttalam Districts extended to 05AM on the 27th of April - PMD.
+    - text: Curfew for other districts will be relaxed daily from 05AM to 08PM until 24th April; curfew from 08PM on 24th April to be relaxed at 05AM on 27th April - PMD.
+    - text: Movement between Colombo, Gampaha, Kalutara, Puttalam as well as outside those districts strictly prohibited.
+    - text: Another person who tested positive for COVID-19 recovers. Total recoveries in Sri Lanka now at 97 - Health Ministry.
+    - text: 08 more people tested positive for COVID-19 today. Total confirmed COVID-19 cases in Sri Lanka now at 303 - Ministry of Health.
+    - text: Another person tested positive for COVID-19 today. Total confirmed COVID-19 cases in Sri Lanka now at 304 - Ministry of Health.
+    - text: Another person who tested positive for COVID-19 recovers. Total recoveries in Sri Lanka now at 98 - Health Ministry.
+    - text: National Elections Commission decided to hold the General Elections on the 20th of June - NEC Chairman Mahinda Deshapriya
 
 - date: 19 Apr, 2020
-  - text: 05 more people who tested positive for COVID-19 recover. Total recoveries in Sri Lanka now at 91 - Health Ministry.
-  - text: 02 more people tested positive for COVID-19. Total confirmed COVID-19 cases in Sri Lanka now at 256 - Ministry of Health.
-  - text: 15 people tested positive for COVID-19 today. Total confirmed COVID-19 cases in Sri Lanka now at 269 - Ministry of Health.
-  - text: 197 suspects arrested over 2019 April 21st attacks, and a second planned attack was stopped - Police Spokesperson.
-  - text: 05 more people who tested positive for COVID-19 recover. Total recoveries in Sri Lanka now at 96 - Health Ministry.
-  - text: Buses & trains will not operate in areas, where curfew will remain until 22/04. Inter-Provincial bus service to resume on 22/04 - Min. of Passenger Transport.
-  - text: 02 more people tested positive for COVID-19. Total confirmed COVID-19 cases in Sri Lanka now at 271 - Ministry of Health.
+  data:
+    - text: 05 more people who tested positive for COVID-19 recover. Total recoveries in Sri Lanka now at 91 - Health Ministry.
+    - text: 02 more people tested positive for COVID-19. Total confirmed COVID-19 cases in Sri Lanka now at 256 - Ministry of Health.
+    - text: 15 people tested positive for COVID-19 today. Total confirmed COVID-19 cases in Sri Lanka now at 269 - Ministry of Health.
+    - text: 197 suspects arrested over 2019 April 21st attacks, and a second planned attack was stopped - Police Spokesperson.
+    - text: 05 more people who tested positive for COVID-19 recover. Total recoveries in Sri Lanka now at 96 - Health Ministry.
+    - text: Buses & trains will not operate in areas, where curfew will remain until 22/04. Inter-Provincial bus service to resume on 22/04 - Min. of Passenger Transport.
+    - text: 02 more people tested positive for COVID-19. Total confirmed COVID-19 cases in Sri Lanka now at 271 - Ministry of Health.
 
 - date: 18 Apr, 2020
-  - text: 5000 SLTB buses and 400 trains will be deployed for public transport services from 20th April - Ministry of Passenger Transport Management.
-  - text: 04 more people tested positive for COVID-19. Total confirmed COVID-19 cases in Sri Lanka now at 248 - Ministry of Health.
-  - text: Curfew for all districts excluding Colombo, Gampaha, Kalutara, Puttalam, Kandy, Kegalle & Ampara will be relaxed at 05AM on 20th & will be re-imposed at 08PM.
-  - text: 09 people who tested positive for COVID-19 recover. Total recoveries in Sri Lanka now at 86 - Health Ministry.
-  - text: Train services from 20th April will only be for staff attached to public & private sector essential services, as declared by the government - Dept. of Railways.
-  - text: 06 more people tested positive for COVID-19. Total confirmed COVID-19 cases in Sri Lanka now at 254 - Ministry of Health.
+  data:
+    - text: 5000 SLTB buses and 400 trains will be deployed for public transport services from 20th April - Ministry of Passenger Transport Management.
+    - text: 04 more people tested positive for COVID-19. Total confirmed COVID-19 cases in Sri Lanka now at 248 - Ministry of Health.
+    - text: Curfew for all districts excluding Colombo, Gampaha, Kalutara, Puttalam, Kandy, Kegalle & Ampara will be relaxed at 05AM on 20th & will be re-imposed at 08PM.
+    - text: 09 people who tested positive for COVID-19 recover. Total recoveries in Sri Lanka now at 86 - Health Ministry.
+    - text: Train services from 20th April will only be for staff attached to public & private sector essential services, as declared by the government - Dept. of Railways.
+    - text: 06 more people tested positive for COVID-19. Total confirmed COVID-19 cases in Sri Lanka now at 254 - Ministry of Health.
 
 - date: 17 Apr, 2020
-  - text: 02 more people who tested positive for COVID-19 recover. Total recoveries in Sri Lanka now at 70 - Health Ministry.
-  - text: Public transport to be used for essential services only, for a period of two weeks after 20th April - Minister Mahinda Amaraweera.
-  - text: CID arrested a woman for spreading false information on COVID-19 via social media. In total 17 suspects arrested for the same offence - Police Media Division.
-  - text: 03 more people tested positive for COVID-19. Total confirmed COVID-19 cases in Sri Lanka now at 241 - Health Ministry.
-  - text: 07 people who tested positive for COVID-19 recover. Total recoveries in Sri Lanka now at 77 - Health Ministry.
-  - text: 02 more people tested positive for COVID-19. Total confirmed COVID-19 cases in Sri Lanka now at 244 - Health Ministry.
+  data:
+    - text: 02 more people who tested positive for COVID-19 recover. Total recoveries in Sri Lanka now at 70 - Health Ministry.
+    - text: Public transport to be used for essential services only, for a period of two weeks after 20th April - Minister Mahinda Amaraweera.
+    - text: CID arrested a woman for spreading false information on COVID-19 via social media. In total 17 suspects arrested for the same offence - Police Media Division.
+    - text: 03 more people tested positive for COVID-19. Total confirmed COVID-19 cases in Sri Lanka now at 241 - Health Ministry.
+    - text: 07 people who tested positive for COVID-19 recover. Total recoveries in Sri Lanka now at 77 - Health Ministry.
+    - text: 02 more people tested positive for COVID-19. Total confirmed COVID-19 cases in Sri Lanka now at 244 - Health Ministry.
 
 - date: 16 Apr, 2020
   data:
