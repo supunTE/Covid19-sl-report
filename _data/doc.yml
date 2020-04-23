@@ -1,10 +1,40 @@
 
 # http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-eu-28-01.pdf
 
-- name: Situation Report 83 (10:00 HRS)
+- name: Situation Report 87 (10:00 HRS)
+  provider: Epidemiology Unit, Ministry of Health Sri Lanka
+  date: 23 Apr, 2020
+  url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-23-04_10.pdf
+
+- name: Situation Report 86 (10:00 HRS)
+  provider: Epidemiology Unit, Ministry of Health Sri Lanka
+  date: 22 Apr, 2020
+  url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-22-04_10.pdf
+
+- name: Global Situation Report 93
+  provider: World Health Organization
+  date: 22 Apr, 2020
+  url: https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200422-sitrep-93-covid-19.pdf?sfvrsn=35cf80d7_4
+
+- name: Situation Report 85 (10:00 HRS)
+  provider: Epidemiology Unit, Ministry of Health Sri Lanka
+  date: 21 Apr, 2020
+  url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-21-04_10.pdf
+
+- name: Global Situation Report 92
+  provider: World Health Organization
+  date: 21 Apr, 2020
+  url: https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200421-sitrep-92-covid-19.pdf?sfvrsn=38e6b06d_6
+
+- name: Situation Report 84 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka
   date: 20 Apr, 2020
   url: http://www.epid.gov.lk/web/images/pdf/corona_virus_report/sitrep-sl-en-20-04_10.pdf
+
+- name: Global Situation Report 91
+  provider: World Health Organization
+  date: 20 Apr, 2020
+  url: https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200420-sitrep-91-covid-19.pdf?sfvrsn=fcf0670b_4
 
 - name: Situation Report 83 (10:00 HRS)
   provider: Epidemiology Unit, Ministry of Health Sri Lanka

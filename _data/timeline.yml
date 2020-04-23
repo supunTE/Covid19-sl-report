@@ -9,10 +9,36 @@
 #     - text: none
 #   data:
 #     - text: WHO declares Coronavirus as a global emergency
-- date: 20 Apr, 2020
+- date: 22 Apr, 2020
   data:
+    - text: 588 people who violated the curfew arrested during the past 24 hours. In total 35,321 curfew violators arrested and 9,015 vehicles seized - Police Media Division.
+    - text: 02 more people who tested positive for COVID-19 recover. Total recoveries in Sri Lanka now at 104 - Health Ministry.
+    - text: 11 more people tested positive for COVID-19. Total confirmed COVID-19 cases in Sri Lanka now at 321 - Health Ministry.
+    - text: Guidelines issued for vendors conducting mobile sales & delivery ; failure to comply would result in termination of curfew pass - Police Spokesperson.
+    - text: 01 more person tested positive for COVID-19 & was detected while receiving treatment at Polonnaruwa Hospital. Total confirmed COVID-19 cases in Sri Lanka now 322 - Ministry of Health.
+    - text: Only 02 passengers permitted to travel in a three-wheeler - DG Health Services.
+    - text: Barber shops and food stalls around hospitals will remain closed until further notice - DG Health Services.
+    - text: Presidential Task Force for economic revival and poverty eradication established. It will be led by President's Special Representive Basil Rajapaksa - PMD.
+    - text: Another person tested positive for COVID-19. Total confirmed cases in Sri Lanka now at 323 & total recoveries at 105 - Health Ministry.
+    - text: Assistance of foreign military not required to combat COVID-19 & discussions on the matter did not take place with India - Defence Secretary.
+
+- date: 21 Apr, 2020
+  data:
+    - text: All taverns in the country instructed to remain closed until further notice - PMD.
+    - text: 1,020 people from Bandaranaike Mawatha in Colombo 12 moved in to quarantine - Chief MOH of the Colombo MC.
+    - text: 05 more people tested positive for COVID-19. Total confirmed COVID-19 cases in Sri Lanka now at 309 - DG Health Services.
+    - text: 100 people have thus far recovered from COVID-19 in Sri Lanka as 02 people who tested positive for COVID-19 recovered today - Health Ministry.
+    - text: Retail trade at the Peliyagoda Fish Market suspended temporarily. Business restricted to wholesale trade only - Government Information Department.
+    - text: Covid-19 has infected more than 2.5 million people and killed 171,693 worldwide.
+    - text: Another person tested positive for COVID-19 today. Total confirmed COVID-19 cases in Sri Lanka now at 310 - DG Health Services.
+    - text: Two more people who tested positive for COVID-19 recover. Total recoveries in Sri Lanka now at 102 - Health Ministry.
+    - text: Sri Lankan Airlines flight with 93 Sri Lankan students from Pakistan arrived in the island - Reporter.
+
+- date: 20 Apr, 2020
+  important:
     - text: 24 people tested positive for COVID-19 from Colombo 12 today. Total confirmed COVID-19 cases in Sri Lanka now at 295 - DG Health Services.
-    - text: Postal service in areas where curfew will be relaxed to resume on 21st. Distribution of mail to commence on 22nd - Post Master General.
+  data:
+    - text: Postal service in areas where curfew will be relaxed to resume on 21st. Distribution of mail to commence on 22nd. Overseas mail will not be accepted until further notice - Post Master General.
     - text: Curfew for Colombo, Gampaha, Kalutara and Puttalam Districts extended to 05AM on the 27th of April - PMD.
     - text: Curfew for other districts will be relaxed daily from 05AM to 08PM until 24th April; curfew from 08PM on 24th April to be relaxed at 05AM on 27th April - PMD.
     - text: Movement between Colombo, Gampaha, Kalutara, Puttalam as well as outside those districts strictly prohibited.
@@ -35,7 +61,10 @@
 - date: 18 Apr, 2020
   data:
     - text: 5000 SLTB buses and 400 trains will be deployed for public transport services from 20th April - Ministry of Passenger Transport Management.
+    - text: National Elections Commission is bound to declare a separate date for elections, if it is not possible to hold electons - Prime Minister.
+    - text: Dambulla Dedicated Economic Centre will be open from tomorrow, from 06AM to 08PM - Minister Janaka Bandara.
     - text: 04 more people tested positive for COVID-19. Total confirmed COVID-19 cases in Sri Lanka now at 248 - Ministry of Health.
+    - text: Curfew for all districts excluding Colombo, Gampaha, Kalutara, Puttlam, Kandy, Kegalle & Ampara will be in effect from 08PM to 05AM daily from 20th April.
     - text: Curfew for all districts excluding Colombo, Gampaha, Kalutara, Puttalam, Kandy, Kegalle & Ampara will be relaxed at 05AM on 20th & will be re-imposed at 08PM.
     - text: 09 people who tested positive for COVID-19 recover. Total recoveries in Sri Lanka now at 86 - Health Ministry.
     - text: Train services from 20th April will only be for staff attached to public & private sector essential services, as declared by the government - Dept. of Railways.
