@@ -202,32 +202,7 @@ title: Home
       </h6>
     </div>
 
-    <div class="container font-1" id="latestTimeline">
-      <div class="row">
-        <div class="col-xl-12 col-md-8 mx-auto">
-          <h3 class="display-4 caption-2">Timeline</h3>
-          <ul class="timeline">
-            {% for date in site.data.timeline limit: 6 %}
-            <li>
-              <h3>{{ date.date }}</h3>
-              {% if date.important %}
-              {% for importanttext in date.important %}
-              <h5 style="color: red;">- {{ importanttext.text }}</h5>
-              {% endfor %}
-              {% endif %}
-
-              {% for detail in date.data %}
-              <h6>- {{ detail.text }}</h6>
-              {% endfor %}
-            </li>
-            {% endfor %}
-          </ul>
-          <a href="./timeline.html" class="btn btn-see-all text-white mx-auto" style="width: 100%;">See All</a>
-          <div class="text-center">Source - News1st | <a
-              href="http://corona.newsfirst.lk/">http://corona.newsfirst.lk/</a></div>
-        </div>
-      </div>
-    </div>
+    <!-- Removed Timeline -->
 
   </div>
 
@@ -237,18 +212,7 @@ title: Home
       {% include map.html %}
     </div>
 
-    <div class="col-xl-12 col-10 mx-auto news-panel" id="latestNews"
-      style="width: 100%;">
-      <h3 class="display-4 caption-2" id="news-panel">Latest News on COVID-19</h3>
-      <input type="text" class="col-10 search-bar" id="myInput" onkeyup="searchFunction()"
-        placeholder="Search for news.." title="Type here" style="display: none;">
-      <h5 class="loading-news" id="loading-news">Loading News ...</h5>
-      <h5 class="no-news" id="noNews" style="display: none;">Search not found! <br> Check in all News.</h5>
-      <div class="card-columns news" id="news">
-      </div>
-      <a href="./news.html" class="btn btn-see-all text-white mx-auto" id="see-all" style="display: none;">See All
-        News</a>
-    </div>
+    <!-- Removed News -->
 
     <div class="container font-1" id="emergencyContacts">
       <div class="card-emergency font-1">
@@ -393,13 +357,5 @@ title: Home
     </div>
   </div>
 </div>
-
-<!-- <div class="col-xl-8 col-11 alert mx-auto alert-success alert-dismissible font-2 alert-new-year fade show" role="alert">
-  <h5 class="alert-heading" id="demo1">Sinhala & Tamil New Year</h5>
-  <span id="demo"></span>
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div> -->
 
 <script src="./script.js"></script>
