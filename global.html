@@ -54,7 +54,7 @@ title: Global
     <div class="col-md-7 col-b">
 
       <!-- bg-white-2 for white theme -->
-      <div class="card bg-dark-2">
+      <!-- <div class="card bg-dark-2">
         <div class="card-body global-data text-white font-2">
 
           <h3 class="text-center">Global News</h3>
@@ -64,8 +64,24 @@ title: Global
           </div>
 
         </div>
-      </div>
+      </div> -->
         
+      <script>
+        
+var xhr = new XMLHttpRequest();
+xhr.withCredentials = true;
+
+xhr.addEventListener("readystatechange", function() {
+  if(this.readyState === 4) {
+    console.log(this.responseText);
+  }
+});
+
+xhr.open("GET", "https://www.who.int/feeds/entity/csr/don/en/rss.xml");
+
+xhr.send();
+      </script>
+
     </div>
     <!-- <div class="col-md col-c">
       One of three columns

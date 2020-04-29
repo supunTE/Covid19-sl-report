@@ -108,7 +108,7 @@ fetch(api_url)
 getData();
 
 //  https://newsapi.org/docs
-var url = 'http://newsapi.org/v2/everything?' +
+var url = 'https://newsapi.org/v2/everything?' +
 'q=COVID+corona&' +
 'language=en&' +
 'pageSize=5&' +
