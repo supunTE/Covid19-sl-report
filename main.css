@@ -592,7 +592,7 @@ ul.timeline>li:before {
 }
 
 .card.card-details {
-    border-radius: 0 !important;
+    border-radius: 10px !important;
 }
 
 .table-card-header {

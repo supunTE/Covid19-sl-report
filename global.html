@@ -3,9 +3,79 @@ layout: default
 title: Global
 ---
 
-<h3 class="global-data-caption margin-top-under-nav">Global Data</h3>
+<link href="./css/global.css" rel="stylesheet">
 
-<div class="col-10 mx-auto table-gl-details card-group">
+<div class="container margin-top-under-nav">
+  <div class="row">
+    <div class="col-md-5 col-a">
+
+      <!-- bg-white-2 for white theme -->
+      <div class="card bg-dark-2">
+        <div class="card-body global-data text-white font-2">
+
+          <h3 class="text-center">Global Details</h3>
+
+          <div class="global-data-card bg-transparent-dark b-blue b-2 b-l text-dark">
+            <h4 id="global_total">00</h4>
+            <p id="global_cases_today">Today: +0</p>
+            <h6>Total Cases</h6>
+          </div>
+
+          <div class="global-data-card bg-transparent-dark b-red text-dark">
+            <h4 id="global_deaths">00</h4>
+            <p id="global_deaths_today">Today: +0</p>
+            <h6>Total Deaths</h6>
+          </div>
+
+          <div class="global-data-card bg-transparent-dark b-green text-dark">
+            <h4 id="global_recovered">00</h4>
+            <h6>Total Recovered</h6>
+          </div>
+
+          <div class="global-data-card bg-transparent-dark b-pink text-dark">
+            <h4 id="global_active">00</h4>
+            <h6>Total Active</h6>
+          </div>
+
+          <div class="global-data-card bg-transparent-dark b-orange text-dark">
+            <h4 id="global_critical">00</h4>
+            <h6>Total Critical</h6>
+          </div>
+
+          <div class="global-data-card bg-transparent-dark b-dark text-dark">
+            <h4 id="global_tests">00</h4>
+            <h6>Total Tests</h6>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-7 col-b">
+
+      <!-- bg-white-2 for white theme -->
+      <div class="card bg-dark-2">
+        <div class="card-body global-data text-white font-2">
+
+          <h3 class="text-center">Global News</h3>
+
+          <div id="globalNews">
+
+          </div>
+
+        </div>
+      </div>
+        
+    </div>
+    <!-- <div class="col-md col-c">
+      One of three columns
+    </div> -->
+  </div>
+</div>
+
+<!-- <h3 class="global-data-caption">Global Data</h3> -->
+
+<!-- <div class="col-10 mx-auto table-gl-details card-deck">
   <div class="card" style="background-color: #c79600">
     <div class="card-body">
       <h4 class="card-text global-table-card-header-value" id="global_total">
@@ -61,14 +131,15 @@ title: Global
       <h5 class="card-title global-table-card-text">Deaths Today</h5>
     </div>
   </div>
-</div>
+</div> -->
 
-<h6 class="text-center font-1 source">( Source - HEALTH PROMOTION BUREAU of SRI LANKA | <a
-    href="https://www.hpb.health.gov.lk/en">https://www.hpb.health.gov.lk/en</a> )
+<!-- <h6 class="text-center font-1 source">( Source - Novel COVID API | <a href="https://disease.sh/">https://disease.sh/</a>
+  )
   <br>
-  Last updated at : <span id="API_lastUpdated"></span>
-  <p class="text-danger margin-bottom-before-footer">Displaying these data is not supported on some of the web browsers, try
+  Last updated at : <span id="API_lastUpdated"></span> </h6>-->
+  <p class="text-danger margin-bottom-before-footer">Displaying these data is not supported on some of the web browsers,
+    try
     to go to source link.</p>
-</h6>
 
-<script src="./script-global.js"></script>
+
+<script src="./js/script-global.js"></script>
