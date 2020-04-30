@@ -302,18 +302,18 @@
     border-bottom-style: solid;
     border-width: 5px;
     margin: 5px;
-    border-radius: 10px;
+    border-radius: 20px 0 0 40px;
 }
 
 .global-news-card div.image {
-    background-color: #151823;
+    background-color: #343a40;
     border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
     width: 100%;
+    overflow: hidden;
 }
 
 #global_news_img {
-    border-radius: 10px;
+    border-radius: 100px;
 }
 
 .global-news-card div.col {
@@ -322,8 +322,11 @@
 
 #global_news_title {
     margin: 0px;
-    font-size: 160%;
+    font-size: 120%;
     font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre;
 }
 
 #global_news_desc {
@@ -342,9 +345,8 @@
 
 #global_new_author {
     text-align: right;
-    font-size: 80%;
+    font-size: 70%;
     margin: 0px;
-    font-style: italic;
 }
 
 
