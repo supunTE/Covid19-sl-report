@@ -5,9 +5,9 @@ title: Global
 
 <link href="./css/global.css" rel="stylesheet">
 
-<div class="container margin-top-under-nav">
+<div class="container-xl margin-top-under-nav">
   <div class="row">
-    <div class="col-md-5 col-a">
+    <div class="col-xl-5 col-a">
 
       <!-- bg-white-2 for white theme -->
       <div class="card bg-dark-2">
@@ -51,7 +51,20 @@ title: Global
       </div>
 
     </div>
-    <div class="col-md-7 col-b">
+    <div class="col-xl-7 col-b">
+
+      <!-- bg-white-2 for white theme -->
+      <div class="card bg-dark-2">
+        <div class="card-body global-data text-white font-2">
+
+          <h3 class="text-center">Details of Countries</h3>
+
+          <div id="countriesDetails">
+
+          </div>
+
+        </div>
+      </div>
 
       <!-- bg-white-2 for white theme -->
       <!-- <div class="card bg-dark-2">
@@ -65,22 +78,6 @@ title: Global
 
         </div>
       </div> -->
-        
-      <script>
-        
-var xhr = new XMLHttpRequest();
-xhr.withCredentials = true;
-
-xhr.addEventListener("readystatechange", function() {
-  if(this.readyState === 4) {
-    console.log(this.responseText);
-  }
-});
-
-xhr.open("GET", "https://www.who.int/feeds/entity/csr/don/en/rss.xml");
-
-xhr.send();
-      </script>
 
     </div>
     <!-- <div class="col-md col-c">
@@ -153,9 +150,49 @@ xhr.send();
   )
   <br>
   Last updated at : <span id="API_lastUpdated"></span> </h6>-->
-  <p class="text-danger margin-bottom-before-footer">Displaying these data is not supported on some of the web browsers,
-    try
-    to go to source link.</p>
+<p class="text-danger margin-bottom-before-footer">Displaying these data is not supported on some of the web browsers,
+  try
+  to go to source link.</p>
 
 
 <script src="./js/script-global.js"></script>
+
+
+<!-- <table class="table table-sm n-table-dark table-country-details">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Cases</th>
+      <th scope="col">Deaths</th>
+      <th scope="col">Recovered</th>
+      <th scope="col">Active</th>
+      <th scope="col">Critical</th>
+      <th scope="col">Cases per 1M</th>
+      <th scope="col">Deaths per 1M</th>
+      <th scope="col">Tests</th>
+      <th scope="col">Tests per 1M</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table> -->
