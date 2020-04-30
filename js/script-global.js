@@ -147,6 +147,7 @@ function globalNewsFunction(title, desc, imgUrl, url, time, author, source) {
   let authorHTML = document.createElement('h6');
 
   a.setAttribute('href', url);
+  a.setAttribute('tagert', "_blank");
   cardHTML.setAttribute('class', 'global-news-card bg-transparent-dark b-dark text-dark');
   imageHTML.setAttribute('class', 'image');
   imgHTML.setAttribute('class', 'col-sm-3 col-5');
