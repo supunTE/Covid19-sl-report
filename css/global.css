@@ -179,6 +179,14 @@
 
 /* #### */
 /* Country Details */
+.nav-tabs{
+    border-color: rgb(126, 126, 126);
+}
+
+.nav-tabs a{
+    color: rgb(126, 126, 126);
+}
+
 .country-details-card {
     border-bottom-style: solid;
     border-width: 10px;
@@ -192,11 +200,14 @@
 
 .country_flag_image {
     display: inline;
+    vertical-align: middle;
+    margin: 0px 5px 5px 5px;
 }
 
 .country_flag {
-    height: 35px;
-    margin: 0px 0px 10px 0;
+    height: 40px;
+    width: 80px;
+    object-fit: fill;
 }
 
 .country-details-card:hover {
@@ -204,6 +215,7 @@
 }
 
 .country-details-card h6 {
+    font-size: 100%;
     margin: 0px;
 }
 
@@ -216,10 +228,10 @@
     padding: 4px;
     border-radius: 10px;
     vertical-align: top;
-    font-size: 80%;
 }
 
 .country-details-card.bg-transparent-dark h6.country_active {
+    font-size: 80%;
     background-color: rgb(126, 126, 126);
 }
 
@@ -227,8 +239,6 @@
     padding: 10px;
     text-align: center;
     font-size: 80%;
-    background-color: #343a40;
-    color: white;
 }
 
 .country_more_details{
@@ -257,8 +267,6 @@
     .country_details_col{
         padding: 10px;
         text-align: left;
-        background-color: #343a40;
-        color: white;
     }
 
     .country_more_details{
@@ -268,7 +276,7 @@
 
 @media (max-width: 576px) {
     .country-details-card {
-        height: 86px;
+        height: 66px;
     }
 
     .country-details-card:hover {
@@ -280,11 +288,21 @@
         font-weight: 500;
     }
 
+    .country_flag {
+        height: 20px;
+        width: 40px;
+        object-fit: fill;
+    }
+
     .country_active {
         display: block;
         margin: 0px 80px !important;
         border-radius: 10px 10px 0 0;
         text-align: center;
+    }
+
+    .country-details-card.bg-transparent-dark h6.country_active {
+        font-size: 70%;
     }
 
     .country_more_details h6{
@@ -303,26 +321,28 @@
     border-width: 5px;
     margin: 5px;
     border-radius: 20px 0 0 40px;
-}
-
-.global-news-card div.image {
-    background-color: #343a40;
-    border-top-left-radius: 8px;
-    width: 100%;
     overflow: hidden;
 }
 
+.global-news-card div.image {
+    margin: 0px;
+    /* border-top-left-radius: 8px; */
+    /* width: 100%; */
+    /* overflow: hidden; */
+}
+
 #global_news_img {
-    border-radius: 100px;
+    padding: 0px;
+    border-radius: 0 0 10px 0px;
 }
 
 .global-news-card div.col {
-    padding: 20px;
+    padding: 5px 20px 20px 20px;
 }
 
 #global_news_title {
     margin: 0px;
-    font-size: 120%;
+    font-size: 140%;
     font-weight: 500;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -331,7 +351,7 @@
 
 #global_news_desc {
     margin: 0px;
-    font-size: 80%;
+    font-size: 0%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: pre;
