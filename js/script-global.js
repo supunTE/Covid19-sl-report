@@ -371,7 +371,7 @@ totalCasesCharts();
 
 async function totalCasesCharts(){
   const data = await getHistoryData();
-  const ctx = document.getElementById('myChart');
+  const ctx = document.getElementById('globaldataChart');
   const myChart = new Chart(ctx, {
       type: 'line',
       data: {

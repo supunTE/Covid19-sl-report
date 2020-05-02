@@ -113,12 +113,8 @@
     <div class="font-2" id="mapDetailsBox">
         <div id="mapDetailsBoxDetails">
             <h4 id="mapDetailsBoxName">Total Confirmed</h4>
-            <h5 id="mapDetailsBoxCount">Count : {{ site.data.confirmed_lk.TOT }}</h5>
+            <h5 id="mapDetailsBoxCount">Count : </h5>
             <div id="mapDetailsOther">
-                <div id="mapDetailsBoxQuarn">From Quarantine Centers : <em>{{ site.data.confirmed_lk.QUARN }}</em></div>
-                <div id="mapDetailsBoxForei">Foreigners : <em>{{ site.data.confirmed_lk.FOREI }}</em></div>
-                <div id="mapDetailsBoxForei">Under Investigation : <em>{{ site.data.confirmed_lk.UNDIN }}</em></div>
-                <div id="mapDetailsBoxForei">Naval Base Welisara : <em>{{ site.data.confirmed_lk.NABWALI }}</em></div>
             </div>
             <table id="mapDetailsColors">
                 <!-- &lt; -->
@@ -148,12 +144,8 @@
                 </tr>
             </table>
             <div id="mapdetailsFooter">
-                <small>*Details of Kalmunai is added in to Ampara District.
-                    <br>Last Updated on {{ site.data.confirmed_lk.date }}
-                </small>
-                <br>
-                    Source - Epidemiology Unit, Ministry of Health Sri Lanka | 
-                    <a href="{{ site.data.confirmed_lk.link }}" target="_blank">Link for the file</a>
+                Source - Arimac COVID-19 Sri Lankan Daily Uploads |
+                <a href="https://github.com/arimacdev/covid19-srilankan-data" target="_blank">Source Link</a>
             </div>
         </div>
     </div>
@@ -188,6 +180,7 @@
         "MONG",
         "QUARN",
         "FOREI",
+        "NAVW",
         "KALM"
     ]
 
@@ -217,202 +210,124 @@
         "Anuradhapura",
         "Polonnaruwa",
         "Monaragala",
-        "Quarantine Centers",
+        "Quarantine",
         "Foreigners",
+        "NAVAL BASE-WELISARA",
         "Kalmunai"
     ]
 
-    // var KALM = {{site.data.confirmed_lk.KALM}}
+    const url_to_historical_data_lk_csv =
+        'https://raw.githubusercontent.com/arimacdev/covid19-srilankan-data/master/Districts/districts_lk.csv';
 
-    // var COLB = {{site.data.confirmed_lk.COLB}}
-    // var PUTL = {{site.data.confirmed_lk.PUTL}}
-    // var KALT = {{site.data.confirmed_lk.KALT}}
-    // var GAMP = {{site.data.confirmed_lk.GAMP}}
-    // var KAND = {{site.data.confirmed_lk.KAND}}
-    // var JAFN = {{site.data.confirmed_lk.JAFN}}
-    // var RATN = {{site.data.confirmed_lk.RATN}}
-    // var KURN = {{site.data.confirmed_lk.KURN}}
-    // var MATR = {{site.data.confirmed_lk.MATR}}
-    // var GALE = {{site.data.confirmed_lk.GALE}}
-    // var KEGL = {{site.data.confirmed_lk.KEGL}}
-    // var BATC = {{site.data.confirmed_lk.BATC}}
-    // var BADL = {{site.data.confirmed_lk.BADL}}
-    // var MATL = {{site.data.confirmed_lk.MATL}}
-    // var NUWE = {{site.data.confirmed_lk.NUWE}}
-    // var HAMT = {{site.data.confirmed_lk.HAMT}}
-    // var KILN = {{site.data.confirmed_lk.KILN}}
-    // var MANR = {{site.data.confirmed_lk.MANR}}
-    // var VAVN = {{site.data.confirmed_lk.VAVN}}
-    // var MULT = {{site.data.confirmed_lk.MULT}}
-    // var AMPR = {{site.data.confirmed_lk.AMPR}} + KALM;
-    // var TRIC = {{site.data.confirmed_lk.TRIC}}
-    // var ANUP = {{site.data.confirmed_lk.ANUP}}
-    // var POLN = {{site.data.confirmed_lk.POLN}}
-    // var MONG = {{site.data.confirmed_lk.MONG}}
+    processData();
 
-    // var QUARN = {{site.data.confirmed_lk.QUARN}}
-    // var FOREI = {{site.data.confirmed_lk.FOREI}}
-    // var TOT = {{site.data.confirmed_lk.TOT}}
+    async function getHistoryData() {
+        // var Colombo;
+        // var Puttalam;
+        // var Kalutara;
+        // var Gampaha;
+        // var Kandy;
+        // var Jaffna;
+        // var Ratnapura;
+        // var Kurunegala;
+        // var Matara;
+        // var Galle;
+        // var Kegalle;
+        // var Batticaloa;
+        // var Badulla;
+        // var Matale;
+        // var Nuwara_Eliya;
+        // var Hambantota;
+        // var Kilinochchi;
+        // var Mannar;
+        // var Vavuniya;
+        // var Mullaitivu;
+        // var Ampara;
+        // var Trincomalee;
+        // var Anuradhapura;
+        // var Polonnaruwa;
+        // var Monaragala;
+        // var Quarantine;
+        // var Foreigners;
+        // var NAVALBASE_WELISARA;
+        // var Kalmunai;
+        const districtData = [];
+        var TotalfromDistricts = 0;
 
-    var KALM = {{site.data.confirmed_lk.KALM}}
+        const response_his = await fetch(url_to_historical_data_lk_csv);
 
-    var COLB = {{site.data.confirmed_lk.COLB}}
-    var PUTL = {{site.data.confirmed_lk.PUTL}}
-    var KALT = {{site.data.confirmed_lk.KALT}}
-    var GAMP = {{site.data.confirmed_lk.GAMP}}
-    var KAND = {{site.data.confirmed_lk.KAND}}
-    var JAFN = {{site.data.confirmed_lk.JAFN}}
-    var RATN = {{site.data.confirmed_lk.RATN}}
-    var KURN = {{site.data.confirmed_lk.KURN}}
-    var MATR = {{site.data.confirmed_lk.MATR}}
-    var GALE = {{site.data.confirmed_lk.GALE}}
-    var KEGL = {{site.data.confirmed_lk.KEGL}}
-    var BATC = {{site.data.confirmed_lk.BATC}}
-    var BADL = {{site.data.confirmed_lk.BADL}}
-    var MATL = {{site.data.confirmed_lk.MATL}}
-    var NUWE = {{site.data.confirmed_lk.NUWE}}
-    var HAMT = {{site.data.confirmed_lk.HAMT}}
-    var KILN = {{site.data.confirmed_lk.KILN}}
-    var MANR = {{site.data.confirmed_lk.MANR}}
-    var VAVN = {{site.data.confirmed_lk.VAVN}}
-    var MULT = {{site.data.confirmed_lk.MULT}}
-    var AMPR = {{site.data.confirmed_lk.AMPR}} + KALM;
-    var TRIC = {{site.data.confirmed_lk.TRIC}}
-    var ANUP = {{site.data.confirmed_lk.ANUP}}
-    var POLN = {{site.data.confirmed_lk.POLN}}
-    var MONG = {{site.data.confirmed_lk.MONG}}
+        const data = await response_his.text();
+        const rows = data.split('\n');
+        const rows2 = rows.slice(1);
 
-    var UNDIN = {{site.data.confirmed_lk.UNDIN}}
-    var QUARN = {{site.data.confirmed_lk.QUARN}}
-    var FOREI = {{site.data.confirmed_lk.FOREI}}
-    var TOT = {{site.data.confirmed_lk.TOT}}
+        rows2.forEach(elt => {
+            const row = elt.split(',');
+            const provinceName = row[0];
+            
+            // TotalfromDistricts += parseInt(row[3]);
+            if(!(row=="")){
+                TotalfromDistricts += parseInt(row[3]);
+            }
 
-    // COLBper = (COLB / TOT) * 100;
-    // COLBperS = (Math.floor(COLBper * 100) / 100) + '%';
+            for (a = 0; a < districtNames.length; a++) {
+                if (provinceName == districtNames[a]) {
+                    // // console.log(districtNames[a] + ' : ' + row[3]);
+                    // if(provinceName=="Nuwara Eliya"){
+                    //     Nuwara_Eliya = row[3];
+                    // }else if(provinceName=="NAVAL BASE-WELISARA"){
+                    //     NAVALBASE_WELISARA = row[3];
+                    // }else{
+                    //     this[districtNames[a]] = row[3];
+                    // }
+                    districtData[a] = row[3];
+                }
+            }
 
-    // PUTLper = (PUTL / TOT) * 100;
-    // PUTLperS = (Math.floor(PUTLper * 100) / 100) + '%';
-
-    // KALTper = (KALT / TOT) * 100;
-    // KALTperS = (Math.floor(KALTper * 100) / 100) + '%';
-
-    // GAMPper = (GAMP / TOT) * 100;
-    // GAMPperS = (Math.floor(GAMPper * 100) / 100) + '%';
-
-    // KANDper = (KAND / TOT) * 100;
-    // KANDperS = (Math.floor(KANDper * 100) / 100) + '%';
-
-    // JAFNper = (JAFN / TOT) * 100;
-    // JAFNperS = (Math.floor(JAFNper * 100) / 100) + '%';
-
-    // RATNper = (RATN / TOT) * 100;
-    // RATNperS = (Math.floor(RATNper * 100) / 100) + '%';
-
-    // KURNper = (KURN / TOT) * 100;
-    // KURNperS = (Math.floor(KURNper * 100) / 100) + '%';
-
-    // MATRper = (MATR / TOT) * 100;
-    // MATRperS = (Math.floor(MATRper * 100) / 100) + '%';
-
-    // GALEper = (GALE / TOT) * 100;
-    // GALEperS = (Math.floor(GALEper * 100) / 100) + '%';
-
-    // KEGLper = (KEGL / TOT) * 100;
-    // KEGLperS = (Math.floor(KEGLper * 100) / 100) + '%';
-
-    // BATCper = (BATC / TOT) * 100;
-    // BATCperS = (Math.floor(BATCper * 100) / 100) + '%';
-
-    // BADLper = (BADL / TOT) * 100;
-    // BADLperS = (Math.floor(BADLper * 100) / 100) + '%';
-
-    // MATLper = (MATL / TOT) * 100;
-    // MATLperS = (Math.floor(MATLper * 100) / 100) + '%';
-
-    // NUWEper = (NUWE / TOT) * 100;
-    // NUWEperS = (Math.floor(NUWEper * 100) / 100) + '%';
-
-    // HAMTper = (HAMT / TOT) * 100;
-    // HAMTperS = (Math.floor(HAMTper * 100) / 100) + '%';
-
-    // KILNper = (KILN / TOT) * 100;
-    // KILNperS = (Math.floor(KILNper * 100) / 100) + '%';
-
-    // MANRper = (MANR / TOT) * 100;
-    // MANRperS = (Math.floor(MANRper * 100) / 100) + '%';
-
-    // VAVNper = (VAVN / TOT) * 100;
-    // VAVNperS = (Math.floor(VAVNper * 100) / 100) + '%';
-
-    // MULTper = (MULT / TOT) * 100;
-    // MULTperS = (Math.floor(MULTper * 100) / 100) + '%';
-
-    // AMPRper = (AMPR / TOT) * 100;
-    // AMPRperS = (Math.floor(AMPRper * 100) / 100) + '%';
-
-    // TRICper = (TRIC / TOT) * 100;
-    // TRICperS = (Math.floor(TRICper * 100) / 100) + '%';
-
-    // ANUPper = (ANUP / TOT) * 100;
-    // ANUPperS = (Math.floor(ANUPper * 100) / 100) + '%';
-
-    // POLNper = (POLN / TOT) * 100;
-    // POLNperS = (Math.floor(POLNper * 100) / 100) + '%';
-
-    // MONGper = (MONG / TOT) * 100;
-    // MONGperS = (Math.floor(MONGper * 100) / 100) + '%';
-
-    // QUARNper = (QUARN / TOT) * 100;
-    // QUARNperS = (Math.floor(QUARNper * 100) / 100) + '%';
-
-    // FOREIper = (FOREI / TOT) * 100;
-    // FOREIperS = (Math.floor(FOREIper * 100) / 100) + '%';
-
-    for (a = 0; a < 28; a++) {
-        this[districtCodes[a] + 'per'] = ((this[districtCodes[a]]) / TOT) * 100;
-        this[districtCodes[a] + 'perS'] = (Math.floor((this[districtCodes[a] + 'per']) * 100) / 100) + '%';
+            // console.log(TotalfromDistricts);
+        });
+        return {districtData, TotalfromDistricts};
     }
 
-    // console.log(COLBperS);
-    // console.log(PUTLperS);
-    // console.log(KLATperS);
-    // console.log(GAMPperS);
-    // console.log(KANDperS);
-    // console.log(JAFNperS);
-    // console.log(RATNperS);
-    // console.log(KURNperS);
-    // console.log(MATRperS);
-    // console.log(GALEperS);
-    // console.log(KEGLperS);
-    // console.log(BATCperS);
-    // console.log(BADLperS);
-    // console.log(MATLperS);
-    // console.log(NUWEperS);
-    // console.log(HAMTperS);
-    // console.log(KILNperS);
-    // console.log(MANRperS);
-    // console.log(VAVNperS);
-    // console.log(MULTperS);
-    // console.log(AMPRperS);
-    // console.log(TRICperS);
-    // console.log(ANUPperS);
-    // console.log(POLNperS);
-    // console.log(MONGperS);
+    // Colombo, Puttalam, Kalutara, Gampaha, Kandy, Jaffna, Ratnapura, Kurunegala, Matara, Galle, Kegalle, Batticaloa, Badulla, Matale, 
+    //         Nuwara_Eliya, Hambantota, Kilinochchi, Mannar, Vavuniya, Mullaitivu, Ampara, Trincomalee, Anuradhapura, Polonnaruwa, Monaragala,
+    //         Quarantine, Foreigners, NAVALBASE_WELISARA, Kalmunai,
 
-    // console.log(QUARNperS);
-    // console.log(FOREIperS);
+    async function processData(){
+        const dataMain = await getHistoryData();
+        const data = dataMain.districtData;
 
-    for (a = 0; a < 28; a++) {
-        console.log(districtCodes[a] + ":");
-        console.log(this[districtCodes[a] + "perS"]);
-    }
+        for (a = 0; a < districtNames.length; a++) {
+            this[districtCodes[a]] = data[a];
+        }
 
-    color1 = "#ff0000";
-    color2 = "#ff5a1d";
-    color3 = "#ff833e";
-    color4 = "#ffa463";
-    color5 = "#ffc28d";
-    color6 = "#ffffff";
+        var TOT = dataMain.TotalfromDistricts;
+
+        // console.log(TOT);
+
+        for (a = 0; a < districtNames.length; a++) {
+            this[districtCodes[a] + 'per'] = ((this[districtCodes[a]]) / TOT) * 100;
+            this[districtCodes[a] + 'perS'] = (Math.floor((this[districtCodes[a] + 'per']) * 100) / 100) + '%';
+        }
+
+        fullCountDiv = document.getElementById('mapDetailsBoxCount');
+        mapDetailsOtherDiv = document.getElementById('mapDetailsOther')
+        fullCountDiv.textContent = 'Count: ' + TOT;
+
+
+        for (a = 25; a < districtNames.length; a++) {
+            let otherdetailName = document.createElement('p');
+
+            otherdetailName.textContent += districtNames[a] + ': ' + data[a];
+
+            mapDetailsOtherDiv.appendChild(otherdetailName);
+        }
+
+        color1 = "#ff0000";
+        color2 = "#ff5a1d";
+        color3 = "#ff833e";
+        color4 = "#ffa463";
+        color5 = "#ffc28d";
+        color6 = "#ffffff";
 
     // if (COLBper > 40) {
     //     document.getElementById('Colombo').style.fill = color1;
@@ -534,6 +449,9 @@
         document.getElementById('mapDetailsOther').style.display = 'block';
         document.getElementById('mapDetailsColors').style.display = 'block';
     };
+
+
+}
 </script>
 
 <style>
@@ -559,10 +477,10 @@
         padding: 0.5rem 1.5rem;
     }
 
-    #mapDetailsBoxQuarn,
-    #mapDetailsBoxForei {
-        padding: 0 1.5rem;
-        font-size: 90%;
+    #mapDetailsOther p{
+        font-size: 80%;
+        margin: 0px 10px;
+        padding-bottom: 0px;
     }
 
     #mapdetailsFooter {
@@ -631,30 +549,38 @@
 
     @media only screen and (max-width: 860px) {
         #mapDetailsBox {
-            top: 270px;
+            top: 140px;
         }
-        #mapDetailsBoxName{
+
+        #mapDetailsBoxName {
             font-size: 140%;
             padding: 0.4rem 1.5rem;
         }
+
         #mapDetailsBoxCount {
             padding: 0rem 1.5rem;
             font-size: 125%;
         }
-        #mapDetailsBoxQuarn, #mapDetailsBoxForei {
+
+        #mapDetailsBoxQuarn,
+        #mapDetailsBoxForei {
             font-size: 75%;
         }
+
         #mapDetailsColors tr td:first-of-type {
             width: 5px;
         }
-        .percentage{
+
+        .percentage {
             padding: 0.2rem 1rem;
             font-size: 90%;
         }
-        #mapdetailsFooter{
+
+        #mapdetailsFooter {
             padding: 0.4rem 1rem;
             font-size: 80%;
         }
+
         div.mapSL svg {
             width: 55%;
         }
@@ -665,6 +591,7 @@
             position: static;
             width: 100%;
         }
+
         div.mapSL svg {
             width: 95%;
             margin-top: -40px;

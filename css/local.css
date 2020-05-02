@@ -1,0 +1,145 @@
+.bg-white-2 {
+    background-color: #dddfe0;
+}
+
+.bg-dark-2 {
+    background-color: rgb(71, 76, 80);
+}
+
+.bg-transparent-dark {
+    background-color: #ffffffbe;
+}
+
+.b-blue {
+    border-color: #007bff;
+    transition: 1s;
+}
+
+.b-blue:hover {
+    background-color: #007bff;
+    color: white !important;
+}
+
+.b-indigo {
+    border-color: #6610f2;
+    transition: 1s;
+}
+
+.b-indigo:hover {
+    background-color: #6610f2;
+    color: white !important;
+}
+
+.b-purple {
+    border-color: #6f42c1;
+    transition: 1s;
+}
+
+.b-purple:hover {
+    background-color: #6f42c1;
+    color: white !important;
+}
+
+.b-pink {
+    border-color: #e83e8c;
+    transition: 1s;
+}
+
+.b-pink:hover {
+    background-color: #e83e8c;
+    color: white !important;
+}
+
+.b-red {
+    border-color: #dc3545;
+    transition: 1s;
+}
+
+.b-red:hover {
+    background-color: #dc3545;
+    color: white !important;
+}
+
+.b-orange {
+    border-color: #fd7e14;
+    transition: 1s;
+}
+
+.b-orange:hover {
+    background-color: #fd7e14;
+    color: white !important;
+}
+
+.b-yellow {
+    border-color: #ffc107;
+    transition: 1s;
+}
+
+.b-yellow:hover {
+    background-color: #ffc107;
+    color: white !important;
+}
+
+.b-green {
+    border-color: #28a745;
+    transition: 1s;
+}
+
+.b-green:hover {
+    background-color: #28a745;
+    color: white !important;
+}
+
+.b-teal {
+    border-color: #20c997;
+    transition: 1s;
+}
+
+.b-teal:hover {
+    background-color: #20c997;
+    color: white !important;
+}
+
+.b-cyan {
+    border-color: #17a2b8;
+    transition: 1s;
+}
+
+.b-cyan:hover {
+    background-color: #17a2b8;
+    color: white !important;
+}
+
+.b-light {
+    border-color: #f8f9fa;
+    transition: 1s;
+}
+
+.b-light:hover {
+    background-color: #f8f9fa;
+    color: white !important;
+}
+
+.b-dark {
+    border-color: #343a40;
+    transition: 1s;
+}
+
+.b-dark:hover {
+    background-color: #343a40;
+    color: white !important;
+}
+
+.b-gray {
+    border-color: #6c757d;
+    transition: 1s;
+}
+
+.b-gray:hover {
+    background-color: #6c757d;
+    color: white !important;
+}
+
+.card {
+    margin-bottom: 10px;
+}
