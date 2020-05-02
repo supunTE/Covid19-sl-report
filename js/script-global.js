@@ -17,34 +17,6 @@ globalCasesToday = document.getElementById('global_cases_today');
 globalDeathsToday = document.getElementById('global_deaths_today');
 LastUpdated = document.getElementById('API_lastUpdated');
 
-// async function getData() {
-//   const response = await fetch(api_url);
-//   const all_data = await response.json();
-//   const data = all_data.data;
-
-//   globalTotalAPI = data.global_total_cases;
-//   globalDeathsAPI = data.global_deaths;
-//   globalRecoveredAPI = data.global_recovered;
-//   globalCasesTodayAPI = data.global_new_cases;
-//   globalDeathsTodayAPI = data.global_new_deaths;
-//   LastUpdatedAPI = data.update_date_time;
-
-//   globalTotal.innerHTML = formatNumber(globalTotalAPI);
-//   globalDeaths.innerHTML = formatNumber(globalDeathsAPI);
-//   globalRecovered.innerHTML = formatNumber(globalRecoveredAPI);
-//   globalCasesToday.innerHTML = formatNumber(globalCasesTodayAPI);
-//   globalDeathsToday.innerHTML = formatNumber(globalDeathsTodayAPI);
-//   LastUpdated.innerHTML = LastUpdatedAPI;
-
-// }
-
-// function setup(){
-//   loadJSON('https://www.hpb.health.gov.lk/api/get-current-statistical', gotData);
-// }
-// setup();
-// function gotData(data){
-//   console.log(data);
-// }
 
 function getDatefromStamp(timeStamp) {
   var a = new Date(timeStamp);
@@ -315,4 +287,165 @@ function countryDetailsFunction(t, letters) {
       countriesDetailsWXYZ.appendChild(cardHTML);
       break;
   }
+}
+
+// Historical Data
+
+
+const url_to_historical_data_csv = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv';
+
+async function getHistoryData(){
+  const xAxisLabels = [];
+  const USData = [];
+  const SpainData = [];
+  const ItalyData = [];
+  const UKData = [];
+  const GermanyData = [];
+  const SLData = [];
+  
+  // const response_his = await fetch('./csv/test.csv');
+  const response_his = await fetch(url_to_historical_data_csv);
+
+  const data = await response_his.text();
+  // console.log(data);
+
+  const rows = data.split('\n');
+  // console.log(rows);
+  const headers = rows[0];
+  const topics = headers.split(',');
+
+  headersLength = topics.length;
+  for(a=headersLength-10; a<headersLength; a++){
+    xAxisLabels.push(topics[a]);
+  }
+
+  const rows2 = rows.slice(1);
+
+  rows2.forEach(elt => {
+    const row = elt.split(',');
+    const provinceName = row[0];
+    const countryName = row[1];
+    if((countryName == 'US') && (provinceName == '')){
+      const lengthUS = row.length;
+      for(a=lengthUS-10; a<lengthUS; a++){
+        USData.push(row[a]);
+      }
+    }
+    if((countryName == 'Spain') && (provinceName == '')){
+      const lengthSpain = row.length;
+      for(a=lengthSpain-10; a<lengthSpain; a++){
+        SpainData.push(row[a]);
+      }
+    }
+    if((countryName == 'Italy') && (provinceName == '')){
+      const lengthItaly = row.length;
+      for(a=lengthItaly-10; a<lengthItaly; a++){
+        ItalyData.push(row[a]);
+      }
+    }
+    if((countryName == 'United Kingdom') && (provinceName == '')){
+      const lengthUK = row.length;
+      for(a=lengthUK-10; a<lengthUK; a++){
+        UKData.push(row[a]);
+      }
+    }
+    if((countryName == 'Germany') && (provinceName == '')){
+      const lengthGermany = row.length;
+      for(a=lengthGermany-10; a<lengthGermany; a++){
+        GermanyData.push(row[a]);
+      }
+    }
+    if((countryName == 'Sri Lanka') && (provinceName == '')){
+      const lengthSL = row.length;
+      // console.log(lengthSL);
+      for(a=lengthSL-10; a<lengthSL; a++){
+        SLData.push(row[a]);
+      }
+    }
+  });
+
+  return{xAxisLabels, USData, SpainData, ItalyData, UKData, GermanyData, SLData};
+}
+
+totalCasesCharts();
+
+async function totalCasesCharts(){
+  const data = await getHistoryData();
+  const ctx = document.getElementById('myChart');
+  const myChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+          labels: data.xAxisLabels,
+          datasets: [
+            {
+              label: 'Total Cases Sri Lanka',
+              data: data.SLData,
+              borderColor: 'rgba(40, 167, 69)',
+              hoverBackgroundColor: '#fff',       
+              borderWidth: 3
+            },
+            {
+              label: 'Total Cases Germany',
+              data: data.GermanyData,
+              borderColor: 'rgba(32, 201, 151)',
+              hoverBackgroundColor: '#fff',       
+              borderWidth: 3
+            },
+            {
+              label: 'Total Cases UK',
+              data: data.UKData,
+              borderColor: 'rgba(102, 16, 242)',
+              hoverBackgroundColor: '#fff',       
+              borderWidth: 3
+            },
+            {
+              label: 'Total Cases Italy',
+              data: data.ItalyData,
+              borderColor: 'rgba(255, 193, 7)',
+              hoverBackgroundColor: '#fff',       
+              borderWidth: 3
+            },
+            {
+              label: 'Total Cases Spain',
+              data: data.SpainData,
+              borderColor: 'rgba(220, 53, 69)',
+              hoverBackgroundColor: '#fff',       
+              borderWidth: 3
+            },
+            {
+              label: 'Total Cases USA',
+              data: data.USData,
+              borderColor: 'rgba(0, 123, 255)',
+              hoverBackgroundColor: '#fff',       
+              borderWidth: 3
+            },
+        ],
+      },
+      options: {
+          scales: {
+              xAxes: [{
+                  ticks: {
+                      fontColor: "rgb(190, 190, 190)", // this here
+                  }                  
+              }],
+              yAxes: [{
+                  ticks: {
+                      beginAtZero: false,
+                      fontColor: "rgb(190, 190, 190)", // this here
+                  }                  
+              }],
+              scaleLabel: [{
+                  scaleTitle:{
+                    fontColor: '#fff',
+                  }                
+              }]
+          },
+          legend: {
+            position: 'bottom',
+            labels: {
+                fontColor: 'white',
+            },
+        }
+      }
+  });
 }
