@@ -1,24 +1,24 @@
-// Your web app's Firebase configuration
-var config = {
-  apiKey: "AIzaSyDQJ5gZ5boj0LV__nyBMcIfCyWNTJKugx8",
-  authDomain: "covidsl-59df9.firebaseapp.com",
-  databaseURL: "https://covidsl-59df9.firebaseio.com",
-  projectId: "covidsl-59df9",
-  storageBucket: "covidsl-59df9.appspot.com",
-  messagingSenderId: "816288189009",
-  appId: "1:816288189009:web:7edaff32bfddf44e0d0670",
-  measurementId: "G-SKWZ49LYVV"
-};
-// Initialize Firebase
-firebase.initializeApp(config);
-const db = firebase.firestore();
+// // Your web app's Firebase configuration
+// var config = {
+//   apiKey: "AIzaSyDQJ5gZ5boj0LV__nyBMcIfCyWNTJKugx8",
+//   authDomain: "covidsl-59df9.firebaseapp.com",
+//   databaseURL: "https://covidsl-59df9.firebaseio.com",
+//   projectId: "covidsl-59df9",
+//   storageBucket: "covidsl-59df9.appspot.com",
+//   messagingSenderId: "816288189009",
+//   appId: "1:816288189009:web:7edaff32bfddf44e0d0670",
+//   measurementId: "G-SKWZ49LYVV"
+// };
+// // Initialize Firebase
+// firebase.initializeApp(config);
+// const db = firebase.firestore();
 
-const settings = {
-  timestampsInSnapshots: true
-};
-db.settings(settings);
+// const settings = {
+//   timestampsInSnapshots: true
+// };
+// db.settings(settings);
 
-var docRef = db.collection("data").doc("lk");
+// var docRef = db.collection("data").doc("lk");
 
 var totalInfected = document.getElementById('totalInfected');
 var activeCases = document.getElementById('activeCases');
@@ -123,183 +123,273 @@ setInterval(getCurrentTime, 1000);
 // }, 1000);
 // 
 
-docRef.get().then(function (doc) {
-  totalInfectedno = doc.data().total_infected;
-  recoveredno = doc.data().recovered;
-  suspectedno = doc.data().suspected;
-  deathsno = doc.data().deaths;
 
-  window.document.title = '(' + totalInfectedno + ') ' + window.document.title ; 
+// Firebase data load
+// docRef.get().then(function (doc) {
+//   totalInfectedno = doc.data().total_infected;
+//   recoveredno = doc.data().recovered;
+//   suspectedno = doc.data().suspected;
+//   deathsno = doc.data().deaths;
 
-  totalInfected.innerHTML = totalInfectedno;
-  activeCases.innerHTML = totalInfectedno - (recoveredno + deathsno);
-  recovered.innerHTML = recoveredno;
-  suspected.innerHTML = suspectedno;
-  deaths.innerHTML = deathsno;
+//   window.document.title = '(' + totalInfectedno + ') ' + window.document.title ; 
 
-  deathsRateno =  (deathsno/totalInfectedno)*100;
-  recoveryRateno = (recoveredno/totalInfectedno)*100;
+//   totalInfected.innerHTML = totalInfectedno;
+//   activeCases.innerHTML = totalInfectedno - (recoveredno + deathsno);
+//   recovered.innerHTML = recoveredno;
+//   suspected.innerHTML = suspectedno;
+//   deaths.innerHTML = deathsno;
+
+//   deathsRateno =  (deathsno/totalInfectedno)*100;
+//   recoveryRateno = (recoveredno/totalInfectedno)*100;
   
-  deathRate.innerHTML = (Math.floor(deathsRateno*100)/100) + '%' ;
-  recoveryRate.innerHTML = (Math.floor(recoveryRateno*100)/100) + '%';
+//   deathRate.innerHTML = (Math.floor(deathsRateno*100)/100) + '%' ;
+//   recoveryRate.innerHTML = (Math.floor(recoveryRateno*100)/100) + '%';
 
-  activeCases2.innerHTML = totalInfectedno - (recoveredno + deathsno);
-  recovered2.innerHTML = recoveredno;
-  deaths2.innerHTML = deathsno;
+//   activeCases2.innerHTML = totalInfectedno - (recoveredno + deathsno);
+//   recovered2.innerHTML = recoveredno;
+//   deaths2.innerHTML = deathsno;
 
-  document.getElementById('loading-news').style.display = "none";
-  document.getElementById('myInput').style.display = "block";
-  document.getElementById('see-all').style.display = "block";
+//   document.getElementById('loading-news').style.display = "none";
+//   document.getElementById('myInput').style.display = "block";
+//   document.getElementById('see-all').style.display = "block";
 
-});
+// });
 
-var news = document.getElementById("news");
+// Hospital Data
+const api_url = "https://www.hpb.health.gov.lk/api/get-current-statistical";
 
-function renderNews(doc) {
-  let carddiv = document.createElement('div');
-  let img = document.createElement('img');
-  let bodydiv = document.createElement('div');
-  let hidediv = document.createElement('div');
-  let title = document.createElement('h2');
-  let contentdiv = document.createElement('div');
-  let description = document.createElement('h5');
-  let channel = document.createElement('p');
-  let button = document.createElement('a');
-  let time = document.createElement('p');
-  let small = document.createElement('small');
-  let i = document.createElement('i');
-  let b = document.createElement('b');
+tableHospitals = document.getElementById('sl-hospitals-details');
+LastUpdated = document.getElementById('API_lastUpdated');
 
-  var imgDb = doc.img;
-  var captionDb = doc.caption;
-  if (doc.description) {
-    var descriptionDb = doc.description;
-  }
-  var channelDb = doc.channel;
-  var linkDb = doc.link;
-
-  var dateDb = new Date(doc.time.seconds * 1000);
-  var hrsDb = dateDb.getHours();
-  if (hrsDb == 00) {
-    hrsDb = 12;
-  }
-  if (hrsDb > 12) {
-    hrsDb -= 12;
-  }
-  if (hrsDb < 10) {
-    hrsDb = '0' + hrsDb;
-  }
-  var minsDb = dateDb.getMinutes();
-  if (minsDb < 10) {
-    minsDb = '0' + minsDb;
-  }
-  var hrsUTC = dateDb.getHours();
-  if (hrsUTC < 12) {
-    tmformat = 'AM';
-  } else {
-    tmformat = 'PM';
-  }
-
-  var timeDb = dateDb.getDate() + ' ' + month[dateDb.getMonth()] + ', ' + dateDb.getFullYear() + ' | ' + hrsDb + ':' + minsDb + ' ' + tmformat;
-
-  if (channelDb == 'News1st') {
-    carddiv.setAttribute('class', 'card text-white newsfirst');
-  } else if (channelDb == 'AdaDerana') {
-    carddiv.setAttribute('class', 'card text-white adaderana');
-  } else if (channelDb == 'BBC') {
-    carddiv.setAttribute('class', 'card text-white bbc');
-  } else {
-    carddiv.setAttribute('class', 'card text-white other');
-  }
-
-  if (doc.img) {
-    img.setAttribute('class', 'card-img-top news-image');
-    img.setAttribute('src', imgDb);
-    img.setAttribute('alt', 'img');
-
-    carddiv.appendChild(img);
-  }
-
-  ///
-
-  bodydiv.setAttribute('class', 'card-body news-body');
-
-  title.setAttribute('class', 'card-title news-title');
-  b.textContent = captionDb;
-  title.appendChild(b);
-
-  hidediv.setAttribute('class', 'hide-card');
-  hidediv.appendChild(title);
-
-  if (doc.description) {
-    description.setAttribute('class', 'card-text news-description');
-    description.textContent = descriptionDb;
-  }
-
-  channel.setAttribute('class', 'card-text');
-  i.textContent = 'Source - ' + channelDb;
-  channel.appendChild(i);
-
-  if (channelDb == 'News1st') {
-    button.setAttribute('class', 'btn btn-sm btn-warning');
-  } else if (channelDb == 'AdaDerana') {
-    button.setAttribute('class', 'btn btn-sm btn-danger');
-  } else if (channelDb == 'BBC') {
-    button.setAttribute('class', 'btn btn-sm btn-dark');
-  } else {
-    button.setAttribute('class', 'btn btn-sm btn-primary');
-  }
-  button.setAttribute('href', linkDb);
-  button.setAttribute('target', '_blank');
-  button.textContent = 'Visit...';
-
-  time.setAttribute('class', 'card-text news-time');
-  small.textContent = timeDb;
-  time.appendChild(small);
-
-  contentdiv.setAttribute('class', 'content-card');
-  if (doc.description) {
-    contentdiv.appendChild(description);
-  }
-  contentdiv.appendChild(channel);
-  contentdiv.appendChild(button);
-  contentdiv.appendChild(time);
-
-  bodydiv.appendChild(hidediv);
-  bodydiv.appendChild(contentdiv);
-  ///
-
-  carddiv.appendChild(bodydiv);
-  ///
-
-  news.appendChild(carddiv);
+function getData(){
+  fetch(api_url)
+    .then(function(response) {
+      if (response.status >= 400) {
+        throw new Error("Bad response from server");
+      }
+      return response.json();
+    })
   
-};
+    .then(function(json) {
+      hospitals = json.data.hospital_data;
+      
+      LastUpdatedAPI = json.data.update_date_time;
+      LastUpdated.innerHTML = LastUpdatedAPI; 
 
-newsDb = db.collection("news");
+      // automatic data
 
-newsDb.orderBy("time", "desc").limit(15).get().then(function (querySnapshot) {
-    querySnapshot.forEach(function (doc) {
-      renderNews(doc.data());
-    });
-    // var coll = document.getElementsByClassName("hide-card");
-    // var i;
+      totalInfectedno = json.data.local_total_cases;
+      recoveredno = json.data.local_recovered;
+      // suspectedno = doc.data().suspected;
+      deathsno = json.data.local_deaths;
+
+      window.document.title = '(' + totalInfectedno + ') ' + window.document.title ; 
+
+      totalInfected.innerHTML = totalInfectedno;
+      activeCases.innerHTML = totalInfectedno - (recoveredno + deathsno);
+      recovered.innerHTML = recoveredno;
+      // suspected.innerHTML = suspectedno;
+      deaths.innerHTML = deathsno;
+
+      deathsRateno =  (deathsno/totalInfectedno)*100;
+      recoveryRateno = (recoveredno/totalInfectedno)*100;
+      
+      deathRate.innerHTML = (Math.floor(deathsRateno*100)/100) + '%' ;
+      recoveryRate.innerHTML = (Math.floor(recoveryRateno*100)/100) + '%';
+
+      activeCases2.innerHTML = totalInfectedno - (recoveredno + deathsno);
+      recovered2.innerHTML = recoveredno;
+      deaths2.innerHTML = deathsno;
+
+      // document.getElementById('loading-news').style.display = "none";
+      // document.getElementById('myInput').style.display = "block";
+      // document.getElementById('see-all').style.display = "block";
+
+      // 
+
+      hospitals.forEach(function(hospital){  
+
+        let tr = document.createElement('tr');
+        let hospitalName = document.createElement('td');
+        let SLpatientsnum = document.createElement('td');
+        let Foreignpatientsnum = document.createElement('td');
+        let Totalpatientsnum = document.createElement('td');
+
+        var hospitalNameAPI = hospital.hospital.name;
+        var SLpatientsnumAPI = hospital.treatment_local;
+        var ForeignpatientsnumAPI = hospital.treatment_foreign;
+        var Totalpatientsnumdata = SLpatientsnumAPI + ForeignpatientsnumAPI;
+
+        hospitalName.setAttribute('class', 'hospital-name');
+        hospitalName.textContent = hospitalNameAPI;
+        SLpatientsnum.setAttribute('class', 'sl-patients');
+        SLpatientsnum.textContent = SLpatientsnumAPI;  
+        Foreignpatientsnum.setAttribute('class', 'foreign-patients');
+        Foreignpatientsnum.textContent = ForeignpatientsnumAPI;
+        Totalpatientsnum.setAttribute('class', 'total-patients');
+        Totalpatientsnum.textContent = Totalpatientsnumdata;
+
+        tr.appendChild(hospitalName);
+        tr.appendChild(SLpatientsnum);
+        tr.appendChild(Foreignpatientsnum);
+        tr.appendChild(Totalpatientsnum);
+
+        tableHospitals.appendChild(tr); 
+      });
+    })
   
-    // for (i = 0; i < coll.length; i++) {
-    //   coll[i].addEventListener("click", function () {
-    //     this.classList.toggle("active");
-    //     var content = this.nextElementSibling;
-    //     if (content.style.maxHeight) {
-    //       content.style.maxHeight = null;
-    //     } else {
-    //       content.style.maxHeight = content.scrollHeight + "px";
-    //     }
-    //   });
-    // }
-  })
-  .catch(function (error) {
-    console.log("Error getting documents: ", error);
-  });
+  }
+  
+  getData();
+
+
+// var news = document.getElementById("news");
+
+// function renderNews(doc) {
+//   let carddiv = document.createElement('div');
+//   let img = document.createElement('img');
+//   let bodydiv = document.createElement('div');
+//   let hidediv = document.createElement('div');
+//   let title = document.createElement('h2');
+//   let contentdiv = document.createElement('div');
+//   let description = document.createElement('h5');
+//   let channel = document.createElement('p');
+//   let button = document.createElement('a');
+//   let time = document.createElement('p');
+//   let small = document.createElement('small');
+//   let i = document.createElement('i');
+//   let b = document.createElement('b');
+
+//   var imgDb = doc.img;
+//   var captionDb = doc.caption;
+//   if (doc.description) {
+//     var descriptionDb = doc.description;
+//   }
+//   var channelDb = doc.channel;
+//   var linkDb = doc.link;
+
+//   var dateDb = new Date(doc.time.seconds * 1000);
+//   var hrsDb = dateDb.getHours();
+//   if (hrsDb == 00) {
+//     hrsDb = 12;
+//   }
+//   if (hrsDb > 12) {
+//     hrsDb -= 12;
+//   }
+//   if (hrsDb < 10) {
+//     hrsDb = '0' + hrsDb;
+//   }
+//   var minsDb = dateDb.getMinutes();
+//   if (minsDb < 10) {
+//     minsDb = '0' + minsDb;
+//   }
+//   var hrsUTC = dateDb.getHours();
+//   if (hrsUTC < 12) {
+//     tmformat = 'AM';
+//   } else {
+//     tmformat = 'PM';
+//   }
+
+//   var timeDb = dateDb.getDate() + ' ' + month[dateDb.getMonth()] + ', ' + dateDb.getFullYear() + ' | ' + hrsDb + ':' + minsDb + ' ' + tmformat;
+
+//   if (channelDb == 'News1st') {
+//     carddiv.setAttribute('class', 'card text-white newsfirst');
+//   } else if (channelDb == 'AdaDerana') {
+//     carddiv.setAttribute('class', 'card text-white adaderana');
+//   } else if (channelDb == 'BBC') {
+//     carddiv.setAttribute('class', 'card text-white bbc');
+//   } else {
+//     carddiv.setAttribute('class', 'card text-white other');
+//   }
+
+//   if (doc.img) {
+//     img.setAttribute('class', 'card-img-top news-image');
+//     img.setAttribute('src', imgDb);
+//     img.setAttribute('alt', 'img');
+
+//     carddiv.appendChild(img);
+//   }
+
+//   ///
+
+//   bodydiv.setAttribute('class', 'card-body news-body');
+
+//   title.setAttribute('class', 'card-title news-title');
+//   b.textContent = captionDb;
+//   title.appendChild(b);
+
+//   hidediv.setAttribute('class', 'hide-card');
+//   hidediv.appendChild(title);
+
+//   if (doc.description) {
+//     description.setAttribute('class', 'card-text news-description');
+//     description.textContent = descriptionDb;
+//   }
+
+//   channel.setAttribute('class', 'card-text');
+//   i.textContent = 'Source - ' + channelDb;
+//   channel.appendChild(i);
+
+//   if (channelDb == 'News1st') {
+//     button.setAttribute('class', 'btn btn-sm btn-warning');
+//   } else if (channelDb == 'AdaDerana') {
+//     button.setAttribute('class', 'btn btn-sm btn-danger');
+//   } else if (channelDb == 'BBC') {
+//     button.setAttribute('class', 'btn btn-sm btn-dark');
+//   } else {
+//     button.setAttribute('class', 'btn btn-sm btn-primary');
+//   }
+//   button.setAttribute('href', linkDb);
+//   button.setAttribute('target', '_blank');
+//   button.textContent = 'Visit...';
+
+//   time.setAttribute('class', 'card-text news-time');
+//   small.textContent = timeDb;
+//   time.appendChild(small);
+
+//   contentdiv.setAttribute('class', 'content-card');
+//   if (doc.description) {
+//     contentdiv.appendChild(description);
+//   }
+//   contentdiv.appendChild(channel);
+//   contentdiv.appendChild(button);
+//   contentdiv.appendChild(time);
+
+//   bodydiv.appendChild(hidediv);
+//   bodydiv.appendChild(contentdiv);
+//   ///
+
+//   carddiv.appendChild(bodydiv);
+//   ///
+
+//   news.appendChild(carddiv);
+  
+// };
+
+// newsDb = db.collection("news");
+
+// newsDb.orderBy("time", "desc").limit(15).get().then(function (querySnapshot) {
+//     querySnapshot.forEach(function (doc) {
+//       renderNews(doc.data());
+//     });
+//     // var coll = document.getElementsByClassName("hide-card");
+//     // var i;
+  
+//     // for (i = 0; i < coll.length; i++) {
+//     //   coll[i].addEventListener("click", function () {
+//     //     this.classList.toggle("active");
+//     //     var content = this.nextElementSibling;
+//     //     if (content.style.maxHeight) {
+//     //       content.style.maxHeight = null;
+//     //     } else {
+//     //       content.style.maxHeight = content.scrollHeight + "px";
+//     //     }
+//     //   });
+//     // }
+//   })
+//   .catch(function (error) {
+//     console.log("Error getting documents: ", error);
+//   });
 
 //search function
 function searchFunction() {
@@ -378,62 +468,6 @@ function hidetabledetails() {
 //   LastUpdated.innerHTML = LastUpdatedAPI;
 
 // }
-
-// Hospital Data
-const api_url = "https://www.hpb.health.gov.lk/api/get-current-statistical";
-
-tableHospitals = document.getElementById('sl-hospitals-details');
-LastUpdated = document.getElementById('API_lastUpdated');
-
-function getData(){
-  fetch(api_url)
-    .then(function(response) {
-      if (response.status >= 400) {
-        throw new Error("Bad response from server");
-      }
-      return response.json();
-    })
-  
-    .then(function(json) {
-      hospitals = json.data.hospital_data;
-      
-      LastUpdatedAPI = json.data.update_date_time;
-      LastUpdated.innerHTML = LastUpdatedAPI; 
-
-      hospitals.forEach(function(hospital){  
-
-        let tr = document.createElement('tr');
-        let hospitalName = document.createElement('td');
-        let SLpatientsnum = document.createElement('td');
-        let Foreignpatientsnum = document.createElement('td');
-        let Totalpatientsnum = document.createElement('td');
-
-        var hospitalNameAPI = hospital.hospital.name;
-        var SLpatientsnumAPI = hospital.treatment_local;
-        var ForeignpatientsnumAPI = hospital.treatment_foreign;
-        var Totalpatientsnumdata = SLpatientsnumAPI + ForeignpatientsnumAPI;
-
-        hospitalName.setAttribute('class', 'hospital-name');
-        hospitalName.textContent = hospitalNameAPI;
-        SLpatientsnum.setAttribute('class', 'sl-patients');
-        SLpatientsnum.textContent = SLpatientsnumAPI;  
-        Foreignpatientsnum.setAttribute('class', 'foreign-patients');
-        Foreignpatientsnum.textContent = ForeignpatientsnumAPI;
-        Totalpatientsnum.setAttribute('class', 'total-patients');
-        Totalpatientsnum.textContent = Totalpatientsnumdata;
-
-        tr.appendChild(hospitalName);
-        tr.appendChild(SLpatientsnum);
-        tr.appendChild(Foreignpatientsnum);
-        tr.appendChild(Totalpatientsnum);
-
-        tableHospitals.appendChild(tr); 
-      });
-    })
-  
-  }
-  
-  getData();
 
 // getData();
 
