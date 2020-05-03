@@ -202,6 +202,27 @@ title: Home
   </div>
 </div>
 
+<h3 class="display-4 caption-2">Local Growth Details</h3>
+
+<canvas id="dataChart" width="400" height="100">
+  Your browser does not support the canvas element.
+</canvas> 
+
+<style>
+  #dataChart{
+    padding: 0 10px;
+  }
+</style>
+
+<script>
+
+  var c = document.getElementById("dataChart");
+  if(screen.width < 576){
+    c.height = 400;
+  }
+  
+</script>
+
 <div class="row mx-auto row-main-2" style="width: 100%;">
   <div class="col-xl-4 main-col-1 main-col-b-1 margin-bottom-before-footer-xl" style="width: 100%;">
     <div class="col-xl-12 col-md-8 mx-auto font-1" id="hospitalDetails">

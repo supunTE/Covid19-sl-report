@@ -492,3 +492,111 @@ function detectBrowser() {
     // alert('unknown');
   }
 }
+
+const lk_historical_data_csv = 'https://raw.githubusercontent.com/arimacdev/covid19-srilankan-data/master/Daily/covid_lk.csv';
+
+// getHistoryData();
+
+async function getHistoryData(){
+  const xAxisLabels_lk = [];
+  const CasesData = [];
+  const DeathsData = [];
+  const RecoveriesData = [];
+  
+  // const response_his = await fetch('./csv/test.csv');
+  const response_lk = await fetch(lk_historical_data_csv);
+
+  const data_lk = await response_lk.text();
+  // console.log(data_lk);
+
+  const rows = data_lk.split('\n');
+  // console.log(rows);
+  const headers = rows[0];
+  const topics = headers.split(',');
+
+  headersLength = topics.length;
+  for(a=0; a<headersLength; a++){
+    xAxisLabels_lk.push(topics[a]);
+    // console.log(topics[a]);
+  }
+
+  const casesDaily = rows[1].split(',');
+  casesDaily.forEach(elt => {
+    CasesData.push(elt);
+  });
+
+  const deathsDaily = rows[2].split(',');
+  deathsDaily.forEach(elt => {
+    DeathsData.push(elt);
+  });
+
+  const recoveriesdaily = rows[3].split(',');
+  recoveriesdaily.forEach(elt => {
+    RecoveriesData.push(elt);
+  });
+      
+
+  return{xAxisLabels_lk, CasesData, DeathsData, RecoveriesData};
+}
+
+totalCasesCharts();
+
+async function totalCasesCharts(){
+  const data = await getHistoryData();
+  const ctx = document.getElementById('dataChart');
+  const myChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+          labels: data.xAxisLabels_lk,
+          datasets: [
+            {
+              label: 'Total Deaths in Sri Lanka',
+              data: data.DeathsData,
+              borderColor: '#dc3545',
+              hoverBackgroundColor: '#fff',       
+              borderWidth: 3
+            },
+            {
+              label: 'Total Recoveries in Sri Lanka',
+              data: data.RecoveriesData,
+              borderColor: '#28a745',
+              hoverBackgroundColor: '#fff',       
+              borderWidth: 3
+            },
+            {
+              label: 'Total Cases in Sri Lanka',
+              data: data.CasesData,
+              borderColor: '#007bff',
+              hoverBackgroundColor: '#fff',       
+              borderWidth: 3
+            },
+        ],
+      },
+      options: {
+          scales: {
+              xAxes: [{
+                  ticks: {
+                      fontColor: "rgb(190, 190, 190)", // this here
+                  }                  
+              }],
+              yAxes: [{
+                  ticks: {
+                      beginAtZero: false,
+                      fontColor: "rgb(190, 190, 190)", // this here
+                  }                  
+              }],
+              scaleLabel: [{
+                  scaleTitle:{
+                    fontColor: '#fff',
+                  }                
+              }]
+          },
+          legend: {
+            position: 'bottom',
+            labels: {
+                fontColor: 'white',
+            },
+        }
+      }
+  });
+}
