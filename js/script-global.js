@@ -86,7 +86,7 @@ var url = 'https://newsapi.org/v2/everything?' +
   'language=en&' +
   'pageSize=5&' +
   'excludeDomains=Youtube.com&' +
-  'sortBy=relevancy&' +
+  'sortBy=publishedAt&' +
   'apiKey=6814e8af1172455a95052c18d4a90f8b';
 
 var globalNews = document.getElementById('globalNews');
