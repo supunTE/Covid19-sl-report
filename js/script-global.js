@@ -82,7 +82,7 @@ getData();
 // global news
 //  https://newsapi.org/docs
 var url = 'https://newsapi.org/v2/everything?' +
-  'q=COVID+corona&' +
+  'qInTitle=COVID+corona&' +
   'language=en&' +
   'pageSize=5&' +
   'excludeDomains=Youtube.com&' +
