@@ -82,10 +82,10 @@ getData();
 // global news
 //  https://newsapi.org/docs
 var url = 'https://newsapi.org/v2/everything?' +
-  'qInTitle=COVID+corona&' +
+  'q=COVID+corona&' +
   'language=en&' +
   'pageSize=5&' +
-  'excludeDomains=Youtube.com&' +
+  'domains=bbc.co.uk&' +
   'sortBy=publishedAt&' +
   'apiKey=6814e8af1172455a95052c18d4a90f8b';
 
