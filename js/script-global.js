@@ -301,6 +301,7 @@ async function getHistoryData(){
   const ItalyData = [];
   const UKData = [];
   const GermanyData = [];
+  const RussiaData = []; 
   const SLData = [];
   
   // const response_his = await fetch('./csv/test.csv');
@@ -355,6 +356,12 @@ async function getHistoryData(){
         GermanyData.push(row[a]);
       }
     }
+    if((countryName == 'Russia') && (provinceName == '')){
+      const lengthRussia = row.length;
+      for(a=lengthRussia-10; a<lengthRussia; a++){
+        RussiaData.push(row[a]);
+      }
+    }
     if((countryName == 'Sri Lanka') && (provinceName == '')){
       const lengthSL = row.length;
       // console.log(lengthSL);
@@ -364,7 +371,7 @@ async function getHistoryData(){
     }
   });
 
-  return{xAxisLabels, USData, SpainData, ItalyData, UKData, GermanyData, SLData};
+  return{xAxisLabels, USData, SpainData, ItalyData, UKData, GermanyData, RussiaData, SLData};
 }
 
 totalCasesCharts();
@@ -409,6 +416,13 @@ async function totalCasesCharts(){
               label: 'Total Cases Spain',
               data: data.SpainData,
               borderColor: 'rgba(220, 53, 69)',
+              hoverBackgroundColor: '#fff',       
+              borderWidth: 3
+            },
+            {
+              label: 'Total Cases Russia',
+              data: data.RussiaData,
+              borderColor: 'rgba(255, 0, 247)',
               hoverBackgroundColor: '#fff',       
               borderWidth: 3
             },
