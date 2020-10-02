@@ -1,18 +1,18 @@
 # Covid-19 Sri Lankan Report
 
-   Visit the [website](https://covid19-sl-report.netlify.com/) and  get The the Latest Updates
+   Visit the [website](https://covid19-sl-report.netlify.com/) and  get The Latest Updates
 
 ![Website](https://i.imgur.com/un7n8u4.png)
 		
 
-### This is web app that can be used to get the latest coronavirus update in Sri Lanka and WorldWide
+### This is a web app that can be used to get the latest Covid-19 updates in Sri Lanka and WorldWide
 
 ## **Services Provided :**
 
  - Get the latest Covid-19 situation in Sri Lanka ( Total cases, Active cases, Deaths, recoveries )
  - Get the latest Covid-19 situation worldwide
  - Get latest news about the situation
- - Built in map for identify Testing Centers and Quarantine Centers
+ - Built in map to identify Testing Centers and Quarantine Centers
  - Know what happened on which day from the timeline 
 
 ## **Sources of NEWS :**
